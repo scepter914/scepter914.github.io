@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Scepter914 Website</title>
+    <link>https://scepter914.github.io/blog/</link>
+    <description>Recent content in Blogs on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Dec 2017 23:59:57 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>More information about me</title>
+      <link>https://scepter914.github.io/blog/aboutmore/</link>
+      <pubDate>Thu, 28 Dec 2017 23:59:57 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/aboutmore/</guid>
+      <description>Hobby Soccer I have played soccer for about 15 years. I play as attacker, mainly Second Top and Side Midfielder.
+Interest Music I like background music of movie and anime and game. Especially, I like Yuki Kajiura(梶浦由記), who is a Japanese composer and music producer. I listen to her music (Soundtracks, Fiction Junction, Kalafina) a lot.
+History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代).</description>
+    </item>
+    
+    <item>
+      <title>もう少し自己紹介</title>
+      <link>https://scepter914.github.io/blog/aboutmoreja/</link>
+      <pubDate>Thu, 28 Dec 2017 23:59:56 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/aboutmoreja/</guid>
+      <description> このページ  好きなものについてたらたら書いている中身ないページ  好きなこと サッカー  幼小中高大と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング  歴史  歴史の本読むのが好き 三国志
+ 三国志だと魏が好き  曹操,司馬懿,張遼,郭嘉あたり   日本の戦国時代
+ お城見物したりしている   音楽  梶浦由記さんのファン よく聞いてる  </description>
+    </item>
+    
+  </channel>
+</rss>
