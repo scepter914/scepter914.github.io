@@ -49,8 +49,8 @@
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-01-25T00:00:01JST",
-    "dateModified": "2018-01-25T00:00:01JST",
+    "datePublished": "2018-01-25T00:02:00JST",
+    "dateModified": "2018-01-25T00:02:00JST",
     "author": {
       "@type": "Person",
       "name": "Scepter914 Website"
@@ -147,7 +147,7 @@
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-25T00:00:01JST">Jan 25, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-25T00:02:00JST">Jan 25, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
@@ -426,6 +426,15 @@ Office製品は，蓄積した情報に対しての検索性が悪すぎるし�
 
 <h2 id="reveal-js-pandoc-システム">reveal.js (+ pandoc)システム</h2>
 
+<h3 id="スライド作成をwikiに噛ましたい">スライド作成をwikiに噛ましたい</h3>
+
+<ul>
+<li>パワポで一々開いて「あのスライドどこだっけー」ってやりたくない</li>
+<li>wikiの中にスライドの情報を突っ込みたい</li>
+<li>Markdownでスライド作るの楽</li>
+<li>Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃんってなった</li>
+</ul>
+
 <h3 id="install-1">install</h3>
 
 <ul>
@@ -470,9 +479,9 @@ Office製品は，蓄積した情報に対しての検索性が悪すぎるし�
 
 <pre><code>var=`grep -ic '# ' $1`
 echo &quot;スライド数&quot;$var  
-cp $1 ~/wiki/.reveal.js/index.md
-cp -r ./pic ~/wiki/.reveal.js/
-cd ~/wiki/.reveal.js/
+cp $1 ~/wiki/reveal.js/index.md
+cp -r ./pic ~/wiki/reveal.js/
+cd ~/wiki/reveal.js/
 pandoc -f markdown index.md -t revealjs -V theme:black --template=$HOME/wiki/uploads/code/pandoc_template/slide_default.html --highlight-style=espresso --slide-level=2 -o index.html
 google-chrome index.html
 </code></pre>
