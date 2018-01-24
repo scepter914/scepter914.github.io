@@ -6,9 +6,37 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jan 2018 00:00:01 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gollum</title>
+      <link>https://scepter914.github.io/tags/gollum/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:01 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/gollum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandoc</title>
+      <link>https://scepter914.github.io/tags/pandoc/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:01 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reveal.js</title>
+      <link>https://scepter914.github.io/tags/reveal.js/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:01 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/reveal.js/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

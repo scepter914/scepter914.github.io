@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2018/20180124_gollum/</loc>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/blog/2017/20171230_startblog/</loc>
     <lastmod>2017-12-30T00:00:00+09:00</lastmod>
   </url>
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2017-12-30T00:00:00+09:00</lastmod>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,19 +51,44 @@
   </url>
   
   <url>
+    <loc>https://scepter914.github.io/tags/gollum/</loc>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/categories/misc/</loc>
     <lastmod>2017-12-30T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://scepter914.github.io/tags/pandoc/</loc>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/reveal.js/</loc>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2017-12-30T00:00:00+09:00</lastmod>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/categories/server/</loc>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2018-01-25T00:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
