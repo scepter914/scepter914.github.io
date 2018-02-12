@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>gollumの運用Tipsと拡張 - Scepter914 Website</title>
+    
+<meta name="description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_config  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.">
+
+<meta property="og:title" content="gollumの運用Tipsと拡張 - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180210_gollum_tips/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_config  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180210_gollum_tips/">
+<meta name="twitter:title" content="gollumの運用Tipsと拡張 - Scepter914 Website">
+<meta name="twitter:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_config  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "gollumの運用Tipsと拡張 - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-02-10T00:04:00JST",
+    "dateModified": "2018-02-10T00:04:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_config  wiki起動時は  gollum &ndash;config config.rb &ndash;css &ndash;allow-uploads &ndash;show-all &ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github."
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">tag</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">gollumの運用Tipsと拡張</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:04:00JST">Feb 10, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">gollumの運用Tipsと拡張</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="このページは">このページは</h2>
+
+<ul>
+<li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a>の3ページ目</li>
+</ul>
+
+<h2 id="運用のtips">運用のTIps</h2>
+
+<ul>
+<li>gitリポジトリを大きくし過ぎない
+
+<ul>
+<li>重くなる</li>
+<li>あんまり大きいpdfやmp4等をcommitしないようにする</li>
+<li>wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する</li>
+<li>履歴が必要ないならrebase -iするのも手</li>
+</ul></li>
+</ul>
+
+<h2 id="gollumの拡張">gollumの拡張</h2>
+
+<h3 id="custom-cssとconfig-rb">custom.cssとconfig.rb</h3>
+
+<ul>
+<li>custom.cssとconfig.rbをwikiディレクトリに置く
+
+<ul>
+<li>自分の設定ファイル <a href="https://github.com/scepter914/gollum_config">https://github.com/scepter914/gollum_config</a></li>
+</ul></li>
+<li>wiki起動時は
+
+<ul>
+<li>gollum &ndash;config config.rb &ndash;css &ndash;allow-uploads &ndash;show-all &ndash;mathjax</li>
+</ul></li>
+<li>自分の設定ファイル
+
+<ul>
+<li>config
+
+<ul>
+<li>mediawiki の色付き表を使えるようにした</li>
+</ul></li>
+<li>css
+
+<ul>
+<li>編集枠を大きく</li>
+<li>ページの幅ひろく</li>
+<li>サイドバー狭く</li>
+<li>行間狭く</li>
+</ul></li>
+</ul></li>
+<li>設定ファイルが反映されてない時
+
+<ul>
+<li>gitがmasterであることを確認する</li>
+</ul></li>
+<li>railsやcssを勉強すれば好きにカスタマイズができる(白目)</li>
+<li>cssのカスタマイズ
+
+<ul>
+<li><a href="https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/css">https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/css</a>にあるのを参考にしながら適当に</li>
+<li>自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに</li>
+</ul></li>
+</ul>
+
+<h3 id="plantuml">PlantUML</h3>
+
+<ul>
+<li>PlantUMLとは
+
+<ul>
+<li>Graphvizのモデリング言語</li>
+<li>フローチャート組む時に使ったりしている</li>
+<li>詳しくはggってください</li>
+</ul></li>
+<li>環境構築
+
+<ul>
+<li>公式 <a href="https://github.com/gollum/gollum/wiki/Custom-PlantUML-Server#gollum-configuration">https://github.com/gollum/gollum/wiki/Custom-PlantUML-Server#gollum-configuration</a></li>
+</ul></li>
+<li>ubuntu16.04だとppa追加が必要</li>
+<li>sudo add-apt-repository ppa:openjdk-r/ppa<br /></li>
+<li>sudo apt-get update<br /></li>
+<li>sudo apt-get install openjdk-7-jdk<br /></li>
+<li>sudo apt-get install maven graphviz git-core<br /></li>
+<li>git clone <a href="https://github.com/plantuml/plantuml-server.git">https://github.com/plantuml/plantuml-server.git</a></li>
+<li>cd plantuml-server</li>
+<li>mvn jetty:run</li>
+<li><a href="http://localhost:8080/plantumlで見られるはず">http://localhost:8080/plantumlで見られるはず</a></li>
+<li>wikiディレクトリの中に置くなら.gitignoreしておく</li>
+</ul>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

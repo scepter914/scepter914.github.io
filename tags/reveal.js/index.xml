@@ -6,24 +6,29 @@
     <description>Recent content in Reveal.js on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2018 00:02:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 00:05:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/reveal.js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180124_gollum/</link>
-      <pubDate>Thu, 25 Jan 2018 00:02:00 +0900</pubDate>
+      <title>gollum &#43; reveal.js &#43; pandocによるスライド作成システム</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</link>
+      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/2018/20180124_gollum/</guid>
-      <description>環境  Ubuntu 16.04LTS  概要  個人用wikiについて
- gollum + reveal.js環境
- gollumのセットアップ gollumのカスタマイズ reveal.js (+pandoc)によるスライド作成  2018/1/30 指摘を受けて追記
-なぜ個人用wikiをなぜ使うのか  そもそも何をしたいのか  ドキュメント，メモの管理 pdfの管理 png, jpegの管理 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くすため  階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能  この辺の情報を(軽量に)一括で管理したい
-よく見るもの よくあるのはOffice製品によるドキュメント，メモ書き残し． Office製品は，蓄積した情報に対しての検索性が悪すぎるし， 開くまで時間かかるのが厳しい．重い． あと何処に何のファイルがわからなくなることが多い． 紙は検索ができないから嫌．
-因みに外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義． （このBlogも外部サービスに頼らなかったのはそういう理由がある） あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．
-色々探した結果Gollumというwikiにたどり着いた Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Gitができる事前提なので，非エンジニア用wikiにはなりにくい  この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する Git commitで変更が反映される仕様 wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける Markdownで書ける プラグイン的なのを入れるとMediawiki文法も書ける 数式はLaTeXで書ける その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる   install  https://github.</description>
+      <guid>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</guid>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.</description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
+      <pubDate>Sat, 10 Feb 2018 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
+      <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
+ gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
+  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの   下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
     </item>
     
   </channel>

@@ -6,24 +6,53 @@
     <description>Recent content in Gollum on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2018 00:02:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 00:04:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/gollum/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180124_gollum/</link>
-      <pubDate>Thu, 25 Jan 2018 00:02:00 +0900</pubDate>
+      <title>gollumの運用Tipsと拡張</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</link>
+      <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/2018/20180124_gollum/</guid>
-      <description>環境  Ubuntu 16.04LTS  概要  個人用wikiについて
- gollum + reveal.js環境
- gollumのセットアップ gollumのカスタマイズ reveal.js (+pandoc)によるスライド作成  2018/1/30 指摘を受けて追記
-なぜ個人用wikiをなぜ使うのか  そもそも何をしたいのか  ドキュメント，メモの管理 pdfの管理 png, jpegの管理 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くすため  階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能  この辺の情報を(軽量に)一括で管理したい
-よく見るもの よくあるのはOffice製品によるドキュメント，メモ書き残し． Office製品は，蓄積した情報に対しての検索性が悪すぎるし， 開くまで時間かかるのが厳しい．重い． あと何処に何のファイルがわからなくなることが多い． 紙は検索ができないから嫌．
-因みに外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義． （このBlogも外部サービスに頼らなかったのはそういう理由がある） あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．
-色々探した結果Gollumというwikiにたどり着いた Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Gitができる事前提なので，非エンジニア用wikiにはなりにくい  この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する Git commitで変更が反映される仕様 wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける Markdownで書ける プラグイン的なのを入れるとMediawiki文法も書ける 数式はLaTeXで書ける その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる   install  https://github.</description>
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_config  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.</description>
+    </item>
+    
+    <item>
+      <title>gollumのインストール</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum_install/</link>
+      <pubDate>Sat, 10 Feb 2018 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_install/</guid>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp;amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む) install  sudo apt-get gem ruby-dev sudo gem install gollum github-markdown   mediawiki文法で書きたい人は  sudo gem install wikicloth  wikiを立てる  cd ~ mkdir wiki  お好きなところに  git init vim Home.</description>
+    </item>
+    
+    <item>
+      <title>なぜ個人wikiを使うのか</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_whywiki/</link>
+      <pubDate>Sat, 10 Feb 2018 00:02:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_whywiki/</guid>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目  そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイトとか   欲を言うと  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい   この辺はドキュメントとして． Excelファイルとwordファイルに分かれていて一々開き直すの辛い (というか開くまで時間かかるのが辛い)， pdfみたいに編集できない辛い， みたいな状況を起こしたくないというお話．
+ 階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する   紙は検索ができないから嫌というお話がある．
+ この辺の情報を(軽量に)一括で管理したい  結局のところは，「いい感じに情報を管理したい」というお話．
+この辺を解決してくれるのが wiki
+外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．
+あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．
+あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．</description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
+      <pubDate>Sat, 10 Feb 2018 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
+      <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
+ gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
+  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの   下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
     </item>
     
   </channel>

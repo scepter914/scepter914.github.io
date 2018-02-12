@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>gollum &#43; reveal.js &#43; pandocによるスライド作成システム - Scepter914 Website</title>
+    
+<meta name="description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.">
+
+<meta property="og:title" content="gollum &#43; reveal.js &#43; pandocによるスライド作成システム - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/">
+<meta name="twitter:title" content="gollum &#43; reveal.js &#43; pandocによるスライド作成システム - Scepter914 Website">
+<meta name="twitter:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "gollum &#43; reveal.js &#43; pandocによるスライド作成システム - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-02-10T00:05:00JST",
+    "dateModified": "2018-02-10T00:05:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal."
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">tag</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">gollum &#43; reveal.js &#43; pandocによるスライド作成システム</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:05:00JST">Feb 10, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">gollum &#43; reveal.js &#43; pandocによるスライド作成システム</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="このページは">このページは</h2>
+
+<ul>
+<li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a>の4ページ目</li>
+</ul>
+
+<h2 id="スライド作成をwikiに噛ましたい">スライド作成をwikiに噛ましたい</h2>
+
+<ul>
+<li>パワポで一々開いて「あのスライドどこだっけー」ってやりたくない
+
+<ul>
+<li>検索性がアレ</li>
+</ul></li>
+<li>wikiの中にスライドの情報を突っ込みたい
+
+<ul>
+<li>wikiに噛ませれば検索性が上がるだろう</li>
+</ul></li>
+<li>そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは
+
+<ul>
+<li>Markdownでスライドさっと作成できれば便利だし</li>
+</ul></li>
+<li>Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん</li>
+</ul>
+
+<h2 id="reveal-js">reveal.js</h2>
+
+<ul>
+<li>Markdown記法でスライドを作成できる神ツール</li>
+<li>詳しくは色々とggってください</li>
+<li>公式 <a href="https://revealjs.com/#/">https://revealjs.com/#/</a></li>
+</ul>
+
+<h2 id="pandoc">pandoc</h2>
+
+<ul>
+<li>reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル</li>
+<li>Markdown別ファイルにするにはローカルサーバーを立てる必要がある</li>
+<li>ぶっちゃけめんどくさい</li>
+<li>そこでpandocを使う</li>
+<li>pandoc
+
+<ul>
+<li>文書を別の形式に変える神ツール</li>
+<li>詳しくはggってください</li>
+<li>今回はfrom markdown to revealjsを使います</li>
+</ul></li>
+</ul>
+
+<h2 id="環境構築">環境構築</h2>
+
+<ul>
+<li>reveal.js install
+
+<ul>
+<li>apt-get install wkhtmltopdf</li>
+<li>参考 公式 <a href="https://github.com/hakimel/reveal.js/#installation">https://github.com/hakimel/reveal.js/#installation</a></li>
+<li>git clone <a href="https://github.com/hakimel/reveal.js.git">https://github.com/hakimel/reveal.js.git</a></li>
+</ul></li>
+<li>pandoc install
+
+<ul>
+<li>sudo apt-get install pandoc</li>
+</ul></li>
+<li>reveal.jsディレクトリをwikiの下に置く</li>
+</ul>
+
+<pre><code>wiki/
+　└ reveal.js/
+　　├ css
+　　├ js
+　　├ lib
+　　└ pic
+</code></pre>
+
+<ul>
+<li>.gitignoreに/reveal.jsを追加する</li>
+<li>自分の設定ファイル <a href="https://github.com/scepter914/gollum_config">https://github.com/scepter914/gollum_config</a>のslide_default.htmlをダウンロード
+
+<ul>
+<li>適当な場所に置く(自分は$HOME/wiki/uploads/code/pandoc_template/slide_default.htmlに置いている)</li>
+</ul></li>
+<li>slide.shを作成する
+
+<ul>
+<li>ファイル場所は適宜</li>
+</ul></li>
+</ul>
+
+<pre><code>var=`grep -ic '# ' $1`
+echo &quot;スライド数&quot;$var  
+cp $1 ~/wiki/reveal.js/index.md
+cp -r ./pic ~/wiki/reveal.js/
+cd ~/wiki/reveal.js/
+pandoc -f markdown index.md -t revealjs -V theme:black --template=$HOME/wiki/uploads/code/pandoc_template/slide_default.html --highlight-style=espresso --slide-level=2 -o index.html
+google-chrome index.html
+</code></pre>
+
+<ul>
+<li>.bashrc等に
+
+<ul>
+<li>alias slide=&ldquo;$HOME/wiki/uploads/code/slide.sh&rdquo;</li>
+<li>を追加</li>
+</ul></li>
+</ul>
+
+<h2 id="スライド作成">スライド作成</h2>
+
+<ol>
+<li>wiki内でスライド用のディレクトリを作成する
+
+<ul>
+<li>階層構造は以下の通り</li>
+</ul></li>
+</ol>
+
+<pre><code>slide/
+　├ hoge.md
+　└ pic/
+　　├ image.jpg
+　　└ image2.jpg
+</code></pre>
+
+<ol>
+<li>mdファイルを作成する(hoge.mdとする)</li>
+</ol>
+
+<pre><code>% タイトル
+% 名前
+% 日付
+スライド
+
+### ページ1-1(###で大きさが決まる)
+
+- リスト
+- リスト
+- リスト
+
+---
+
+#### サブページ1-2はスライドが下側にできる
+
+1. 番号付き項目
+1. 番号付き項目
+1. 番号付き項目
+
+---
+
+### ページ2
+ベタ書き &lt;br&gt;
+ベタ書き2 &lt;br&gt;
+空行を入れたい時はスペースを2こ入れる  
+&lt;b&gt;&lt;!-- --&gt;&lt;/b&gt;  
+前方になんらかの文字が必要なのでコメントを入れる  
+
+---
+
+#### サブページ2-1
+
+- 上下に空行がないと左寄せになる
+![キャプション1横並び](pic/image.jpg){width=320px}
+![キャプション2横並び](pic/image2.jpg){width=320px}
+
+- 上下に空行があると中央そろえになる
+
+![キャプション1中央縦並び](pic/image.jpg){width=320px}
+
+![キャプション2中央縦並び](pic/image2.jpg){width=320px}
+
+- video
+&lt;video data-autoplay src=&quot;pic/video.mp4&quot;&gt;&lt;/video&gt;
+</code></pre>
+
+<ul>
+<li>2. slide.sh hoge.md で起動するはず</li>
+</ul>
+
+<h2 id="reveal-jsのtips">reveal.jsのTips</h2>
+
+<ul>
+<li>/picでなく/uploadsに画像等を纏めたい場合
+
+<ul>
+<li>uploads/image.jpeg</li>
+<li>revealjs内に，uploads全てをコピーする</li>
+<li>slide.shを適宜書き換えてください</li>
+</ul></li>
+<li>よく使う操作
+
+<ul>
+<li>s 時間やスライドの表示</li>
+</ul></li>
+<li>凝ったスライド作りたい時
+
+<ul>
+<li>凝るにはhtmlのtemplateを頑張ればおーけー</li>
+<li>というかcss頑張ってください</li>
+<li>というかパワポ使え感</li>
+</ul></li>
+<li>表題で大文字化を無効
+
+<ul>
+<li>theme の css で表題のスタイルに text-transform: uppercase; を無効にする</li>
+</ul></li>
+</ul>
+
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6 {
+    text-transform: none;
+  }
+&lt;/style&gt;
+</code></pre>
+
+<ul>
+<li>PDF印刷
+
+<ul>
+<li>URLの最後に?print-pdfと書き加えるとPDF用のレイアウトになる</li>
+<li>ブラウザの印刷機能でPDFに変換</li>
+<li>なんか白くて変な場合は 背景のグラフィック にチェックを入れる(Chromeの場合?)</li>
+<li>画像だけが分かれちゃった場合は画像のサイズを小さくする。</li>
+</ul></li>
+</ul>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/reveal.js/">reveal.js</a></li>
+          
+          <li><a href="https://scepter914.github.io/tags/pandoc/">pandoc</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
