@@ -78,7 +78,7 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/misc/</loc>
-    <lastmod>2017-12-28T23:59:59+09:00</lastmod>
+    <lastmod>2017-12-30T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -91,6 +91,12 @@
   <url>
     <loc>https://scepter914.github.io/tags/reveal.js/</loc>
     <lastmod>2018-02-10T00:05:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/robocon/</loc>
+    <lastmod>2017-12-30T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
