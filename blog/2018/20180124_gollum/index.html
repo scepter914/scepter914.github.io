@@ -14,23 +14,23 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website</title>
+    <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website</title>
     
-<meta name="description" content="環境  Ubuntu 16.04LTS  概要  個人用wikiについて gollum &#43; reveal.js環境 gollumのセットアップ gollumのカスタマイズ reveal.js (&#43;pandoc)によるスライド作成  2018/1/30 指摘を受けて追記なぜ個人用wikiをなぜ使うのか  そもそも何をしたいのか  ドキュメント，メモの管理 pdfの管理 png, jpegの管理 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くすため  階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能  この辺の情報を(軽量に)一括で管理したいよく見るもの よくあるのはOffice製品によるドキュメント，メモ書き残し． Office製品は，蓄積した情報に対しての検索性が悪すぎるし， 開くまで時間かかるのが厳しい．重い． あと何処に何のファイルがわからなくなることが多い． 紙は検索ができないから嫌．因みに外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義． （このBlogも外部サービスに頼らなかったのはそういう理由がある） あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．色々探した結果Gollumというwikiにたどり着いた Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Gitができる事前提なので，非エンジニア用wikiにはなりにくい  この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する Git commitで変更が反映される仕様 wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける Markdownで書ける プラグイン的なのを入れるとMediawiki文法も書ける 数式はLaTeXで書ける その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる   install  https://github.">
+<meta name="description" content=" リダイレクト  書き直しました 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理  ">
 
-<meta property="og:title" content="個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website">
+<meta property="og:title" content="個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2018/20180124_gollum/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="環境  Ubuntu 16.04LTS  概要  個人用wikiについて gollum &#43; reveal.js環境 gollumのセットアップ gollumのカスタマイズ reveal.js (&#43;pandoc)によるスライド作成  2018/1/30 指摘を受けて追記なぜ個人用wikiをなぜ使うのか  そもそも何をしたいのか  ドキュメント，メモの管理 pdfの管理 png, jpegの管理 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くすため  階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能  この辺の情報を(軽量に)一括で管理したいよく見るもの よくあるのはOffice製品によるドキュメント，メモ書き残し． Office製品は，蓄積した情報に対しての検索性が悪すぎるし， 開くまで時間かかるのが厳しい．重い． あと何処に何のファイルがわからなくなることが多い． 紙は検索ができないから嫌．因みに外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義． （このBlogも外部サービスに頼らなかったのはそういう理由がある） あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．色々探した結果Gollumというwikiにたどり着いた Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Gitができる事前提なので，非エンジニア用wikiにはなりにくい  この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する Git commitで変更が反映される仕様 wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける Markdownで書ける プラグイン的なのを入れるとMediawiki文法も書ける 数式はLaTeXで書ける その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる   install  https://github.">
+<meta property="og:description" content=" リダイレクト  書き直しました 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理  ">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180124_gollum/">
-<meta name="twitter:title" content="個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website">
-<meta name="twitter:description" content="環境  Ubuntu 16.04LTS  概要  個人用wikiについて gollum &#43; reveal.js環境 gollumのセットアップ gollumのカスタマイズ reveal.js (&#43;pandoc)によるスライド作成  2018/1/30 指摘を受けて追記なぜ個人用wikiをなぜ使うのか  そもそも何をしたいのか  ドキュメント，メモの管理 pdfの管理 png, jpegの管理 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くすため  階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能  この辺の情報を(軽量に)一括で管理したいよく見るもの よくあるのはOffice製品によるドキュメント，メモ書き残し． Office製品は，蓄積した情報に対しての検索性が悪すぎるし， 開くまで時間かかるのが厳しい．重い． あと何処に何のファイルがわからなくなることが多い． 紙は検索ができないから嫌．因みに外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義． （このBlogも外部サービスに頼らなかったのはそういう理由がある） あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．色々探した結果Gollumというwikiにたどり着いた Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Gitができる事前提なので，非エンジニア用wikiにはなりにくい  この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する Git commitで変更が反映される仕様 wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける Markdownで書ける プラグイン的なのを入れるとMediawiki文法も書ける 数式はLaTeXで書ける その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる   install  https://github.">
+<meta name="twitter:title" content="個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website">
+<meta name="twitter:description" content=" リダイレクト  書き直しました 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理  ">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"https://scepter914.github.io/"
     },
-    "headline": "個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website",
+    "headline": "個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
       "url": "https://scepter914.github.io/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-01-25T00:02:00JST",
-    "dateModified": "2018-01-25T00:02:00JST",
+    "datePublished": "2018-01-25T00:01:00JST",
+    "dateModified": "2018-01-25T00:01:00JST",
     "author": {
       "@type": "Person",
       "name": "Scepter914 Website"
@@ -65,13 +65,7 @@
         "height": 60
       }
     },
-    "description": "環境  Ubuntu 16.04LTS  概要  個人用wikiについて
- gollum + reveal.js環境
- gollumのセットアップ gollumのカスタマイズ reveal.js (+pandoc)によるスライド作成  2018/1/30 指摘を受けて追記
-なぜ個人用wikiをなぜ使うのか  そもそも何をしたいのか  ドキュメント，メモの管理 pdfの管理 png, jpegの管理 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くすため  階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能  この辺の情報を(軽量に)一括で管理したい
-よく見るもの よくあるのはOffice製品によるドキュメント，メモ書き残し． Office製品は，蓄積した情報に対しての検索性が悪すぎるし， 開くまで時間かかるのが厳しい．重い． あと何処に何のファイルがわからなくなることが多い． 紙は検索ができないから嫌．
-因みに外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義． （このBlogも外部サービスに頼らなかったのはそういう理由がある） あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．
-色々探した結果Gollumというwikiにたどり着いた Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Gitができる事前提なので，非エンジニア用wikiにはなりにくい  この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する Git commitで変更が反映される仕様 wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける Markdownで書ける プラグイン的なのを入れるとMediawiki文法も書ける 数式はLaTeXで書ける その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる   install  https://github."
+    "description": " リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  "
   }
 </script>
 
@@ -141,428 +135,31 @@
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
         
-        <li class="active">個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理</li>
+        <li class="active">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-25T00:02:00JST">Jan 25, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-25T00:01:00JST">Jan 25, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
 
-    <h1 class="title">個人用wiki(Gollum) &#43; reveal.jsによる情報一括管理</h1>
+    <h1 class="title">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</h1>
   </header>
 
   
 
   <div class="article-body">
 
-<h2 id="環境">環境</h2>
+<h2 id="リダイレクト">リダイレクト</h2>
 
 <ul>
-<li>Ubuntu 16.04LTS</li>
+<li>書き直しました</li>
+<li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a></li>
 </ul>
-
-<h2 id="概要">概要</h2>
-
-<ul>
-<li><p>個人用wikiについて</p></li>
-
-<li><p>gollum + reveal.js環境</p>
-
-<ul>
-<li>gollumのセットアップ</li>
-<li>gollumのカスタマイズ</li>
-<li>reveal.js (+pandoc)によるスライド作成</li>
-</ul></li>
-
-<li><p>2018/1/30 指摘を受けて追記</p>
-
-<h2 id="なぜ個人用wikiをなぜ使うのか">なぜ個人用wikiをなぜ使うのか</h2></li>
-</ul>
-
-<h3 id="そもそも何をしたいのか">そもそも何をしたいのか</h3>
-
-<ul>
-<li>ドキュメント，メモの管理</li>
-<li>pdfの管理</li>
-<li>png, jpegの管理</li>
-<li>数式をLaTeXで書きたい</li>
-<li>表も簡単に書きたい
-
-<ul>
-<li>計算してない表Excelを無くすため</li>
-</ul></li>
-<li>階層構造を持ちたい
-
-<ul>
-<li>何処に何があるかをわかりやすくするため</li>
-</ul></li>
-<li>検索機能</li>
-</ul>
-
-<p>この辺の情報を(軽量に)一括で管理したい</p>
-
-<h3 id="よく見るもの">よく見るもの</h3>
-
-<p>よくあるのはOffice製品によるドキュメント，メモ書き残し．
-Office製品は，蓄積した情報に対しての検索性が悪すぎるし，
-開くまで時間かかるのが厳しい．重い．
-あと何処に何のファイルがわからなくなることが多い．
-紙は検索ができないから嫌．</p>
-
-<h3 id="因みに外部サービスは-evernote等">因みに外部サービスは？(Evernote等)</h3>
-
-<p>そのサービス終了すると悲しい目に合うので，
-データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義．
-（このBlogも外部サービスに頼らなかったのはそういう理由がある）
-あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．
-あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．</p>
-
-<h2 id="色々探した結果gollumというwikiにたどり着いた">色々探した結果Gollumというwikiにたどり着いた</h2>
-
-<h3 id="gollumの特徴">Gollumの特徴</h3>
-
-<ul>
-<li>かなりシンプルなwikiでGit baseのwiki</li>
-<li>Gitができる事前提なので，非エンジニア用wikiにはなりにくい
-
-<ul>
-<li>この記事では一人運用前提で話します</li>
-</ul></li>
-<li>Gitリポジトリでファイルを管理する</li>
-<li>Git commitで変更が反映される仕様</li>
-<li>wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける</li>
-<li>Markdownで書ける</li>
-<li>プラグイン的なのを入れるとMediawiki文法も書ける</li>
-<li>数式はLaTeXで書ける</li>
-<li>その気になってrailsを書けば拡張可能
-
-<ul>
-<li>あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない</li>
-<li>configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)</li>
-</ul></li>
-<li>サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる
-
-<ul>
-<li>サーバーよく分からなくてもwikiを立てられる</li>
-</ul></li>
-</ul>
-
-<h3 id="install">install</h3>
-
-<ul>
-<li><a href="https://github.com/gollum/gollum">https://github.com/gollum/gollum</a> 公式Readme</li>
-<li><a href="https://github.com/gollum/gollum/wiki">https://github.com/gollum/gollum/wiki</a> 公式wiki</li>
-<li>Windowでも建てられるっぽいけど，バグバグしいかもしれない・・・？(よく知らない)</li>
-<li>install
-
-<ul>
-<li>sudo apt-get gem ruby-dev</li>
-<li>sudo gem install gollum</li>
-</ul></li>
-<li>mediawiki文法で書きたい人は
-
-<ul>
-<li>sudo gem install wikicloth</li>
-</ul></li>
-</ul>
-
-<h3 id="wikiを立てる">wikiを立てる</h3>
-
-<ul>
-<li>cd ~</li>
-<li>mkdir wiki
-
-<ul>
-<li>お好きなところに</li>
-</ul></li>
-<li>git init</li>
-<li>vim Home.md or vim Home.mediawiki
-
-<ul>
-<li>なんか書く</li>
-<li>お好きなエディタでどうぞ</li>
-</ul></li>
-<li>gollum &ndash;allow-uploads &ndash;show-all &ndash;mathjax &ndash;config config.rb
-
-<ul>
-<li>それぞれのオプションの意味はreadme参照</li>
-<li>Markdownしか使わない人は&ndash;live-previewしたほうがいいかも</li>
-<li>.bashrcとか.zshrcとかで適当にaliasする</li>
-</ul></li>
-<li>ブラウザでlocalhostアクセスすると見れる
-
-<ul>
-<li><a href="http://localhost:4567/Home">http://localhost:4567/Home</a></li>
-<li>デフォルトポートは4567</li>
-</ul></li>
-</ul>
-
-<h3 id="運用">運用</h3>
-
-<ul>
-<li>wikiディレクトリ下に階層を作る，以下は例</li>
-</ul>
-
-<pre><code> /study
- /tech
- /hobby
- /uploads
-</code></pre>
-
-<ul>
-<li>ファイル = ページを作る
-
-<ul>
-<li>ブラウザからも作成可能だけど，階層構造の中に入ってくれないのでlocalのエディタで作る</li>
-<li>拡張子は.md
-
-<ul>
-<li>mediawiki拡張してある場合は.mediawiki</li>
-</ul></li>
-</ul></li>
-<li>ファイル編集
-
-<ul>
-<li>ファイル直接編集もできるし，ブラウザ上でも編集できる</li>
-</ul></li>
-<li>ファイル書いたらgit add &amp;&amp; git commit で更新される</li>
-<li>ページ内リンクについて
-
-<ul>
-<li>[[ページ名]]
-
-<ul>
-<li>基本的にページ名被りはさせないように</li>
-</ul></li>
-<li>頭に/をつけると絶対パス</li>
-</ul></li>
-<li>ファイルのアップロード
-
-<ul>
-<li>/uploadsにpngやらpdfやらを置く</li>
-<li>git add commit &ldquo;update&rdquo;</li>
-<li>リンクを書く
-
-<ul>
-<li>pdfの場合 [[名前 | /uploads/hoge.pdf]]</li>
-<li>pngの場合 [[/uploads/hoge.png]]</li>
-<li>mp4の場合 [[/uploads/hoge.mp4]]</li>
-</ul></li>
-</ul></li>
-<li>数式
-
-<ul>
-<li>$ \frac{x}{y} $</li>
-<li>$$ \frac{x}{y} $$</li>
-</ul></li>
-</ul>
-
-<h2 id="gollumを拡張">gollumを拡張</h2>
-
-<h3 id="cssとconfig-ファイル">cssとconfig ファイル</h3>
-
-<ul>
-<li>custom.cssをwikiディレクトリに置く</li>
-<li>wiki起動時は
-
-<ul>
-<li>gollum &ndash;config config.rb &ndash;css &ndash;allow-uploads &ndash;show-all &ndash;mathjax</li>
-</ul></li>
-<li>自分の設定ファイル <a href="https://github.com/scepter914/gollum_config">https://github.com/scepter914/gollum_config</a>
-
-<ul>
-<li>config
-
-<ul>
-<li>mediawiki の色付き表を使えるようにした</li>
-</ul></li>
-<li>css
-
-<ul>
-<li>編集枠を大きく</li>
-<li>ページの幅ひろく</li>
-<li>サイドバー狭く</li>
-<li>行間狭く</li>
-</ul></li>
-</ul></li>
-<li>設定ファイルが反映されてない時
-
-<ul>
-<li>gitがmasterであることを確認する</li>
-</ul></li>
-<li>css勉強すれば好きにカスタマイズができる(白目)</li>
-<li>カスタマイズ
-
-<ul>
-<li><a href="https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/css">https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/css</a>にあるのを参考にしながら適当に</li>
-<li>自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに</li>
-</ul></li>
-</ul>
-
-<h3 id="plantuml">PlantUML</h3>
-
-<ul>
-<li>モデリング言語
-
-<ul>
-<li>詳しくはggってください</li>
-</ul></li>
-<li>公式 <a href="https://github.com/gollum/gollum/wiki/Custom-PlantUML-Server#gollum-configuration">https://github.com/gollum/gollum/wiki/Custom-PlantUML-Server#gollum-configuration</a></li>
-<li>ubuntu16.04だとppa追加が必要</li>
-<li>sudo add-apt-repository ppa:openjdk-r/ppa<br /></li>
-<li>sudo apt-get update<br /></li>
-<li>sudo apt-get install openjdk-7-jdk<br /></li>
-<li>sudo apt-get install maven graphviz git-core<br /></li>
-<li>git clone <a href="https://github.com/plantuml/plantuml-server.git">https://github.com/plantuml/plantuml-server.git</a></li>
-<li>cd plantuml-server</li>
-<li>mvn jetty:run</li>
-
-<li><p><a href="http://localhost:8080/plantumlで見られるはず">http://localhost:8080/plantumlで見られるはず</a></p></li>
-
-<li><p>wikiディレクトリの中に置くなら.gitignoreしておく</p></li>
-</ul>
-
-<h2 id="reveal-js-pandoc-システム">reveal.js (+ pandoc)システム</h2>
-
-<h3 id="スライド作成をwikiに噛ましたい">スライド作成をwikiに噛ましたい</h3>
-
-<ul>
-<li>パワポで一々開いて「あのスライドどこだっけー」ってやりたくない</li>
-<li>wikiの中にスライドの情報を突っ込みたい</li>
-<li>Markdownでスライド作るの楽</li>
-<li>Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃんってなった</li>
-</ul>
-
-<h3 id="install-1">install</h3>
-
-<ul>
-<li>reveal.js
-
-<ul>
-<li>Markdownからスライドを作成できる神ツール</li>
-<li>詳しくはggってください</li>
-<li>公式 <a href="https://revealjs.com/#/">https://revealjs.com/#/</a></li>
-</ul></li>
-<li>pandoc
-
-<ul>
-<li>文書を別の形式に買える神ツール</li>
-<li>今回はmarkdown to revealjsをする</li>
-<li>詳しくはggってください</li>
-</ul></li>
-<li>revealjs install
-
-<ul>
-<li>参考 公式 <a href="https://github.com/hakimel/reveal.js/#installation">https://github.com/hakimel/reveal.js/#installation</a></li>
-<li>git clone <a href="https://github.com/hakimel/reveal.js.git">https://github.com/hakimel/reveal.js.git</a></li>
-</ul></li>
-<li>pandoc install
-
-<ul>
-<li>sudo apt-get install pandoc</li>
-</ul></li>
-</ul>
-
-<h3 id="環境構築">環境構築</h3>
-
-<ul>
-<li>revealjsディレクトリをwikiの下に置く</li>
-<li>.gitignoreに/reveal.jsを追加する</li>
-<li>自分の設定ファイル <a href="https://github.com/scepter914/gollum_config">https://github.com/scepter914/gollum_config</a>のdefault.htmlをダウンロード
-
-<ul>
-<li>適当な場所に置く(自分は$HOME/wiki/uploads/code/pandoc_template/default.htmlに置いている)</li>
-</ul></li>
-<li>slide.shを作成する
-
-<ul>
-<li>ファイル場所は適宜</li>
-</ul></li>
-</ul>
-
-<pre><code>var=`grep -ic '# ' $1`
-echo &quot;スライド数&quot;$var  
-cp $1 ~/wiki/reveal.js/index.md
-cp -r ./pic ~/wiki/reveal.js/
-cd ~/wiki/reveal.js/
-pandoc -f markdown index.md -t revealjs -V theme:black --template=$HOME/wiki/uploads/code/pandoc_template/slide_default.html --highlight-style=espresso --slide-level=2 -o index.html
-google-chrome index.html
-</code></pre>
-
-<ul>
-<li>.bashrc等に
-
-<ul>
-<li>alias slide=&ldquo;$HOME/wiki/uploads/code/slide.sh&rdquo;</li>
-<li>を追加</li>
-</ul></li>
-</ul>
-
-<h3 id="スライド作成">スライド作成</h3>
-
-<ul>
-<li>1. wiki内でmdファイルを作成する(hoge.mdとする)</li>
-</ul>
-
-<pre><code>% タイトル
-% 名前
-% 日付
-スライド
-
-### ページ1-1(###で大きさが決まる)
-
-- リスト
-- リスト
-- リスト
-
----
-
-#### サブページ1-2
-
-1. 番号付き項目
-1. 番号付き項目
-1. 番号付き項目
-
----
-
-### ページ2
-ベタ書き &lt;br&gt;
-ベタ書き2 &lt;br&gt;
-空行を入れたい時はスペースを2こ入れる  
-&lt;b&gt;&lt;!-- --&gt;&lt;/b&gt;  
-前方になんらかの文字が必要なのでコメントを入れる  
-
----
-
-### サブページ2-1
-
-- 上下に空行がないと左寄せになる
-![キャプション1横並び](pic/image.jpg){width=320px}
-![キャプション2横並び](pic/image.jpg){width=320px}
-
-- 上下に空行があると中央そろえになる
-
-![キャプション1中央縦並び](pic/image.jpg){width=320px}
-
-![キャプション2中央縦並び](pic/image.jpg){width=320px}
-
-- video
-&lt;video data-autoplay src=&quot;pic/video.mp4&quot;&gt;&lt;/video&gt;
-</code></pre>
-
-<ul>
-<li>2. slide.sh hoge.md で起動するはず</li>
-</ul>
-
-<h2 id="最後に">最後に</h2>
-
-<p>環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので，
-間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</p>
 </div>
 
   <footer class="article-footer">
@@ -576,7 +173,7 @@ google-chrome index.html
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://scepter914.github.io/categories/server/">server</a></li>
+          <li><a href="https://scepter914.github.io/categories//"></a></li>
           
         </ul>
       </div>
@@ -591,11 +188,7 @@ google-chrome index.html
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/reveal.js/">reveal.js</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/pandoc/">pandoc</a></li>
+          <li><a href="https://scepter914.github.io/tags//"></a></li>
           
         </ul>
       </div>
@@ -629,11 +222,11 @@ google-chrome index.html
     </div>
     <div class="list-group">
       
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
       
-      <a href="https://scepter914.github.io/categories/misc" class="list-group-item">misc</a>
-      
-      <a href="https://scepter914.github.io/categories/server" class="list-group-item">server</a>
+      <a href="https://scepter914.github.io/categories/" class="list-group-item"></a>
       
     </div>
   </section>
@@ -644,11 +237,17 @@ google-chrome index.html
     </div>
     <div class="list-group">
       
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
       <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
       
       <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+      <a href="https://scepter914.github.io/tags/" class="list-group-item"></a>
+      
+      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
       
     </div>
   </section>
