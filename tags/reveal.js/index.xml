@@ -31,14 +31,5 @@
   環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの   下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
     </item>
     
-    <item>
-      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180125_gollum/</link>
-      <pubDate>Thu, 25 Jan 2018 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180125_gollum/</guid>
-      <description> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </description>
-    </item>
-    
   </channel>
 </rss>
