@@ -70,7 +70,7 @@
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
       <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
  gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
-  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの   下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
+  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
     </item>
     
     <item>
