@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scepter914 Website</title>
+    <title>Tags on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/</link>
-    <description>Recent content on Scepter914 Website</description>
+    <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jan 2018 00:01:00 +0900</lastBuildDate>
@@ -12,12 +12,57 @@
     
     
     <item>
-      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180124_gollum/</link>
+      <title></title>
+      <link>https://scepter914.github.io/tags/</link>
       <pubDate>Wed, 24 Jan 2018 00:01:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/2018/20180124_gollum/</guid>
-      <description> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </description>
+      <guid>https://scepter914.github.io/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gollum</title>
+      <link>https://scepter914.github.io/tags/gollum/</link>
+      <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/gollum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Misc</title>
+      <link>https://scepter914.github.io/tags/misc/</link>
+      <pubDate>Sat, 17 Feb 2018 23:59:56 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandoc</title>
+      <link>https://scepter914.github.io/tags/pandoc/</link>
+      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reveal.js</title>
+      <link>https://scepter914.github.io/tags/reveal.js/</link>
+      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/reveal.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robocon</title>
+      <link>https://scepter914.github.io/tags/robocon/</link>
+      <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/robocon/</guid>
+      <description></description>
     </item>
     
   </channel>
