@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scepter914 Website</title>
+    <title>Categories on Scepter914 Website</title>
     <link>https://scepter914.github.io/categories/</link>
-    <description>Recent content on Scepter914 Website</description>
+    <description>Recent content in Categories on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jan 2018 00:01:00 +0900</lastBuildDate>
@@ -12,12 +12,30 @@
     
     
     <item>
-      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180124_gollum/</link>
+      <title></title>
+      <link>https://scepter914.github.io/categories/</link>
       <pubDate>Wed, 24 Jan 2018 00:01:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/2018/20180124_gollum/</guid>
-      <description> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </description>
+      <guid>https://scepter914.github.io/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aboutme</title>
+      <link>https://scepter914.github.io/categories/aboutme/</link>
+      <pubDate>Sat, 17 Feb 2018 23:59:56 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/aboutme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>個人wiki</title>
+      <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
+      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
+      <description></description>
     </item>
     
   </channel>
