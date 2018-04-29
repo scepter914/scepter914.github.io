@@ -82,6 +82,30 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-29T23:30:00JST">Apr 29, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a></h2>
+  </header>
+
+  
+  <div class="summary">やりたいこと @にカーソルがあるとして，
+ abcd@efghij  から
+ @abcd efghij  にする．
+続けてoを打てば
+ abcd @ efghij  となって便利
+解決法 .vimrcに
+ nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k  を書く.
+するとノーマルモードでEnter押せば，題意の通りになっているはず</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-17T23:59:56JST">Feb 17, 2018</time></li>
       
       
@@ -262,23 +286,6 @@
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-12-28T23:59:59JST">Dec 28, 2017</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/aboutmeja/">自己紹介</a></h2>
-  </header>
-
-  
-  <div class="summary">  趣味とか  Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M1  学業  東海中学高校 東京大学  理科1類 工学部精密工学科  神保小谷研究室   東京大学大学院  情報理工学研究科 創造情報学専攻  石川妹尾研究室    研究分野/興味  Robotics 画像処理  研究  田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018．  Robocon  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械屋としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞  使っているツール  Ubuntu Python Vim CAD(SolidEdge, SOLIDWORKS, Fusion360) gollum wiki, reveal.js, pandoc  Contacts  Twitter Github  </div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -308,6 +315,8 @@
     </div>
     <div class="list-group">
       
+      <a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/" class="list-group-item">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a>
+      
       <a href="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/" class="list-group-item">gollum &#43; reveal.js &#43; pandocによるスライド作成システム</a>
       
       <a href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/" class="list-group-item">gollumの運用Tipsと拡張</a>
@@ -319,8 +328,6 @@
       <a href="https://scepter914.github.io/blog/2018/20180210_gollum/" class="list-group-item">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</a>
       
       <a href="https://scepter914.github.io/blog/2018/20180124_gollum/" class="list-group-item">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</a>
-      
-      <a href="https://scepter914.github.io/blog/2017/20171230_startblog/" class="list-group-item">blog開設</a>
       
     </div>
   </section>
@@ -335,8 +342,6 @@
       <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
       
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/" class="list-group-item"></a>
       
     </div>
   </section>
@@ -355,9 +360,9 @@
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
       
-      <a href="https://scepter914.github.io/tags/" class="list-group-item"></a>
-      
       <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
+      
+      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
       
     </div>
   </section>

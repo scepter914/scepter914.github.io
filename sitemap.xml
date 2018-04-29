@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2018/20180429_vim_enter/</loc>
+    <lastmod>2018-04-29T23:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/aboutmoreja/</loc>
     <lastmod>2018-02-17T23:59:56+09:00</lastmod>
   </url>
@@ -58,18 +63,6 @@
   </url>
   
   <url>
-    <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2018-01-24T00:01:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://scepter914.github.io/categories/</loc>
-    <lastmod>2018-01-24T00:01:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://scepter914.github.io/categories/aboutme/</loc>
     <lastmod>2018-02-17T23:59:56+09:00</lastmod>
     <priority>0</priority>
@@ -77,13 +70,13 @@
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2018-02-10T00:05:00+09:00</lastmod>
+    <lastmod>2018-04-29T23:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/categories/</loc>
-    <lastmod>2018-01-24T00:01:00+09:00</lastmod>
+    <lastmod>2018-02-17T23:59:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,13 +112,19 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2018-02-17T23:59:56+09:00</lastmod>
+    <lastmod>2018-04-29T23:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2018-01-24T00:01:00+09:00</lastmod>
+    <lastmod>2018-02-10T00:04:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/vim/</loc>
+    <lastmod>2018-04-29T23:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

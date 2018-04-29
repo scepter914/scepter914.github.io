@@ -6,19 +6,10 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jan 2018 00:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 00:04:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://scepter914.github.io/tags/</link>
-      <pubDate>Wed, 24 Jan 2018 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Gollum</title>
@@ -62,6 +53,15 @@
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/robocon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://scepter914.github.io/tags/vim/</link>
+      <pubDate>Sun, 29 Apr 2018 23:30:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/vim/</guid>
       <description></description>
     </item>
     

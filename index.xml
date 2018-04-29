@@ -6,10 +6,26 @@
     <description>Recent content on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Feb 2018 23:59:56 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Apr 2018 23:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</title>
+      <link>https://scepter914.github.io/blog/2018/20180429_vim_enter/</link>
+      <pubDate>Sun, 29 Apr 2018 23:30:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180429_vim_enter/</guid>
+      <description>やりたいこと @にカーソルがあるとして，
+ abcd@efghij  から
+ @abcd efghij  にする．
+続けてoを打てば
+ abcd @ efghij  となって便利
+解決法 .vimrcに
+ nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.
+するとノーマルモードでEnter押せば，題意の通りになっているはず</description>
+    </item>
     
     <item>
       <title>もう少し自己紹介</title>

@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180124_gollum/">
+<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180429_vim_enter/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website</title>
+    <title>VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする - Scepter914 Website</title>
     
-<meta name="description" content=" リダイレクト  書き直しました 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理  ">
+<meta name="description" content="やりたいこと @にカーソルがあるとして， abcd@efghij  から @abcd efghij  にする．続けてoを打てば abcd @ efghij  となって便利解決法 .vimrcに nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.するとノーマルモードでEnter押せば，題意の通りになっているはず">
 
-<meta property="og:title" content="個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website">
+<meta property="og:title" content="VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする - Scepter914 Website">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180124_gollum/">
+<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180429_vim_enter/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content=" リダイレクト  書き直しました 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理  ">
+<meta property="og:description" content="やりたいこと @にカーソルがあるとして， abcd@efghij  から @abcd efghij  にする．続けてoを打てば abcd @ efghij  となって便利解決法 .vimrcに nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.するとノーマルモードでEnter押せば，題意の通りになっているはず">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180124_gollum/">
-<meta name="twitter:title" content="個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website">
-<meta name="twitter:description" content=" リダイレクト  書き直しました 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理  ">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180429_vim_enter/">
+<meta name="twitter:title" content="VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする - Scepter914 Website">
+<meta name="twitter:description" content="やりたいこと @にカーソルがあるとして， abcd@efghij  から @abcd efghij  にする．続けてoを打てば abcd @ efghij  となって便利解決法 .vimrcに nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.するとノーマルモードでEnter押せば，題意の通りになっているはず">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"https://scepter914.github.io/"
     },
-    "headline": "個人用wiki(gollum) &#43; reveal.jsによる情報一括管理 - Scepter914 Website",
+    "headline": "VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
       "url": "https://scepter914.github.io/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-01-24T00:01:00JST",
-    "dateModified": "2018-01-24T00:01:00JST",
+    "datePublished": "2018-04-29T23:30:00JST",
+    "dateModified": "2018-04-29T23:30:00JST",
     "author": {
       "@type": "Person",
       "name": "Scepter914 Website"
@@ -65,7 +65,14 @@
         "height": 60
       }
     },
-    "description": " リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  "
+    "description": "やりたいこと @にカーソルがあるとして，
+ abcd@efghij  から
+ @abcd efghij  にする．
+続けてoを打てば
+ abcd @ efghij  となって便利
+解決法 .vimrcに
+ nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k  を書く.
+するとノーマルモードでEnter押せば，題意の通りになっているはず"
   }
 </script>
 
@@ -135,31 +142,59 @@
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
         
-        <li class="active">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</li>
+        <li class="active">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-24T00:01:00JST">Jan 24, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-29T23:30:00JST">Apr 29, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
 
-    <h1 class="title">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</h1>
+    <h1 class="title">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</h1>
   </header>
 
   
 
   <div class="article-body">
 
-<h2 id="リダイレクト">リダイレクト</h2>
+<h2 id="やりたいこと">やりたいこと</h2>
 
-<ul>
-<li>書き直しました</li>
-<li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a></li>
-</ul>
+<p>@にカーソルがあるとして，</p>
+
+<pre><code> abcd@efghij
+</code></pre>
+
+<p>から</p>
+
+<pre><code> @abcd
+ efghij
+</code></pre>
+
+<p>にする．</p>
+
+<p>続けてoを打てば</p>
+
+<pre><code> abcd
+ @
+ efghij
+</code></pre>
+
+<p>となって便利</p>
+
+<h2 id="解決法">解決法</h2>
+
+<p>.vimrcに</p>
+
+<pre><code> nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k
+</code></pre>
+
+<p>を書く.</p>
+
+<p>するとノーマルモードでEnter押せば，題意の通りになっているはず</p>
 </div>
 
   <footer class="article-footer">
@@ -167,6 +202,19 @@
     
     
     
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/vim/">vim</a></li>
+          
+        </ul>
+      </div>
+    </section>
     
     
   </footer>
