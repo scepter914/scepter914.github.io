@@ -90,9 +90,9 @@
   </header>
 
   
-  <div class="summary"> $BA0CV$-(B  mediawiki$B%U%)!&lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B $BC5$7$F$_$k(B  $B0F30B8:_$7$J$$$C$]$$(B  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  $B&lt;+J,$N4D6-$,0-$$$;$$$J$N$+!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B   $B=PMh$?$b$N(B  $B&lt;+J,$G(BDockerfile$B$r=q$$$?(B https://github.com/scepter914/gollum_files$B$K%&ldquo;%C%W%m!&lt;%I$7$?(B  $B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$+$b$3$3$K%&ldquo;%C%W%m!&lt;%I$7$?(B   $B6lO+$7$?E@(B  build$B$,DL$i$J$+$C$?(B  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B
- $B;29M(B https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawiki$B$G=q$+$l$?%U%!%$%k$,(B&rdquo;uninitialized constant Twitter::Autolink&rdquo;$B$H$7$F$7$+I=&lt;($5$l$J$$(B
- https://github.com/gollum/gollum/issues/1273 $B$KF1$8LdBj$,(B twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&gt;$C$?(B   </div>
+  <div class="summary"> 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った
+ 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&rdquo;uninitialized constant Twitter::Autolink&rdquo;としてしか表示されない
+ https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   </div>
 
   
 </article>
@@ -337,8 +337,6 @@
       <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
       
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/b8dmbwiki" class="list-group-item">b8dmbwiki</a>
       
     </div>
   </section>

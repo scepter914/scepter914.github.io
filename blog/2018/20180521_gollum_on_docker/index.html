@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>gollum on docker - Scepter914 Website</title>
     
-<meta name="description" content=" $BA0CV$-(B  mediawiki$B%U%)!&amp;lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B $BC5$7$F$_$k(B  $B0F30B8:_$7$J$$$C$]$$(B  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  $B&amp;lt;&#43;J,$N4D6-$,0-$$$;$$$J$N$&#43;!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B   $B=PMh$?$b$N(B  $B&amp;lt;&#43;J,$G(BDockerfile$B$r=q$$$?(B https://github.com/scepter914/gollum_files$B$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B  $B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$&#43;$b$3$3$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B   $B6lO&#43;$7$?E@(B  build$B$,DL$i$J$&#43;$C$?(B  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B $B;29M(B https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawiki$B$G=q$&#43;$l$?%U%!%$%k$,(B&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;$B$H$7$F$7$&#43;I=&amp;lt;($5$l$J$$(B https://github.com/gollum/gollum/issues/1273 $B$KF1$8LdBj$,(B twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&amp;gt;$C$?(B   ">
+<meta name="description" content=" 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;としてしか表示されない https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   ">
 
 <meta property="og:title" content="gollum on docker - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content=" $BA0CV$-(B  mediawiki$B%U%)!&amp;lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B $BC5$7$F$_$k(B  $B0F30B8:_$7$J$$$C$]$$(B  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  $B&amp;lt;&#43;J,$N4D6-$,0-$$$;$$$J$N$&#43;!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B   $B=PMh$?$b$N(B  $B&amp;lt;&#43;J,$G(BDockerfile$B$r=q$$$?(B https://github.com/scepter914/gollum_files$B$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B  $B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$&#43;$b$3$3$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B   $B6lO&#43;$7$?E@(B  build$B$,DL$i$J$&#43;$C$?(B  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B $B;29M(B https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawiki$B$G=q$&#43;$l$?%U%!%$%k$,(B&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;$B$H$7$F$7$&#43;I=&amp;lt;($5$l$J$$(B https://github.com/gollum/gollum/issues/1273 $B$KF1$8LdBj$,(B twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&amp;gt;$C$?(B   ">
+<meta property="og:description" content=" 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;としてしか表示されない https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   ">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
 <meta name="twitter:title" content="gollum on docker - Scepter914 Website">
-<meta name="twitter:description" content=" $BA0CV$-(B  mediawiki$B%U%)!&amp;lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B $BC5$7$F$_$k(B  $B0F30B8:_$7$J$$$C$]$$(B  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  $B&amp;lt;&#43;J,$N4D6-$,0-$$$;$$$J$N$&#43;!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B   $B=PMh$?$b$N(B  $B&amp;lt;&#43;J,$G(BDockerfile$B$r=q$$$?(B https://github.com/scepter914/gollum_files$B$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B  $B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$&#43;$b$3$3$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B   $B6lO&#43;$7$?E@(B  build$B$,DL$i$J$&#43;$C$?(B  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B $B;29M(B https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawiki$B$G=q$&#43;$l$?%U%!%$%k$,(B&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;$B$H$7$F$7$&#43;I=&amp;lt;($5$l$J$$(B https://github.com/gollum/gollum/issues/1273 $B$KF1$8LdBj$,(B twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&amp;gt;$C$?(B   ">
+<meta name="twitter:description" content=" 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;としてしか表示されない https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   ">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -65,9 +65,9 @@
         "height": 60
       }
     },
-    "description": " $BA0CV$-(B  mediawiki$B%U%)!&lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B $BC5$7$F$_$k(B  $B0F30B8:_$7$J$$$C$]$$(B  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  $B&lt;+J,$N4D6-$,0-$$$;$$$J$N$+!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B   $B=PMh$?$b$N(B  $B&lt;+J,$G(BDockerfile$B$r=q$$$?(B https://github.com/scepter914/gollum_files$B$K%&ldquo;%C%W%m!&lt;%I$7$?(B  $B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$+$b$3$3$K%&ldquo;%C%W%m!&lt;%I$7$?(B   $B6lO+$7$?E@(B  build$B$,DL$i$J$+$C$?(B  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B
- $B;29M(B https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawiki$B$G=q$+$l$?%U%!%$%k$,(B&rdquo;uninitialized constant Twitter::Autolink&rdquo;$B$H$7$F$7$+I=&lt;($5$l$J$$(B
- https://github.com/gollum/gollum/issues/1273 $B$KF1$8LdBj$,(B twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&gt;$C$?(B   "
+    "description": " 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った
+ 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&rdquo;uninitialized constant Twitter::Autolink&rdquo;としてしか表示されない
+ https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   "
   }
 </script>
 
@@ -156,53 +156,53 @@
 
   <div class="article-body">
 
-<h2 id="ba0cv-b">$BA0CV$-(B</h2>
+<h2 id="前置き">前置き</h2>
 
 <ul>
-<li>mediawiki$B%U%)!&lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B</li>
-<li>$BC5$7$F$_$k(B
+<li>mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい</li>
+<li>探してみる
 
 <ul>
-<li>$B0F30B8:_$7$J$$$C$]$$(B</li>
+<li>案外存在しないっぽい</li>
 </ul></li>
 <li><a href="https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/">https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/</a>
 
 <ul>
-<li>$B&lt;+J,$N4D6-$,0-$$$;$$$J$N$+!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B</li>
+<li>自分の環境が悪いせいなのか，検索ができないバグが存在した．</li>
 </ul></li>
 </ul>
 
-<h2 id="b-pmh-b-n-b">$B=PMh$?$b$N(B</h2>
+<h2 id="出来たもの">出来たもの</h2>
 
 <ul>
-<li>$B&lt;+J,$G(BDockerfile$B$r=q$$$?(B</li>
-<li><a href="https://github.com/scepter914/gollum_files">https://github.com/scepter914/gollum_files</a>$B$K%&ldquo;%C%W%m!&lt;%I$7$?(B
+<li>自分でDockerfileを書いた</li>
+<li><a href="https://github.com/scepter914/gollum_files">https://github.com/scepter914/gollum_files</a>にアップロードした
 
 <ul>
-<li>$B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$+$b$3$3$K%&ldquo;%C%W%m!&lt;%I$7$?(B</li>
+<li>ついでにconfig.rbとcustom.cssとかもここにアップロードした</li>
 </ul></li>
 </ul>
 
-<h2 id="b6lo-7-e-b">$B6lO+$7$?E@(B</h2>
+<h2 id="苦労した点">苦労した点</h2>
 
 <ul>
-<li>build$B$,DL$i$J$+$C$?(B
+<li>buildが通らなかった
 <code>
 ERROR:  Error installing wikicloth:
 ERROR: Failed to build gem native extension.
 </code></li>
 
-<li><p>wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B</p>
+<li><p>wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った</p>
 
 <ul>
-<li>$B;29M(B <a href="https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b">https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b</a></li>
+<li>参考 <a href="https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b">https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b</a></li>
 </ul></li>
 
-<li><p>.mediawiki$B$G=q$+$l$?%U%!%$%k$,(B&rdquo;uninitialized constant Twitter::Autolink&rdquo;$B$H$7$F$7$+I=&lt;($5$l$J$$(B</p>
+<li><p>.mediawikiで書かれたファイルが&rdquo;uninitialized constant Twitter::Autolink&rdquo;としてしか表示されない</p>
 
 <ul>
-<li><a href="https://github.com/gollum/gollum/issues/1273">https://github.com/gollum/gollum/issues/1273</a> $B$KF1$8LdBj$,(B</li>
-<li>twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&gt;$C$?(B</li>
+<li><a href="https://github.com/gollum/gollum/issues/1273">https://github.com/gollum/gollum/issues/1273</a> に同じ問題が</li>
+<li>twitter-textのversionを指定すると直った</li>
 </ul></li>
 </ul>
 </div>
@@ -218,7 +218,7 @@ ERROR: Failed to build gem native extension.
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://scepter914.github.io/categories/b8dmbwiki/">$B8D?M(Bwiki</a></li>
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
           
         </ul>
       </div>
@@ -272,8 +272,6 @@ ERROR: Failed to build gem native extension.
       <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
       
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/b8dmbwiki" class="list-group-item">b8dmbwiki</a>
       
     </div>
   </section>

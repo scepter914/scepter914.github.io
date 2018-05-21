@@ -6,10 +6,21 @@
     <description>Recent content in 個人wiki on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Feb 2018 00:05:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 21 May 2018 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gollum on docker</title>
+      <link>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
+      <description> 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った
+ 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;としてしか表示されない
+ https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   </description>
+    </item>
     
     <item>
       <title>gollum &#43; reveal.js &#43; pandocによるスライド作成システム</title>

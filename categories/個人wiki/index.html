@@ -86,6 +86,25 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-05-21T00:00:00JST">May 21, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">gollum on docker</a></h2>
+  </header>
+
+  
+  <div class="summary"> 前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた https://github.com/scepter914/gollum_filesにアップロードした  ついでにconfig.rbとcustom.cssとかもここにアップロードした   苦労した点  buildが通らなかった  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikiclothのinstallにはidn-rubyが必要で，installしたらbuildが通った
+ 参考 https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawikiで書かれたファイルが&rdquo;uninitialized constant Twitter::Autolink&rdquo;としてしか表示されない
+ https://github.com/gollum/gollum/issues/1273 に同じ問題が twitter-textのversionを指定すると直った   </div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:05:00JST">Feb 10, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
@@ -203,6 +222,8 @@
     </div>
     <div class="list-group">
       
+      <a href="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/" class="list-group-item">gollum on docker</a>
+      
       <a href="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/" class="list-group-item">gollum &#43; reveal.js &#43; pandocによるスライド作成システム</a>
       
       <a href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/" class="list-group-item">gollumの運用Tipsと拡張</a>
@@ -226,8 +247,6 @@
       <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
       
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/b8dmbwiki" class="list-group-item">b8dmbwiki</a>
       
     </div>
   </section>
