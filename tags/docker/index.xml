@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/docker/</link>
+    <description>Recent content in Docker on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 May 2018 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gollum on docker</title>
+      <link>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
+      <description> $BA0CV$-(B  mediawiki$B%U%)!&amp;lt;%^%C%H$G=q$/$N$KI,MW$J(Bwikicloth$B$,(Binstall$B$5$l$?(BGollum$B$N(BDockerfile$B$,M_$7$$(B $BC5$7$F$_$k(B  $B0F30B8:_$7$J$$$C$]$$(B  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  $B&amp;lt;+J,$N4D6-$,0-$$$;$$$J$N$+!$8!:w$,$G$-$J$$%P%0$,B8:_$7$?!%(B   $B=PMh$?$b$N(B  $B&amp;lt;+J,$G(BDockerfile$B$r=q$$$?(B https://github.com/scepter914/gollum_files$B$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B  $B$D$$$G$K(Bconfig.rb$B$H(Bcustom.css$B$H$+$b$3$3$K%&amp;ldquo;%C%W%m!&amp;lt;%I$7$?(B   $B6lO+$7$?E@(B  build$B$,DL$i$J$+$C$?(B  ERROR: Error installing wikicloth: ERROR: Failed to build gem native extension.  wikicloth$B$N(Binstall$B$K$O(Bidn-ruby$B$,I,MW$G!$(Binstall$B$7$?$i(Bbuild$B$,DL$C$?(B
+ $B;29M(B https://qiita.com/noraworld/items/7b8ba64d413f3f424b5b  .mediawiki$B$G=q$+$l$?%U%!%$%k$,(B&amp;rdquo;uninitialized constant Twitter::Autolink&amp;rdquo;$B$H$7$F$7$+I=&amp;lt;($5$l$J$$(B
+ https://github.com/gollum/gollum/issues/1273 $B$KF1$8LdBj$,(B twitter-text$B$N(Bversion$B$r;XDj$9$k$HD&amp;gt;$C$?(B   </description>
+    </item>
+    
+  </channel>
+</rss>
