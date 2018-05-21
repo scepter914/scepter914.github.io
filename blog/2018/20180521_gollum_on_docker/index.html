@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>gollum on docker - Scepter914 Website</title>
     
-<meta name="description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
+<meta name="description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
 
 <meta property="og:title" content="gollum on docker - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
+<meta property="og:description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
 <meta name="twitter:title" content="gollum on docker - Scepter914 Website">
-<meta name="twitter:description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
+<meta name="twitter:description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -65,7 +65,9 @@
         "height": 60
       }
     },
-    "description": "前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1."
+    "description": "前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
+ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
+ コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1."
   }
 </script>
 
@@ -163,10 +165,18 @@
 <ul>
 <li>案外存在しないっぽい</li>
 </ul></li>
-<li><a href="https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/">https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/</a>
+
+<li><p><a href="https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/">https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/</a></p>
 
 <ul>
 <li>自分の環境が悪いせいなのか，検索ができないバグが存在した．</li>
+</ul></li>
+
+<li><p><a href="https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile">https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile</a></p>
+
+<ul>
+<li>コンパイルが通らなかった</li>
+<li>これをbaseに書いてみた</li>
 </ul></li>
 </ul>
 
@@ -238,6 +248,14 @@ ERROR: Failed to build gem native extension.
 <li>twitter-textのversionを指定すると直った</li>
 </ul></li>
 </ul>
+
+<h2 id="最後に">最後に</h2>
+
+<p><a href="https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile">https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile</a>で，
+zachlatta/gollum-dockerにDockerhubないなって思って自分でbulidしたのに，
+Readme読んだら思いっきり&rdquo;docker pull zachlatta/gollum&rdquo;って書いてあるやんっていう&hellip;</p>
+
+<p>日曜一日無駄にしてしまった&hellip;</p>
 </div>
 
   <footer class="article-footer">

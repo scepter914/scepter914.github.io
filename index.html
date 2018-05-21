@@ -90,7 +90,9 @@
   </header>
 
   
-  <div class="summary">前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/  自分の環境が悪いせいなのか，検索ができないバグが存在した．   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1.</div>
+  <div class="summary">前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
+ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
+ コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1.</div>
 
   
   <footer>
