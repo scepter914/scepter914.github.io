@@ -39,12 +39,16 @@
     </item>
     
     <item>
-      <title>もう少し自己紹介</title>
-      <link>https://scepter914.github.io/aboutmoreja/</link>
+      <title>ロボコンについて</title>
+      <link>https://scepter914.github.io/aboutrobocon/</link>
       <pubDate>Sat, 17 Feb 2018 23:59:56 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/aboutmoreja/</guid>
-      <description> このページについて  自己紹介の続き  ロボコンについて(ロボコン勢向けの書き方です)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 作戦班副班長  RC2016,ABU2016 Chai-Yo  チームリーダー(メンバー,Ecoメカ整備担当) EcoRobot班班長 日本大会(NHK学生ロボコン2016)優勝 世界大会@バンコク(タイ)(ABUロボコン2016)ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017 APPARE  マシン班メカ  他ロボコン活動  高専ロボコン2016 デバプラで取材したり解剖計画のコメント書いたりしました 関東春ロボコン委員 立ち上げメンバー   趣味 サッカー  幼小中高大と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期  歴史  歴史の本読むのが好き 三国志  三国志だと魏が好き  曹操,司馬懿,張遼,郭嘉あたり   日本の戦国時代  お城見物したりしている   音楽  梶浦由記さんのファン  よく聞いてる   </description>
+      <guid>https://scepter914.github.io/aboutrobocon/</guid>
+      <description> 概要  ロボコンに関する活動のまとめ かなりロボコン勢向けの書き方です  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 作戦班副班長  RC2016,ABU2016 Chai-Yo  チームリーダー(メンバー,Ecoメカ整備担当) EcoRobot班班長 日本大会(NHK学生ロボコン2016)優勝 世界大会@バンコク(タイ)(ABUロボコン2016)ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017 APPARE  マシン班メカ   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  デバイスプラス  記事書いたり，取材のお手伝いをしています．  NHK高専ロボコン，NHK学生ロボコン  高専ロボコン2016  取材手伝い，解剖計画のコメント書き  学生ロボコン2017  解剖計画のコメント書き  学生ロボコン2018
+ 取材手伝い，解剖計画のコメント書き
+Robomaster  2018年夏，取材手伝い@中国深セン
+ 記事
+ https://deviceplus.jp/events/robomaster2018-04/   </description>
     </item>
     
     <item>
@@ -127,10 +131,10 @@
       <pubDate>Thu, 28 Dec 2017 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ More information  Profile  Satoshi Tanaka
+      <description>日本語ページ  Profile  Satoshi Tanaka
  2014&amp;frasl;4- The University of Tokyo
- 2016&amp;frasl;4-2018&amp;frasl;3 Dept. of Precison Engineering 2017&amp;frasl;4-2018&amp;frasl;3 Kotani Lab, Research Center for Advanced Sceience and Technology 2018&amp;frasl;4- Ishikawa Senoo Lab, Department of Creative Informatics, Graduate School of Information Science and Technology  Research Field / Interest
- Robotics Image Processing   Robocon From 2014 to 2017, I was a member of RoboTech, the team for robot contest at The University of Tokyo.</description>
+ 2016&amp;frasl;4-2018&amp;frasl;3 Dept. of Precison Engineering 2017&amp;frasl;4-2018&amp;frasl;3 Kotani Lab, Research Center for Advanced Sceience and Technology 2018&amp;frasl;4-Now Ishikawa Senoo Lab, Department of Creative Informatics, Graduate School of Information Science and Technology  Research Field / Interest
+ Robotics Image Processing   Other avtivity Robot Competition (2014-2017) From 2014 to 2017, I was a member of RoboTech, the team for robot contest at The University of Tokyo.</description>
     </item>
     
     <item>
@@ -139,18 +143,7 @@
       <pubDate>Thu, 28 Dec 2017 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>  趣味とか  Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M1  学業  東海中学高校 東京大学  理科1類 工学部精密工学科  神保小谷研究室   東京大学大学院  情報理工学研究科 創造情報学専攻  石川妹尾研究室    研究分野/興味  Robotics 画像処理  研究  田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018．  Robocon  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械屋としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞  使っているツール  Ubuntu Python Vim CAD(SolidEdge, SOLIDWORKS, Fusion360) gollum wiki, reveal.js, pandoc  Contacts  Twitter Github  </description>
-    </item>
-    
-    <item>
-      <title>More information about me</title>
-      <link>https://scepter914.github.io/aboutmore/</link>
-      <pubDate>Thu, 28 Dec 2017 23:59:57 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutmore/</guid>
-      <description>Hobby Soccer I have played soccer for about 15 years. I play as attacker, mainly Second Top and Side Midfielder.
-Interest Music I like background music of movie and anime and game. Especially, I like Yuki Kajiura(梶浦由記), who is a Japanese composer and music producer. I listen to her music (Soundtracks, Fiction Junction, Kalafina) a lot.
-History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代).</description>
+      <description>Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M1 石川妹尾研究室  Biography  2014&amp;frasl;4- 東京大学  理科1類 工学部精密工学科  神保小谷研究室   2018&amp;frasl;4- 東京大学大学院  情報理工学研究科 創造情報学専攻  石川妹尾研究室    研究分野/興味  ロボット工学 高速画像処理  研究  田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018． 小林 由弥, 庭野 恭彰, 田中 敬, 赤尾 旭彦, 小谷 潔, 神保 泰彦: 定量的な光刺激による一次視覚野のα波の応答評価 電気学会論文誌Ｃ（電子・情報・システム部門誌），2018．  Other avtivity ロボコン (2014-2017)  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械屋としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞 他ロボコン活動について  日立製作所 研究補助員(2017&amp;frasl;08-2018&amp;frasl;03) CAD用マウス(2017&amp;frasl;04-)  https://cadingmouse.</description>
     </item>
     
   </channel>
