@@ -1,14 +1,164 @@
-{
-    {
-        define "main"
-    }
-}
-<main>
-    <article>
-    <header>
-        <h1>なぜ個人wikiを使うのか</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180210_whywiki/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>なぜ個人wikiを使うのか - Scepter914 Website</title>
+    
+<meta name="description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目  そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイトとか   欲を言うと  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい   この辺はドキュメントとして． Excelファイルとwordファイルに分かれていて一々開き直すの辛い (というか開くまで時間かかるのが辛い)， pdfみたいに編集できない辛い， みたいな状況を起こしたくないというお話． 階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する   紙は検索ができないから嫌というお話がある． この辺の情報を(軽量に)一括で管理したい  結局のところは，「いい感じに情報を管理したい」というお話．この辺を解決してくれるのが wiki外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．">
+
+<meta property="og:title" content="なぜ個人wikiを使うのか - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180210_whywiki/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目  そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイトとか   欲を言うと  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい   この辺はドキュメントとして． Excelファイルとwordファイルに分かれていて一々開き直すの辛い (というか開くまで時間かかるのが辛い)， pdfみたいに編集できない辛い， みたいな状況を起こしたくないというお話． 階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する   紙は検索ができないから嫌というお話がある． この辺の情報を(軽量に)一括で管理したい  結局のところは，「いい感じに情報を管理したい」というお話．この辺を解決してくれるのが wiki外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180210_whywiki/">
+<meta name="twitter:title" content="なぜ個人wikiを使うのか - Scepter914 Website">
+<meta name="twitter:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目  そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイトとか   欲を言うと  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい   この辺はドキュメントとして． Excelファイルとwordファイルに分かれていて一々開き直すの辛い (というか開くまで時間かかるのが辛い)， pdfみたいに編集できない辛い， みたいな状況を起こしたくないというお話． 階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する   紙は検索ができないから嫌というお話がある． この辺の情報を(軽量に)一括で管理したい  結局のところは，「いい感じに情報を管理したい」というお話．この辺を解決してくれるのが wiki外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "なぜ個人wikiを使うのか - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-02-10T00:02:00JST",
+    "dateModified": "2018-02-10T00:02:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目  そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイトとか   欲を言うと  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい   この辺はドキュメントとして． Excelファイルとwordファイルに分かれていて一々開き直すの辛い (というか開くまで時間かかるのが辛い)， pdfみたいに編集できない辛い， みたいな状況を起こしたくないというお話．
+ 階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する   紙は検索ができないから嫌というお話がある．
+ この辺の情報を(軽量に)一括で管理したい  結局のところは，「いい感じに情報を管理したい」というお話．
+この辺を解決してくれるのが wiki
+外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．
+あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．
+あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．"
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
     </header>
+
+    <main>
+      <div class="container">
         
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">なぜ個人wikiを使うのか</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:02:00JST">Feb 10, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">なぜ個人wikiを使うのか</h1>
+  </header>
+
+  
+
+  <div class="article-body">
 
 <h2 id="このページは">このページは</h2>
 
@@ -78,25 +228,122 @@ pdfみたいに編集できない辛い，
 <p>あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．</p>
 
 <p>あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．</p>
+</div>
 
-    </article>
-    <aside>
-        <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#このページは">このページは</a></li>
-<li><a href="#そもそも何をしたいのか">そもそも何をしたいのか</a></li>
-<li><a href="#欲を言うと">欲を言うと</a></li>
-<li><a href="#この辺を解決してくれるのが">この辺を解決してくれるのが</a></li>
-<li><a href="#外部サービスは-evernote等">外部サービスは？(Evernote等)</a></li>
-</ul></li>
-</ul>
-</nav>
-    </aside>
-</main>
-{
-    {
-        end
-    }
-}
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      
+      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
+      
+      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
