@@ -1,160 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.31.1" />
-
-
-
-<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>gollum on docker - Scepter914 Website</title>
-    
-<meta name="description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
-
-<meta property="og:title" content="gollum on docker - Scepter914 Website">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
-<meta property="og:image" content="https://scepter914.github.io/images/default.png">
-<meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">
-<meta name="twitter:title" content="gollum on docker - Scepter914 Website">
-<meta name="twitter:description" content="前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/ 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.">
-<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
-    },
-    "headline": "gollum on docker - Scepter914 Website",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2018-05-21T00:00:00JST",
-    "dateModified": "2018-05-21T00:00:00JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scepter914 Website"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scepter914 Website",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
- 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
- コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1."
-  }
-</script>
-
-
-    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
+{
+    {
+        define "main"
+    }
+}
+<main>
+    <article>
+    <header>
+        <h1>gollum on docker</h1>
     </header>
-
-    <main>
-      <div class="container">
         
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
-        
-        <li class="active">gollum on docker</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-05-21T00:00:00JST">May 21, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
-      
-    </ul>
-
-    <h1 class="title">gollum on docker</h1>
-  </header>
-
-  
-
-  <div class="article-body">
 
 <h2 id="前置き">前置き</h2>
 
@@ -256,124 +110,24 @@ zachlatta/gollum-dockerにDockerhubないなって思って自分でbulidした�
 Readme読んだら思いっきり&rdquo;docker pull zachlatta/gollum&rdquo;って書いてあるやんっていう&hellip;</p>
 
 <p>日曜一日無駄にしてしまった&hellip;</p>
-</div>
 
-  <footer class="article-footer">
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">CATEGORIES</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/docker/">docker</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
-</article>
-
-
-    
-  </div>
-
-  <div class="col-md-4">
-    <aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
-      
-      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
-      
-      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
-      
-      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
-      
-      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
-      
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
-      
-      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
-      
-      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-
-  </div>
-</div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
-</html>
-
+    </article>
+    <aside>
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#前置き">前置き</a></li>
+<li><a href="#出来たもの">出来たもの</a></li>
+<li><a href="#苦労した点">苦労した点</a></li>
+<li><a href="#最後に">最後に</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+</main>
+{
+    {
+        end
+    }
+}
