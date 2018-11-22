@@ -6,10 +6,20 @@
     <description>Recent content in 個人wiki on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Aug 2018 17:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Nov 2018 00:02:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>なぜ個人wikiを使うのか</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_whywiki/</link>
+      <pubDate>Wed, 21 Nov 2018 00:02:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_whywiki/</guid>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &amp;ldquo;何処&amp;rdquo;に&amp;rdquo;何&amp;rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&amp;rdquo;いい感じ&amp;rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．
+とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18.</description>
+    </item>
     
     <item>
       <title>利きwiki 〜Wiki survey〜</title>
@@ -58,21 +68,6 @@
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum_install/</guid>
       <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp;amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</description>
-    </item>
-    
-    <item>
-      <title>なぜ個人wikiを使うのか</title>
-      <link>https://scepter914.github.io/blog/2018/20180210_whywiki/</link>
-      <pubDate>Sat, 10 Feb 2018 00:02:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180210_whywiki/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目  そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイトとか   欲を言うと  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい   この辺はドキュメントとして． Excelファイルとwordファイルに分かれていて一々開き直すの辛い (というか開くまで時間かかるのが辛い)， pdfみたいに編集できない辛い， みたいな状況を起こしたくないというお話．
- 階層構造を持ちたい  何処に何があるかをわかりやすくするため  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する   紙は検索ができないから嫌というお話がある．
- この辺の情報を(軽量に)一括で管理したい  結局のところは，「いい感じに情報を管理したい」というお話．
-この辺を解決してくれるのが wiki
-外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．
-あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．
-あとかなり個人的な話だけど，Vimでゴリゴリ書きたいなぁってなるとwiki立てる方が早いというのもある．</description>
     </item>
     
     <item>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2018/20180210_whywiki/</loc>
+    <lastmod>2018-11-21T00:02:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/blog/2018/20180819_wikiengine/</loc>
     <lastmod>2018-08-19T17:00:00+09:00</lastmod>
   </url>
@@ -38,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://scepter914.github.io/blog/2018/20180210_whywiki/</loc>
-    <lastmod>2018-02-10T00:02:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://scepter914.github.io/blog/2018/20180210_gollum/</loc>
     <lastmod>2018-02-10T00:01:00+09:00</lastmod>
   </url>
@@ -75,7 +75,7 @@
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2018-08-19T17:00:00+09:00</lastmod>
+    <lastmod>2018-11-21T00:02:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,7 +93,7 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/gollum/</loc>
-    <lastmod>2018-05-21T00:00:00+09:00</lastmod>
+    <lastmod>2018-11-21T00:02:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,7 +123,7 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2018-08-19T17:00:00+09:00</lastmod>
+    <lastmod>2018-11-21T00:02:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -141,7 +141,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</loc>
-    <lastmod>2018-08-19T17:00:00+09:00</lastmod>
+    <lastmod>2018-11-21T00:02:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
