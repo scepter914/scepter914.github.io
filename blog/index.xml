@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Nov 2018 00:02:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tensegrity Simulation</title>
+      <link>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
+      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1}$ ← $x_n$ + ($xn$-$x{n - 1}$) + $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
+    </item>
     
     <item>
       <title>なぜ個人wikiを使うのか</title>

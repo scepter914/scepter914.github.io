@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</loc>
+    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/aboutme/</loc>
-    <lastmod>2018-11-23T23:59:59+09:00</lastmod>
+    <lastmod>2019-01-02T23:59:59+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/aboutmeja/</loc>
-    <lastmod>2018-11-23T23:59:59+09:00</lastmod>
+    <lastmod>2019-01-01T23:59:59+09:00</lastmod>
   </url>
   
   <url>
@@ -69,19 +74,19 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/aboutme/</loc>
-    <lastmod>2018-11-23T23:59:59+09:00</lastmod>
+    <lastmod>2019-01-02T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2018-11-21T00:02:00+09:00</lastmod>
+    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/categories/</loc>
-    <lastmod>2018-11-23T23:59:59+09:00</lastmod>
+    <lastmod>2019-01-02T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,7 +104,13 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/misc/</loc>
-    <lastmod>2018-11-23T23:59:59+09:00</lastmod>
+    <lastmod>2019-01-02T23:59:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/openframeworks/</loc>
+    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,7 +134,7 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2018-11-23T23:59:59+09:00</lastmod>
+    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -136,6 +147,12 @@
   <url>
     <loc>https://scepter914.github.io/tags/vim/</loc>
     <lastmod>2018-04-29T23:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/categories/works/</loc>
+    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

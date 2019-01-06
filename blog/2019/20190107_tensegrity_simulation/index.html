@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Tensegrity Simulation - Scepter914 Website</title>
+    
+<meta name="description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1}$ ← $x_n$ &#43; ($xn$-$x{n - 1}$) &#43; $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+
+<meta property="og:title" content="Tensegrity Simulation - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1}$ ← $x_n$ &#43; ($xn$-$x{n - 1}$) &#43; $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
+<meta name="twitter:title" content="Tensegrity Simulation - Scepter914 Website">
+<meta name="twitter:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1}$ ← $x_n$ &#43; ($xn$-$x{n - 1}$) &#43; $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "Tensegrity Simulation - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-01-07T00:00:00JST",
+    "dateModified": "2019-01-07T00:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1}$ ← $x_n$ + ($xn$-$x{n - 1}$) + $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 + x_1)/2."
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Tensegrity Simulation</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-07T00:00:00JST">Jan 7, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Tensegrity Simulation</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="what-is-this">What is this</h2>
+
+<ul>
+<li>Blog of <a href="https://github.com/scepter914/Tensegrity-simulation">https://github.com/scepter914/Tensegrity-simulation</a></li>
+</ul>
+
+<h2 id="methods">Methods</h2>
+
+<h3 id="sequence">Sequence</h3>
+
+<ol>
+<li>Initialize position of particles and parameters</li>
+<li>Loop
+
+<ol>
+<li>Initialize force of each particle</li>
+<li>Update force of each particle from spring</li>
+<li>Update position of each particle</li>
+<li>Satisfy distance constraints of each strut</li>
+<li>Update collision of ground</li>
+</ol></li>
+</ol>
+
+<h3 id="each-particles">Each Particles</h3>
+
+<ul>
+<li>f = Mg</li>
+</ul>
+
+<h3 id="spring">Spring</h3>
+
+<ul>
+<li>$f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$</li>
+<li>$K_s$ : spring constant</li>
+<li>$l$ : current length</li>
+<li>$l_0$ : rest length</li>
+<li>$d$ : unit vector toward the other particle</li>
+<li>$K_d$ : damper constant</li>
+<li>$v_0$,$v_1$ : velocity of particles</li>
+</ul>
+
+<h3 id="update-particles">Update particles</h3>
+
+<ul>
+<li>Verlet Integration</li>
+<li>$x_{n+1}$ ←  $x_n$ + ($x<em>n$-$x</em>{n - 1}$) + $Δt^2$ $F_n$ / $m$</li>
+</ul>
+
+<h3 id="strut">Strut</h3>
+
+<ul>
+<li>$x_0$ ←  $(x_0 + x_1)/2.0$ - $(l_0/2.0)$ $d$
+
+<ul>
+<li>d : the unit vector toward the other particle</li>
+<li>$l_0$ is the rest length.</li>
+</ul></li>
+<li>This update does not move the center of gravity of the strut.</li>
+</ul>
+
+<h3 id="update-collision-of-graound">Update collision of graound</h3>
+
+<p>If the z value of a particle is under the particle radius, the particle
+have to jump. I use the Position-based method for collision against
+the ground.</p>
+
+<ul>
+<li>$ z_{n+1} = r $</li>
+<li>$ z<em>n ← r + z</em>{n+1} - z_n $</li>
+</ul>
+
+<p>z is the z position of a particle. r is the radius of particles.</p>
+
+<p>For x, y, I add friction for collision.</p>
+
+<ul>
+<li>$ x_n = x<em>n + (x</em>{n+1} - x_n)(1.0 - u) $</li>
+<li>$ y_n = y<em>n + (y</em>{n+1} - y_n)(1.0 - u) $</li>
+</ul>
+
+<h3 id="parameters">Parameters</h3>
+
+<ul>
+<li><p>item Common value</p>
+
+<ul>
+<li>$M$ = 0.20</li>
+<li>$¥Delta t$ = 0.010</li>
+<li>$r$ = 5.0</li>
+<li>$u$ = 0.80</li>
+</ul></li>
+
+<li><p>video1</p>
+
+<ul>
+<li>$¥bm{x}$ = (-400.0, 200.0, 250.0)</li>
+<li>$¥bm{v}$ = (-0.70, 0.80, 0.50)</li>
+<li>$ K_s$ = 20.0</li>
+<li>$ K_b$ = 5.0</li>
+<li>$ g $ = -9.8</li>
+</ul></li>
+
+<li><p>Video2</p>
+
+<ul>
+<li>$¥bm{x}$ = (-500.0, 800.0, 250.0)</li>
+<li>$¥bm{v}$ = (-0.30, 1.00, 0.40)</li>
+<li>$ K_s$ = 20.0</li>
+<li>$ K_b$ = 5.0</li>
+<li>$ g $ = -9.8</li>
+</ul></li>
+
+<li><p>Video3</p>
+
+<ul>
+<li>$¥bm{x}$ = (-500.0, 800.0, 250.0)</li>
+<li>$¥bm{v}$ = (-0.30, 1.00, 0.40)</li>
+<li>$ K_s$ = 20.0</li>
+<li>$ K_b$ = 5.0</li>
+<li>$ g $ = -0.98</li>
+</ul></li>
+
+<li><p>Video4</p>
+
+<ul>
+<li>$¥bm{x}$ = (-500.0, 800.0, 250.0)</li>
+<li>$¥bm{v}$ = (-0.30, 1.00, 0.40)</li>
+<li>$ K_s$ = 1.1</li>
+<li>$ K_b$ = 0.6</li>
+<li>$ g $ = -0.98</li>
+</ul></li>
+</ul>
+
+<h3 id="make-movie">make movie</h3>
+
+<ul>
+<li>run
+
+<ul>
+<li>make</li>
+<li>make run</li>
+</ul></li>
+<li>make movie
+
+<ul>
+<li>cd bin/data</li>
+<li>ffmpeg -r 200 -i image %05d.png -vcodec libx264 -pix fmt yuv420p -r 200 out.mp4</li>
+</ul></li>
+</ul>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/works/">works</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/openframeworks/">openframeworks</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      
+      <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
+      
+      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
+      
+      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
