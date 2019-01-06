@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Tensegrity Simulation - Scepter914 Website</title>
     
-<meta name="description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1}$ ← $x_n$ &#43; ($xn$-$x{n - 1}$) &#43; $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta name="description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
 
 <meta property="og:title" content="Tensegrity Simulation - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1}$ ← $x_n$ &#43; ($xn$-$x{n - 1}$) &#43; $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta property="og:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
 <meta name="twitter:title" content="Tensegrity Simulation - Scepter914 Website">
-<meta name="twitter:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1}$ ← $x_n$ &#43; ($xn$-$x{n - 1}$) &#43; $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta name="twitter:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1}$ ← $x_n$ + ($xn$-$x{n - 1}$) + $Δt^2$ $F_n$ / $m$  Strut  $x_0$ ← $(x_0 + x_1)/2."
+    "description": "What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2."
   }
 </script>
 
@@ -199,7 +199,12 @@
 
 <ul>
 <li>Verlet Integration</li>
-<li>$x_{n+1}$ ←  $x_n$ + ($x<em>n$-$x</em>{n - 1}$) + $Δt^2$ $F_n$ / $m$</li>
+<li>$x_{n+1} ← $
+
+<ul>
+<li>$ xn+(xn-x_{n-1})+Δt^2F_n/m$</li>
+<li>xn is $x_n$ (it is rendering error)</li>
+</ul></li>
 </ul>
 
 <h3 id="strut">Strut</h3>
@@ -222,7 +227,11 @@ the ground.</p>
 
 <ul>
 <li>$ z_{n+1} = r $</li>
-<li>$ z<em>n ← r + z</em>{n+1} - z_n $</li>
+<li>$ zn ← r + z_{n+1} - zn $
+
+<ul>
+<li>zn is $z_n$ (it is rendering error)</li>
+</ul></li>
 </ul>
 
 <p>z is the z position of a particle. r is the radius of particles.</p>
@@ -230,8 +239,8 @@ the ground.</p>
 <p>For x, y, I add friction for collision.</p>
 
 <ul>
-<li>$ x_n = x<em>n + (x</em>{n+1} - x_n)(1.0 - u) $</li>
-<li>$ y_n = y<em>n + (y</em>{n+1} - y_n)(1.0 - u) $</li>
+<li>$xn=xn+(x_{n+1}-xn)(1.0-u)$$</li>
+<li>$yn = yn + (y_{n+1} - yn)(1.0 - u) $</li>
 </ul>
 
 <h3 id="parameters">Parameters</h3>
@@ -241,7 +250,7 @@ the ground.</p>
 
 <ul>
 <li>$M$ = 0.20</li>
-<li>$¥Delta t$ = 0.010</li>
+<li>$\Delta t$ = 0.010</li>
 <li>$r$ = 5.0</li>
 <li>$u$ = 0.80</li>
 </ul></li>
@@ -249,8 +258,8 @@ the ground.</p>
 <li><p>video1</p>
 
 <ul>
-<li>$¥bm{x}$ = (-400.0, 200.0, 250.0)</li>
-<li>$¥bm{v}$ = (-0.70, 0.80, 0.50)</li>
+<li>$x$ = (-400.0, 200.0, 250.0)</li>
+<li>$v$ = (-0.70, 0.80, 0.50)</li>
 <li>$ K_s$ = 20.0</li>
 <li>$ K_b$ = 5.0</li>
 <li>$ g $ = -9.8</li>
@@ -259,8 +268,8 @@ the ground.</p>
 <li><p>Video2</p>
 
 <ul>
-<li>$¥bm{x}$ = (-500.0, 800.0, 250.0)</li>
-<li>$¥bm{v}$ = (-0.30, 1.00, 0.40)</li>
+<li>$x$ = (-500.0, 800.0, 250.0)</li>
+<li>$v$ = (-0.30, 1.00, 0.40)</li>
 <li>$ K_s$ = 20.0</li>
 <li>$ K_b$ = 5.0</li>
 <li>$ g $ = -9.8</li>
@@ -269,8 +278,8 @@ the ground.</p>
 <li><p>Video3</p>
 
 <ul>
-<li>$¥bm{x}$ = (-500.0, 800.0, 250.0)</li>
-<li>$¥bm{v}$ = (-0.30, 1.00, 0.40)</li>
+<li>$x$ = (-500.0, 800.0, 250.0)</li>
+<li>$v$ = (-0.30, 1.00, 0.40)</li>
 <li>$ K_s$ = 20.0</li>
 <li>$ K_b$ = 5.0</li>
 <li>$ g $ = -0.98</li>
@@ -279,8 +288,8 @@ the ground.</p>
 <li><p>Video4</p>
 
 <ul>
-<li>$¥bm{x}$ = (-500.0, 800.0, 250.0)</li>
-<li>$¥bm{v}$ = (-0.30, 1.00, 0.40)</li>
+<li>$x$ = (-500.0, 800.0, 250.0)</li>
+<li>$v$ = (-0.30, 1.00, 0.40)</li>
 <li>$ K_s$ = 1.1</li>
 <li>$ K_b$ = 0.6</li>
 <li>$ g $ = -0.98</li>
@@ -402,6 +411,14 @@ the ground.</p>
 
 </aside>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']]
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   </div>
 </div>
