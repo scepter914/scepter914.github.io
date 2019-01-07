@@ -259,11 +259,12 @@ Object Detectionはざっくりいうとinputの画像に対して，
 オブジェクトを検出して「四角で囲んだここにはhogeがある」って言ってくれるタスクのこと．</p>
 
 <p>そして今回使ったアルゴリズムはみんな大好きYOLO(You Only Look Once)．
-YOLOはObject Detectionタスクのアルゴリズムの一種で，</p>
+YOLOはObject Detectionタスクのアルゴリズムの一種．
+詳しくは論文読んでください．</p>
 
 <p>Detectionのコードは<a href="https://github.com/chainer/chainercv/tree/master/examples/yolo">https://github.com/chainer/chainercv/tree/master/examples/yolo</a>にあるdemo.pyほとんどそのまま．
 ここではFPSを上げたかったのでsampleにあったYolo v2 tinyを使った．
-ここでうだうだ説明するよりYOLOの論文とChainerCVの実装を読んだ方が早いのであとは省略．</p>
+ここでうだうだ説明するよりChainerCVの実装を読んだ方が早いのであとは省略．</p>
 
 <p>あとなぜだかよくわからんけどexampleのコードをそのまま動かしたら</p>
 
@@ -317,7 +318,9 @@ ImportError: cannot import name 'YOLOv2Tiny'
 
 <ul>
 <li>当たり前だけど一気にやらずに一個一個実装していった(テストコードも特にリファクタリングしていないのでGithubに乗せたままな気がする)</li>
-<li>順番としては</li>
+<li>順番としては
+
+<ol>
 <li>ChainerCVのYoloのdemoをそのまま動かす</li>
 <li>videoから画像を取ってきてYoloのdemoに突っ込むのでFPSを確認</li>
 <li>videoからとってきた画像でドローンの制御指定値の算出のデバッグ(実際にドローンを動かしていない)</li>
@@ -326,8 +329,9 @@ ImportError: cannot import name 'YOLOv2Tiny'
 <li>ドローンから画像をとってこれるかを確認</li>
 <li>ドローンからとってきた画像でDetectionしてみる</li>
 <li>ドローンからとってきた画像で制御指定値の算出を確認(実際にドローンを動かしていない)</li>
-<li>実際に人に付いていくデモをしてみる
-こんな感じで実装した．</li>
+<li>実際に人に付いていくデモをしてみる</li>
+</ol></li>
+<li>こんな感じで実装した．</li>
 </ul>
 
 <h3 id="トイドローンについて">トイドローンについて</h3>
