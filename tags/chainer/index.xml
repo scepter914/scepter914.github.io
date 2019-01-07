@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Works on Scepter914 Website</title>
-    <link>https://scepter914.github.io/categories/works/</link>
-    <description>Recent content in Works on Scepter914 Website</description>
+    <title>Chainer on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/chainer/</link>
+    <description>Recent content in Chainer on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jan 2019 01:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://scepter914.github.io/categories/works/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scepter914.github.io/tags/chainer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,15 +23,6 @@
 ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;amp;&amp;amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる．
  参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．
 import tellopy help(tellopy)  を見ればなんとなく中身が分かる． というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．</description>
-    </item>
-    
-    <item>
-      <title>Tensegrity Simulation</title>
-      <link>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
-      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
     </item>
     
   </channel>

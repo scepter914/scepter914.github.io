@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2019/20190107_tellodetection/</loc>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</loc>
     <lastmod>2019-01-07T00:00:00+09:00</lastmod>
   </url>
@@ -80,13 +85,19 @@
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/categories/</loc>
     <lastmod>2019-01-02T23:59:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/chainer/</loc>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -134,13 +145,13 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2018-05-21T00:00:00+09:00</lastmod>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -152,7 +163,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/works/</loc>
-    <lastmod>2019-01-07T00:00:00+09:00</lastmod>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

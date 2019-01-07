@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2019/20190107_tellodetection/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Tello Detection: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション - Scepter914 Website</title>
+    
+<meta name="description" content="概要  ChainerCVのdetection example &#43; tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくものプログラムを作った ！注意！  安全面は各自の自己責任でお願いします  周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください  (ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません コードはあくまで参考程度にし，自己責任で一行づつ実装してください そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)   まえがき 何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた． 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば， &amp;ldquo;転がっている学習済モデルを使って&amp;rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは， 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大． なので，もし知っている方がいたらTwitter等で教えていただけると助かります． あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;amp;&amp;amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる． 参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．import tellopy help(tellopy)  を見ればなんとなく中身が分かる． というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．">
+
+<meta property="og:title" content="Tello Detection: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2019/20190107_tellodetection/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="概要  ChainerCVのdetection example &#43; tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくものプログラムを作った ！注意！  安全面は各自の自己責任でお願いします  周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください  (ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません コードはあくまで参考程度にし，自己責任で一行づつ実装してください そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)   まえがき 何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた． 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば， &amp;ldquo;転がっている学習済モデルを使って&amp;rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは， 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大． なので，もし知っている方がいたらTwitter等で教えていただけると助かります． あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;amp;&amp;amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる． 参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．import tellopy help(tellopy)  を見ればなんとなく中身が分かる． というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190107_tellodetection/">
+<meta name="twitter:title" content="Tello Detection: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション - Scepter914 Website">
+<meta name="twitter:description" content="概要  ChainerCVのdetection example &#43; tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくものプログラムを作った ！注意！  安全面は各自の自己責任でお願いします  周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください  (ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません コードはあくまで参考程度にし，自己責任で一行づつ実装してください そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)   まえがき 何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた． 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば， &amp;ldquo;転がっている学習済モデルを使って&amp;rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは， 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大． なので，もし知っている方がいたらTwitter等で教えていただけると助かります． あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;amp;&amp;amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる． 参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．import tellopy help(tellopy)  を見ればなんとなく中身が分かる． というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "Tello Detection: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-01-07T01:00:00JST",
+    "dateModified": "2019-01-07T01:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "概要  ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくものプログラムを作った ！注意！  安全面は各自の自己責任でお願いします  周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください  (ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません コードはあくまで参考程度にし，自己責任で一行づつ実装してください そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)   まえがき 何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた． 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．
+あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば， &ldquo;転がっている学習済モデルを使って&rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは， 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．
+関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大． なので，もし知っている方がいたらTwitter等で教えていただけると助かります． あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．
+ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;&amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる．
+ 参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．
+import tellopy help(tellopy)  を見ればなんとなく中身が分かる． というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．"
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Tello Detection: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-07T01:00:00JST">Jan 7, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Tello Detection: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="概要">概要</h2>
+
+<ul>
+<li>ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話</li>
+<li>アプリケーションとしては人についていくものプログラムを作った</li>
+<li>！注意！
+
+<ul>
+<li>安全面は各自の自己責任でお願いします
+
+<ul>
+<li>周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください</li>
+</ul></li>
+<li>(ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません</li>
+<li>コードはあくまで参考程度にし，自己責任で一行づつ実装してください</li>
+<li>そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)</li>
+</ul></li>
+</ul>
+
+<h2 id="まえがき">まえがき</h2>
+
+<p>何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた．
+「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．</p>
+
+<p>あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば，
+&ldquo;転がっている学習済モデルを使って&rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは，
+大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．</p>
+
+<p>関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大．
+なので，もし知っている方がいたらTwitter等で教えていただけると助かります．
+あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．</p>
+
+<h2 id="ソースコード">ソースコード</h2>
+
+<ul>
+<li><a href="https://github.com/scepter914/TelloFollowingPerson">https://github.com/scepter914/TelloFollowingPerson</a></li>
+<li><del> 書き散らしただけでリファクタリング全くしてないコードなのはご容赦を </del></li>
+</ul>
+
+<h2 id="環境構築-version">環境構築 &amp;&amp; version</h2>
+
+<ul>
+<li>READMEに書いたのでそちらを参照を</li>
+</ul>
+
+<h2 id="処理の流れ">処理の流れ</h2>
+
+<ol>
+<li>host PCからTelloに制御信号を送って初期位置へ移動させる</li>
+<li>Telloから画像を取得,host PCに画像を送る</li>
+<li>ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得</li>
+<li>取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る</li>
+</ol>
+
+<h3 id="telloとは">Telloとは</h3>
+
+<p>DJIから販売されているトイドローン．
+Amazonから買えて1万円超えくらい．
+Pythonから叩けるので遊ぶのに便利．
+ggるといろいろ記事が出てくる．</p>
+
+<ul>
+<li>参考
+
+<ul>
+<li><a href="https://www.droneskyfish.com/entry/tello-fly">https://www.droneskyfish.com/entry/tello-fly</a> 手動で動かす参考</li>
+</ul></li>
+</ul>
+
+<h3 id="telloの自動制御">Telloの自動制御</h3>
+
+<p>pythonでtelloを動かすライブラリのTelloPyを使った．
+ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い．
+これだけで結構遊べる気がする．</p>
+
+<pre><code class="language-python3">import tellopy
+help(tellopy)
+</code></pre>
+
+<p>を見ればなんとなく中身が分かる．
+というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．</p>
+
+<ul>
+<li>参考
+
+<ul>
+<li><a href="https://github.com/hanyazou/TelloPy">https://github.com/hanyazou/TelloPy</a></li>
+<li><a href="https://www.mitomoyo.com/entry/2018/06/22/010142">https://www.mitomoyo.com/entry/2018/06/22/010142</a> teellopy+keras</li>
+</ul></li>
+</ul>
+
+<h3 id="object-detection-task">Object Detection Task</h3>
+
+<p>使ったライブラリはChainerCV，なので使うフレームワークはChainer．
+ChainerCVはDeepの学習済モデルとか含めてよしなにexampleから簡単に動かせるライブラリ．実際くっそ楽．
+今回はChainerCVのObject Detectionのサンプルコードを利用する．
+Object Detectionはざっくりいうとinputの画像に対して，
+オブジェクトを検出して「四角で囲んだここにはhogeがある」って言ってくれるタスクのこと．</p>
+
+<p>そして今回使ったアルゴリズムはみんな大好きYOLO(You Only Look Once)．
+YOLOはObject Detectionタスクのアルゴリズムの一種で，</p>
+
+<p>Detectionのコードは<a href="https://github.com/chainer/chainercv/tree/master/examples/yolo">https://github.com/chainer/chainercv/tree/master/examples/yolo</a>にあるdemo.pyほとんどそのまま．
+ここではFPSを上げたかったのでsampleにあったYolo v2 tinyを使った．
+ここでうだうだ説明するよりYOLOの論文とChainerCVの実装を読んだ方が早いのであとは省略．</p>
+
+<p>あとなぜだかよくわからんけどexampleのコードをそのまま動かしたら</p>
+
+<pre><code>
+File &quot;demo.py&quot;, line 7, in &lt;module&gt;
+from chainercv.experimental.links import YOLOv2Tiny
+ImportError: cannot import name 'YOLOv2Tiny'
+
+</code></pre>
+
+<p>とerrorが出たので，でっちあげでファイルコピってimport周りを少し書き換えた．(非常にクソ解法)</p>
+
+<ul>
+<li>参考
+
+<ul>
+<li><a href="https://github.com/chainer/chainercv">https://github.com/chainer/chainercv</a> ChainerCV</li>
+</ul></li>
+</ul>
+
+<h3 id="telloの移動制御">Telloの移動制御</h3>
+
+<ul>
+<li>くっそ<del> 稚拙 </del>シンプルな実装</li>
+<li>Detectionによってbounding boxの座標，ラベルが求まるので，(複数人映っている可能性も考慮して)人間(label == 14)がラベルのものの重心位置とbounding boxの平均面積を算出</li>
+<li>左右，上下: 重心位置が画面の中心にくるように，(適当なゲインを調整して)上下左右に移動する</li>
+<li>前後: 平均面積がある閾値になるように，(適当なゲインを調整して)前後に移動する
+
+<ul>
+<li>人に近づくとbounding boxの面積は大きくなる，人から遠ざかるとbounding boxの面積は小さくなる</li>
+</ul></li>
+<li><del> 図を作るのすらもめんどい </del></li>
+</ul>
+
+<h3 id="他に参考にしたもの">他に参考にしたもの</h3>
+
+<ul>
+<li><a href="http://robonchu.hatenablog.com/entry/2018/10/09/215542">http://robonchu.hatenablog.com/entry/2018/10/09/215542</a> yolo + tello</li>
+<li><a href="https://github.com/mutsuyuki/DroneControllByYOLOv2">https://github.com/mutsuyuki/DroneControllByYOLOv2</a> yolo + tello ジェスチャー</li>
+<li><a href="https://github.com/Ubotica/telloCV/">https://github.com/Ubotica/telloCV/</a> tello * CV</li>
+</ul>
+
+<h2 id="結果">結果</h2>
+
+<p>それっぽく動いたけれど，自分のノートPCのCPU onlyでDetectionの推論が0.15fpsで結構しんどい気持ちになった．
+自分のコードの書き方が悪いのかもしれないけど，単純にスペック不足&hellip;？</p>
+
+<h2 id="他感想的な">他感想的な</h2>
+
+<h3 id="実装に関して">実装に関して</h3>
+
+<ul>
+<li>当たり前だけど一気にやらずに一個一個実装していった(テストコードも特にリファクタリングしていないのでGithubに乗せたままな気がする)</li>
+<li>順番としては</li>
+<li>ChainerCVのYoloのdemoをそのまま動かす</li>
+<li>videoから画像を取ってきてYoloのdemoに突っ込むのでFPSを確認</li>
+<li>videoからとってきた画像でドローンの制御指定値の算出のデバッグ(実際にドローンを動かしていない)</li>
+<li>ドローン単体でtake offとlandが動くことを確認</li>
+<li>ドローンに前後上下左右の指令を出して，どのくらい移動量があるかを確認</li>
+<li>ドローンから画像をとってこれるかを確認</li>
+<li>ドローンからとってきた画像でDetectionしてみる</li>
+<li>ドローンからとってきた画像で制御指定値の算出を確認(実際にドローンを動かしていない)</li>
+<li>実際に人に付いていくデモをしてみる
+こんな感じで実装した．</li>
+</ul>
+
+<h3 id="トイドローンについて">トイドローンについて</h3>
+
+<ul>
+<li>バッテリー持ち</li>
+</ul>
+
+<p>すぐにバッテリーが切れるので，案外デバッグ(というよりパラメータ調整)が捗らなかった．
+充電待ちの時間が結構あったので，もし時間に迫られる+何かを作らないといけない，みたいなシチュエーションだとあんまりトイドローンを使うのはおすすめできないかも．</p>
+
+<ul>
+<li>デバッグ</li>
+</ul>
+
+<p>デバッグがマジで怖い&hellip;
+例えば本来whileを抜けるはずなのに抜けないバグを仕込んで，着陸しようとしないとかいうバグを仕込んでしまったバカがいたわけです．
+Telloはありがたいことにバッテリーがすぐ切れるので，充電切れによりことなきを得たけど．もし数十分飛んでたらどないしようと思った．
+因みにこれ作る間に，不時着によりプロペラ一個破壊しました．(Tello買うと予備プロペラが4つ入っているのでゆーても壊れるものなのかもしれない)
+皆様もお気をつけを&hellip;</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/works/">works</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/chainer/">chainer</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      
+      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      
+      <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
+      
+      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
+      
+      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']]
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
