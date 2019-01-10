@@ -6,10 +6,22 @@
     <description>Recent content in Works on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jan 2019 01:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jan 2019 10:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/works/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setting Velocity on Joints and Links for Gazebo ver9.6</title>
+      <link>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</link>
+      <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</guid>
+      <description> 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．
+Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．
+余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．
+Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   </description>
+    </item>
     
     <item>
       <title>TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション</title>

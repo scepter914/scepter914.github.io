@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="https://scepter914.github.io/aboutme/">
+<link rel="canonical" href="https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>About me - Scepter914 Website</title>
+    <title>Setting Velocity on Joints and Links for Gazebo ver9.6 - Scepter914 Website</title>
     
-<meta name="description" content="日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M1  Research Field / Interest  System design of Dynamic manipulation using high-speed image processing and high-speed robots Deformation Control (one of the force control) Robot manipulation using deep reinforcement learning   Biography Academic background  2014&amp;frasl;4- The University of Tokyo  2016&amp;frasl;4-2018&amp;frasl;3 Dept.">
+<meta name="description" content=" 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   ">
 
-<meta property="og:title" content="About me - Scepter914 Website">
+<meta property="og:title" content="Setting Velocity on Joints and Links for Gazebo ver9.6 - Scepter914 Website">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/aboutme/">
+<meta property="og:url" content="https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M1  Research Field / Interest  System design of Dynamic manipulation using high-speed image processing and high-speed robots Deformation Control (one of the force control) Robot manipulation using deep reinforcement learning   Biography Academic background  2014&amp;frasl;4- The University of Tokyo  2016&amp;frasl;4-2018&amp;frasl;3 Dept.">
+<meta property="og:description" content=" 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   ">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/aboutme/">
-<meta name="twitter:title" content="About me - Scepter914 Website">
-<meta name="twitter:description" content="日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M1  Research Field / Interest  System design of Dynamic manipulation using high-speed image processing and high-speed robots Deformation Control (one of the force control) Robot manipulation using deep reinforcement learning   Biography Academic background  2014&amp;frasl;4- The University of Tokyo  2016&amp;frasl;4-2018&amp;frasl;3 Dept.">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/">
+<meta name="twitter:title" content="Setting Velocity on Joints and Links for Gazebo ver9.6 - Scepter914 Website">
+<meta name="twitter:description" content=" 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   ">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"https://scepter914.github.io/"
     },
-    "headline": "About me - Scepter914 Website",
+    "headline": "Setting Velocity on Joints and Links for Gazebo ver9.6 - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
       "url": "https://scepter914.github.io/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2019-01-02T23:59:59JST",
-    "dateModified": "2019-01-02T23:59:59JST",
+    "datePublished": "2019-01-10T10:00:00JST",
+    "dateModified": "2019-01-10T10:00:00JST",
     "author": {
       "@type": "Person",
       "name": "Scepter914 Website"
@@ -65,7 +65,10 @@
         "height": 60
       }
     },
-    "description": "日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M1  Research Field / Interest  System design of Dynamic manipulation using high-speed image processing and high-speed robots Deformation Control (one of the force control) Robot manipulation using deep reinforcement learning   Biography Academic background  2014&frasl;4- The University of Tokyo  2016&frasl;4-2018&frasl;3 Dept."
+    "description": " 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．
+Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．
+余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．
+Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   "
   }
 </script>
 
@@ -133,131 +136,55 @@
       <ol class="breadcrumb">
         <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         
-        <li class="active">About me</li>
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Setting Velocity on Joints and Links for Gazebo ver9.6</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-02T23:59:59JST">Jan 2, 2019</time></li>
-      
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-10T10:00:00JST">Jan 10, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
 
-    <h1 class="title">About me</h1>
+    <h1 class="title">Setting Velocity on Joints and Links for Gazebo ver9.6</h1>
   </header>
 
   
 
   <div class="article-body">
 
+<h2 id="概要">概要</h2>
+
 <ul>
-<li><a href="https://scepter914.github.io/aboutmeja">日本語ページ</a></li>
+<li><a href="http://gazebosim.org/tutorials?tut=set_velocity">Setting Velocity on Joints and Links (Gazebo ver7.0)</a>をGazebo version 9.6 で動くようにした</li>
+<li><a href="https://github.com/scepter914/set_vel_plugin">https://github.com/scepter914/set_vel_plugin</a> Github</li>
 </ul>
 
-<h2 id="profile">Profile</h2>
+<h2 id="やったこと">やったこと</h2>
+
+<p>流石にROSを少し触った方がいいんじゃないかと思い，
+「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら，
+まずサンプルはversion古いやつやでっていう罠に引っかかった．</p>
+
+<p>Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした．
+デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．</p>
+
+<p>余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．</p>
+
+<h2 id="environment">Environment</h2>
 
 <ul>
-<li>Satoshi Tanaka</li>
-<li>The University of Tokyo
+<li>Ubuntu18.04LTS</li>
+<li>ROS: Melodic</li>
+<li>Gazebo 9.6
 
 <ul>
-<li>Department of Creative Informatics, Graduate School of Information Science and Technology</li>
-<li><a href="http://www.k2.t.u-tokyo.ac.jp/index-e.html">Ishikawa Senoo Lab</a> M1</li>
+<li>参考 <a href="http://gazebosim.org/tutorials?tut=ros_wrapper_versions">http://gazebosim.org/tutorials?tut=ros_wrapper_versions</a></li>
 </ul></li>
-<li>Research Field / Interest
-
-<ul>
-<li>System design of Dynamic manipulation using high-speed image processing and high-speed robots</li>
-<li>Deformation Control (one of the force control)</li>
-<li>Robot manipulation using deep reinforcement learning</li>
-</ul></li>
-</ul>
-
-<h2 id="biography">Biography</h2>
-
-<h3 id="academic-background">Academic background</h3>
-
-<ul>
-<li><sup>2014</sup>&frasl;<sub>4</sub>- The University of Tokyo
-
-<ul>
-<li><sup>2016</sup>&frasl;<sub>4</sub>-<sup>2018</sup>&frasl;<sub>3</sub> Dept. of Precison Engineering</li>
-<li><sup>2017</sup>&frasl;<sub>4</sub>-<sup>2018</sup>&frasl;<sub>3</sub> Kotani Lab, Research Center for Advanced Sceience and Technology</li>
-<li><sup>2018</sup>&frasl;<sub>4</sub>-Now Ishikawa Senoo Lab, Department of Creative Informatics, Graduate School of Information Science and Technology</li>
-</ul></li>
-</ul>
-
-<h3 id="internship">Internship</h3>
-
-<ul>
-<li><sup>2017</sup>&frasl;<sub>08</sub>-<sup>2018</sup>&frasl;<sub>03</sub> Internship at Hitachi, Ltd
-
-<ul>
-<li>As a research assistant.</li>
-</ul></li>
-<li><sup>2018</sup>&frasl;<sub>4</sub>-Now Internship at Preferred Networks, Inc.
-
-<ul>
-<li>As a contract employee.</li>
-</ul></li>
-</ul>
-
-<h2 id="other-avtivity">Other avtivity</h2>
-
-<h3 id="robotic-competition-2014-2017">Robotic Competition (2014-2017)</h3>
-
-<p>From 2014 to 2017, I was a member of <a href="http://tuk.t.u-tokyo.ac.jp/robotech/">RoboTech</a>, the team for robot contest at The University of Tokyo. In RoboTech, I belonged to mechanic section.</p>
-
-<p>In 2016, I am a team leader of RoboTech. We were winner of National Championships(NHK Robocon) and we participated in the international robot contest &ldquo;ABU Robocon2016&rdquo; as Representation from Japan. At this contest, We were 2nd-RunnerUp and we were commened for ABU Robocon award.</p>
-
-<h3 id="mouse-for-cad-2017-04">Mouse for CAD(<sup>2017</sup>&frasl;<sub>04</sub>-)</h3>
-
-<ul>
-<li><a href="https://cadingmouse.github.io/">https://cadingmouse.github.io/</a></li>
-<li>Maker Faire Tokyo 2017</li>
-<li>GUGEN2017</li>
-</ul>
-
-<h2 id="using-tool">Using Tool</h2>
-
-<ul>
-<li>Linux(Ubuntu)</li>
-<li>Vim</li>
-<li>C++, Python</li>
-<li>openFrameworks, OpenCV, Chainer</li>
-<li>CAD(SolidEdge, SOLIDWORKS, Fusion360)</li>
-</ul>
-
-<h2 id="interest">Interest</h2>
-
-<h3 id="soccer">Soccer</h3>
-
-<p>I have played soccer for about 15 years. I play as attacker, mainly Second Top and Side Midfielder.</p>
-
-<h3 id="history">History</h3>
-
-<p>I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代).
-As a person, I like Du Yu(杜預), Cao Cao(曹操), Sima Yi(司馬懿), Zhang Liao(張遼), and Guo Jia(郭嘉) in the Three Lingdom.</p>
-
-<h3 id="music">Music</h3>
-
-<p>I like background music of movie and anime and game.
-Especially, I like Yuki Kajiura(梶浦由記), who is a Japanese composer and music producer. I listen to her music (Soundtracks, Fiction Junction, Kalafina) a lot.</p>
-
-<h3 id="game">Game</h3>
-
-<ul>
-<li>NieR: Automata</li>
-<li>Ever17</li>
-</ul>
-
-<h2 id="contacts">Contacts</h2>
-
-<ul>
-<li><a href="https://twitter.com/scepter914">Twitter</a></li>
-<li><a href="https://github.com/scepter914">Github</a></li>
 </ul>
 </div>
 
@@ -272,7 +199,7 @@ Especially, I like Yuki Kajiura(梶浦由記), who is a Japanese composer and mu
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://scepter914.github.io/categories/aboutme/">aboutme</a></li>
+          <li><a href="https://scepter914.github.io/categories/works/">works</a></li>
           
         </ul>
       </div>
@@ -287,7 +214,7 @@ Especially, I like Yuki Kajiura(梶浦由記), who is a Japanese composer and mu
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://scepter914.github.io/tags/misc/">misc</a></li>
+          <li><a href="https://scepter914.github.io/tags/ros/">ROS</a></li>
           
         </ul>
       </div>
