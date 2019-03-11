@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>個人用wiki(gollum)を使った研究survey - Scepter914 Website</title>
     
-<meta name="description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ 検索にかかるようになるが 面倒すぎて発狂するMendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった">
+<meta name="description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&amp;gt; 名前をコピーする -&amp;gt; mendeleyを起動 -&amp;gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&amp;hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&amp;hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita.">
 
 <meta property="og:title" content="個人用wiki(gollum)を使った研究survey - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ 検索にかかるようになるが 面倒すぎて発狂するMendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった">
+<meta property="og:description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&amp;gt; 名前をコピーする -&amp;gt; mendeleyを起動 -&amp;gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&amp;hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&amp;hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
 <meta name="twitter:title" content="個人用wiki(gollum)を使った研究survey - Scepter914 Website">
-<meta name="twitter:description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ 検索にかかるようになるが 面倒すぎて発狂するMendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった">
+<meta name="twitter:description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&amp;gt; 名前をコピーする -&amp;gt; mendeleyを起動 -&amp;gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&amp;hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&amp;hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita.">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -65,14 +65,7 @@
         "height": 60
       }
     },
-    "description": "概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
- これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
-論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
- 検索にかかるようになるが 面倒すぎて発狂する
-Mendeleyで検索をかける  欲しい機能4へのアプローチとして
- 全文検索を使える
- ローカルのpdfを読み込ませて自動でrenameもできる
- タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった"
+    "description": "概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&gt; 名前をコピーする -&gt; mendeleyを起動 -&gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita."
   }
 </script>
 
@@ -205,56 +198,54 @@ Mendeleyで検索をかける  欲しい機能4へのアプローチとして
 <li>分野を跨いだ論文をどこにあるのか忘れる</li>
 <li>というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった</li>
 </ul></li>
-
-<li><p>ローカルでどのディレクトリにどのpdfがあるかがわからない</p>
+<li>ローカルでどのディレクトリにどのpdfがあるかがわからない
 
 <ul>
-<li><p>これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する</p>
-
-<h3 id="論文のpdfのファイル名をtitleにrename">論文のpdfのファイル名をtitleにrename</h3></li>
+<li>これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する</li>
 </ul></li>
+</ul>
 
-<li><p>欲しい機能4へのアプローチ</p>
+<h3 id="論文のpdfのファイル名をtitleにrename">論文のpdfのファイル名をtitleにrename</h3>
+
+<ul>
+<li>欲しい機能4へのアプローチ
 
 <ul>
 <li>検索にかかるようになるが</li>
-
-<li><p>面倒すぎて発狂する</p>
-
-<h3 id="mendeleyで検索をかける">Mendeleyで検索をかける</h3></li>
+<li>面倒すぎて発狂する</li>
 </ul></li>
+</ul>
 
-<li><p>欲しい機能4へのアプローチとして</p></li>
+<h3 id="mendeleyで検索をかける">Mendeleyで検索をかける</h3>
 
-<li><p>全文検索を使える</p></li>
-
-<li><p>ローカルのpdfを読み込ませて自動でrenameもできる</p>
+<ul>
+<li>欲しい機能4へのアプローチとして</li>
+<li>全文検索を使える</li>
+<li>ローカルのpdfを読み込ませて自動でrenameもできる
 
 <ul>
 <li>タイトルが読み込めない時に辛かった</li>
 <li>直す手間が辛い</li>
 </ul></li>
-
-<li><p>開くのが面倒になってしまった</p>
+<li>開くのが面倒になってしまった
 
 <ul>
 <li>なんでかよくわかってないけど</li>
 <li>wiki見る -&gt; 名前をコピーする -&gt; mendeleyを起動 -&gt; mendeleyの検索にかける が怠かったのでしょう</li>
 </ul></li>
-
-<li><p>あと容量制限が辛い&hellip;</p>
+<li>あと容量制限が辛い&hellip;
 
 <ul>
-<li><p>課金しろよって話ですが</p>
-
-<h3 id="一回一回googleに論文名を突っ込む">一回一回Googleに論文名を突っ込む</h3></li>
+<li>課金しろよって話ですが</li>
 </ul></li>
+</ul>
 
-<li><p>大学外のネットワークだと読めない</p></li>
+<h3 id="一回一回googleに論文名を突っ込む">一回一回Googleに論文名を突っ込む</h3>
 
-<li><p>やはりノートPCのローカルを参照したい&hellip;</p></li>
-
-<li><p>arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする</p>
+<ul>
+<li>大学外のネットワークだと読めない</li>
+<li>やはりノートPCのローカルを参照したい&hellip;</li>
+<li>arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする
 
 <ul>
 <li>ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね</li>
@@ -277,69 +268,64 @@ Mendeleyで検索をかける  欲しい機能4へのアプローチとして
 <li>個人wiki立てたらそこに纏めないと情報が発散する&hellip;</li>
 </ul></li>
 <li>欲しい機能4へのアプローチができない(特にリモートなので)</li>
-
-<li><p>アイデアとして使える箇所</p>
+<li>アイデアとして使える箇所
 
 <ul>
-<li><p>論文ごとにページを作ってタグで管理する</p>
+<li>論文ごとにページを作ってタグで管理する
 
 <ul>
 <li>分野ごとに纏めていた失敗に活かせそう</li>
-
-<li><p>ただ数が増えてくると欲しい機能3を満たせなくなってくる</p>
-
-<h3 id="スライドでまとめる">スライドでまとめる</h3></li>
+<li>ただ数が増えてくると欲しい機能3を満たせなくなってくる</li>
 </ul></li>
 </ul></li>
+</ul>
 
-<li><p>参考</p>
+<h3 id="スライドでまとめる">スライドでまとめる</h3>
+
+<ul>
+<li>参考
 
 <ul>
 <li><a href="https://github.com/cvpaperchallenge">https://github.com/cvpaperchallenge</a></li>
 </ul></li>
+<li>1人用ではオーバーキルかなぁと</li>
+<li>1枚にまとめるのは精読と略読でmemoの量変わるし</li>
+<li>reveal.jsで作成するのはありかもしれない</li>
+<li>結局欲しい機能4へのアプローチができない</li>
+</ul>
 
-<li><p>1人用ではオーバーキルかなぁと</p></li>
+<h3 id="githubのissue">githubのissue</h3>
 
-<li><p>1枚にまとめるのは精読と略読でmemoの量変わるし</p></li>
-
-<li><p>reveal.jsで作成するのはありかもしれない</p></li>
-
-<li><p>結局欲しい機能4へのアプローチができない</p>
-
-<h3 id="githubのissue">githubのissue</h3></li>
-
-<li><p>参考</p>
+<ul>
+<li>参考
 
 <ul>
 <li><a href="https://github.com/arXivTimes/arXivTimes">https://github.com/arXivTimes/arXivTimes</a></li>
 </ul></li>
+<li>Tagで分野, Projectで学会を管理</li>
+<li>issueで論文のアブストをまとめ</li>
+<li>これも欲しい機能4へのアプローチができない</li>
+</ul>
 
-<li><p>Tagで分野, Projectで学会を管理</p></li>
+<h3 id="evernote">Evernote</h3>
 
-<li><p>issueで論文のアブストをまとめ</p></li>
+<ul>
+<li><a href="http://tieki83.blog106.fc2.com/blog-entry-29.html">http://tieki83.blog106.fc2.com/blog-entry-29.html</a></li>
+<li>やっている事自体はwikiとおんなじ</li>
+</ul>
 
-<li><p>これも欲しい機能4へのアプローチができない</p>
+<h3 id="タブレットでの書き込み">タブレットでの書き込み</h3>
 
-<h3 id="evernote">Evernote</h3></li>
-
-<li><p><a href="http://tieki83.blog106.fc2.com/blog-entry-29.html">http://tieki83.blog106.fc2.com/blog-entry-29.html</a></p></li>
-
-<li><p>やっている事自体はwikiとおんなじ</p>
-
-<h3 id="タブレットでの書き込み">タブレットでの書き込み</h3></li>
-
-<li><p>参考</p>
+<ul>
+<li>参考
 
 <ul>
 <li><a href="https://coarsepaper.com/ipad-pro-survey2/">https://coarsepaper.com/ipad-pro-survey2/</a></li>
 <li><a href="https://tabe-phdcareer.com/blog-entry-122.html">https://tabe-phdcareer.com/blog-entry-122.html</a></li>
 </ul></li>
-
-<li><p>ipad使って論文管理するのが一番ナウい気がする</p></li>
-
-<li><p>自分がやらない理由はノートPCとタブレット2台持ちが単純に鞄が重くなるのが嫌だってだけなので，これが解決できる感じになったら後々導入していこうかなぁと思っている</p></li>
-
-<li><p>個人wikiといい感じに絡められると良いんだけどね</p></li>
+<li>ipad使って論文管理するのが一番ナウい気がする</li>
+<li>自分がやらない理由はノートPCとタブレット2台持ちが単純に鞄が重くなるのが嫌だってだけなので，これが解決できる感じになったら後々導入していこうかなぁと思っている</li>
+<li>個人wikiといい感じに絡められると良いんだけどね</li>
 </ul>
 
 <h2 id="アプローチ">アプローチ</h2>
@@ -347,17 +333,18 @@ Mendeleyで検索をかける  欲しい機能4へのアプローチとして
 <h3 id="何ベースで纏めるか">何ベースで纏めるか</h3>
 
 <ul>
-<li><p>研究テーマごとのsurveyまとめ</p>
+<li>研究テーマごとのsurveyまとめ
 
 <ul>
 <li>どこにpdf置くか迷わない</li>
-
-<li><p>違うテーマで同じ論文を引っ張る時はページだけ作ってオリジナルのmarkdownファイルのリンク貼れば良い</p>
-
-<h3 id="欲しい機能3へのアプローチ">欲しい機能3へのアプローチ</h3></li>
+<li>違うテーマで同じ論文を引っ張る時はページだけ作ってオリジナルのmarkdownファイルのリンク貼れば良い</li>
 </ul></li>
+</ul>
 
-<li><p>(gollum特有機能の)下位ページ一覧を活用する</p></li>
+<h3 id="欲しい機能3へのアプローチ">欲しい機能3へのアプローチ</h3>
+
+<ul>
+<li>(gollum特有機能の)下位ページ一覧を活用する</li>
 
 <li><p>実はGollumには便利なマクロがある</p>
 
