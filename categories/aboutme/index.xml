@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aboutme on Scepter914 Website</title>
@@ -6,36 +6,136 @@
     <description>Recent content in Aboutme on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jan 2019 13:59:56 +0900</lastBuildDate>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Tue, 17 Nov 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/aboutme/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ロボコンについて</title>
-      <link>https://scepter914.github.io/aboutrobocon/</link>
-      <pubDate>Tue, 08 Jan 2019 13:59:56 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutrobocon/</guid>
-      <description>概要  ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 作戦班副班長  RC2016,ABU2016 Chai-Yo  チームリーダー(メンバー,Ecoメカ整備担当) EcoRobot班班長  https://pages.rohm.co.jp/dp-robocon2016-kaibo.html マシンの解説記事  日本大会(NHK学生ロボコン2016)優勝 世界大会@バンコク(タイ)(ABUロボコン2016)ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017 APPARE  マシン班メカ   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  https://deviceplus.jp/events/kanto-haru-robocon-2017-interview/ 立ち上げ側のインタビュー記事   学生ロボコンOBとして  記事を書いたり，取材のお手伝い等をしています．  NHK高専ロボコン  高専ロボコン2016  デバイスプラス取材手伝い，解剖計画のコメント https://pages.rohm.co.jp/dp-kosen2016-kaibo.html  高専ロボコン2018  デバイスプラス取材手伝い   ABUロボコン  ABUロボコン2018@ニンビン，ベトナム  NHK手伝い   NHK学生ロボコン  学生ロボコン2017  デバイスプラスの解剖計画のコメント https://pages.</description>
-    </item>
-    
-    <item>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       <title>About me</title>
+<<<<<<< HEAD
       <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Wed, 02 Jan 2019 23:59:59 +0900</pubDate>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M1  Research Field / Interest  System design of Dynamic manipulation using high-speed image processing and high-speed robots Deformation Control (one of the force control) Robot manipulation using deep reinforcement learning   Biography Academic background  2014&amp;frasl;4- The University of Tokyo  2016&amp;frasl;4-2018&amp;frasl;3 Dept.</description>
+<<<<<<< HEAD
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Rngineering  Apr.</description>
+||||||| parent of 4ab2a52 (rebuilding site 2020年 11月 18日 水曜日 05:39:20 JST)
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering  Apr.</description>
+=======
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+>>>>>>> 4ab2a52 (rebuilding site 2020年 11月 18日 水曜日 05:39:20 JST)
     </item>
     
     <item>
       <title>自己紹介</title>
       <link>https://scepter914.github.io/aboutmeja/</link>
-      <pubDate>Tue, 01 Jan 2019 23:59:59 +0900</pubDate>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M1 石川妹尾研究室 研究分野/興味  高速画像処理と高速ロボットを用いたダイナミックなロボットのシステム設計 塑性変形制御 深層強化学習を用いたロボットマニピュレーション   Biography Academic background  2014&amp;frasl;4-2018&amp;frasl;3 東京大学  理科1類 工学部精密工学科  神保小谷研究室   2018&amp;frasl;4- 東京大学大学院  情報理工学研究科 創造情報学専攻  石川妹尾研究室    Internship  2017&amp;frasl;08-2018&amp;frasl;03 日立製作所 研究補助員(2017&amp;frasl;08-2018&amp;frasl;03) 2018&amp;frasl;4-Now Preferred Networks アルバイト  研究  田中 敬，妹尾 拓，石川 正俊： 高速アクティブビジョンを用いたマルチカメラトラッキングシステム，第19回計測自動制御学会システムインテグレーション部門講演会（SI2018），（大阪，2018.12.15），講演論文集，pp. 3002&amp;ndash; 3005(2018). 田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018． 小林 由弥, 庭野 恭彰, 田中 敬, 赤尾 旭彦, 小谷 潔, 神保 泰彦: 定量的な光刺激による一次視覚野のα波の応答評価 電気学会論文誌Ｃ（電子・情報・システム部門誌），2018．  Other avtivity ロボコン (2014-2017)  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械屋としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞 他ロボコン活動について  CAD用マウス(2017&amp;frasl;04-)  https://cadingmouse.</description>
+      <description>Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background 2018&amp;frasl;04-2020&amp;frasl;03 東京大学大</description>
+    </item>
+    
+    <item>
+      <title>Publication</title>
+      <link>https://scepter914.github.io/project/research/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research/</guid>
+      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Keisuke Koyama, Taku Senoo, and Masatoshi Ishikawa: Adaptive Visual Shock Absorber with Visual-based Maxwell Model Using Magnetic Gear, The 2020 International Conference on Robotics and Automation (ICRA2020) (Paris, 2020.</description>
+    </item>
+    
+    <item>
+      <title>研究成果</title>
+      <link>https://scepter914.github.io/project/research_ja/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research_ja/</guid>
+      <description>研究分野 人間より器用かつ速くタスクを達成する，物理世界とインタラクションする自動ロボットシステムの構築 ロボット工学, コンピュータビジョン 10</description>
+    </item>
+    
+    <item>
+||||||| parent of 115dda4 (rebuilding site 2020年 11月 18日 水曜日 05:40:02 JST)
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/</guid>
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutmeja/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutmeja/</guid>
+      <description>English version Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Contacts: Twitter Github Hobby Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background</description>
+    </item>
+    
+    <item>
+=======
+>>>>>>> 115dda4 (rebuilding site 2020年 11月 18日 水曜日 05:40:02 JST)
+||||||| parent of 9d5994c (rebuilding site 2020年 11月 18日 水曜日 05:42:24 JST)
+=======
+      <title>About me</title>
+||||||| parent of 7d21ccb (rebuilding site 2020年 12月 14日 月曜日 01:22:54 JST)
+      <title>About me</title>
+=======
+      <title></title>
+>>>>>>> 7d21ccb (rebuilding site 2020年 12月 14日 月曜日 01:22:54 JST)
+||||||| parent of d25e200 (rebuilding site 2020年 12月 16日 水曜日 23:22:40 JST)
+      <title></title>
+=======
+      <title>About me</title>
+>>>>>>> d25e200 (rebuilding site 2020年 12月 16日 水曜日 23:22:40 JST)
+      <link>https://scepter914.github.io/aboutme/</link>
+||||||| parent of 24fefce (rebuilding site 2021年  8月  4日 水曜日 06:17:46 JST)
+      <link>https://scepter914.github.io/aboutme/</link>
+=======
+      <link>https://scepter914.github.io/aboutme/aboutme/</link>
+>>>>>>> 24fefce (rebuilding site 2021年  8月  4日 水曜日 06:17:46 JST)
+      <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
+      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Perception Algorithms Engineer    Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
+>>>>>>> 9d5994c (rebuilding site 2020年 11月 18日 水曜日 05:42:24 JST)
+||||||| parent of 3633bea (rebuilding site 2020年 11月 18日 水曜日 05:42:46 JST)
+=======
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutme/aboutmeja/</link>
+      <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
+      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Perception Algorithms Engineer Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic</description>
+    </item>
+    
+    <item>
+>>>>>>> 3633bea (rebuilding site 2020年 11月 18日 水曜日 05:42:46 JST)
+      <title>Interest</title>
+      <link>https://scepter914.github.io/project/hobby/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/hobby/</guid>
+      <description>Soccer I have played soccer for over 15 years. I play as attacker, mainly Second Top and Side Midfielder. History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代). As a person, I like Du Yu(杜預)</description>
+    </item>
+    
+    <item>
+      <title>趣味</title>
+      <link>https://scepter914.github.io/project/hobbyja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/hobbyja/</guid>
+      <description>サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</description>
     </item>
     
   </channel>

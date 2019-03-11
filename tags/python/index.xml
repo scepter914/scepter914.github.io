@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/python/</link>
+    <description>Recent content in python on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2024 21:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる</title>
+      <link>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
+      <description>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる 概要 Rust製可視化ツールのrerunを使って、mmd</description>
+    </item>
+    
+  </channel>
+</rss>

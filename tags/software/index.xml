@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/software/</link>
+    <description>Recent content in software on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Nov 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>デフォルトパラメータとどう付き合うか</title>
+      <link>https://scepter914.github.io/blog/2024/20241104_parameter_override/</link>
+      <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241104_parameter_override/</guid>
+      <description>デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）</description>
+    </item>
+    
+    <item>
+      <title>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題</title>
+      <link>https://scepter914.github.io/blog/2024/20240921_monitor_error/</link>
+      <pubDate>Sat, 21 Sep 2024 20:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240921_monitor_error/</guid>
+      <description>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題 概要 モニターにunknown monit</description>
+    </item>
+    
+    <item>
+      <title>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる</title>
+      <link>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
+      <description>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる 概要 Rust製可視化ツールのrerunを使って、mmd</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wiki on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/wiki/</link>
+    <description>Recent content in wiki on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>個人的なwiki運用の一案</title>
+      <link>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</guid>
+      <description>概要 最近良く「markdownで色々情報を残すのが便利なのはわかったんだけど、Toolを何使うと便利なの？」と聞かれるので、blogにしてお</description>
+    </item>
+    
+    <item>
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
+    </item>
+    
+    <item>
+      <title>作業日誌の書く手順</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
+    </item>
+    
+    <item>
+      <title>なぜ作業日誌を書くのか</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
+      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
+    </item>
+    
+    <item>
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
+    
+    <item>
+      <title>Page layout collapse in gollum ver5</title>
+      <link>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</link>
+      <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
+      <description>Error  For user of custom css  gollum &amp;ndash;css   When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.    How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes    </description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
+      <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
+      <description>概要 ！注意！ gollum ver5.0になり大きな変更がされました 2020/07/12追記 version5.0 対応 あくまで参考程度に使用してください 自分の使っている個人用</description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum)を使った研究survey</title>
+      <link>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</link>
+      <pubDate>Mon, 11 Mar 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</guid>
+      <description>概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究s</description>
+    </item>
+    
+    <item>
+      <title>なぜ個人wikiを使うのか</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_whywiki/</link>
+      <pubDate>Wed, 21 Nov 2018 00:02:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_whywiki/</guid>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 更新 2018/02/10 ver1 2018/11/22 ver2 色々と聞かれることが多かったので追記</description>
+    </item>
+    
+    <item>
+      <title>利きwiki 〜Wiki survey〜</title>
+      <link>https://scepter914.github.io/blog/2018/20180819_wikiengine/</link>
+      <pubDate>Sun, 19 Aug 2018 17:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180819_wikiengine/</guid>
+      <description>概要 情報管理についてsurveyした記事 個人wiki用に色々調べたり使ってみたことのまとめ 表が見づらいのはHugoの仕様っぽいのでお許しを&amp;</description>
+    </item>
+    
+    <item>
+      <title>gollum on docker</title>
+      <link>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
+      <description>前置き 追記: 内容更新 gollum version5対応 mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollum</description>
+    </item>
+    
+    <item>
+      <title>gollum &#43; reveal.js &#43; pandocによるスライド作成システム</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</link>
+      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</guid>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開</description>
+    </item>
+    
+    <item>
+      <title>gollumの運用Tipsと拡張</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</link>
+      <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 追記: 内容更新 gollum version5対応 pdf化 ma</description>
+    </item>
+    
+    <item>
+      <title>gollumのインストール</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum_install/</link>
+      <pubDate>Sat, 10 Feb 2018 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_install/</guid>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目 個人用wiki 個人用wikiとして 色々探した結果</description>
+    </item>
+    
+  </channel>
+</rss>

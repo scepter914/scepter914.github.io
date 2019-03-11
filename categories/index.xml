@@ -1,42 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Scepter914 Website</title>
     <link>https://scepter914.github.io/categories/</link>
     <description>Recent content in Categories on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jan 2019 13:59:56 +0900</lastBuildDate>
-    
-	<atom:link href="https://scepter914.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Aboutme</title>
-      <link>https://scepter914.github.io/categories/aboutme/</link>
-      <pubDate>Tue, 08 Jan 2019 13:59:56 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/aboutme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Works</title>
-      <link>https://scepter914.github.io/categories/works/</link>
-      <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/works/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>個人wiki</title>
-      <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
-      <pubDate>Mon, 11 Mar 2019 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://scepter914.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

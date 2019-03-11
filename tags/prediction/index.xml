@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prediction on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/prediction/</link>
+    <description>Recent content in prediction on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2025 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/prediction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FutureMotion (2024/05 github)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/001095_future_motion/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/001095_future_motion/</guid>
+      <description>FutureMotion (2024/05 github) Summary https://github.com/kit-mrt/future-motion かなりちゃんと書かれている predictionのlibrary Method forward 見ると大体分かる inputがかなり抽象化されている class Wayformer(nn.Module): def forward( self, target_valid: Tensor,</description>
+    </item>
+    
+    <item>
+      <title>Real-Time Motion Prediction via Heterogeneous Polyline Transformer with Relative Pose Encoding (NeurIPS 2023)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/001096_hptr/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/001096_hptr/</guid>
+      <description>Real-Time Motion Prediction via Heterogeneous Polyline Transformer with Relative Pose Encoding (NeurIPS 2023) Summary [[001095_future_motion]] の元になった論文 scene-centricで計算効率をよく、agent-centricで性能よく、を合体させた</description>
+    </item>
+    
+    <item>
+      <title>SIMPL: A Simple and Efficient Multi-agent Motion Prediction Baseline for Autonomous Driving (arxiv2024/02, RA-L 2024)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000835_simpl/</link>
+      <pubDate>Sun, 04 Aug 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000835_simpl/</guid>
+      <description>SIMPL: A Simple and Efficient Multi-agent Motion Prediction Baseline for Autonomous Driving (arxiv2024/02, RA-L 2024) Summary https://www.youtube.com/watch?v=_8-6ccopZMM https://github.com/HKUST-Aerial-Robotics/SIMPL?tab=readme-ov-file Transformer base prediction Method Experiment 3060Ti 250Actorでも20ms程度はめっちゃ使い勝手は良さそう 可視化の動画めっちゃ良さげに見え</description>
+    </item>
+    
+    <item>
+      <title>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000560_mtp/</link>
+      <pubDate>Thu, 15 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000560_mtp/</guid>
+      <description>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022) Summary from Carnegie mellon and nvidia https://www.youtube.com/watch?v=ydQ9IPbX_-A multi-hypothesis tracking and prediction framework の提案 tracking results を複数持つことでpredictionの性能を上げる tracking errors が prediction performance に与える影響の解析も行って</description>
+    </item>
+    
+    <item>
+      <title>Multimodal Trajectory Predictions for Autonomous Driving using Deep Convolutional Networks (ICRA2019)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000361_uber_prediction_mtp/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000361_uber_prediction_mtp/</guid>
+      <description>Summary Raster mapを用いた1 agent multi-modal prediction https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/prediction/models/mtp.py github code 確率とともに複数経路(= multi-modal) を出力できるように拡張 single modalだと行きもしないところのpathが出てくる Method i: a</description>
+    </item>
+    
+    <item>
+      <title>Multiple Trajectory Prediction with Deep Temporal and Spatial Convolutional Neural Networks (IROS2020)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000448_tcn_prediction/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000448_tcn_prediction/</guid>
+      <description>summary temporal convolutional networks (TCNs) を用いたPredictionの提案 Method 軽くて良さげな全体framework mobilenetなのがrealtimeを考慮していて良い</description>
+    </item>
+    
+    <item>
+      <title>The Importance of Prior Knowledge in Precise Multimodal Prediction (IROS2020)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000444_uber_reinforce/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000444_uber_reinforce/</guid>
+      <description>summary UberによるPrediction framework REINFORCE の提案 Mapや交通ルールから好ましい予測のoutputを出したいが、基本的に微分不可能 REINFORCE gradient estim</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty-aware Short-term Motion Prediction of Traffic Actors for Autonomous Driving (arxiv2018, WACV2020)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000360_uber_prediction/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000360_uber_prediction/</guid>
+      <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
+    </item>
+    
+  </channel>
+</rss>

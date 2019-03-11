@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rust on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/rust/</link>
+    <description>Recent content in rust on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2024 21:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる</title>
+      <link>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
+      <description>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる 概要 Rust製可視化ツールのrerunを使って、mmd</description>
+    </item>
+    
+    <item>
+      <title>RustでRosbag2から画像を抽出するcrate</title>
+      <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
+      <description>RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち</description>
+    </item>
+    
+    <item>
+      <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
+      <link>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
+    </item>
+    
+    <item>
+      <title>Rustでの画像保存の高速化</title>
+      <link>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</link>
+      <pubDate>Sun, 22 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
+      <description>Rustでの画像保存の高速化 概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまち</description>
+    </item>
+    
+    <item>
+      <title>Rustでカメラから取得した画像に対して画像処理をする</title>
+      <link>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</link>
+      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
+      <description>Rustでカメラから取得した画像に対して画像処理をする 概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ない</description>
+    </item>
+    
+  </channel>
+</rss>

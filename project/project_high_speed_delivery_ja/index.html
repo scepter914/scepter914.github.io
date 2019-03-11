@@ -1,0 +1,197 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発 - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発" />
+<meta property="og:description" content="Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/project/project_high_speed_delivery_ja/" /><meta property="article:section" content="project" />
+<meta property="article:published_time" content="2020-05-20T20:59:59+09:00" />
+<meta property="article:modified_time" content="2020-05-20T20:59:59+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発"/>
+<meta name="twitter:description" content="Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#reference">Reference</a></li>
+    <li><a href="#media">Media</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <img src=https://scepter914.github.io/pic/itsc2019.png width="700px">
+<h2 id="summary">Summary</h2>
+<ul>
+<li><a href="http://ishikawa-vision.org/fusion/UAVdelivery/index-j.html">http://ishikawa-vision.org/fusion/UAVdelivery/index-j.html</a>における成果</li>
+</ul>
+<p>無人航空機を用いた物流の自動化の研究は近年盛んに行われているが，無人航空機に配達する荷物を積載するタスクの自動化については未だ十分に行われていない．</p>
+<p>本研究では無人航空機による自動荷物配達システムとして物流の高速化を目指し， 飛行中の無人航空機に荷物を載せるコンセプトを提案し，荷物の供給基地の開発を行った．
+荷物の受け渡しタスクを成功させるために，フレームレートの異なるカメラを用いて遠距離からトラッキング可能な高速アクティブビジョンシステムを構築し，遠方から近づいてくる無人航空機に対して位置追従することを想定して，トラッキング対象物に対して2軸アクチュエータで高速に位置合わせを行うシステムを構築した．
+自動の無人航空機への荷物受け渡しタスクの実験を行い，1m/sで飛行中の無人航空機に荷物を受け渡すことに成功した．</p>
+<ul>
+<li>Concept of non-stop handover of a parcel to an airborne UAV</li>
+</ul>
+<img src=https://scepter914.github.io/pic/concept_uav.png width="400px">
+<img src=https://scepter914.github.io/pic/tracking.png width="700px">
+<ul>
+<li>Experiment</li>
+</ul>
+<br>
+<center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/PkdJe8vHevk" frameborder="0" allowfullscreen></iframe>
+</center>
+<br>
+<img src=https://scepter914.github.io/pic/handover_continous.png width="350px">
+<img src=https://scepter914.github.io/pic/handover_continous_close.png width="350px">
+<h2 id="reference">Reference</h2>
+<ul>
+<li>Satoshi Tanaka, Taku Senoo, and Masatoshi Ishikawa: Non-Stop Handover of Parcel to Airborne UAV Based on High-Speed Visual Object Tracking, 2019 19th International Conference on Advanced Robotics (ICAR) (Belo Horizonte, 2019.12.03), Proceedings, pp. 414-419.</li>
+<li>Satoshi Tanaka, Taku Senoo, and Masatoshi Ishikawa: High-speed UAV Delivery System with Non-Stop Parcel Handover Using High-speed Visual Control, 2019 IEEE Intelligent Transportation Systems Conference (ITSC19) (Auckland, 2019.10.30), Proceedings, pp. 4449-4455.</li>
+<li>田中 敬，妹尾 拓，石川 正俊： 高速ビジョンシステムを用いたUAVヘの荷物受け渡しシステムの開発，ロボティクス・メカトロニクス講演会2019（ROBOMECH2019），講演論文集，2P2-I06，2019．</li>
+<li>田中 敬，妹尾 拓，石川 正俊： 高速アクティブビジョンを用いたマルチカメラトラッキングシステム，第19回計測自動制御学会システムインテグレーション部門講演会（SI2018）講演論文集，pp. 3002 - 3005 ，2018.</li>
+</ul>
+<h2 id="media">Media</h2>
+<ul>
+<li><a href="https://spectrum.ieee.org/automaton/robotics/drones/high-speed-robot-arm-hands-off-package?fbclid=IwAR0bDj2WrymtIcHoL_nWsCiGqF_84MAbfZFdq4Kr5OES_C25QL5U6iVIQRg">IEEE Spectrum &ldquo;High-Speed Robot Arm Hands Off Package to Delivery Drone&rdquo;</a></li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

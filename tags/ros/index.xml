@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ros on Scepter914 Website</title>
+    <title>ros on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/ros/</link>
-    <description>Recent content in Ros on Scepter914 Website</description>
+    <description>Recent content in ros on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Jan 2019 10:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://scepter914.github.io/tags/ros/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/ros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rosbagのtopicを大量にremapするshell script</title>
+      <link>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</link>
+      <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</guid>
+      <description>rosbagのtopicを大量にremapするshell script 概要 rosbagのtopicを大量にremapするshell scriptを作った 脳</description>
+    </item>
     
     <item>
       <title>Setting Velocity on Joints and Links for Gazebo ver9.6</title>
@@ -17,10 +22,7 @@
       <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</guid>
-      <description> 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．
-Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．
-余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．
-Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   </description>
+      <description>概要 Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強が</description>
     </item>
     
   </channel>

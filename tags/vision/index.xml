@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vision on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/vision/</link>
+    <description>Recent content in vision on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Dec 2024 23:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey for real-time 3D detection in autonomous driving</title>
+      <link>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</link>
+      <pubDate>Mon, 23 Dec 2024 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</guid>
+      <description>Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
+Based on the performance comparison, following models of the multi-camera 3D detection stand out:
+ StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
+    </item>
+    
+    <item>
+      <title>Far3D: Expanding the Horizon for Surround-View 3D Object Detection (AAAI2024)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000852_far3d/</link>
+      <pubDate>Sun, 22 Dec 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000852_far3d/</guid>
+      <description>Far3D: Expanding the Horizon for Surround-View 3D Object Detection (AAAI2024) Summary https://github.com/megvii-research/Far3D multi-camera 3D detection for far detection Method 遠距離はCamera onlyの方が精度良い frustumにfeatureを散布する 全体アーキテクチャ Experiment</description>
+    </item>
+    
+    <item>
+      <title>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000992_catsam/</link>
+      <pubDate>Fri, 01 Nov 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000992_catsam/</guid>
+      <description>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024) Summary https://xiaoaoran.github.io/projects/CAT-SAM https://github.com/weihao1115/cat-sam &amp;ldquo;a ConditionAl Tuning network&amp;rdquo; for SAM SAMに additional pipelineを追加して、元のSAMはfrozenしてadaptationする研究 Method architecture a</description>
+    </item>
+    
+    <item>
+      <title>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</guid>
+      <description>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01) Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model + Unsupervisedな学習の手法を取り入</description>
+    </item>
+    
+    <item>
+      <title>Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000959_stream_petr/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000959_stream_petr/</guid>
+      <description>Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023) Summary Multi-Camera 3D detection 実行速度も早く、multi-Camera 3D detection の中だと今一番強いまである https://github.com/exiawsh/StreamPETR/ https://github.com/NVIDIA/DL4AGX/tree/master/AV-Solutions/streampetr-trt TensorRT実装もある Method Experiment RTX3090 で動</description>
+    </item>
+    
+    <item>
+      <title>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</guid>
+      <description>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01) Summary https://www.youtube.com/watch?v=QNub6PYMp1k Method 非常にイケているUI 所謂 pseudo label の 分布の表現も必要っぽい Experiment Discussion</description>
+    </item>
+    
+    <item>
+      <title>SAM 2: Segment Anything in Images and Videos (arxiv 2024/07)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000907_sam_v2/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000907_sam_v2/</guid>
+      <description>SAM 2: Segment Anything in Images and Videos (arxiv 2024/07) Summary https://github.com/facebookresearch/segment-anything-2 参考 https://speakerdeck.com/tenten0727/segment-anything-model-2?slide=5 Method dataset Experiment 高速化 FPSが結構出てるのすごい Model Size (M) Speed (FPS) SA-V test (J&amp;amp;F) MOSE val (J&amp;amp;F) LVOS v2 (J&amp;amp;F) sam2_hiera_tiny 38.9 47.2 75.0 70.9 75.3 sam2_hiera_small 46 43.3 (53.0 compiled*) 74.9 71.5 76.4 sam2_hiera_base_plus 80.8 34.8 (43.8 compiled*) 74.7 72.8 75.8</description>
+    </item>
+    
+    <item>
+      <title>DepthAnythingのROS2 packageを作った</title>
+      <link>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</link>
+      <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</guid>
+      <description>DepthAnythingのROS2 packageを作った 概要 DepthAnything のROS2 packageを作った それに対する感想や周辺Toolを作った話をつ</description>
+    </item>
+    
+    <item>
+      <title>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</link>
+      <pubDate>Tue, 20 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</guid>
+      <description>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) Summary https://github.com/Megvii-BaseDetection/BEVDepth BEVDepthの後継、軽量version 軽量なBEV-base Camera 3d detection CPUでも動作するレベルで軽量 CPUでも数10</description>
+    </item>
+    
+    <item>
+      <title>BEVerse: Unified Perception and Prediction in Birds-Eye-View for Vision-Centric Autonomous Driving (arxiv2022/05)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000707_beverse/</link>
+      <pubDate>Sun, 11 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000707_beverse/</guid>
+      <description>Summary https://arxiv.org/pdf/2205.09743.pdf https://github.com/zhangyp15/BEVerse Multi-Camera BEV perception 3d detection, motion prediction, semantic map のmulti-task learning semantic map は mapのみでobjectは含まない motion prediction はsegmentationの表現で行われている Multi-frame,</description>
+    </item>
+    
+    <item>
+      <title>BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000692_bev_former/</link>
+      <pubDate>Sun, 11 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000692_bev_former/</guid>
+      <description>BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022) Summary https://github.com/fundamentalvision/BEVFormer Attention base でのMulti-cameraからBird&amp;rsquo;s-Eye-View Representation を得る</description>
+    </item>
+    
+    <item>
+      <title>RustでRosbag2から画像を抽出するcrate</title>
+      <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
+      <description>RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち</description>
+    </item>
+    
+    <item>
+      <title>Let’s Get Dirty: GAN Based Data Augmentation for Camera Lens Soiling Detection in Autonomous Driving (WACV2021)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</guid>
+      <description>Summary https://openaccess.thecvf.com/content/WACV2021/papers/Uricar_Lets_Get_Dirty_GAN_Based_Data_Augmentation_for_Camera_Lens_WACV_2021_paper.pdf レンズの汚れをマスクしたデータセットを公開する予定 https://github.com/uricamic/soiling 2021/02/06地点で未公開 魚眼レンズの汚れたデータ・セット あるデータ・セットに</description>
+    </item>
+    
+    <item>
+      <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
+      <link>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
+    </item>
+    
+    <item>
+      <title>Rustでの画像保存の高速化</title>
+      <link>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</link>
+      <pubDate>Sun, 22 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
+      <description>Rustでの画像保存の高速化 概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまち</description>
+    </item>
+    
+    <item>
+      <title>Rustでカメラから取得した画像に対して画像処理をする</title>
+      <link>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</link>
+      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
+      <description>Rustでカメラから取得した画像に対して画像処理をする 概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ない</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,268 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>なぜ作業日誌を書くのか - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="なぜ作業日誌を書くのか" />
+<meta property="og:description" content="このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2020/20200725_whydairylog/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-07-24T01:00:00+09:00" />
+<meta property="article:modified_time" content="2020-07-24T01:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="なぜ作業日誌を書くのか"/>
+<meta name="twitter:description" content="このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#このページは">このページは</a></li>
+    <li><a href="#なぜ作業日誌を書くのか">なぜ作業日誌を書くのか</a></li>
+    <li><a href="#書き残す上での前提">書き残す上での前提</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h2 id="このページは">このページは</h2>
+<ul>
+<li><a href="https://scepter914.github.io/blog/2020/20200712_experiment_report">ロボット系に参考になるかもしれない作業日誌の書き方</a>の1ページ目</li>
+<li>実験報告書、作業日誌を残す個人的な思想について</li>
+</ul>
+<h2 id="なぜ作業日誌を書くのか">なぜ作業日誌を書くのか</h2>
+<ul>
+<li>どの変更をいつ加えてどのように変わったのか、の情報を全部覚えておけないから</li>
+<li>再現率の低いバグの再現条件の洗い出しのため
+<ul>
+<li>再現しにくいバグの情報をかき集める時に「数カ月前の実験の時どうだったっけ」ってなることがある</li>
+<li>ロボコンで重要なのは言わずもがな</li>
+</ul>
+</li>
+<li>バグを実際に見た時に、思ったことを後から振り返るときに必要だから
+<ul>
+<li>
+<ol>
+<li>動かしてうまくいかない -&gt; 考察する -&gt; 変更する -&gt; 動かしてみる を繰り返す</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>動かしてうまくいかない -&gt; とりあえず変更する -&gt; 動かしてみるを繰り返して、まとめて一日の終わりに考察する</li>
+</ol>
+</li>
+<li>ロボットの場合、2の方が効率良いと思っている
+<ul>
+<li>特に実験場所の都合でロボットを動かせる時間が決まっている場合はなおさらだと思っている</li>
+</ul>
+</li>
+<li>2においてまとめて考察するときに細かい情報が必要</li>
+</ul>
+</li>
+<li>後（時には半年後レベルで）から変更したときの挙動の変わり方を参照したいから
+<ul>
+<li>研究では論文書く時に結構見直した記憶がある</li>
+</ul>
+</li>
+<li>git使っていればそれが作業日誌にならない？
+<ul>
+<li>ならないと思ってる</li>
+<li>変更に対してどう結果が変わったかを書く必要がある</li>
+<li>gitのコミットで結果は書かない気がする</li>
+</ul>
+</li>
+</ul>
+<h2 id="書き残す上での前提">書き残す上での前提</h2>
+<ul>
+<li>どこに書き残しているの？
+<ul>
+<li>僕は <a href="https://scepter914.github.io/blog/2018/20180210_gollum/">個人のwiki</a>に書いている</li>
+<li>別になんでもいいと思うけど、何かしらで検索機能を有しているアプリ等を想定している</li>
+</ul>
+</li>
+<li>この手の作業日誌で意識していること
+<ul>
+<li>とにかく箇条書きで書きなぐる</li>
+<li>綺麗に書こうと思わない、コマンドをコピペする、変更したパラメータをコピペする</li>
+</ul>
+</li>
+<li>実験の作業日誌において表は使わない方がいいと思っている
+<ul>
+<li>これが綺麗にまとめようという意識が働いて書きなぐる精神が消える</li>
+<li>あとスライド形式で作業日誌書くのとかは違うやろって個人的に思っている</li>
+<li>以下みたいな表はそれっぽく見えるのは分かるけど、書きなぐって後から検索すれば良くない？って個人的には思っている
+<ul>
+<li>まとめながら作業日誌書くのが辛いと思っているけど、スーパー要領がいい人ならできる気もする</li>
+<li>少なくとも僕はできない</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>時間</th>
+<th>内容</th>
+<th>作業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14:00</td>
+<td>タスクA</td>
+<td>パラメータを変えた</td>
+</tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>(余談)
+<ul>
+<li>なんで表形式が多いのかなぁと思ってふと「作業日誌　書き方」でggってみたら表形式しか出てこなくて地獄を感じた</li>
+<li>日報というものが世の中ではWordとExcelに支配されているらしいと学んだ</li>
+<li>単純作業の繰り返しの報告書なら表形式でいいも思うけど、バグが次から次へ湧いてくるロボット開発には向いてないと僕は思うのです</li>
+</ul>
+</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

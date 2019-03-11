@@ -1,0 +1,354 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022)" />
+<meta property="og:description" content="MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) Summary from Intel &#43; Mobileye RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2022-06-21T13:00:00+09:00" />
+<meta property="article:modified_time" content="2022-06-21T13:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022)"/>
+<meta name="twitter:description" content="MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) Summary from Intel &#43; Mobileye RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#method">Method</a>
+      <ul>
+        <li><a href="#safety-relevant-and-severe-perception-errors">Safety Relevant and Severe Perception Errors</a></li>
+        <li><a href="#potentially-dangerous-traffic-situation">Potentially Dangerous Traffic Situation</a></li>
+        <li><a href="#statistical-model">Statistical Model</a></li>
+        <li><a href="#model-input">Model Input</a></li>
+      </ul>
+    </li>
+    <li><a href="#experiment">Experiment</a>
+      <ul>
+        <li><a href="#highd-dataset">HighD dataset</a></li>
+        <li><a href="#model">model</a></li>
+        <li><a href="#extracting-perception-quality-requirements">Extracting Perception Quality Requirements</a></li>
+        <li><a href="#from-perception-errors-to-vehicle-level-failures">From Perception Errors to Vehicle-Level Failures</a></li>
+        <li><a href="#discussion">Discussion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="mtbf-model-for-avs---from-perception-errors-to-vehicle-level-failures-iv2022">MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022)</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>from Intel + Mobileye</li>
+<li>RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を紐付けた評価が必要だった</li>
+<li>Perception errorを考慮した自動運転車両の安全性のEvaluation modelとして、Mean Time Between Failure (MTBF) models の提案
+<ul>
+<li>Situation</li>
+<li>Vehicle mission profile (speed range, road characteristics, traffic density, time of day)</li>
+<li>Potentially dangerous Situation</li>
+<li>Perception Errorの種類</li>
+<li>の重み和を用いて衝突するprobabilityを計算する、というのが基本的な考え方</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_5.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_6.png" alt=""></p>
+<h2 id="background">Background</h2>
+<ul>
+<li>“Responsibility Sensitive Safety” (RSS) model
+<ul>
+<li>Planning error における safety frameworks</li>
+<li>Perception errorはしない仮定を置いていた</li>
+</ul>
+</li>
+</ul>
+<h2 id="method">Method</h2>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_7.png" alt=""></p>
+<h3 id="safety-relevant-and-severe-perception-errors">Safety Relevant and Severe Perception Errors</h3>
+<ul>
+<li>
+<p>Typeを2つに分ける</p>
+<ul>
+<li>Type.1 False Positive / Underestimate distance or speed
+<ul>
+<li>実際には車がいないのに、認識器はいると判断</li>
+<li>要らない急ブレーキかけちゃう危険性</li>
+</ul>
+</li>
+<li>Type.2 False Negative / Overestimate distance or speed.
+<ul>
+<li>実際には車がいるのに、認識器はいないと判断</li>
+<li>前方のブレーキに間に合わない</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Safety-Relevant Perception Error (KPI)</p>
+<ul>
+<li>ISO 26262 defines four classes of severity, S0 to S3</li>
+<li>Safety decision of the AV planning module (RSS) is changed</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_9.png" alt=""></p>
+<h3 id="potentially-dangerous-traffic-situation">Potentially Dangerous Traffic Situation</h3>
+<ul>
+<li>Sever Perception Error = S2 - S3 Severity</li>
+<li>Hazardous (Dangerous) Traffic Situation
+<ul>
+<li>Typeごとに危険因子を分解</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_8.png" alt=""></p>
+<h3 id="statistical-model">Statistical Model</h3>
+<ul>
+<li>Estimate Hazardous Traffic Situation Rate
+<ul>
+<li>Use naturalistic driving data (e.g. HighD, REM, etc.)</li>
+<li>Obtain information on how long/how often a vehicle performs certain actions (decelerating, accelerating, lane changes, driving with certain speed, etc.)</li>
+</ul>
+</li>
+<li>$$ MTBF ^ {-1} = \sum_{m=\text { Mission }} p_{m} \sum_{i=\text { SpeedRange }} p_{i, m}\left[\sum_{t=\text { ErrorType }} \lambda_{p_{t, m, i}} \times p_{S_{t, m, i}}\right] $$
+<ul>
+<li>$ p_{m} $: the occurrence probability of mission profile $m$</li>
+<li>$ p_{i, m} $:  the occurrence probability of the speed range $ i $ (e.g. the range from 100 km/h to 130 km/h) for mission profile $ m $</li>
+<li>$ \lambda_{p_{t, m, i}} $: perception error rate
+<ul>
+<li>hardwareそのものの故障とsoftwareの能力不足両方含んでいる</li>
+</ul>
+</li>
+<li>$ p_{S_{t, m, i}} $: the probability of being within a relevant traffic situation</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_1.png" alt=""></p>
+<ul>
+<li>今回はi: speed range としたが、自由に設定できる
+<ul>
+<li>危険なsituationも自由に設定可能</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_2.png" alt=""></p>
+<h3 id="model-input">Model Input</h3>
+<ul>
+<li>perception error rates を得るために解析を行う
+<ul>
+<li>$ d _ {per} &gt; d _ {RSS} &gt; d _ {real} $ -&gt; Type 2 Error</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_3.png" alt=""></p>
+<h2 id="experiment">Experiment</h2>
+<h3 id="highd-dataset">HighD dataset</h3>
+<ul>
+<li><a href="https://www.highd-dataset.com/">https://www.highd-dataset.com/</a></li>
+<li>Type II perception errorsのみの解析</li>
+<li>データセット（における視野角）的に1sec以上程度しか車が存在しないため、Type I errorは解析しても微妙なため</li>
+<li>lostの方が影響が大きいため、velocity and distance errors も無視</li>
+</ul>
+<h3 id="model">model</h3>
+<ul>
+<li>$ p_{S_{i}} $ のmodelを以下の通りにする（situationごとに定義できる）
+<ul>
+<li>$$ p _ {S _ {i}}=p _ {d _ {i}}+p _ {a _ {i}} \times p _ {a _ {T T C, i}}+\left(1-p _ {a _ {i}}-p _ {d _ {i}}\right) \times p _ {c _ {T T C, i}} $$</li>
+<li>We define “close” to the lead vehicle, as a TTC5 (time-to-collision) of less than 5 seconds.</li>
+<li>1項
+<ul>
+<li>$ p _ {d _ {i}} $: the probability of a lead car decelerating in speed range i</li>
+</ul>
+</li>
+<li>2項
+<ul>
+<li>$ p _ {a _ {i}} $: the probability that the lead car is sufficiently close</li>
+<li>$ p _ {a _ {T T C, i}} $: the probability that the lead car accelerates</li>
+</ul>
+</li>
+<li>3項
+<ul>
+<li>$ p _ {c _ {T T C, i}} $: the probability that the lead car is sufficiently close</li>
+<li>$ p _ {c _ {i}} = 1-p _ {a _ {i}}-p _ {d _ {i}} $: the probability that the lead car drives with constant speed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>解析
+<ul>
+<li>80-100 km/h, 100-130 km/h and 130- 180 km/h の区分で分けることに</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_11.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_10.png" alt=""></p>
+<h3 id="extracting-perception-quality-requirements">Extracting Perception Quality Requirements</h3>
+<ul>
+<li>$$ \lambda=\sum_{i} \lambda_{i} \times p_{i} \times p_{S_{i}}=\hat{\lambda} \times \sum_{i} p_{i} \times p_{S_{i}}=: \hat{\lambda} \times \kappa $$
+<ul>
+<li>$ \hat{\lambda} $: the perception error rate</li>
+</ul>
+</li>
+<li>最終的なmodel</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtbf_4.png" alt=""></p>
+<h3 id="from-perception-errors-to-vehicle-level-failures">From Perception Errors to Vehicle-Level Failures</h3>
+<ul>
+<li>Lyft dataset で LiDAR detectionのみで perception errorを算出</li>
+<li>the severe perception miss rate (frames with misses per second) is 17/5040 s = 12.1 errors/second
+<ul>
+<li>速度は考慮無し</li>
+</ul>
+</li>
+<li>the overall vehicle-level MTBF is 1523 second (0.4 hours) で目標にまだ届いていない</li>
+</ul>
+<h3 id="discussion">Discussion</h3>
+<ul>
+<li>Datasetに評価するべきscenarioが包括されているか</li>
+<li>評価にData augmentation を適応する時は、biasが入りやすいので慎重に</li>
+<li>error duration の解釈
+<ul>
+<li>1 miss * 500 frameと100miss * 5 frameでは解釈が異なるはず</li>
+</ul>
+</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

@@ -1,15 +1,840 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scepter914 Website</title>
+    <title>About me on Scepter914 Website</title>
     <link>https://scepter914.github.io/</link>
-    <description>Recent content on Scepter914 Website</description>
+    <description>Recent content in About me on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DRIVE VLM: The Convergence of Autonomous Driving and Large Vision-Language Models (arxiv2024/02, CoRL2024)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</guid>
+      <description>DRIVE VLM: The Convergence of Autonomous Driving and Large Vision-Language Models (arxiv2024/02, CoRL2024) Summary https://github.com/Tsinghua-MARS-Lab/DriveVLM 2024/10/17現在未公開 https://tsinghua-mars-lab.github.io/DriveVLM/ Method DriveVLM-Dual architecture Output Meta-action Decision Waypoints Traditional pipeline = E2E model のこと Integrating 3D Perception. 2Dに投影して、critical objec</description>
+    </item>
     
-	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FutureMotion (2024/05 github)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/001095_future_motion/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/001095_future_motion/</guid>
+      <description>FutureMotion (2024/05 github) Summary https://github.com/kit-mrt/future-motion かなりちゃんと書かれている predictionのlibrary Method forward 見ると大体分かる inputがかなり抽象化されている class Wayformer(nn.Module): def forward( self, target_valid: Tensor,</description>
+    </item>
     
+    <item>
+      <title>Real-Time Motion Prediction via Heterogeneous Polyline Transformer with Relative Pose Encoding (NeurIPS 2023)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/001096_hptr/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/001096_hptr/</guid>
+      <description>Real-Time Motion Prediction via Heterogeneous Polyline Transformer with Relative Pose Encoding (NeurIPS 2023) Summary [[001095_future_motion]] の元になった論文 scene-centricで計算効率をよく、agent-centricで性能よく、を合体させた</description>
+    </item>
+    
+    <item>
+      <title>Senna: Bridging Large Vision-Language Models and End-to-End Autonomous Driving (arxiv 2024/10)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/001034_senna/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/001034_senna/</guid>
+      <description>Senna: Bridging Large Vision-Language Models and End-to-End Autonomous Driving (arxiv 2024/10) Summary VLMとE2E modelを繋ぐフレームワーク Senna を用いた自動運転 DriveVLMの後継 Method Experiment DriveVLM とはそんなに変わらないかな</description>
+    </item>
+    
+    <item>
+      <title>Survey for real-time 3D detection in autonomous driving</title>
+      <link>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</link>
+      <pubDate>Mon, 23 Dec 2024 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</guid>
+      <description>Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
+Based on the performance comparison, following models of the multi-camera 3D detection stand out:
+ StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
+    </item>
+    
+    <item>
+      <title>Far3D: Expanding the Horizon for Surround-View 3D Object Detection (AAAI2024)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000852_far3d/</link>
+      <pubDate>Sun, 22 Dec 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000852_far3d/</guid>
+      <description>Far3D: Expanding the Horizon for Surround-View 3D Object Detection (AAAI2024) Summary https://github.com/megvii-research/Far3D multi-camera 3D detection for far detection Method 遠距離はCamera onlyの方が精度良い frustumにfeatureを散布する 全体アーキテクチャ Experiment</description>
+    </item>
+    
+    <item>
+      <title>RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/001008_regtta3d/</link>
+      <pubDate>Thu, 14 Nov 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/001008_regtta3d/</guid>
+      <description>RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024) Summary Test-time adaptationを用いた3D detection Domain adaptation Regressionを中心に少ないparameterでtuningできる Method Domain</description>
+    </item>
+    
+    <item>
+      <title>デフォルトパラメータとどう付き合うか</title>
+      <link>https://scepter914.github.io/blog/2024/20241104_parameter_override/</link>
+      <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241104_parameter_override/</guid>
+      <description>デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）</description>
+    </item>
+    
+    <item>
+      <title>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000992_catsam/</link>
+      <pubDate>Fri, 01 Nov 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000992_catsam/</guid>
+      <description>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024) Summary https://xiaoaoran.github.io/projects/CAT-SAM https://github.com/weihao1115/cat-sam &amp;ldquo;a ConditionAl Tuning network&amp;rdquo; for SAM SAMに additional pipelineを追加して、元のSAMはfrozenしてadaptationする研究 Method architecture a</description>
+    </item>
+    
+    <item>
+      <title>Detecting As Labeling: Rethinking LiDAR-camera Fusion in 3D Object Detection (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000972_detecting_as_labeling/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000972_detecting_as_labeling/</guid>
+      <description>Detecting As Labeling: Rethinking LiDAR-camera Fusion in 3D Object Detection (ECCV2024) Summary from Phigent Robotics CTOが Baidu -&amp;gt; Horizon Robotics の経歴 https://github.com/HuangJunJie2017/BEVDet Camera LiDAR 3D detection において、Camera pipelineはlabel推定にしか使わないようにした</description>
+    </item>
+    
+    <item>
+      <title>On-the-fly Category Discovery for LiDAR Semantic Segmentation (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/001003_ocdss/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/001003_ocdss/</guid>
+      <description>On-the-fly Category Discovery for LiDAR Semantic Segmentation (ECCV2024) Summary Unknown objectのための LiDAR Semantic Segmentationに必要なカテゴライズの導入 Method Baseは &amp;ldquo;On-the-fly Category Discovery (CVPR 2023)&amp;rdquo; https://github.com/PRIS-CV/On-the-fly-Category-Discovery 解きたいタスクの違い (a)</description>
+    </item>
+    
+    <item>
+      <title>Towards Stable 3D Object Detection (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000969_towards_stable/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000969_towards_stable/</guid>
+      <description>Towards Stable 3D Object Detection (ECCV2024) Summary https://github.com/jbwang1997/StabilityIndex from Nankai University + KargoBot Inc. （自動運転企業） 3D detectionにおける時系列の安定性を考慮したMetrics、Stability Index (SI) の提案</description>
+    </item>
+    
+    <item>
+      <title>UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000993_unitraj/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000993_unitraj/</guid>
+      <description>UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction (ECCV2024) Summary https://vita-epfl.github.io/UniTraj/ https://github.com/vita-epfl/UniTraj prediction taskを統一的に扱えるフレームワークの提案 巨大なデータでpredictionを学習したら、結局データの大きさが</description>
+    </item>
+    
+    <item>
+      <title>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題</title>
+      <link>https://scepter914.github.io/blog/2024/20240921_monitor_error/</link>
+      <pubDate>Sat, 21 Sep 2024 20:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240921_monitor_error/</guid>
+      <description>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題 概要 モニターにunknown monit</description>
+    </item>
+    
+    <item>
+      <title>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる</title>
+      <link>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
+      <description>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる 概要 Rust製可視化ツールのrerunを使って、mmd</description>
+    </item>
+    
+    <item>
+      <title>mmcarrot</title>
+      <link>https://scepter914.github.io/project/project_mmcarrot/</link>
+      <pubDate>Sat, 17 Aug 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_mmcarrot/</guid>
+      <description>Summary  Repository: https://github.com/scepter914/mmcarrot Made useful tools for MMlab libraries  Made 3D visualization of mmdetection3d with rerun.io    3D visualization  Made 3D visualization of mmdetection3d with rerun.io   </description>
+    </item>
+    
+    <item>
+      <title>3D Small Object Detection with Dynamic Spatial Pruning (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</guid>
+      <description>3D Small Object Detection with Dynamic Spatial Pruning (ECCV2024) Summary https://xuxw98.github.io/DSPDet3D/ PruningしながらFPNする機構を備えたsmall object 3D detection real-time object detectionも考慮 https://github.com/xuxw98/DSPDet3D mmdet base https://www.youtube.com/watch?v=Wq-cIRnKhw0 Method Pruning 全体 Experiment Discussion</description>
+    </item>
+    
+    <item>
+      <title>Find n’ Propagate: Open-Vocabulary 3D Object Detection in Urban Environments (arxiv 2024/03, ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</guid>
+      <description>Find n’ Propagate: Open-Vocabulary 3D Object Detection in Urban Environments (arxiv 2024/03, ECCV2024) Summary Open-Vocabulary 3D Object Detection https://github.com/djamahl99/findnpropagate contribute 2D VLM を用いたfrustum base手法 Greedy Box Seeker frustumからsegmentしてspaceをsea</description>
+    </item>
+    
+    <item>
+      <title>Injecting Planning-Awareness into Prediction and Detection Evaluation (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000558_pi_metrics/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000558_pi_metrics/</guid>
+      <description>Injecting Planning-Awareness into Prediction and Detection Evaluation (IV2022) Summary https://github.com/BorisIvanovic/PlanningAwareEvaluation Detectionとforecastingに使えるPI-metricsの提案 Method 他の手法 task-aware evaluation metrics be: Able to capture asymmetries in downstream tasks. Method-agnostic. Computationally feasible to compute. Interpretable</description>
+    </item>
+    
+    <item>
+      <title>Soft Robotics Commercialization: Jamming Grippers from Research to Product (Soft robotics 2016)</title>
+      <link>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</guid>
+      <description>Summary ドラえもんハンドのproduct化で大変だったことまとめ集 ソフトロボティクスを事業化しようとするなら必読 動画 https://www.youtube.com/watch?v=GdJyICIp4t4 https://www.youtube.com/watch?v=KZ0Y2fDZ8Uw https://www.youtube.com/watch?v=zgHSAUEzjn4 Background これまでの世界にimp</description>
+    </item>
+    
+    <item>
+      <title>Weakly Supervised 3D Object Detection via Multi-Level Visual Guidance (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</guid>
+      <description>Weakly Supervised 3D Object Detection via Multi-Level Visual Guidance (ECCV2024) Summary from google 2D labelだけで3D detectionをするframeworkの提案 画像の特徴量を3D側に伝える工夫 https://github.com/kuanchihhuang/VG-W3D Method Background 3D Object Detection</description>
+    </item>
+    
+    <item>
+      <title>What data do we need for training an AV motion planner? (ICRA2021)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</guid>
+      <description>What data do we need for training an AV motion planner? (ICRA2021) Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine</description>
+    </item>
+    
+    <item>
+      <title>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</guid>
+      <description>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01) Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model + Unsupervisedな学習の手法を取り入</description>
+    </item>
+    
+    <item>
+      <title>Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000959_stream_petr/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000959_stream_petr/</guid>
+      <description>Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023) Summary Multi-Camera 3D detection 実行速度も早く、multi-Camera 3D detection の中だと今一番強いまである https://github.com/exiawsh/StreamPETR/ https://github.com/NVIDIA/DL4AGX/tree/master/AV-Solutions/streampetr-trt TensorRT実装もある Method Experiment RTX3090 で動</description>
+    </item>
+    
+    <item>
+      <title>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</guid>
+      <description>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024) Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label による</description>
+    </item>
+    
+    <item>
+      <title>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</guid>
+      <description>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01) Summary https://www.youtube.com/watch?v=QNub6PYMp1k Method 非常にイケているUI 所謂 pseudo label の 分布の表現も必要っぽい Experiment Discussion</description>
+    </item>
+    
+    <item>
+      <title>SAM 2: Segment Anything in Images and Videos (arxiv 2024/07)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000907_sam_v2/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000907_sam_v2/</guid>
+      <description>SAM 2: Segment Anything in Images and Videos (arxiv 2024/07) Summary https://github.com/facebookresearch/segment-anything-2 参考 https://speakerdeck.com/tenten0727/segment-anything-model-2?slide=5 Method dataset Experiment 高速化 FPSが結構出てるのすごい Model Size (M) Speed (FPS) SA-V test (J&amp;amp;F) MOSE val (J&amp;amp;F) LVOS v2 (J&amp;amp;F) sam2_hiera_tiny 38.9 47.2 75.0 70.9 75.3 sam2_hiera_small 46 43.3 (53.0 compiled*) 74.9 71.5 76.4 sam2_hiera_base_plus 80.8 34.8 (43.8 compiled*) 74.7 72.8 75.8</description>
+    </item>
+    
+    <item>
+      <title>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</link>
+      <pubDate>Sat, 10 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</guid>
+      <description>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12) Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手く</description>
+    </item>
+    
+    <item>
+      <title>SIMPL: A Simple and Efficient Multi-agent Motion Prediction Baseline for Autonomous Driving (arxiv2024/02, RA-L 2024)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000835_simpl/</link>
+      <pubDate>Sun, 04 Aug 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000835_simpl/</guid>
+      <description>SIMPL: A Simple and Efficient Multi-agent Motion Prediction Baseline for Autonomous Driving (arxiv2024/02, RA-L 2024) Summary https://www.youtube.com/watch?v=_8-6ccopZMM https://github.com/HKUST-Aerial-Robotics/SIMPL?tab=readme-ov-file Transformer base prediction Method Experiment 3060Ti 250Actorでも20ms程度はめっちゃ使い勝手は良さそう 可視化の動画めっちゃ良さげに見え</description>
+    </item>
+    
+    <item>
+      <title>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</link>
+      <pubDate>Fri, 02 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</guid>
+      <description>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01) Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかり</description>
+    </item>
+    
+    <item>
+      <title>About me (Japanese)</title>
+      <link>https://scepter914.github.io/project/aboutmeja/</link>
+      <pubDate>Mon, 06 May 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
+      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; Twitter: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background 2018/04-2020/03 東京大学大学院 修士課</description>
+    </item>
+    
+    <item>
+      <title>DepthAnything-ROS</title>
+      <link>https://scepter914.github.io/project/project_depth_anything_ros/</link>
+      <pubDate>Mon, 06 May 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_depth_anything_ros/</guid>
+      <description>Summary   Developed by hobby coding.
+  Repository: https://github.com/scepter914/DepthAnything-ROS
+  Made prototype ROS2 package of DepthAnything with TensorRT C++.
+ DepthAnything is one of the high performance monocular depth estimation.    This work is covered by official github repository and its gallary.
+  Performance results
+     Model Params RTX2070 TensorRT     Depth-Anything-Small 24.8M 27 ms, VRAM 300MB   Depth-Anything-Base 97.</description>
+    </item>
+    
+    <item>
+      <title>DepthAnythingのROS2 packageを作った</title>
+      <link>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</link>
+      <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</guid>
+      <description>DepthAnythingのROS2 packageを作った 概要 DepthAnything のROS2 packageを作った それに対する感想や周辺Toolを作った話をつ</description>
+    </item>
+    
+    <item>
+      <title>VSCode Vim で日本語の変換が変になる問題への対処</title>
+      <link>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
+      <description>VSCode Vim で日本語の変換が変になる問題への対処 概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態</description>
+    </item>
+    
+    <item>
+      <title>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</link>
+      <pubDate>Tue, 20 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</guid>
+      <description>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) Summary https://github.com/Megvii-BaseDetection/BEVDepth BEVDepthの後継、軽量version 軽量なBEV-base Camera 3d detection CPUでも動作するレベルで軽量 CPUでも数10</description>
+    </item>
+    
+    <item>
+      <title>DeepFusion: A Robust and Modular 3D Object Detector for Lidars, Cameras and Radars (IROS2022)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000709_deepfusion_bosch/</link>
+      <pubDate>Mon, 19 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000709_deepfusion_bosch/</guid>
+      <description>DeepFusion: A Robust and Modular 3D Object Detector for Lidars, Cameras and Radars (IROS2022) Summary moduleのように扱える BEV baseのCamera-LiDAR-Radar fusion 3d detection 定性評価で細かく解析 LiDAR only だと縦</description>
+    </item>
+    
+    <item>
+      <title>aiMotive Dataset: A Multimodal Dataset for Robust Autonomous Driving with Long-Range Perception (arxiv 2022/11)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000689_aimotive_dataset/</link>
+      <pubDate>Fri, 16 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000689_aimotive_dataset/</guid>
+      <description>aiMotive Dataset: A Multimodal Dataset for Robust Autonomous Driving with Long-Range Perception (arxiv 2022/11) Summary https://arxiv.org/pdf/2211.09445.pdf https://github.com/aimotive/aimotive_dataset/tree/f71828446692587318ebccbd3cdad5b4335eb9f3 datasetに関して https://github.com/aimotive/aimotive-dataset-loader api https://github.com/aimotive/mm_training Camera-LiDAR-Radar dataset の提案 200mまでannotationされているので遠距離detectio</description>
+    </item>
+    
+    <item>
+      <title>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000560_mtp/</link>
+      <pubDate>Thu, 15 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000560_mtp/</guid>
+      <description>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022) Summary from Carnegie mellon and nvidia https://www.youtube.com/watch?v=ydQ9IPbX_-A multi-hypothesis tracking and prediction framework の提案 tracking results を複数持つことでpredictionの性能を上げる tracking errors が prediction performance に与える影響の解析も行って</description>
+    </item>
+    
+    <item>
+      <title>Simple-BEV: What Really Matters for Multi-Sensor BEV Perception? (arxiv 2022/09)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000683_simple_bev/</link>
+      <pubDate>Tue, 13 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000683_simple_bev/</guid>
+      <description>Simple-BEV: What Really Matters for Multi-Sensor BEV Perception? (arxiv 2022/09) Summary https://simple-bev.github.io/ https://github.com/aharley/simple_bev NuScenes, Lyft でtrain code NuScenesはpretrain modelあり Camera-Radar fusion の BEV detection 検出 input: Camera * 6 (360度) + radar pointcloud Depth-based, Homography-based では</description>
+    </item>
+    
+    <item>
+      <title>BEVerse: Unified Perception and Prediction in Birds-Eye-View for Vision-Centric Autonomous Driving (arxiv2022/05)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000707_beverse/</link>
+      <pubDate>Sun, 11 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000707_beverse/</guid>
+      <description>Summary https://arxiv.org/pdf/2205.09743.pdf https://github.com/zhangyp15/BEVerse Multi-Camera BEV perception 3d detection, motion prediction, semantic map のmulti-task learning semantic map は mapのみでobjectは含まない motion prediction はsegmentationの表現で行われている Multi-frame,</description>
+    </item>
+    
+    <item>
+      <title>BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000692_bev_former/</link>
+      <pubDate>Sun, 11 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000692_bev_former/</guid>
+      <description>BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022) Summary https://github.com/fundamentalvision/BEVFormer Attention base でのMulti-cameraからBird&amp;rsquo;s-Eye-View Representation を得る</description>
+    </item>
+    
+    <item>
+      <title>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</link>
+      <pubDate>Sat, 10 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</guid>
+      <description>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05) Summary https://bevfusion.mit.edu/ 公式 https://github.com/mit-han-lab/bevfusion mmdet base、waymo, nuscenes で評価 pretrained modelがある https://www.youtube.com/watch?v=uCAka90si9E BEV特徴量空間でfusionするCam</description>
+    </item>
+    
+    <item>
+      <title>Blog の update</title>
+      <link>https://scepter914.github.io/blog/2022/20220901_blog_update/</link>
+      <pubDate>Thu, 01 Sep 2022 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220901_blog_update/</guid>
+      <description>Blog の update Blogの見た目を再び変えました なんかgithub-styleがしっくり着てなかったので変更 要件としては ダークモードがある ごちゃごちゃ</description>
+    </item>
+    
+    <item>
+      <title>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</link>
+      <pubDate>Tue, 21 Jun 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</guid>
+      <description>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) Summary from Intel + Mobileye RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を</description>
+    </item>
+    
+    <item>
+      <title>LaneFusion: 3D detection with HD map</title>
+      <link>https://scepter914.github.io/project/project_lanefusion/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_lanefusion/</guid>
+      <description>Summary concept  Researched at TIER IV, Inc.  In this study, LaneFusion, a 3D object detection framework employing LiDAR and HD map fusion using a vector map, are developed to overcome the problem that existing detection model often infer objects heading in opposite.
+Method Through a offline rasterization and a online rasterization, LaneFusion overcomes the problem that the vector map format is difficult to input into current mainstream convolutional neural networks (CNNs).</description>
+    </item>
+    
+    <item>
+      <title>LaneFusion: 地図を用いた3d detection</title>
+      <link>https://scepter914.github.io/project/project_lanefusion_ja/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_lanefusion_ja/</guid>
+      <description>Summary concept Researched at TIER IV, Inc. concept 本研究では、Objectの反対方向への推測を抑えることを目的とした、LiDARとベクターマップを使用した3D detectio</description>
+    </item>
+    
+    <item>
+      <title>VSCodeのterminal tabの設定をする</title>
+      <link>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</link>
+      <pubDate>Sun, 20 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
+      <description>VSCodeのterminal tabの設定をする 概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直し</description>
+    </item>
+    
+    <item>
+      <title>RustでRosbag2から画像を抽出するcrate</title>
+      <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
+      <description>RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち</description>
+    </item>
+    
+    <item>
+      <title>Blogのupdate</title>
+      <link>https://scepter914.github.io/blog/2021/20211011_blog_update/</link>
+      <pubDate>Mon, 11 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20211011_blog_update/</guid>
+      <description>Blogのupdate Blogの見た目を変えました HugoのthemeをBegからgithub-styleに変更しました 理由としては Begが</description>
+    </item>
+    
+    <item>
+      <title>Center-based 3D Object Detection and Tracking (araxiv 2020/06, CVPR2021)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000411_centerpoint/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000411_centerpoint/</guid>
+      <description>summary LiDAR-based 3d object detection + tracking Anchor-free 2020年あたりからのデファクトスタンダード https://github.com/tianweiy/CenterPoint github Centerの点を考える手法 anchor-freeで考えられて、tracki</description>
+    </item>
+    
+    <item>
+      <title>EagerMOT: 3D Multi-Object Tracking via Sensor Fusion (ICRA2021)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000298_eager_mot/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000298_eager_mot/</guid>
+      <description>summary Cameraだけ/LiDARだけ/Camera-Lidarに対応している Sensor FusionのTracking フレームワーク (i) fusion of 3D and 2D evidence that merges detections</description>
+    </item>
+    
+    <item>
+      <title>Investigating the Effect of Sensor Modalities in Multi-Sensor Detection-Prediction Models (NeurIPS 2020 Workshop)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/</guid>
+      <description>summary sensor dropoutを用いて Detection + PredictionにおけるSensorのcontriobutionを解析 from Uber Model 2つの合体 RV-MultiXNet (S. Fadadu, S. Pandey, D. Hegde, Y. Shi, F.-C.</description>
+    </item>
+    
+    <item>
+      <title>Let’s Get Dirty: GAN Based Data Augmentation for Camera Lens Soiling Detection in Autonomous Driving (WACV2021)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</guid>
+      <description>Summary https://openaccess.thecvf.com/content/WACV2021/papers/Uricar_Lets_Get_Dirty_GAN_Based_Data_Augmentation_for_Camera_Lens_WACV_2021_paper.pdf レンズの汚れをマスクしたデータセットを公開する予定 https://github.com/uricamic/soiling 2021/02/06地点で未公開 魚眼レンズの汚れたデータ・セット あるデータ・セットに</description>
+    </item>
+    
+    <item>
+      <title>LU-Net: An Efficient Network for 3D LiDAR Point Cloud Semantic Segmentation Based on End-to-End-Learned 3D Features and U-Net (ICCV Workshop 2019)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000307_lunet/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000307_lunet/</guid>
+      <description>概要 https://arxiv.org/abs/1908.11656 https://github.com/pbias/lunet github Lidar 3D Semantic Segmentation 3D -&amp;gt; 2D -&amp;gt; Unet range imageにおけるSegmantationのわかりやすい概要図がある range image baseを割合細かく説明されている印象</description>
+    </item>
+    
+    <item>
+      <title>Multi-View 3D Object Detection Network for Autonomous Driving (IROS2019)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000304_rangenet_pp/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000304_rangenet_pp/</guid>
+      <description>概要 Rangenet++の提案 https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/milioto2019iros.pdf Paper https://www.youtube.com/watch?v=wuokg7MFZyU youtube http://jbehley.github.io/ 著者 https://github.com/PRBonn/lidar-bonnetal github Lidar-only semantic segmentation. Lidarのreal-time procesing, 10fps程度 projection-based methods a spherical projectionを使った2D</description>
+    </item>
+    
+    <item>
+      <title>Multimodal Trajectory Predictions for Autonomous Driving using Deep Convolutional Networks (ICRA2019)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000361_uber_prediction_mtp/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000361_uber_prediction_mtp/</guid>
+      <description>Summary Raster mapを用いた1 agent multi-modal prediction https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/prediction/models/mtp.py github code 確率とともに複数経路(= multi-modal) を出力できるように拡張 single modalだと行きもしないところのpathが出てくる Method i: a</description>
+    </item>
+    
+    <item>
+      <title>Multiple Trajectory Prediction with Deep Temporal and Spatial Convolutional Neural Networks (IROS2020)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000448_tcn_prediction/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000448_tcn_prediction/</guid>
+      <description>summary temporal convolutional networks (TCNs) を用いたPredictionの提案 Method 軽くて良さげな全体framework mobilenetなのがrealtimeを考慮していて良い</description>
+    </item>
+    
+    <item>
+      <title>MVLidarNet: Real-Time Multi-Class Scene Understanding for Autonomous Driving Using Multiple Views (IROS2020)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000295_mvlidarnet_nvidia/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000295_mvlidarnet_nvidia/</guid>
+      <description>Summary Link https://arxiv.org/abs/2006.05518 arxiv版 https://www.youtube.com/watch?v=2ck5_sToayc https://www.youtube.com/watch?v=T7w-ZCVVUgM https://blogs.nvidia.com/blog/2020/03/11/drive-labs-multi-view-lidarnet-self-driving-cars/ nvidia blog githubはない 2020/10現在 Two-stage型 Lidar 3d multi-class detection framework “multi-view” = “perspecti</description>
+    </item>
+    
+    <item>
+      <title>One Million Scenes for Autonomous Driving: ONCE Dataset (2021/06 arxiv)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000299_once_dataset/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000299_once_dataset/</guid>
+      <description>summary ONCE (One millioN sCenEs) dataset Huaweiから出たDataset baselibeについて色々結果をまとめているのでsurvey記事として価値が高い baseli</description>
+    </item>
+    
+    <item>
+      <title>Optimising the selection of samples for robust lidar camera calibration (arxiv 2021/03)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000356_camera_lidar_calib/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000356_camera_lidar_calib/</guid>
+      <description>Summary 使いやすい形になっているっぽい https://gitlab.acfr.usyd.edu.au/its/cam_lidar_calibration https://www.youtube.com/watch?v=WmzEnjmffQU 素人でもcalibrationができるようなtarget-based なLidar- Camera calibのパイプラ</description>
+    </item>
+    
+    <item>
+      <title>The Importance of Prior Knowledge in Precise Multimodal Prediction (IROS2020)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000444_uber_reinforce/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000444_uber_reinforce/</guid>
+      <description>summary UberによるPrediction framework REINFORCE の提案 Mapや交通ルールから好ましい予測のoutputを出したいが、基本的に微分不可能 REINFORCE gradient estim</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty-aware Short-term Motion Prediction of Traffic Actors for Autonomous Driving (arxiv2018, WACV2020)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000360_uber_prediction/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000360_uber_prediction/</guid>
+      <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
+    </item>
+    
+    <item>
+      <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
+      <link>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
+    </item>
+    
+    <item>
+      <title>使ってて良かった家電・ガジェット類の紹介</title>
+      <link>https://scepter914.github.io/blog/2021/20210903_gadget/</link>
+      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210903_gadget/</guid>
+      <description>使ってて良かった家電・ガジェット類の紹介 概要 使ってて良かった家電・ガジェット類の紹介 同僚に「買ってよかったランキングを聞かせてくれ」と聞かれ</description>
+    </item>
+    
+    <item>
+      <title>Rustでの画像保存の高速化</title>
+      <link>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</link>
+      <pubDate>Sun, 22 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
+      <description>Rustでの画像保存の高速化 概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまち</description>
+    </item>
+    
+    <item>
+      <title>Rustでカメラから取得した画像に対して画像処理をする</title>
+      <link>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</link>
+      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
+      <description>Rustでカメラから取得した画像に対して画像処理をする 概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ない</description>
+    </item>
+    
+    <item>
+      <title>rosbagのtopicを大量にremapするshell script</title>
+      <link>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</link>
+      <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</guid>
+      <description>rosbagのtopicを大量にremapするshell script 概要 rosbagのtopicを大量にremapするshell scriptを作った 脳</description>
+    </item>
+    
+    <item>
+      <title>個人的なwiki運用の一案</title>
+      <link>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</guid>
+      <description>概要 最近良く「markdownで色々情報を残すのが便利なのはわかったんだけど、Toolを何使うと便利なの？」と聞かれるので、blogにしてお</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車グリッパ”Magripper”による高速グラスピング</title>
+      <link>https://scepter914.github.io/project/project_magripper_ja/</link>
+      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magripper_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magripper/index-j.html における成果 concept 本研究では、バックドライバビリティが高いグリッパ&amp;quot;Magripper&amp;quot;と、リーチングからシームレスに高</description>
+    </item>
+    
+    <item>
+      <title>High-speed Hitting Grasping with Magripper</title>
+      <link>https://scepter914.github.io/project/project_magripper/</link>
+      <pubDate>Wed, 30 Sep 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magripper/</guid>
+      <description>Summary  Research at http://ishikawa-vision.org/fusion/Magripper/index-e.html concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
+ Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.</description>
+    </item>
+    
+    <item>
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
+    </item>
+    
+    <item>
+      <title>作業日誌の書く手順</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
+    </item>
+    
+    <item>
+      <title>なぜ作業日誌を書くのか</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
+      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
+    </item>
+    
+    <item>
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
+    
+    <item>
+      <title>最近あったこと</title>
+      <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200711_blog/</guid>
+      <description>概要 ブログって銘打ってるのに技術忘備録しか書いてないからたまにはね。 リモートワークに適応するのにひいこらひいこら言っていたこの3か月のできご</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/project_magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/Magslider/index-e.html concept    control strategy   In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構 &#39;&#39;Magslider&#39;&#39; による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/project_magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magslider/index-j.html における成果 concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;quot;Magslider&amp;quot;による高速衝撃吸</description>
+    </item>
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/</guid>
+<<<<<<< HEAD
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Rngineering  Apr.</description>
+||||||| parent of 4ab2a52 (rebuilding site 2020年 11月 18日 水曜日 05:39:20 JST)
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering  Apr.</description>
+=======
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+>>>>>>> 4ab2a52 (rebuilding site 2020年 11月 18日 水曜日 05:39:20 JST)
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutmeja/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutmeja/</guid>
+      <description>Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background 2018&amp;frasl;04-2020&amp;frasl;03 東京大学大</description>
+    </item>
+    
+    <item>
+||||||| parent of 115dda4 (rebuilding site 2020年 11月 18日 水曜日 05:40:02 JST)
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/</guid>
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutmeja/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutmeja/</guid>
+      <description>English version Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Contacts: Twitter Github Hobby Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background</description>
+    </item>
+    
+    <item>
+=======
+>>>>>>> 115dda4 (rebuilding site 2020年 11月 18日 水曜日 05:40:02 JST)
+      <title>Page layout collapse in gollum ver5</title>
+      <link>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</link>
+      <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
+      <description>Error  For user of custom css  gollum &amp;ndash;css   When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.    How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes    </description>
+    </item>
+    
+    <item>
+      <title>オウロ・プレットへの行き方</title>
+      <link>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</link>
+      <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</guid>
+      <description>概要 ブラジルのベロオリゾンテ(Belo Horizonte)からオウロ・プレット(Ouro Preto)への行き方でバスを使わない方法について 2</description>
+    </item>
+    
+    <item>
+      <title>Interest</title>
+      <link>https://scepter914.github.io/project/project_hobby/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_hobby/</guid>
+      <description>Soccer I have played soccer for over 15 years. I play as attacker, mainly Second Top and Side Midfielder. History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代). As a person, I like Du Yu(杜預)</description>
+    </item>
+    
+    <item>
+      <title>Robocon</title>
+      <link>https://scepter914.github.io/project/project_robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_robocon/</guid>
+      <description>RoboTech(2014-2017)  RoboTech, the team for robot contest at The University of Tokyo. Belonged to mechanic section. worked as the team leader of RoboTech in 2016  winner of National Championships(NHK Robocon), and participated in the international robot contest &amp;ldquo;ABU Robocon2016&amp;rdquo; as Representation from Japan Visit to the Prime Minister&amp;rsquo;s residence as Representation from Japan link, link At ABU Robocon2016, We were 2nd-RunnerUp and we were commened for ABU Robocon award.</description>
+    </item>
+    
+    <item>
+      <title>ロボコン</title>
+      <link>https://scepter914.github.io/project/project_roboconja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_roboconja/</guid>
+      <description>概要 ロボコンに関する活動のまとめ 2020/05/01地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
+    </item>
+    
+    <item>
+      <title>趣味</title>
+      <link>https://scepter914.github.io/project/project_hobbyja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_hobbyja/</guid>
+      <description>サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
+      <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
+      <description>概要 ！注意！ gollum ver5.0になり大きな変更がされました 2020/07/12追記 version5.0 対応 あくまで参考程度に使用してください 自分の使っている個人用</description>
+    </item>
     
     <item>
       <title>個人用wiki(gollum)を使った研究survey</title>
@@ -17,14 +842,7 @@
       <pubDate>Mon, 11 Mar 2019 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</guid>
-      <description>概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
- これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
-論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
- 検索にかかるようになるが 面倒すぎて発狂する
-Mendeleyで検索をかける  欲しい機能4へのアプローチとして
- 全文検索を使える
- ローカルのpdfを読み込ませて自動でrenameもできる
- タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった</description>
+      <description>概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究s</description>
     </item>
     
     <item>
@@ -33,19 +851,7 @@ Mendeleyで検索をかける  欲しい機能4へのアプローチとして
       <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</guid>
-      <description> 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．
-Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．
-余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．
-Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   </description>
-    </item>
-    
-    <item>
-      <title>ロボコンについて</title>
-      <link>https://scepter914.github.io/aboutrobocon/</link>
-      <pubDate>Tue, 08 Jan 2019 13:59:56 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutrobocon/</guid>
-      <description>概要  ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 作戦班副班長  RC2016,ABU2016 Chai-Yo  チームリーダー(メンバー,Ecoメカ整備担当) EcoRobot班班長  https://pages.rohm.co.jp/dp-robocon2016-kaibo.html マシンの解説記事  日本大会(NHK学生ロボコン2016)優勝 世界大会@バンコク(タイ)(ABUロボコン2016)ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017 APPARE  マシン班メカ   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  https://deviceplus.jp/events/kanto-haru-robocon-2017-interview/ 立ち上げ側のインタビュー記事   学生ロボコンOBとして  記事を書いたり，取材のお手伝い等をしています．  NHK高専ロボコン  高専ロボコン2016  デバイスプラス取材手伝い，解剖計画のコメント https://pages.rohm.co.jp/dp-kosen2016-kaibo.html  高専ロボコン2018  デバイスプラス取材手伝い   ABUロボコン  ABUロボコン2018@ニンビン，ベトナム  NHK手伝い   NHK学生ロボコン  学生ロボコン2017  デバイスプラスの解剖計画のコメント https://pages.</description>
+      <description>概要 Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強が</description>
     </item>
     
     <item>
@@ -54,11 +860,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Mon, 07 Jan 2019 01:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tellodetection/</guid>
-      <description>概要  ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくものプログラムを作った ！注意！  安全面は各自の自己責任でお願いします  周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください  (ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません コードはあくまで参考程度にし，自己責任で一行づつ実装してください そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)  2019/01/07 ver1.0  2019/01/08 ver1.1 コメント追加   まえがき 何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた． 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．
-あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば， &amp;ldquo;転がっている学習済モデルを使って&amp;rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは， 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．
-関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大． なので，もし知っている方がいたらTwitter等で教えていただけると助かります． あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．
-ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;amp;&amp;amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる．
- 参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．</description>
+      <description>概要 ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくもの</description>
     </item>
     
     <item>
@@ -67,25 +869,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
-      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Wed, 02 Jan 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M1  Research Field / Interest  System design of Dynamic manipulation using high-speed image processing and high-speed robots Deformation Control (one of the force control) Robot manipulation using deep reinforcement learning   Biography Academic background  2014&amp;frasl;4- The University of Tokyo  2016&amp;frasl;4-2018&amp;frasl;3 Dept.</description>
-    </item>
-    
-    <item>
-      <title>自己紹介</title>
-      <link>https://scepter914.github.io/aboutmeja/</link>
-      <pubDate>Tue, 01 Jan 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M1 石川妹尾研究室 研究分野/興味  高速画像処理と高速ロボットを用いたダイナミックなロボットのシステム設計 塑性変形制御 深層強化学習を用いたロボットマニピュレーション   Biography Academic background  2014&amp;frasl;4-2018&amp;frasl;3 東京大学  理科1類 工学部精密工学科  神保小谷研究室   2018&amp;frasl;4- 東京大学大学院  情報理工学研究科 創造情報学専攻  石川妹尾研究室    Internship  2017&amp;frasl;08-2018&amp;frasl;03 日立製作所 研究補助員(2017&amp;frasl;08-2018&amp;frasl;03) 2018&amp;frasl;4-Now Preferred Networks アルバイト  研究  田中 敬，妹尾 拓，石川 正俊： 高速アクティブビジョンを用いたマルチカメラトラッキングシステム，第19回計測自動制御学会システムインテグレーション部門講演会（SI2018），（大阪，2018.12.15），講演論文集，pp. 3002&amp;ndash; 3005(2018). 田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018． 小林 由弥, 庭野 恭彰, 田中 敬, 赤尾 旭彦, 小谷 潔, 神保 泰彦: 定量的な光刺激による一次視覚野のα波の応答評価 電気学会論文誌Ｃ（電子・情報・システム部門誌），2018．  Other avtivity ロボコン (2014-2017)  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械屋としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞 他ロボコン活動について  CAD用マウス(2017&amp;frasl;04-)  https://cadingmouse.</description>
+      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
     </item>
     
     <item>
@@ -94,8 +878,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Wed, 21 Nov 2018 00:02:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_whywiki/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &amp;ldquo;何処&amp;rdquo;に&amp;rdquo;何&amp;rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&amp;rdquo;いい感じ&amp;rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．
-とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18.</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 更新 2018/02/10 ver1 2018/11/22 ver2 色々と聞かれることが多かったので追記</description>
     </item>
     
     <item>
@@ -104,9 +887,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sun, 19 Aug 2018 17:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180819_wikiengine/</guid>
-      <description>概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&amp;hellip;&amp;hellip;  空白を無視するんなら線入れて欲しい&amp;hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位)
- 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位)
- 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト</description>
+      <description>概要 情報管理についてsurveyした記事 個人wiki用に色々調べたり使ってみたことのまとめ 表が見づらいのはHugoの仕様っぽいのでお許しを&amp;</description>
     </item>
     
     <item>
@@ -115,9 +896,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
-      <description>前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
- 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
- コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.</description>
+      <description>前置き 追記: 内容更新 gollum version5対応 mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollum</description>
     </item>
     
     <item>
@@ -126,14 +905,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sun, 29 Apr 2018 23:30:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180429_vim_enter/</guid>
-      <description>やりたいこと @にカーソルがあるとして，
- abcd@efghij  から
- @abcd efghij  にする．
-続けてoを打てば
- abcd @ efghij  となって便利
-解決法 .vimrcに
- nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.
-するとノーマルモードでEnter押せば，題意の通りになっているはず</description>
+      <description>やりたいこと @にカーソルがあるとして， abcd@efghij から @abcd efghij にする． 続けてoを打てば abcd @ efghij となって便利 解決法 .vimrcに nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k を書く. するとノーマルモ</description>
     </item>
     
     <item>
@@ -142,7 +914,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開</description>
     </item>
     
     <item>
@@ -151,7 +923,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 追記: 内容更新 gollum version5対応 pdf化 ma</description>
     </item>
     
     <item>
@@ -160,18 +932,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 10 Feb 2018 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum_install/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp;amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</description>
-    </item>
-    
-    <item>
-      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
-      <pubDate>Sat, 10 Feb 2018 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
-      <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
- gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
-  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 個人wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  追加ページ  個人用wiki(gollum)を使った研究survey  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目 個人用wiki 個人用wikiとして 色々探した結果</description>
     </item>
     
     <item>
@@ -180,7 +941,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Wed, 24 Jan 2018 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180124_gollum/</guid>
-      <description> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </description>
+      <description>リダイレクト 書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理</description>
     </item>
     
     <item>
@@ -189,10 +950,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
-      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</description>
+      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
     </item>
     
   </channel>

@@ -1,445 +1,487 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang='en-us'><head>
     <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
-
-
-
-<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180819_wikiengine/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>利きwiki 〜Wiki survey〜 - Scepter914 Website</title>
-    
-<meta name="description" content="概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&amp;hellip;&amp;hellip;  空白を無視するんなら線入れて欲しい&amp;hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位) 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位) 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト">
 
-<meta property="og:title" content="利きwiki 〜Wiki survey〜 - Scepter914 Website">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180819_wikiengine/">
-<meta property="og:image" content="https://scepter914.github.io/images/default.png">
-<meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&amp;hellip;&amp;hellip;  空白を無視するんなら線入れて欲しい&amp;hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位) 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位) 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180819_wikiengine/">
-<meta name="twitter:title" content="利きwiki 〜Wiki survey〜 - Scepter914 Website">
-<meta name="twitter:description" content="概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&amp;hellip;&amp;hellip;  空白を無視するんなら線入れて欲しい&amp;hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位) 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位) 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト">
-<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
-    },
-    "headline": "利きwiki 〜Wiki survey〜 - Scepter914 Website",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2018-08-19T17:00:00JST",
-    "dateModified": "2018-08-19T17:00:00JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scepter914 Website"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scepter914 Website",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&hellip;&hellip;  空白を無視するんなら線入れて欲しい&hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位)
- 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位)
- 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト"
-  }
-</script>
-
-
-    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
     
 
-  </head>
-
-  <body>
-    
-    
     
 
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
-          </div>
+    
 
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
+    
+        <meta property="og:title" content="利きwiki 〜Wiki survey〜" />
+<meta property="og:description" content="概要 情報管理についてsurveyした記事 個人wiki用に色々調べたり使ってみたことのまとめ 表が見づらいのはHugoの仕様っぽいのでお許しを&" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180819_wikiengine/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-08-19T17:00:00+09:00" />
+<meta property="article:modified_time" content="2018-08-19T17:00:00+09:00" />
 
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="利きwiki 〜Wiki survey〜"/>
+<meta name="twitter:description" content="概要 情報管理についてsurveyした記事 個人wiki用に色々調べたり使ってみたことのまとめ 表が見づらいのはHugoの仕様っぽいのでお許しを&"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
         </div>
-      </nav>
-    </header>
 
-    <main>
-      <div class="container">
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
         
-<div class="row">
-  <div class="col-md-8">
 
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
         
-        <li class="active">利きwiki 〜Wiki survey〜</li>
-      </ol>
-    </nav>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#概要">概要</a></li>
+    <li><a href="#お勧め早見表">お勧め早見表</a>
+      <ul>
+        <li><a href="#1人">1人</a></li>
+        <li><a href="#多人数">多人数</a></li>
+      </ul>
+    </li>
+    <li><a href="#以下の評価基準の話">以下の評価基準の話</a></li>
+    <li><a href="#紙">紙</a></li>
+    <li><a href="#ドキュメントクラウドサービス">ドキュメントクラウドサービス</a>
+      <ul>
+        <li><a href="#概要-1">概要</a></li>
+        <li><a href="#個人向け">個人向け</a></li>
+        <li><a href="#チーム向け">チーム向け</a></li>
+      </ul>
+    </li>
+    <li><a href="#ファイルクラウドサービス">ファイルクラウドサービス</a>
+      <ul>
+        <li><a href="#概要-2">概要</a></li>
+        <li><a href="#github">Github</a></li>
+        <li><a href="#google-document-google-drive">Google Document (Google Drive)</a></li>
+      </ul>
+    </li>
+    <li><a href="#dbバックエンドwiki">DBバックエンドwiki</a>
+      <ul>
+        <li><a href="#概要-3">概要</a></li>
+        <li><a href="#pukiwiki">pukiwiki</a></li>
+        <li><a href="#docuwiki">docuwiki</a></li>
+        <li><a href="#mediawiki">mediawiki</a></li>
+        <li><a href="#crowi-plus">Crowi(-plus)</a></li>
+        <li><a href="#matter-wiki">Matter wiki</a></li>
+      </ul>
+    </li>
+    <li><a href="#gitバックエンドwiki">Gitバックエンドwiki</a>
+      <ul>
+        <li><a href="#概要-4">概要</a></li>
+        <li><a href="#gollum">gollum</a></li>
+        <li><a href="#gitit">Gitit</a></li>
+        <li><a href="#realms">Realms</a></li>
+        <li><a href="#jingo">Jingo</a></li>
+      </ul>
+    </li>
+    <li><a href="#html型のwiki">html型のwiki</a>
+      <ul>
+        <li><a href="#概要-5">概要</a></li>
+        <li><a href="#mdwiki">MDwiki</a></li>
+      </ul>
+    </li>
+    <li><a href="#その他参考にしたサイト">その他参考にしたサイト</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
 
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-08-19T17:00:00JST">Aug 19, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
-      
-    </ul>
 
-    <h1 class="title">利きwiki 〜Wiki survey〜</h1>
-  </header>
 
-  
+    <div class="content-margin">
 
-  <div class="article-body">
-
-<h2 id="概要">概要</h2>
-
+<article class="line-numbers">
+    
+    
+    <h2 id="概要">概要</h2>
 <ul>
 <li>情報管理についてsurveyした記事
-
 <ul>
 <li>個人wiki用に色々調べたり使ってみたことのまとめ</li>
-</ul></li>
+</ul>
+</li>
 <li>表が見づらいのはHugoの仕様っぽいのでお許しを&hellip;&hellip;
-
 <ul>
 <li>空白を無視するんなら線入れて欲しい&hellip;</li>
-</ul></li>
+</ul>
+</li>
 <li>全然埋まってないけど，力尽きたので気が向いたら追記する</li>
 <li>更新
-
 <ul>
 <li>2018/08/19 ver1</li>
-</ul></li>
+<li>2020/07/12 ver2 表の見にくさを解消</li>
 </ul>
-
+</li>
+</ul>
 <h2 id="お勧め早見表">お勧め早見表</h2>
-
 <ul>
 <li>ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)</li>
 </ul>
-
 <h3 id="1人">1人</h3>
-
 <ul>
 <li>オフラインだけでいい
-
 <ul>
 <li>Gollum or Gitit</li>
-</ul></li>
+</ul>
+</li>
 <li>オフラインとオンライン両方使いたい
-
 <ul>
 <li>すぐに使いたい: Github</li>
 <li>環境構築がんばれる: Gollum or Gitit</li>
-</ul></li>
+</ul>
+</li>
 <li>オンラインだけでいい
-
 <ul>
 <li>ドキュメントクラウドサービスからお好きなのを</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="多人数">多人数</h3>
-
 <ul>
-<li><p>単発プロジェクト(数日単位)</p>
-
+<li>
+<p>単発プロジェクト(数日単位)</p>
 <ul>
 <li>例
-
 <ul>
 <li>エンジニア同士での旅行する時の旅の栞</li>
 <li>勉強会</li>
-</ul></li>
+</ul>
+</li>
 <li>基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする</li>
 <li>1ファイルで済む(旅行とかだと): HackMD
-
 <ul>
 <li>共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め</li>
-</ul></li>
+</ul>
+</li>
 <li>複数ファイルに分けたい: Github
-
 <ul>
 <li>議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする</li>
-</ul></li>
-</ul></li>
-
-<li><p>単発プロジェクト(数カ月単位)</p>
-
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>単発プロジェクト(数カ月単位)</p>
 <ul>
 <li>例
-
 <ul>
 <li>Maker Faireに単発でものを展示する</li>
-</ul></li>
+</ul>
+</li>
 <li>Github, Google Drive</li>
 <li>データ(pdfとか): google drive等のクラウド</li>
 <li>SNS: Line(もしくはMessenger)
-
 <ul>
 <li>slackはオーバーキルな気がする</li>
-</ul></li>
-</ul></li>
-
-<li><p>大きいプロジェクト</p>
-
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>大きいプロジェクト</p>
 <ul>
 <li>イメージとしては複数プロジェクトが立っているもの</li>
 <li>例
-
 <ul>
 <li>大学の文化祭でTechな出し物をする</li>
 <li>Maker Faireに毎年展示する</li>
-</ul></li>
+</ul>
+</li>
 <li>サーバー建ててメンテするコストが微妙な塩梅
-
 <ul>
 <li>人が入れ替わらないならサーバー管理者固定でいいけど，変わるならクラウドwikiの方がいい気がする</li>
 <li>サーバーを立てない低コスト管理
-
 <ul>
 <li>Github, Google Drive</li>
-</ul></li>
+</ul>
+</li>
 <li>サーバー建てる
-
 <ul>
 <li>少人数(2-5人): gitit</li>
 <li>大人数(6人より多い): crowi</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>データ(pdfとか): google drive等のクラウド</li>
 <li>SNS: slack</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="以下の評価基準の話">以下の評価基準の話</h2>
-
 <ul>
 <li>クラウド</li>
 </ul>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>インストール型</li>
 </ul>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
 
+
 <ul>
 <li>意味
-
 <ul>
 <li>Export(クラウド)
-
 <ul>
 <li>バックアップ + 運営会社が潰れたときのことを考えるとちゃんとしていて欲しい所</li>
-</ul></li>
+</ul>
+</li>
 <li>DB(インストール型)
-
 <ul>
 <li>バックエンドが何か</li>
 <li>主にデータベースを使う or 使わないにわかれる</li>
 <li>git baseのいいところは生でテキストを編集できること
-
 <ul>
 <li>お好みのエディタでローカルでゴリゴリ編集できる+いつでもどこでもネットワーク遅延無く扱える</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>規模 何人利用が向いているのか</li>
 <li>更新表示
-
 <ul>
 <li>誰が何を更新したのかがはっきり分かるので集団利用では必須だと思っている
-
 <ul>
 <li>一人ならあんまり必要無い気もする</li>
-</ul></li>
+</ul>
+</li>
 <li>A 最新の更新がTop Pageで見れる B 最新更新を表示するページがある C 最新更新はあるが分かりにくい x 無い</li>
-</ul></li>
+</ul>
+</li>
 <li>エディタUI
-
 <ul>
 <li>Markdownだとスペース4つがダルいので欲しい所</li>
 <li>A 最高 B 普通 C 有るだけ x 無い</li>
-</ul></li>
+</ul>
+</li>
 <li>軽さ
-
 <ul>
 <li>A軽い - C重い</li>
-</ul></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="紙">紙</h2>
 
-<table>
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">o</td>
-<td align="center">x</td>
-<td align="center">x</td>
-<td align="center">個人の能力に依存</td>
-<td align="center">1(ノートごと)</td>
-<td align="center">1人</td>
-<td align="center">x</td>
-<td align="center">AAA</td>
-<td align="center">重い(物理)</td>
+<td style="text-align:center">o</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">個人の能力に依存</td>
+<td style="text-align:center">1(ノートごと)</td>
+<td style="text-align:center">1人</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">AAA</td>
+<td style="text-align:center">重い(物理)</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>o 早くmemoをとれる</li>
 <li>o 図も簡単にmemoできる</li>
 <li>x 他人が読めない可能性</li>
 <li>x どこに何があるか忘れる
-
 <ul>
 <li>逆に言うと記憶力のいい人は紙ベースの方が良いんじゃないかと思っている</li>
-</ul></li>
+</ul>
+</li>
 <li>x 無くす</li>
 </ul>
-
 <h2 id="ドキュメントクラウドサービス">ドキュメントクラウドサービス</h2>
-
 <h3 id="概要-1">概要</h3>
-
 <ul>
 <li>blog系もここに入れる(違いはpublicかどうかだけなので)</li>
 <li>o スマホのユーザビリティが良い</li>
@@ -447,40 +489,42 @@
 <li>x 独自の記法のサービスがある</li>
 <li>x ベンダーロックインしてしまい，移行しずらくなる</li>
 </ul>
-
 <h3 id="個人向け">個人向け</h3>
-
 <h4 id="evernote">Evernote</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center">独自</td>
-<td align="center">html</td>
-<td align="center">x</td>
-<td align="center">x(2個まで)</td>
-<td align="center"></td>
-<td align="center">x</td>
-<td align="center">B</td>
-<td align="center">B</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">独自</td>
+<td style="text-align:center">html</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x(2個まで)</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
@@ -489,629 +533,671 @@
 <li>o 無料枠でまぁまぁ使える</li>
 <li>x 数式をLaTexで書けない</li>
 <li>x 階層構造
-
 <ul>
 <li>非常によく出来たweb上word管理というのが個人的な印象</li>
-</ul></li>
+</ul>
+</li>
 <li>x Export
-
 <ul>
 <li>mdでもないので一回Evernoteにしてしまうと，Evernote以外に移れなくなる</li>
-</ul></li>
+</ul>
+</li>
 <li>x 版管理できない(簡易なバックアップが欲しい)</li>
 </ul>
-
 <h4 id="hackmd">HackMD</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">o</td>
-<td align="center">md</td>
-<td align="center">md個別</td>
-<td align="center">A</td>
-<td align="center">x</td>
-<td align="center">任意</td>
-<td align="center">x</td>
-<td align="center">A</td>
-<td align="center">A</td>
+<td style="text-align:center">o</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">md個別</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">A</td>
 </tr>
 </tbody>
 </table>
 
+
 <ul>
 <li>2018/08現在 使用中，ユーザー経験有
-
 <ul>
 <li>他人と情報共有するときとMTG等のログ取りにはこれを使っている</li>
 <li>特に旅行関係</li>
-</ul></li>
+</ul>
+</li>
 <li>o 何人でも無料</li>
 <li>o 登録がほぼ不要で人を選ばない</li>
 <li>o 自分の鯖にも立てられる</li>
 <li>o とても軽い
-
 <ul>
 <li>o 特に共同編集している時に感じる</li>
-</ul></li>
+</ul>
+</li>
 <li>x 階層構造がないので大規模プロジェクトには不向き
-
 <ul>
 <li>逆に単発タスクには持ってこい</li>
-</ul></li>
+</ul>
+</li>
 <li>x 画像が全てPublic
-
 <ul>
 <li><a href="https://qiita.com/suecharo/items/14f4d0b5430db811254e">https://qiita.com/suecharo/items/14f4d0b5430db811254e</a> 鯖管出来る人向けだが，こういった解決法がある</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h4 id="はてなブログ">はてなブログ</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <h4 id="google-keep">Google Keep</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <h4 id="simplenote">Simplenote</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <h4 id="onenote">Onenote</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>x Windows</li>
 </ul>
-
 <h3 id="チーム向け">チーム向け</h3>
-
 <h4 id="scrapbox">Scrapbox</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <h4 id="kibera">Kibera</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">1チーム5人</td>
-<td align="center">md</td>
-<td align="center">md個別</td>
-<td align="center">B</td>
-<td align="center">x</td>
-<td align="center">&lt; 5</td>
-<td align="center">C</td>
-<td align="center">B</td>
-<td align="center">B</td>
+<td style="text-align:center">1チーム5人</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">md個別</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">&lt; 5</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
 <li>o 無料1チーム5人まで</li>
 <li>x 最新の更新表示が分かりにくい</li>
 <li>x 非常によく出来たweb上word管理
-
 <ul>
 <li>EvernoteのMarkdown版といった感じで，情報が散逸しやすい印象</li>
-</ul></li>
+</ul>
+</li>
 <li>x backup, 一括exportできない</li>
 </ul>
+<h4 id="esaio">esa.io</h4>
 
-<h4 id="esa-io">esa.io</h4>
 
-<table>
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">有料</td>
-<td align="center">md</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center">有料</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>学生なら無料 <a href="https://docs.esa.io/posts/238">https://docs.esa.io/posts/238</a></li>
 </ul>
-
 <h4 id="qitta">Qitta</h4>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">個人(ソフトウェアのみ)</td>
-<td align="center">md</td>
-<td align="center">md</td>
-<td align="center">B</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center">個人(ソフトウェアのみ)</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>x 個人利用: 無料枠がプログラミングにソフトウェアに関することのみ</li>
 <li>x 集団利用値段が高い</li>
 </ul>
-
 <h2 id="ファイルクラウドサービス">ファイルクラウドサービス</h2>
-
 <h3 id="概要-2">概要</h3>
-
 <ul>
 <li>o 拡張子の制限がドキュメントクラウドサービスに比べると緩い
-
 <ul>
 <li>mdでもtxtでいけることが多い</li>
-</ul></li>
+</ul>
+</li>
 <li>o ドキュメントクラウドサービスに比べるとオフラインでも作業できる</li>
 </ul>
-
 <h3 id="github">Github</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Publicのみ</td>
-<td align="center">md</td>
-<td align="center">テキストファイル依存</td>
-<td align="center">A</td>
-<td align="center">A</td>
-<td align="center">任意</td>
-<td align="center">B</td>
-<td align="center">C</td>
-<td align="center">A</td>
+<td style="text-align:center">Publicのみ</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">テキストファイル依存</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">A</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
 <li>o プログラマーにとっては慣れたツール</li>
 <li>o Gitでの管理</li>
 <li>x 1リポジトリ1GBくらいまで
-
 <ul>
 <li>pngとかjpegとかがあんまり貼れない</li>
 <li>リポジトリを沢山建てるのもなんかスマートじゃない
-
 <ul>
 <li>おそらくrootリポジトリと各リポジトリへのリンクが貼られる感じになるけど，なんか微妙&hellip;</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Github wikiよりはGithubでmarkdownファイルを管理する方が移行しやすい気がする</li>
 <li>x Private wikiにするためには課金が必要</li>
 </ul>
-
 <h3 id="google-document-google-drive">Google Document (Google Drive)</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">無料枠</th>
-<th align="center">文法</th>
-<th align="center">Export</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">無料枠</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">Export</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">o</td>
-<td align="center">なんでも</td>
-<td align="center">md個別</td>
-<td align="center">C</td>
-<td align="center">A</td>
-<td align="center">&gt;10</td>
-<td align="center">x</td>
-<td align="center">C</td>
-<td align="center">C</td>
+<td style="text-align:center">o</td>
+<td style="text-align:center">なんでも</td>
+<td style="text-align:center">md個別</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">&gt;10</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">C</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
 <li>o テキストデータをGoogle Driveと同じ所に突っ込むことができるのでスマートに管理できる
-
 <ul>
 <li>階層構造は非常にわかりやすい</li>
-</ul></li>
+</ul>
+</li>
 <li>o ローカルで編集できる
-
 <ul>
 <li>自動でファイルを同期してくれる</li>
-</ul></li>
+</ul>
+</li>
 <li>x 重い(特に編集)</li>
 <li>x 更新表示がないのでwikiとしては微妙</li>
 <li>x どちらかというとWordユーザーに合わせてあるのでテキストをレンダリングするツールとしては微妙</li>
 </ul>
-
 <h2 id="dbバックエンドwiki">DBバックエンドwiki</h2>
-
 <h3 id="概要-3">概要</h3>
-
 <ul>
 <li>o 高機能</li>
 <li>x サーバーにwiki建てるコストが高い
-
 <ul>
 <li>サーバーのセットアップ，SSL化，等</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pukiwiki">pukiwiki</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center">pukiwiki独自</td>
-<td align="center"></td>
-<td align="center">x</td>
-<td align="center">A</td>
-<td align="center">&gt;10</td>
-<td align="center">A</td>
-<td align="center">x</td>
-<td align="center">C</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pukiwiki独自</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">&gt;10</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">C</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
 <li>古くからwiki運用しているところはこれな印象</li>
 <li>x 文法がよく分からん</li>
 </ul>
-
 <h3 id="docuwiki">docuwiki</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center">docuwiki独自</td>
-<td align="center"></td>
-<td align="center">x</td>
-<td align="center">A</td>
-<td align="center">&gt;10</td>
-<td align="center">B</td>
-<td align="center">x</td>
-<td align="center">C</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">docuwiki独自</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">&gt;10</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">C</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
 <li>x 文法がよく分からない</li>
 </ul>
-
 <h3 id="mediawiki">mediawiki</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center">mediawiki独自</td>
-<td align="center">MySQL</td>
-<td align="center">B</td>
-<td align="center">A</td>
-<td align="center">&gt;50</td>
-<td align="center">A</td>
-<td align="center">x</td>
-<td align="center">C</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">mediawiki独自</td>
+<td style="text-align:center">MySQL</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">&gt;50</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">C</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 ユーザー経験有</li>
 <li>拡張のプラグインが充実している印象を受ける</li>
 <li>x 文法がよく分からないが，pukiwikiとdokuwikiよりはメジャー&hellip;？</li>
 </ul>
-
 <h3 id="crowi-plus">Crowi(-plus)</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Node.js</td>
-<td align="center">md</td>
-<td align="center">MongoDB</td>
-<td align="center">A</td>
-<td align="center">A</td>
-<td align="center">&gt;30</td>
-<td align="center">A</td>
-<td align="center">A</td>
-<td align="center">B</td>
+<td style="text-align:center">Node.js</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">MongoDB</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">&gt;30</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">B</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 管理者経験有</li>
@@ -1120,419 +1206,313 @@
 <li>o 日本語情報多めな印象</li>
 <li>o Markdown</li>
 </ul>
-
 <h3 id="matter-wiki">Matter wiki</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center">md</td>
-<td align="center">MySQL</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">MySQL</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
 
+
 <h2 id="gitバックエンドwiki">Gitバックエンドwiki</h2>
-
 <h3 id="概要-4">概要</h3>
-
 <ul>
 <li>o ゴリゴリ書くときに，localの自分の好きなエディタで書ける
-
 <ul>
 <li>自分はVimmerなんで超Happy</li>
-</ul></li>
+</ul>
+</li>
 <li>o 生のファイルを扱っているため，扱いやすい
-
 <ul>
 <li>Gitのリポジトリを移す or 同期させればwikiのデータが移したり同期ができる</li>
 <li>= 移行もしやすい</li>
-</ul></li>
+</ul>
+</li>
 <li>o 大量のデータを保管するのには向いてない
-
 <ul>
 <li>大量にコミットすると重くなる</li>
 <li>あくまで1人 or 少人数用途</li>
-</ul></li>
+</ul>
+</li>
 <li>x DBベースよりも低機能(良く言えばシンプル)
-
 <ul>
 <li>拡張する前提でwikiを選ぶ方がいい(開発言語を見たほうがいい)気がする</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="gollum">gollum</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Rails</td>
-<td align="center">md</td>
-<td align="center">Git</td>
-<td align="center">B</td>
-<td align="center">A</td>
-<td align="center">1</td>
-<td align="center">C</td>
-<td align="center">B</td>
-<td align="center">A</td>
+<td style="text-align:center">Rails</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">Git</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">A</td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>2018/08現在 使用中, 管理者経験有</li>
 <li>o プラグインでmediawiki文法等色々な文法が可能
-
 <ul>
 <li>(一番てっとり早く可視化できる)色付きの表が使えるので重宝している</li>
-</ul></li>
+</ul>
+</li>
 <li>o 拡張子 = 文法を表す</li>
 <li>o livepreview機能あり</li>
 </ul>
-
 <h3 id="gitit">Gitit</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Haskell</td>
-<td align="center">Pandoc対応</td>
-<td align="center">Git</td>
-<td align="center">A</td>
-<td align="center">B</td>
-<td align="center">&lt; 5</td>
-<td align="center">A</td>
-<td align="center">x</td>
-<td align="center">A</td>
+<td style="text-align:center">Haskell</td>
+<td style="text-align:center">Pandoc対応</td>
+<td style="text-align:center">Git</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">&lt; 5</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">A</td>
 </tr>
 </tbody>
 </table>
-
 <ul>
 <li>2018/08現在 管理者経験有</li>
 <li>o 最新の更新が非常にわかりやすい</li>
 <li>o pandocを噛ませているので，色々なフォーマットでかける
-
 <ul>
 <li>o latex</li>
-</ul></li>
+</ul>
+</li>
 <li>x 拡張子はひとつがデフォルトで複数にするためにはmeta dataを書く必要がある</li>
 <li>x livepreviewがない</li>
 <li>x Haskellなので拡張するのに一苦労</li>
 </ul>
 
+
 <h3 id="realms">Realms</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Python</td>
-<td align="center">md</td>
-<td align="center">Git</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center">Python</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">Git</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>gollum派生</li>
 <li>o コラボレーション機能</li>
 <li>o チャット機能</li>
 </ul>
-
 <h3 id="jingo">Jingo</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Node.js</td>
-<td align="center">md</td>
-<td align="center">Git</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center">Node.js</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">Git</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
+
 
 <ul>
 <li>gollum派生</li>
 <li>o 多言語対応</li>
 <li>x 調べてもあんまり情報がない</li>
 </ul>
-
 <h2 id="html型のwiki">html型のwiki</h2>
-
 <h3 id="概要-5">概要</h3>
-
 <ul>
 <li>データベース, Gitではない類のもの</li>
 <li>x 履歴は見られない</li>
 </ul>
-
 <h3 id="mdwiki">MDwiki</h3>
 
-<table>
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th align="center">言語</th>
-<th align="center">文法</th>
-<th align="center">DB</th>
-<th align="center">見た目</th>
-<th align="center">階層</th>
-<th align="center">規模</th>
-<th align="center">更新表示</th>
-<th align="center">エディタUI</th>
-<th align="center">軽さ</th>
+<th style="text-align:center">言語</th>
+<th style="text-align:center">文法</th>
+<th style="text-align:center">DB</th>
+<th style="text-align:center">見た目</th>
+<th style="text-align:center">階層</th>
+<th style="text-align:center">規模</th>
+<th style="text-align:center">更新表示</th>
+<th style="text-align:center">エディタUI</th>
+<th style="text-align:center">軽さ</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">Js</td>
-<td align="center">md</td>
-<td align="center">x</td>
-<td align="center">B</td>
-<td align="center">B</td>
-<td align="center">1</td>
-<td align="center">x</td>
-<td align="center">x</td>
-<td align="center"></td>
+<td style="text-align:center">Js</td>
+<td style="text-align:center">md</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
 
+
 <ul>
 <li>参考
-
 <ul>
 <li><a href="https://www.catch.jp/wiki3/tools/mdwiki">https://www.catch.jp/wiki3/tools/mdwiki</a></li>
 <li><a href="http://testsite.ewigleere.net/#!index.md">http://testsite.ewigleere.net/#!index.md</a></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="その他参考にしたサイト">その他参考にしたサイト</h2>
-
 <ul>
 <li><a href="https://dokuwiki.oreda.net/comparing.html">https://dokuwiki.oreda.net/comparing.html</a></li>
 <li><a href="https://qiita.com/japboy/items/427f49ca12148227481d">https://qiita.com/japboy/items/427f49ca12148227481d</a></li>
 <li><a href="https://stock-media.info/?p=569#Scrapbox">https://stock-media.info/?p=569#Scrapbox</a></li>
 </ul>
-</div>
-
-  <footer class="article-footer">
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">CATEGORIES</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
 
 </article>
-
-
-    
-  </div>
-
-  <div class="col-md-4">
-    <aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
-      
-      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
-      
-      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
-      
-      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
-      
-      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
-      
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
-      
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
-      
-      <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
-      
-      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
-      
-      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
-      
-      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']]
-  }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  </div>
 </div>
 
-      </div>
-    </main>
 
-    <footer class="l-footer">
-      <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
 
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+</main>
+    </body>
 </html>
-

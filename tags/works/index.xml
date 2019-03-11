@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>works on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/works/</link>
+    <description>Recent content in works on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Feb 2024 21:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DepthAnythingのROS2 packageを作った</title>
+      <link>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</link>
+      <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</guid>
+      <description>DepthAnythingのROS2 packageを作った 概要 DepthAnything のROS2 packageを作った それに対する感想や周辺Toolを作った話をつ</description>
+    </item>
+    
+    <item>
+      <title>RustでRosbag2から画像を抽出するcrate</title>
+      <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
+      <description>RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち</description>
+    </item>
+    
+    <item>
+      <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
+      <link>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
+    </item>
+    
+    <item>
+      <title>Setting Velocity on Joints and Links for Gazebo ver9.6</title>
+      <link>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</link>
+      <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</guid>
+      <description>概要 Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強が</description>
+    </item>
+    
+    <item>
+      <title>TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション</title>
+      <link>https://scepter914.github.io/blog/2019/20190107_tellodetection/</link>
+      <pubDate>Mon, 07 Jan 2019 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190107_tellodetection/</guid>
+      <description>概要 ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくもの</description>
+    </item>
+    
+    <item>
+      <title>Tensegrity Simulation</title>
+      <link>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
+      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
+    </item>
+    
+  </channel>
+</rss>

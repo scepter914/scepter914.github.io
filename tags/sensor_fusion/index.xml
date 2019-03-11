@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sensor_fusion on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/sensor_fusion/</link>
+    <description>Recent content in sensor_fusion on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Oct 2021 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/sensor_fusion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Investigating the Effect of Sensor Modalities in Multi-Sensor Detection-Prediction Models (NeurIPS 2020 Workshop)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/</guid>
+      <description>summary sensor dropoutを用いて Detection + PredictionにおけるSensorのcontriobutionを解析 from Uber Model 2つの合体 RV-MultiXNet (S. Fadadu, S. Pandey, D. Hegde, Y. Shi, F.-C.</description>
+    </item>
+    
+  </channel>
+</rss>

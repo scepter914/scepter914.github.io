@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Scepter914 Website</title>
+    <link>https://scepter914.github.io/project/</link>
+    <description>Recent content in Projects on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mmcarrot</title>
+      <link>https://scepter914.github.io/project/project_mmcarrot/</link>
+      <pubDate>Sat, 17 Aug 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_mmcarrot/</guid>
+      <description>Summary  Repository: https://github.com/scepter914/mmcarrot Made useful tools for MMlab libraries  Made 3D visualization of mmdetection3d with rerun.io    3D visualization  Made 3D visualization of mmdetection3d with rerun.io   </description>
+    </item>
+    
+    <item>
+      <title>About me (Japanese)</title>
+      <link>https://scepter914.github.io/project/aboutmeja/</link>
+      <pubDate>Mon, 06 May 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
+      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; Twitter: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background 2018/04-2020/03 東京大学大学院 修士課</description>
+    </item>
+    
+    <item>
+      <title>DepthAnything-ROS</title>
+      <link>https://scepter914.github.io/project/project_depth_anything_ros/</link>
+      <pubDate>Mon, 06 May 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_depth_anything_ros/</guid>
+      <description>Summary   Developed by hobby coding.
+  Repository: https://github.com/scepter914/DepthAnything-ROS
+  Made prototype ROS2 package of DepthAnything with TensorRT C++.
+ DepthAnything is one of the high performance monocular depth estimation.    This work is covered by official github repository and its gallary.
+  Performance results
+     Model Params RTX2070 TensorRT     Depth-Anything-Small 24.8M 27 ms, VRAM 300MB   Depth-Anything-Base 97.</description>
+    </item>
+    
+    <item>
+      <title>LaneFusion: 3D detection with HD map</title>
+      <link>https://scepter914.github.io/project/project_lanefusion/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_lanefusion/</guid>
+      <description>Summary concept  Researched at TIER IV, Inc.  In this study, LaneFusion, a 3D object detection framework employing LiDAR and HD map fusion using a vector map, are developed to overcome the problem that existing detection model often infer objects heading in opposite.
+Method Through a offline rasterization and a online rasterization, LaneFusion overcomes the problem that the vector map format is difficult to input into current mainstream convolutional neural networks (CNNs).</description>
+    </item>
+    
+    <item>
+      <title>LaneFusion: 地図を用いた3d detection</title>
+      <link>https://scepter914.github.io/project/project_lanefusion_ja/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_lanefusion_ja/</guid>
+      <description>Summary concept Researched at TIER IV, Inc. concept 本研究では、Objectの反対方向への推測を抑えることを目的とした、LiDARとベクターマップを使用した3D detectio</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車グリッパ”Magripper”による高速グラスピング</title>
+      <link>https://scepter914.github.io/project/project_magripper_ja/</link>
+      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magripper_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magripper/index-j.html における成果 concept 本研究では、バックドライバビリティが高いグリッパ&amp;quot;Magripper&amp;quot;と、リーチングからシームレスに高</description>
+    </item>
+    
+    <item>
+      <title>High-speed Hitting Grasping with Magripper</title>
+      <link>https://scepter914.github.io/project/project_magripper/</link>
+      <pubDate>Wed, 30 Sep 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magripper/</guid>
+      <description>Summary  Research at http://ishikawa-vision.org/fusion/Magripper/index-e.html concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
+ Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/project_magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/Magslider/index-e.html concept    control strategy   In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構 &#39;&#39;Magslider&#39;&#39; による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/project_magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magslider/index-j.html における成果 concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;quot;Magslider&amp;quot;による高速衝撃吸</description>
+    </item>
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
+    
+    <item>
+      <title>Interest</title>
+      <link>https://scepter914.github.io/project/project_hobby/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_hobby/</guid>
+      <description>Soccer I have played soccer for over 15 years. I play as attacker, mainly Second Top and Side Midfielder. History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代). As a person, I like Du Yu(杜預)</description>
+    </item>
+    
+    <item>
+      <title>Robocon</title>
+      <link>https://scepter914.github.io/project/project_robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_robocon/</guid>
+      <description>RoboTech(2014-2017)  RoboTech, the team for robot contest at The University of Tokyo. Belonged to mechanic section. worked as the team leader of RoboTech in 2016  winner of National Championships(NHK Robocon), and participated in the international robot contest &amp;ldquo;ABU Robocon2016&amp;rdquo; as Representation from Japan Visit to the Prime Minister&amp;rsquo;s residence as Representation from Japan link, link At ABU Robocon2016, We were 2nd-RunnerUp and we were commened for ABU Robocon award.</description>
+    </item>
+    
+    <item>
+      <title>ロボコン</title>
+      <link>https://scepter914.github.io/project/project_roboconja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_roboconja/</guid>
+      <description>概要 ロボコンに関する活動のまとめ 2020/05/01地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
+    </item>
+    
+    <item>
+      <title>趣味</title>
+      <link>https://scepter914.github.io/project/project_hobbyja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_hobbyja/</guid>
+      <description>サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</description>
+    </item>
+    
+  </channel>
+</rss>

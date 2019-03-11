@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Scepter914 Website</title>
@@ -6,98 +6,229 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jan 2019 01:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 02 Jan 2025 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chainer</title>
-      <link>https://scepter914.github.io/tags/chainer/</link>
-      <pubDate>Mon, 07 Jan 2019 01:00:00 +0900</pubDate>
+      <title>planning</title>
+      <link>https://scepter914.github.io/tags/planning/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/chainer/</guid>
+      <guid>https://scepter914.github.io/tags/planning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Docker</title>
-      <link>https://scepter914.github.io/tags/docker/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
+      <title>prediction</title>
+      <link>https://scepter914.github.io/tags/prediction/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/docker/</guid>
+      <guid>https://scepter914.github.io/tags/prediction/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Gollum</title>
-      <link>https://scepter914.github.io/tags/gollum/</link>
-      <pubDate>Mon, 11 Mar 2019 00:01:00 +0900</pubDate>
+      <title>vision</title>
+      <link>https://scepter914.github.io/tags/vision/</link>
+      <pubDate>Mon, 23 Dec 2024 23:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/gollum/</guid>
+      <guid>https://scepter914.github.io/tags/vision/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Misc</title>
-      <link>https://scepter914.github.io/tags/misc/</link>
-      <pubDate>Tue, 08 Jan 2019 13:59:56 +0900</pubDate>
+      <title>detection3d</title>
+      <link>https://scepter914.github.io/tags/detection3d/</link>
+      <pubDate>Thu, 14 Nov 2024 10:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/misc/</guid>
+      <guid>https://scepter914.github.io/tags/detection3d/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Openframeworks</title>
-      <link>https://scepter914.github.io/tags/openframeworks/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
+      <title>software</title>
+      <link>https://scepter914.github.io/tags/software/</link>
+      <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/openframeworks/</guid>
+      <guid>https://scepter914.github.io/tags/software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pandoc</title>
-      <link>https://scepter914.github.io/tags/pandoc/</link>
-      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
+      <title>python</title>
+      <link>https://scepter914.github.io/tags/python/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/pandoc/</guid>
+      <guid>https://scepter914.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Reveal.js</title>
-      <link>https://scepter914.github.io/tags/reveal.js/</link>
-      <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
+      <title>rust</title>
+      <link>https://scepter914.github.io/tags/rust/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/reveal.js/</guid>
+      <guid>https://scepter914.github.io/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Robocon</title>
-      <link>https://scepter914.github.io/tags/robocon/</link>
-      <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
+      <title>evaluation</title>
+      <link>https://scepter914.github.io/tags/evaluation/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/robocon/</guid>
+      <guid>https://scepter914.github.io/tags/evaluation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ros</title>
+      <title>robotics</title>
+      <link>https://scepter914.github.io/tags/robotics/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ROS2</title>
+      <link>https://scepter914.github.io/tags/ros2/</link>
+      <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/ros2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>works</title>
+      <link>https://scepter914.github.io/tags/works/</link>
+      <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/works/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://scepter914.github.io/tags/vim/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://scepter914.github.io/tags/vscode/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diary</title>
+      <link>https://scepter914.github.io/tags/diary/</link>
+      <pubDate>Thu, 01 Sep 2022 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sensor_fusion</title>
+      <link>https://scepter914.github.io/tags/sensor_fusion/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/sensor_fusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ros</title>
       <link>https://scepter914.github.io/tags/ros/</link>
-      <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
+      <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/ros/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Vim</title>
-      <link>https://scepter914.github.io/tags/vim/</link>
-      <pubDate>Sun, 29 Apr 2018 23:30:00 +0900</pubDate>
+      <title>wiki</title>
+      <link>https://scepter914.github.io/tags/wiki/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/vim/</guid>
+      <guid>https://scepter914.github.io/tags/wiki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>control</title>
+      <link>https://scepter914.github.io/tags/control/</link>
+      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project</title>
+      <link>https://scepter914.github.io/tags/project/</link>
+      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>high-speed vision</title>
+      <link>https://scepter914.github.io/tags/high-speed-vision/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/high-speed-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aboutme</title>
+      <link>https://scepter914.github.io/tags/aboutme/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/aboutme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robocon</title>
+      <link>https://scepter914.github.io/tags/robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/robocon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandoc</title>
+      <link>https://scepter914.github.io/tags/pandoc/</link>
+      <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reveal.js</title>
+      <link>https://scepter914.github.io/tags/reveal.js/</link>
+      <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/reveal.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openframeworks</title>
+      <link>https://scepter914.github.io/tags/openframeworks/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/openframeworks/</guid>
       <description></description>
     </item>
     

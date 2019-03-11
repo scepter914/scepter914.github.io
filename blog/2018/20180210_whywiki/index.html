@@ -1,481 +1,347 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang='en-us'><head>
     <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
-
-
-
-<link rel="canonical" href="https://scepter914.github.io/blog/2018/20180210_whywiki/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>なぜ個人wikiを使うのか - Scepter914 Website</title>
-    
-<meta name="description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &amp;ldquo;何処&amp;rdquo;に&amp;rdquo;何&amp;rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&amp;rdquo;いい感じ&amp;rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18.">
 
-<meta property="og:title" content="なぜ個人wikiを使うのか - Scepter914 Website">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180210_whywiki/">
-<meta property="og:image" content="https://scepter914.github.io/images/default.png">
-<meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &amp;ldquo;何処&amp;rdquo;に&amp;rdquo;何&amp;rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&amp;rdquo;いい感じ&amp;rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18.">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180210_whywiki/">
-<meta name="twitter:title" content="なぜ個人wikiを使うのか - Scepter914 Website">
-<meta name="twitter:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &amp;ldquo;何処&amp;rdquo;に&amp;rdquo;何&amp;rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&amp;rdquo;いい感じ&amp;rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18.">
-<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
-    },
-    "headline": "なぜ個人wikiを使うのか - Scepter914 Website",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2018-11-21T00:02:00JST",
-    "dateModified": "2018-11-21T00:02:00JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scepter914 Website"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scepter914 Website",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &ldquo;何処&rdquo;に&rdquo;何&rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&rdquo;いい感じ&rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．
-とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18."
-  }
-</script>
-
-
-    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
     
 
-  </head>
-
-  <body>
-    
-    
     
 
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
-          </div>
+    
 
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
+    
+        <meta property="og:title" content="なぜ個人wikiを使うのか" />
+<meta property="og:description" content="このページは 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目 更新 2018/02/10 ver1 2018/11/22 ver2 色々と聞かれることが多かったので追記" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2018/20180210_whywiki/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-11-21T00:02:00+09:00" />
+<meta property="article:modified_time" content="2018-11-21T00:02:00+09:00" />
 
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="なぜ個人wikiを使うのか"/>
+<meta name="twitter:description" content="このページは 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の1ページ目 更新 2018/02/10 ver1 2018/11/22 ver2 色々と聞かれることが多かったので追記"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
         </div>
-      </nav>
-    </header>
 
-    <main>
-      <div class="container">
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
         
-<div class="row">
-  <div class="col-md-8">
 
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
         
-        <li class="active">なぜ個人wikiを使うのか</li>
-      </ol>
-    </nav>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#このページは">このページは</a></li>
+    <li><a href="#需要">需要</a>
+      <ul>
+        <li><a href="#そもそも何をしたいのか">そもそも何をしたいのか</a></li>
+        <li><a href="#機能としてあってほしいこと">機能としてあってほしいこと</a></li>
+        <li><a href="#外部サービスはevernote等">外部サービスは？(Evernote等)</a></li>
+        <li><a href="#とりあえず今の自分の環境を">とりあえず今の自分の環境を</a></li>
+        <li><a href="#この環境について捕捉">この環境について捕捉</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></div>
 
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-21T00:02:00JST">Nov 21, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
-      
-    </ul>
 
-    <h1 class="title">なぜ個人wikiを使うのか</h1>
-  </header>
 
-  
+    <div class="content-margin">
 
-  <div class="article-body">
-
-<h2 id="このページは">このページは</h2>
-
+<article class="line-numbers">
+    
+    
+    <h2 id="このページは">このページは</h2>
 <ul>
 <li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a>の1ページ目</li>
-<li>2018/11/22 ver2
-
+<li>更新
 <ul>
-<li>色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂</li>
-</ul></li>
+<li>2018/02/10 ver1</li>
+<li>2018/11/22 ver2 色々と聞かれることが多かったので追記</li>
 </ul>
-
+</li>
+</ul>
 <h2 id="需要">需要</h2>
-
 <h3 id="そもそも何をしたいのか">そもそも何をしたいのか</h3>
-
 <ul>
 <li>ドキュメント，メモの管理をしたい
-
 <ul>
 <li>環境構築の時に参考にしたサイト</li>
 <li>授業のメモ</li>
 <li>研究のsurvey, 作業日誌</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="機能としてあってほしいこと">機能としてあってほしいこと</h3>
-
 <ul>
 <li>手元のエディタでゴリゴリ書きたい
-
 <ul>
 <li>vimmerなので手元のエディタから直接書けると超ウレシイ</li>
-</ul></li>
+</ul>
+</li>
 <li>png, jpeg，pdfの管理もしたい</li>
 <li>数式をLaTeXで書きたい</li>
 <li>表も簡単に書きたい
-
 <ul>
 <li>計算してない表Excelを無くしたい</li>
 <li>ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外</li>
-</ul></li>
+</ul>
+</li>
 <li>階層構造を持ちたい
-
 <ul>
-<li>&ldquo;何処&rdquo;に&rdquo;何&rdquo;があるかをわかりやすくするため</li>
+<li>&ldquo;何処&quot;に&quot;何&quot;があるかをわかりやすくするため</li>
 <li>情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない</li>
-</ul></li>
+</ul>
+</li>
 <li>検索機能が欲しい
-
 <ul>
 <li>そもそも何処に書いてあるかどうか分からなくなった時に検索する</li>
 <li>紙は検索ができないから嫌</li>
-</ul></li>
+</ul>
+</li>
 <li>軽量
-
 <ul>
 <li>重い情報管理は作業のペースを落とすので嫌だ</li>
-</ul></li>
+</ul>
+</li>
 <li>一括で管理
-
 <ul>
 <li>情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)</li>
-</ul></li>
+</ul>
+</li>
 <li>できればオフラインでも動く
-
 <ul>
 <li>ネット環境ない場所で作業をしたいときがまぁまぁあるので</li>
-</ul></li>
 </ul>
-
-<h3 id="外部サービスは-evernote等">外部サービスは？(Evernote等)</h3>
-
+</li>
+</ul>
+<h3 id="外部サービスはevernote等">外部サービスは？(Evernote等)</h3>
 <p>そのサービス終了すると悲しい目に合うので，
 データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義
 （このBlogも外部サービスに頼らなかったのはそういう理由がある）．
 あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう．
-あと&rdquo;いい感じ&rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．</p>
-
+あと&quot;いい感じ&quot;に他のアプリケーションを連携させることができないので一括管理が厳しい．</p>
 <h3 id="とりあえず今の自分の環境を">とりあえず今の自分の環境を</h3>
-
 <ul>
 <li>使用しているwikiはgit baseのgollum
-
 <ul>
 <li>ここはgit baseなら好みでなんでも良い気がする</li>
-</ul></li>
+</ul>
+</li>
 <li>ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形</li>
 </ul>
-
 <ol>
-<li><p>ノートPC(Ubuntu18.04LTS)</p>
-
+<li>
+<p>ノートPC(Ubuntu18.04LTS)</p>
 <ul>
 <li>データ
-
 <ul>
 <li>$HOME/wiki/にリポジトリ(データ)を置いてある</li>
-</ul></li>
+</ul>
+</li>
 <li>閲覧
-
 <ul>
 <li>gollumを起動してlocalhost上から閲覧(ネット環境無くても閲覧可能)</li>
-</ul></li>
+</ul>
+</li>
 <li>編集
-
 <ul>
 <li>長文編集する時はVim起動，git add &amp;&amp; git commit</li>
 <li>ちょっとした編集はlocalhost上のwikiで編集</li>
-</ul></li>
-</ul></li>
-
-<li><p>レンタルサーバー(docker on Ubuntu16.04LTS)</p>
-
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>レンタルサーバー(docker on Ubuntu16.04LTS)</p>
 <ul>
 <li>レンタルサーバ
-
 <ul>
 <li>IDCFクラウドのクラウドサーバーインスタンス</li>
 <li>DDNSの無料サービスでDNS取得</li>
 <li>計500円/月
-
 <ul>
 <li>一番安いプランでもgollumなら結構快適に動いている</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>サーバー構成
-
 <ul>
 <li>docker-composeで動かしている</li>
 <li>ngnixのbasic authとかも</li>
 <li>docker上でgollumを起動してある</li>
-</ul></li>
+</ul>
+</li>
 <li>データ
-
 <ul>
 <li>定期的にrsyncを羅列したshell script回して，ノートPCのデータをレンタルサーバにコピーしている</li>
 <li>なのでノートPCとリポジトリは別</li>
-</ul></li>
+</ul>
+</li>
 <li>閲覧
-
 <ul>
 <li>ネットから見られるように</li>
 <li>家のデスクトップとスマホとタブレットからはこちらで閲覧</li>
-</ul></li>
+</ul>
+</li>
 <li>編集
-
 <ul>
 <li>しない，閲覧only</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ol>
-
 <h3 id="この環境について捕捉">この環境について捕捉</h3>
-
 <ul>
 <li>データのバックアップ
-
 <ul>
 <li>githubのプライベートリポジトリとか使えば，backupにもなるので一石二鳥？</li>
-</ul></li>
+</ul>
+</li>
 <li>サーバー上のwikiで編集しない理由
-
 <ul>
 <li>サーバー上のリポジトリでも編集すると情報が分散するため避けている</li>
 <li>スマホとかからの編集よりも，オフラインでサクサクwiki閲覧編集やVimでの編集を優先した</li>
 <li>あとは後述のreveal.jsのシステムも使いたかったこともあるので，ローカルをメインにした</li>
-</ul></li>
+</ul>
+</li>
 <li>スマホやipadでも編集できるようにしたいなら，サーバーにデータを置くしかないんじゃないのかなと思う
-
 <ul>
 <li>他に代案あったら教えてほしい</li>
-</ul></li>
+</ul>
+</li>
 <li>無料でやりたい場合
-
 <ul>
 <li>Herokuくらいしか知らないんだけど，どうなんですかね．</li>
 <li>(一応 gollum on herokuでggるとヒットはする，快適かどうかはよく知らない)</li>
-</ul></li>
+</ul>
+</li>
 <li>オフライン環境で編集可 &ldquo;かつ&rdquo; サーバー上でも編集可
-
 <ul>
 <li>定期的にサーバーからgit pullをしておけばlocalで見れる
-
 <ul>
 <li>(自分がローカルからサーバーにpushしているのと逆のことをしている)</li>
-</ul></li>
-<li>ノートPCのローカルでの編集をサーバーに反映させるのが面倒な気がする(mergeで衝突しそう)のと，後でサーバーで編集する用のメモ書きが存在するのもなんかスマートで無い気がする．．．</li>
-</ul></li>
 </ul>
-</div>
-
-  <footer class="article-footer">
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">CATEGORIES</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
+</li>
+<li>ノートPCのローカルでの編集をサーバーに反映させるのが面倒な気がする(mergeで衝突しそう)のと，後でサーバーで編集する用のメモ書きが存在するのもなんかスマートで無い気がする．．．</li>
+</ul>
+</li>
+</ul>
 
 </article>
-
-
-    
-  </div>
-
-  <div class="col-md-4">
-    <aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
-      
-      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
-      
-      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
-      
-      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
-      
-      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
-      
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
-      
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
-      
-      <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
-      
-      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
-      
-      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
-      
-      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']]
-  }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  </div>
 </div>
 
-      </div>
-    </main>
 
-    <footer class="l-footer">
-      <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
 
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+</main>
+    </body>
 </html>
-

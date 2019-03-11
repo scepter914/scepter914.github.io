@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>high-speed vision on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/high-speed-vision/</link>
+    <description>Recent content in high-speed vision on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 May 2020 23:59:59 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/high-speed-vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/project_magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/Magslider/index-e.html concept    control strategy   In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構 &#39;&#39;Magslider&#39;&#39; による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/project_magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magslider/index-j.html における成果 concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;quot;Magslider&amp;quot;による高速衝撃吸</description>
+    </item>
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
+    
+  </channel>
+</rss>

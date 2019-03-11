@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tracking on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/tracking/</link>
+    <description>Recent content in tracking on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Oct 2021 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/tracking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EagerMOT: 3D Multi-Object Tracking via Sensor Fusion (ICRA2021)</title>
+      <link>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</guid>
+      <description>summary Cameraだけ/LiDARだけ/Camera-Lidarに対応している Sensor FusionのTracking フレームワーク (i) fusion of 3D and 2D evidence that merges detections</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diary on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/diary/</link>
+    <description>Recent content in diary on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Sep 2022 01:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog の update</title>
+      <link>https://scepter914.github.io/blog/2022/20220901_blog_update/</link>
+      <pubDate>Thu, 01 Sep 2022 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220901_blog_update/</guid>
+      <description>Blog の update Blogの見た目を再び変えました なんかgithub-styleがしっくり着てなかったので変更 要件としては ダークモードがある ごちゃごちゃ</description>
+    </item>
+    
+    <item>
+      <title>Blogのupdate</title>
+      <link>https://scepter914.github.io/blog/2021/20211011_blog_update/</link>
+      <pubDate>Mon, 11 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20211011_blog_update/</guid>
+      <description>Blogのupdate Blogの見た目を変えました HugoのthemeをBegからgithub-styleに変更しました 理由としては Begが</description>
+    </item>
+    
+    <item>
+      <title>使ってて良かった家電・ガジェット類の紹介</title>
+      <link>https://scepter914.github.io/blog/2021/20210903_gadget/</link>
+      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210903_gadget/</guid>
+      <description>使ってて良かった家電・ガジェット類の紹介 概要 使ってて良かった家電・ガジェット類の紹介 同僚に「買ってよかったランキングを聞かせてくれ」と聞かれ</description>
+    </item>
+    
+    <item>
+      <title>最近あったこと</title>
+      <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200711_blog/</guid>
+      <description>概要 ブログって銘打ってるのに技術忘備録しか書いてないからたまにはね。 リモートワークに適応するのにひいこらひいこら言っていたこの3か月のできご</description>
+    </item>
+    
+    <item>
+      <title>オウロ・プレットへの行き方</title>
+      <link>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</link>
+      <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</guid>
+      <description>概要 ブラジルのベロオリゾンテ(Belo Horizonte)からオウロ・プレット(Ouro Preto)への行き方でバスを使わない方法について 2</description>
+    </item>
+    
+  </channel>
+</rss>

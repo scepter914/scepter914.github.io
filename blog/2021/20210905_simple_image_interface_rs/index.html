@@ -1,0 +1,370 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した" />
+<meta property="og:description" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-09-05T13:00:00+09:00" />
+<meta property="article:modified_time" content="2021-09-05T13:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した"/>
+<meta name="twitter:description" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+    
+        
+        
+            <script defer src="https://scepter914.github.io/js/builtin-copy.56e07a74dd440b068ab36af35542ed8960865686c19fb809f38436877ac081570612cc8a913650b0c0e3073a336680c5df960e73bf7b1de83dc6aa996f2db858.js" integrity="sha512-VuB6dN1ECwaKs2rzVULtiWCGVobBn7gJ84Q2h3rAgVcGEsyKkTZQsMDjBzozZoDF35YOc797Heg9xqqZby24WA=="></script>
+        
+    
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#概要">概要</a></li>
+    <li><a href="#simple-image-interface-rs-について">simple-image-interface-rs について</a></li>
+    <li><a href="#利用するcrateのsurvey">利用するCrateのsurvey</a>
+      <ul>
+        <li><a href="#rscam">rscam</a></li>
+        <li><a href="#その他crate検討-for-カメラ">その他crate検討 for カメラ</a></li>
+        <li><a href="#rust-ffmpeg">rust-ffmpeg</a></li>
+        <li><a href="#その他crate検討-for-動画">その他crate検討 for 動画</a></li>
+      </ul>
+    </li>
+    <li><a href="#作る時につまずいたところ">作る時につまずいたところ</a>
+      <ul>
+        <li><a href="#publishする時のアップロードサイズ制限">publishする時のアップロードサイズ制限</a></li>
+      </ul>
+    </li>
+    <li><a href="#最後に">最後に</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="画像動画カメラ入力を扱うインターフェイスのライブラリをrustで作って公開した">画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</h1>
+<h2 id="概要">概要</h2>
+<ul>
+<li>動画像処理において、カメラinput・mp4動画・1枚の画像を使いながらデバッグすることが多いと思う（特にロボット系は）
+<ul>
+<li>画像処理は共通で扱わないとバグるので各々のインターフェイスに合わせて画像処理に食わせるまで実装することが多い</li>
+</ul>
+</li>
+<li>それらを共通のinterfaceで扱えるようにして、argとかで簡単に切り替えて使えるようにしたcrateを公開した</li>
+</ul>
+<h2 id="simple-image-interface-rs-について">simple-image-interface-rs について</h2>
+<ul>
+<li>作ったもの
+<ul>
+<li><a href="https://github.com/scepter914/simple-image-interface-rs">https://github.com/scepter914/simple-image-interface-rs</a> github</li>
+<li><a href="https://crates.io/crates/simple_image_interface">https://crates.io/crates/simple_image_interface</a> crates.io</li>
+<li><a href="https://docs.rs/simple_image_interface/0.1.0/simple_image_interface/">https://docs.rs/simple_image_interface/0.1.0/simple_image_interface/</a> docs.rs</li>
+</ul>
+</li>
+<li>こんなふうに使える
+<ul>
+<li>くわしくは<a href="https://github.com/scepter914/simple-image-interface-rs/blob/main/examples/examples.rs">https://github.com/scepter914/simple-image-interface-rs/blob/main/examples/examples.rs</a>を参照</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">||</span> <span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pic&#34;</span> {
+        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_picture(<span style="color:#e6db74">&#34;./data/from_raw.png&#34;</span>);
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;video&#34;</span> {
+        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_video(<span style="color:#e6db74">&#34;./data/random_ball.mp4&#34;</span>);
+    } <span style="color:#66d9ef">else</span> {
+        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_camera(<span style="color:#e6db74">&#34;/dev/video0&#34;</span>, <span style="color:#ae81ff">640</span>, <span style="color:#ae81ff">360</span>, <span style="color:#ae81ff">330</span>);
+        <span style="color:#75715e">// width, height, fps
+</span><span style="color:#75715e"></span>    }
+
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> frame_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">loop</span> {
+        frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#66d9ef">let</span> input_image <span style="color:#f92672">=</span> interface.get_frame();
+        <span style="color:#66d9ef">if</span> input_image.is_none() {
+            <span style="color:#66d9ef">break</span>;
+        }
+        my_image_proc(<span style="color:#f92672">&amp;</span>input_image.unwrap(), frame_index);
+    }
+</code></pre></div><h2 id="利用するcrateのsurvey">利用するCrateのsurvey</h2>
+<h3 id="rscam">rscam</h3>
+<ul>
+<li><a href="https://crates.io/crates/rscam">https://crates.io/crates/rscam</a></li>
+<li><a href="https://docs.rs/rscam/0.5.5/rscam/">https://docs.rs/rscam/0.5.5/rscam/</a></li>
+<li>最終的に採用したカメラ用crate
+<ul>
+<li>シンプルに使えそうだったので、採用</li>
+<li>正直メンテされてなさそうだけど全然使えたので利用</li>
+</ul>
+</li>
+<li>画像処理に使うなら、initializeの時にformatをRGB3にすることに注意</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    camera
+        .start(<span style="color:#f92672">&amp;</span>rscam::Config {
+            interval: (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">50</span>), <span style="color:#75715e">// fps.
+</span><span style="color:#75715e"></span>            resolution: (width, height),
+            format: <span style="color:#a6e22e">b</span><span style="color:#e6db74">&#34;RGB3&#34;</span>,
+            <span style="color:#f92672">..</span>Default::default()
+        })
+        .unwrap();
+
+</code></pre></div><ul>
+<li>画像を取得するところ
+<ul>
+<li>最初の方は速度が出ていないので注意</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> frame <span style="color:#f92672">=</span> camera.capture().unwrap();
+</code></pre></div><ul>
+<li>frame to image::RGBImageにはto_vecを用いる</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> rgb_image_2 <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</code></pre></div><h3 id="その他crate検討-for-カメラ">その他crate検討 for カメラ</h3>
+<ul>
+<li>uvc
+<ul>
+<li><a href="https://crates.io/crates/uvc">https://crates.io/crates/uvc</a></li>
+<li><a href="https://github.com/l1npengtul/libuvc-rs">https://github.com/l1npengtul/libuvc-rs</a></li>
+<li>ちょっと複雑？だけどメンテされているからおいおいこっちに移動するつもり</li>
+</ul>
+</li>
+<li>nokhwa
+<ul>
+<li><a href="https://github.com/l1npengtul/nokhwa">https://github.com/l1npengtul/nokhwa</a></li>
+<li>高機能だったけど、ライセンスの都合不採用にした</li>
+</ul>
+</li>
+<li>libv4l-rs
+<ul>
+<li><a href="https://github.com/raymanfx/libv4l-rs">https://github.com/raymanfx/libv4l-rs</a></li>
+<li>これも少し複雑だけど、割と使用例が見つかる</li>
+</ul>
+</li>
+</ul>
+<h3 id="rust-ffmpeg">rust-ffmpeg</h3>
+<ul>
+<li><a href="https://github.com/zmwangx/rust-ffmpeg">https://github.com/zmwangx/rust-ffmpeg</a></li>
+<li>動画の読み込みにつかったcrate</li>
+<li>画像frameを取り出す例を参考にしながら実装した
+<ul>
+<li><a href="https://github.com/zmwangx/rust-ffmpeg/blob/master/examples/dump-frames.rs">https://github.com/zmwangx/rust-ffmpeg/blob/master/examples/dump-frames.rs</a></li>
+<li><a href="https://gist.github.com/AndreaCatania/2b708750ef62171f51c7038e99676822">https://gist.github.com/AndreaCatania/2b708750ef62171f51c7038e99676822</a></li>
+</ul>
+</li>
+<li>画像の取得に関しては、コメントを追記すると以下の感じになる</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
+        <span style="color:#75715e">// ラムダ式
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> receive_and_process_decoded_frames <span style="color:#f92672">=</span>
+            <span style="color:#f92672">|</span>decoder: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> ffmpeg::decoder::Video<span style="color:#f92672">|</span> -&gt; Result<span style="color:#f92672">&lt;</span>(), ffmpeg::Error<span style="color:#f92672">&gt;</span> {
+                <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> decoded <span style="color:#f92672">=</span> Video::empty();
+                <span style="color:#75715e">// 有効フレームかどうか
+</span><span style="color:#75715e"></span>                <span style="color:#75715e">// 最初数フレームは落ちていることもある
+</span><span style="color:#75715e"></span>                <span style="color:#75715e">// frame : ffmpeg::util::frame::video::Video
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">while</span> decoder.receive_frame(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoded).is_ok() {
+                    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> rgb_frame <span style="color:#f92672">=</span> Video::empty();
+                    <span style="color:#75715e">// frameの取り出し
+</span><span style="color:#75715e"></span>                    scaler.run(<span style="color:#f92672">&amp;</span>decoded, <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> rgb_frame)<span style="color:#f92672">?</span>;
+                    save_file(<span style="color:#f92672">&amp;</span>rgb_frame, frame_index).unwrap();
+                    frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+                }
+                Ok(())
+            };
+
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> packet_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">for</span> (stream, packet) <span style="color:#66d9ef">in</span> ictx.packets() {
+            packet_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+            println!(<span style="color:#e6db74">&#34;packet {}&#34;</span>, packet_index);
+            <span style="color:#75715e">// ビデオの終わりかを判定
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> stream.index() <span style="color:#f92672">==</span> video_stream_index {
+                decoder.send_packet(<span style="color:#f92672">&amp;</span>packet)<span style="color:#f92672">?</span>;
+                <span style="color:#75715e">// ラムダ式に受け渡し
+</span><span style="color:#75715e"></span>                receive_and_process_decoded_frames(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoder)<span style="color:#f92672">?</span>;
+            } <span style="color:#66d9ef">else</span> {
+                println!(<span style="color:#e6db74">&#34;End of video&#34;</span>);
+            }
+        }
+        decoder.send_eof()<span style="color:#f92672">?</span>;
+        receive_and_process_decoded_frames(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoder)<span style="color:#f92672">?</span>;
+</code></pre></div><h3 id="その他crate検討-for-動画">その他crate検討 for 動画</h3>
+<ul>
+<li>rust-ffmpeg-frame-grabber
+<ul>
+<li><a href="https://github.com/hediet/rust-ffmpeg-frame-grabber">https://github.com/hediet/rust-ffmpeg-frame-grabber</a></li>
+<li>simpleだけど、触ってみたら1fpsとかでしか動かせないっぽいので不採用</li>
+</ul>
+</li>
+<li>mp4parse-rust
+<ul>
+<li><a href="https://github.com/mozilla/mp4parse-rust">https://github.com/mozilla/mp4parse-rust</a></li>
+<li><a href="https://github.com/mozilla/mp4parse-rust/blob/master/mp4parse_capi/examples/dump.rs">https://github.com/mozilla/mp4parse-rust/blob/master/mp4parse_capi/examples/dump.rs</a> この辺見ても画像の取り出し方の検討が付かなかった</li>
+</ul>
+</li>
+</ul>
+<h2 id="作る時につまずいたところ">作る時につまずいたところ</h2>
+<h3 id="publishする時のアップロードサイズ制限">publishする時のアップロードサイズ制限</h3>
+<ul>
+<li>テスト用にサンプル動画を置いてあったんだけど、どうやら cargo publish のとき、10M以上のファイルがあるとエラーを吐く</li>
+</ul>
+<pre tabindex="0"><code>
+error: failed to publish to registry at https://crates.io
+
+Caused by:
+  the remote server responded with an error: max upload size is: 10485760
+</code></pre><ul>
+<li>ので動画の長さを1/5くらいにする必要があった</li>
+<li>2021/09/07 追記
+<ul>
+<li><a href="https://github.com/scepter914/simple-image-interface-rs/pull/1">https://github.com/scepter914/simple-image-interface-rs/pull/1</a></li>
+<li>ライブラリとして登録するファイルの指定方法があることをPRで教えてもらった</li>
+<li>Cargo.tomlにこういうのを追記
+<ul>
+<li>もしくはexcludeでやればいいっぽい（将来的にこっちかな）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>include = [&quot;src/lib.rs&quot;, &quot;LICENSE&quot;, &quot;README.md&quot;]
+</code></pre><h2 id="最後に">最後に</h2>
+<ul>
+<li>crateの利用、PRお待ちしております</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

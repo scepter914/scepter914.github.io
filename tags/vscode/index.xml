@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/vscode/</link>
+    <description>Recent content in vscode on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Sep 2023 00:01:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode Vim で日本語の変換が変になる問題への対処</title>
+      <link>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
+      <description>VSCode Vim で日本語の変換が変になる問題への対処 概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態</description>
+    </item>
+    
+    <item>
+      <title>VSCodeのterminal tabの設定をする</title>
+      <link>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</link>
+      <pubDate>Sun, 20 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
+      <description>VSCodeのterminal tabの設定をする 概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直し</description>
+    </item>
+    
+  </channel>
+</rss>

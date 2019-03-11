@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Scepter914 Website</title>
@@ -6,10 +6,362 @@
     <description>Recent content in Blogs on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:01:00 +0900</lastBuildDate>
+<<<<<<< HEAD
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
+||||||| parent of 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
+    <lastBuildDate>Sun, 19 Apr 2020 00:03:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Sat, 11 Jul 2020 00:01:00 +0900</lastBuildDate>
+>>>>>>> 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
+||||||| parent of c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
+    <lastBuildDate>Sat, 11 Jul 2020 00:01:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Sun, 12 Jul 2020 22:00:00 +0900</lastBuildDate>
+>>>>>>> c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
+||||||| parent of c8f7bde (rebuilding site 2020年  7月 12日 日曜日 23:06:24 JST)
+    <lastBuildDate>Sun, 12 Jul 2020 22:00:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Sun, 12 Jul 2020 01:00:00 +0900</lastBuildDate>
+>>>>>>> c8f7bde (rebuilding site 2020年  7月 12日 日曜日 23:06:24 JST)
+||||||| parent of b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
+    <lastBuildDate>Sun, 12 Jul 2020 01:00:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
+>>>>>>> b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
+||||||| parent of 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
+    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Sat, 15 Aug 2020 00:03:00 +0900</lastBuildDate>
+>>>>>>> 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
+||||||| parent of 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
+    <lastBuildDate>Sat, 15 Aug 2020 00:03:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
+>>>>>>> 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
+||||||| parent of d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
+    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
+>>>>>>> d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
+||||||| parent of 3e9709a (update)
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Mon, 23 Dec 2024 23:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey for real-time 3D detection in autonomous driving</title>
+      <link>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</link>
+      <pubDate>Mon, 23 Dec 2024 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</guid>
+      <description>Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
+Based on the performance comparison, following models of the multi-camera 3D detection stand out:
+ StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
+    </item>
+>>>>>>> 3e9709a (update)
     
-	<atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>デフォルトパラメータとどう付き合うか</title>
+      <link>https://scepter914.github.io/blog/2024/20241104_parameter_override/</link>
+      <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241104_parameter_override/</guid>
+      <description>デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）</description>
+    </item>
     
+    <item>
+      <title>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題</title>
+      <link>https://scepter914.github.io/blog/2024/20240921_monitor_error/</link>
+      <pubDate>Sat, 21 Sep 2024 20:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240921_monitor_error/</guid>
+      <description>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題 概要 モニターにunknown monit</description>
+    </item>
+    
+    <item>
+      <title>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる</title>
+      <link>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</link>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
+      <description>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる 概要 Rust製可視化ツールのrerunを使って、mmd</description>
+    </item>
+    
+    <item>
+      <title>DepthAnythingのROS2 packageを作った</title>
+      <link>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</link>
+      <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</guid>
+      <description>DepthAnythingのROS2 packageを作った 概要 DepthAnything のROS2 packageを作った それに対する感想や周辺Toolを作った話をつ</description>
+    </item>
+    
+    <item>
+      <title>VSCode Vim で日本語の変換が変になる問題への対処</title>
+      <link>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
+      <description>VSCode Vim で日本語の変換が変になる問題への対処 概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態</description>
+    </item>
+    
+    <item>
+      <title>Blog の update</title>
+      <link>https://scepter914.github.io/blog/2022/20220901_blog_update/</link>
+      <pubDate>Thu, 01 Sep 2022 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220901_blog_update/</guid>
+      <description>Blog の update Blogの見た目を再び変えました なんかgithub-styleがしっくり着てなかったので変更 要件としては ダークモードがある ごちゃごちゃ</description>
+    </item>
+    
+    <item>
+      <title>VSCodeのterminal tabの設定をする</title>
+      <link>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</link>
+      <pubDate>Sun, 20 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
+      <description>VSCodeのterminal tabの設定をする 概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直し</description>
+    </item>
+    
+    <item>
+      <title>RustでRosbag2から画像を抽出するcrate</title>
+      <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
+      <description>RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち</description>
+    </item>
+    
+    <item>
+      <title>Blogのupdate</title>
+      <link>https://scepter914.github.io/blog/2021/20211011_blog_update/</link>
+      <pubDate>Mon, 11 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20211011_blog_update/</guid>
+      <description>Blogのupdate Blogの見た目を変えました HugoのthemeをBegからgithub-styleに変更しました 理由としては Begが</description>
+    </item>
+    
+    <item>
+      <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
+      <link>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
+    </item>
+    
+    <item>
+      <title>使ってて良かった家電・ガジェット類の紹介</title>
+      <link>https://scepter914.github.io/blog/2021/20210903_gadget/</link>
+      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210903_gadget/</guid>
+      <description>使ってて良かった家電・ガジェット類の紹介 概要 使ってて良かった家電・ガジェット類の紹介 同僚に「買ってよかったランキングを聞かせてくれ」と聞かれ</description>
+    </item>
+    
+    <item>
+      <title>Rustでの画像保存の高速化</title>
+      <link>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</link>
+      <pubDate>Sun, 22 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
+      <description>Rustでの画像保存の高速化 概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまち</description>
+    </item>
+    
+    <item>
+      <title>Rustでカメラから取得した画像に対して画像処理をする</title>
+      <link>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</link>
+      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
+      <description>Rustでカメラから取得した画像に対して画像処理をする 概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ない</description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+||||||| parent of 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
+=======
+||||||| parent of 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
+=======
+      <title>wikiの(個人的見解による)運用の仕方お勧め〜</title>
+||||||| parent of 409c587 (rebuilding site 2020年 12月 13日 日曜日 13:47:35 JST)
+      <title>wikiの(個人的見解による)運用の仕方お勧め〜</title>
+=======
+||||||| parent of d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
+=======
+      <title>rosbagのtopicを大量にremapするshell script</title>
+      <link>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</link>
+      <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</guid>
+      <description>rosbagのtopicを大量にremapするshell script 概要 rosbagのtopicを大量にremapするshell scriptを作った 脳</description>
+    </item>
+    
+    <item>
+>>>>>>> d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
+      <title>個人的なwiki運用の一案</title>
+>>>>>>> 409c587 (rebuilding site 2020年 12月 13日 日曜日 13:47:35 JST)
+      <link>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</guid>
+      <description>概要 最近良く「markdownで色々情報を残すのが便利なのはわかったんだけど、Toolを何使うと便利なの？」と聞かれるので、blogにしてお</description>
+    </item>
+    
+    <item>
+>>>>>>> 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
+    </item>
+    
+    <item>
+>>>>>>> 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
+      <title>作業日誌の書く手順</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
+    </item>
+    
+    <item>
+      <title>なぜ作業日誌を書くのか</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
+      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
+    </item>
+    
+    <item>
+||||||| parent of b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
+=======
+      <title>作業日誌の書く手順</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
+    </item>
+    
+    <item>
+      <title>なぜ作業日誌を書くのか</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
+      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
+    </item>
+    
+    <item>
+>>>>>>> b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
+    
+    <item>
+||||||| parent of c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
+=======
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
+    
+    <item>
+>>>>>>> c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
+      <title>最近あったこと</title>
+      <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200711_blog/</guid>
+      <description>概要 ブログって銘打ってるのに技術忘備録しか書いてないからたまにはね。 リモートワークに適応するのにひいこらひいこら言っていたこの3か月のできご</description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
+||||||| parent of 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
+=======
+      <title>最近あったこと</title>
+      <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200711_blog/</guid>
+      <description>概要 ブログって銘打ってるのに技術忘備録しか書いてないからたまにはね。 リモートワークに適応するのにひいこらひいこら言っていたこの3か月のできご</description>
+    </item>
+    
+    <item>
+>>>>>>> 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
+    </item>
+    
+    <item>
+||||||| parent of 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
+    </item>
+    
+    <item>
+=======
+>>>>>>> 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
+      <title>Page layout collapse in gollum ver5</title>
+      <link>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</link>
+      <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
+      <description>Error  For user of custom css  gollum &amp;ndash;css   When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.    How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes    </description>
+    </item>
+    
+    <item>
+      <title>オウロ・プレットへの行き方</title>
+      <link>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</link>
+      <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</guid>
+      <description>概要 ブラジルのベロオリゾンテ(Belo Horizonte)からオウロ・プレット(Ouro Preto)への行き方でバスを使わない方法について 2</description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
+      <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
+      <description>概要 ！注意！ gollum ver5.0になり大きな変更がされました 2020/07/12追記 version5.0 対応 あくまで参考程度に使用してください 自分の使っている個人用</description>
+    </item>
     
     <item>
       <title>個人用wiki(gollum)を使った研究survey</title>
@@ -17,14 +369,7 @@
       <pubDate>Mon, 11 Mar 2019 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</guid>
-      <description>概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
- これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
-論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
- 検索にかかるようになるが 面倒すぎて発狂する
-Mendeleyで検索をかける  欲しい機能4へのアプローチとして
- 全文検索を使える
- ローカルのpdfを読み込ませて自動でrenameもできる
- タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった</description>
+      <description>概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究s</description>
     </item>
     
     <item>
@@ -33,10 +378,7 @@ Mendeleyで検索をかける  欲しい機能4へのアプローチとして
       <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</guid>
-      <description> 概要  Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github  やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強がてらGazeboサンプル動かすかー」と思ってやってみたら， まずサンプルはversion古いやつやでっていう罠に引っかかった．
-Ubuntu18.04LTSでやっていてversion下げるのすげー面倒そうだしデバッグした． デバッグでやったこと，参考リンクはREADMEに書いたので，そちらをご参照を．
-余談ですが，新年色々触って遊んだのでblogの更新が捗りますね．
-Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org/tutorials?tut=ros_wrapper_versions   </description>
+      <description>概要 Setting Velocity on Joints and Links (Gazebo ver7.0)をGazebo version 9.6 で動くようにした https://github.com/scepter914/set_vel_plugin Github やったこと 流石にROSを少し触った方がいいんじゃないかと思い， 「勉強が</description>
     </item>
     
     <item>
@@ -45,11 +387,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Mon, 07 Jan 2019 01:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tellodetection/</guid>
-      <description>概要  ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくものプログラムを作った ！注意！  安全面は各自の自己責任でお願いします  周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください  (ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません コードはあくまで参考程度にし，自己責任で一行づつ実装してください そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)  2019/01/07 ver1.0  2019/01/08 ver1.1 コメント追加   まえがき 何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた． 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．
-あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば， &amp;ldquo;転がっている学習済モデルを使って&amp;rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは， 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．
-関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大． なので，もし知っている方がいたらTwitter等で教えていただけると助かります． あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．
-ソースコード  https://github.com/scepter914/TelloFollowingPerson  書き散らしただけでリファクタリング全くしてないコードなのはご容赦を   環境構築 &amp;amp;&amp;amp; version  READMEに書いたのでそちらを参照を  処理の流れ  host PCからTelloに制御信号を送って初期位置へ移動させる Telloから画像を取得,host PCに画像を送る ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得 取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る  Telloとは DJIから販売されているトイドローン． Amazonから買えて1万円超えくらい． Pythonから叩けるので遊ぶのに便利． ggるといろいろ記事が出てくる．
- 参考  https://www.droneskyfish.com/entry/tello-fly 手動で動かす参考   Telloの自動制御 pythonでtelloを動かすライブラリのTelloPyを使った． ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い． これだけで結構遊べる気がする．</description>
+      <description>概要 ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくもの</description>
     </item>
     
     <item>
@@ -58,7 +396,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
-      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
+      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
     </item>
     
     <item>
@@ -67,8 +405,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Wed, 21 Nov 2018 00:02:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_whywiki/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 2018/11/22 ver2  色々と聞かれることが多かったので，2018/2/10 ver1 から大きく改訂   需要 そもそも何をしたいのか  ドキュメント，メモの管理をしたい  環境構築の時に参考にしたサイト 授業のメモ 研究のsurvey, 作業日誌   機能としてあってほしいこと  手元のエディタでゴリゴリ書きたい  vimmerなので手元のエディタから直接書けると超ウレシイ  png, jpeg，pdfの管理もしたい 数式をLaTeXで書きたい 表も簡単に書きたい  計算してない表Excelを無くしたい ドキュメントとしてExcelファイルとwordファイルに分かれていて一々開き直すのは論外  階層構造を持ちたい  &amp;ldquo;何処&amp;rdquo;に&amp;rdquo;何&amp;rdquo;があるかをわかりやすくするため 情報を管理する上で，何処に何があるかを覚えるために脳の記憶領域を使いたくない  検索機能が欲しい  そもそも何処に書いてあるかどうか分からなくなった時に検索する 紙は検索ができないから嫌  軽量  重い情報管理は作業のペースを落とすので嫌だ  一括で管理  情報が散乱するのが最悪だと思っている(あれはこのブログ，これは手元のメモファイル，みたいに)  できればオフラインでも動く  ネット環境ない場所で作業をしたいときがまぁまぁあるので   外部サービスは？(Evernote等) そのサービス終了すると悲しい目に合うので， データとして情報を残すものでは個人的にはあまり外部サービスは使わない主義 （このBlogも外部サービスに頼らなかったのはそういう理由がある）． あとで情報を移植する可能性があるものは，移植しやすい形にして保存しておかないと面倒すぎて死んじゃう． あと&amp;rdquo;いい感じ&amp;rdquo;に他のアプリケーションを連携させることができないので一括管理が厳しい．
-とりあえず今の自分の環境を  使用しているwikiはgit baseのgollum  ここはgit baseなら好みでなんでも良い気がする  ノートPCのlocalhostから叩くwikiがmaster, サーバーのwikiがslaveな形   ノートPC(Ubuntu18.</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の1ページ目 更新 2018/02/10 ver1 2018/11/22 ver2 色々と聞かれることが多かったので追記</description>
     </item>
     
     <item>
@@ -77,9 +414,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sun, 19 Aug 2018 17:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180819_wikiengine/</guid>
-      <description>概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&amp;hellip;&amp;hellip;  空白を無視するんなら線入れて欲しい&amp;hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位)
- 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位)
- 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト</description>
+      <description>概要 情報管理についてsurveyした記事 個人wiki用に色々調べたり使ってみたことのまとめ 表が見づらいのはHugoの仕様っぽいのでお許しを&amp;</description>
     </item>
     
     <item>
@@ -88,9 +423,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
-      <description>前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
- 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
- コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;amp;&amp;amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian&#39;s build-essential alpine-sdk \ # Install actual dependencies &amp;amp;&amp;amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;amp;&amp;amp; gem install idn-ruby\ # version &amp;amp;&amp;amp; gem install twitter-text -v &amp;quot;1.</description>
+      <description>前置き 追記: 内容更新 gollum version5対応 mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollum</description>
     </item>
     
     <item>
@@ -99,14 +432,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sun, 29 Apr 2018 23:30:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180429_vim_enter/</guid>
-      <description>やりたいこと @にカーソルがあるとして，
- abcd@efghij  から
- @abcd efghij  にする．
-続けてoを打てば
- abcd @ efghij  となって便利
-解決法 .vimrcに
- nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.
-するとノーマルモードでEnter押せば，題意の通りになっているはず</description>
+      <description>やりたいこと @にカーソルがあるとして， abcd@efghij から @abcd efghij にする． 続けてoを打てば abcd @ efghij となって便利 解決法 .vimrcに nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k を書く. するとノーマルモ</description>
     </item>
     
     <item>
@@ -115,7 +441,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開</description>
     </item>
     
     <item>
@@ -124,7 +450,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 追記: 内容更新 gollum version5対応 pdf化 ma</description>
     </item>
     
     <item>
@@ -133,18 +459,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 10 Feb 2018 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum_install/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp;amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</description>
-    </item>
-    
-    <item>
-      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
-      <pubDate>Sat, 10 Feb 2018 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
-      <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
- gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
-  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 個人wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  追加ページ  個人用wiki(gollum)を使った研究survey  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目 個人用wiki 個人用wikiとして 色々探した結果</description>
     </item>
     
     <item>
@@ -153,7 +468,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Wed, 24 Jan 2018 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180124_gollum/</guid>
-      <description> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </description>
+      <description>リダイレクト 書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理</description>
     </item>
     
     <item>
@@ -162,10 +477,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
-      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</description>
+      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
     </item>
     
   </channel>

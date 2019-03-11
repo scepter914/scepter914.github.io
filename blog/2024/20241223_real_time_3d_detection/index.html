@@ -1,0 +1,820 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey for real-time 3D detection in autonomous driving - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="Survey for real-time 3D detection in autonomous driving" />
+<meta property="og:description" content="Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
+Based on the performance comparison, following models of the multi-camera 3D detection stand out:
+ StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-12-23T23:00:00+09:00" />
+<meta property="article:modified_time" content="2024-12-23T23:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Survey for real-time 3D detection in autonomous driving"/>
+<meta name="twitter:description" content="Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
+Based on the performance comparison, following models of the multi-camera 3D detection stand out:
+ StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments."/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#performance-analysis">Performance Analysis</a>
+      <ul>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#comparison-of-models">Comparison of Models</a></li>
+      </ul>
+    </li>
+    <li><a href="#backbone-models">Backbone Models</a>
+      <ul>
+        <li><a href="#vovnet">VoVnet</a></li>
+        <li><a href="#sparse-convolution">Sparse Convolution</a></li>
+        <li><a href="#pointpillars">PointPillars</a></li>
+      </ul>
+    </li>
+    <li><a href="#camera-based-models">Camera-based Models</a>
+      <ul>
+        <li><a href="#bevformer">BEVFormer</a></li>
+        <li><a href="#streampetr">StreamPETR</a></li>
+        <li><a href="#far3d">Far3D</a></li>
+      </ul>
+    </li>
+    <li><a href="#lidar-based-models">LiDAR-based Models</a>
+      <ul>
+        <li><a href="#centerpoint">CenterPoint</a></li>
+        <li><a href="#transfusion">TransFusion</a></li>
+        <li><a href="#bevfusion">BEVFusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="survey-for-real-time-3d-detection-in-autonomous-driving">Survey for Real-time 3D Detection in Autonomous Driving</h1>
+<h2 id="summary">Summary</h2>
+<p>In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.</p>
+<p>Based on the performance comparison, following models of the multi-camera 3D detection stand out:</p>
+<ul>
+<li><strong>StreamPETR (ResNet50)</strong>: This is a lightweight model, making it suitable for a wide range of applications.</li>
+<li><strong>StreamPETR (ResNet101)</strong>: This model strikes a good balance between detection performance and inference time.</li>
+<li><strong>Far3D (V2-99)</strong>: This model may be too computationally heavy for certain environments. So it may be more appropriate as offline model.</li>
+</ul>
+<p>Based on the performance comparison, following models of the LiDAR-based 3D detection stand out:</p>
+<ul>
+<li>
+<p><strong>CenterPoint (pillar)</strong>: The backbone of Pillar encoder is stable in TensorRT environment, so it is suitable for a wide range of applications.</p>
+</li>
+<li>
+<p><strong>TransFusion-L (spconv)</strong>: This model has a moderate balance between detection performance and inference time.</p>
+</li>
+<li>
+<p><strong>BEVFusion-CL (spconv+ResNet50)</strong>: This model uses both camera images and LiDAR pointcloud. If your system can reliably obtain the sensor data, it may be suitable.</p>
+</li>
+<li>
+<p>Summary of Table</p>
+<ul>
+<li>The values in <em>italics</em> are estimated.</li>
+<li><strong>Mo.</strong>: Modality of input (C = Camera input, L = LiDAR input).</li>
+<li><strong>mAP-Nv</strong>: mAP on Nuscenes validation set (fp32, PyTorch).</li>
+<li><strong>mAP-Nt</strong>: mAP on Nuscenes test set (fp32, PyTorch).</li>
+<li><strong>mAP-Av</strong>: mAP on Argoverse validation set (fp32, PyTorch).</li>
+<li><strong>TensorRT</strong>: Inference time and GPU memory by TensorRT (RTX3090, fp16).</li>
+<li>Note that the time delay also increases as the resolution of the camera input increases.</li>
+</ul>
+</li>
+</ul>
+<table class="mc-table">
+<thead>
+<tr>
+<th>Model</th>
+<th>Mo.</th>
+<th>mAP-Nv</th>
+<th>mAP-Nt</th>
+<th>mAP-Av</th>
+<th>TensorRT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StreamPETR (ResNet50)</td>
+<td>C</td>
+<td>43.2</td>
+<td></td>
+<td></td>
+<td><em>14ms</em></td>
+</tr>
+<tr>
+<td>StreamPETR (V2-99, 320*800)</td>
+<td>C</td>
+<td>48.2</td>
+<td></td>
+<td></td>
+<td><em>32ms</em></td>
+</tr>
+<tr>
+<td>Far3D (V2-99)</td>
+<td>C</td>
+<td></td>
+<td></td>
+<td>24.4</td>
+<td><em>100ms</em></td>
+</tr>
+<tr>
+<td>CenterPoint (pillar)</td>
+<td>L</td>
+<td>48.4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CenterPoint (spconv)</td>
+<td>L</td>
+<td>59.5</td>
+<td>60.3</td>
+<td>27.4</td>
+<td>10ms</td>
+</tr>
+<tr>
+<td>TransFusion-L (spconv)</td>
+<td>L</td>
+<td>64.9</td>
+<td></td>
+<td></td>
+<td>10ms</td>
+</tr>
+<tr>
+<td>BEVFusion-CL (spconv+ResNet50)</td>
+<td>CL</td>
+<td>67.9</td>
+<td></td>
+<td></td>
+<td>15ms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="performance-analysis">Performance Analysis</h2>
+<h3 id="performance">Performance</h3>
+<ul>
+<li><strong>Table for performance</strong>
+<ul>
+<li><strong>Pre.</strong>: Pretrain model</li>
+<li><strong>Ten.</strong>: TensorRT(C++) implementation</li>
+<li><strong>Mo.</strong>: Modality of input (C = Camera input, L = LiDAR input).</li>
+<li><strong>mAP-Nv</strong>: mAP on Nuscenes validation set (fp32, PyTorch).</li>
+<li><strong>mAP-Nt</strong>: mAP on Nuscenes test set (fp32, PyTorch).</li>
+<li><strong>mAP-Av</strong>: mAP on Argoverse validation set (fp32, PyTorch).</li>
+<li><strong>PyTorch</strong>: Inference time for Nuscenes data by PyTorch (RTX3090, fp32).</li>
+<li><strong>TensorRT</strong>: Inference time and GPU memory by TensorRT (RTX3090, fp16).</li>
+</ul>
+</li>
+</ul>
+<table class="mc-table">
+<thead>
+<tr>
+<th>Model</th>
+<th>Pre.</th>
+<th>Ten.</th>
+<th>Mo.</th>
+<th>mAP-Nv</th>
+<th>mAP-Nt</th>
+<th>mAP-Av</th>
+<th>PyTorch</th>
+<th>TensorRT</th>
+<th>TensorRT other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BEVFormer tiny (ResNet50)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>C</td>
+<td>25.2</td>
+<td></td>
+<td></td>
+<td>62ms</td>
+<td>14ms, VRAM 1.7GB</td>
+<td>26ms (RTX3090, fp32)</td>
+</tr>
+<tr>
+<td>BEVFormer small (ResNet101)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>C</td>
+<td>37.5</td>
+<td>40.9</td>
+<td></td>
+<td>196ms</td>
+<td>78ms, VRAM 3.7GB</td>
+<td>151ms (RTX3090, fp32)</td>
+</tr>
+<tr>
+<td>BEVFormer base (ResNet101)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>C</td>
+<td>41.6</td>
+<td>44.5</td>
+<td></td>
+<td>417ms</td>
+<td>555ms, VRAM 11.8GB</td>
+<td>666ms (RTX3090, fp32)</td>
+</tr>
+<tr>
+<td>BEVFormer (V2-99)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+<td>48.1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StreamPETR (ResNet50)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>C</td>
+<td>43.2</td>
+<td></td>
+<td></td>
+<td>36ms</td>
+<td></td>
+<td>33ms (Orin)</td>
+</tr>
+<tr>
+<td>StreamPETR (ResNet101)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td>50.4</td>
+<td></td>
+<td></td>
+<td>156ms</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StreamPETR (V2-99, 320*800)</td>
+<td>Yes</td>
+<td></td>
+<td>C</td>
+<td>48.2</td>
+<td></td>
+<td></td>
+<td>80ms</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StreamPETR (V2-99, 960*640)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+<td></td>
+<td>20.3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StreamPETR (V2-99, 640*1600)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+<td>55.0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StreamPETR (ViT-L)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+<td>62.0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Far3D (ResNet101)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td>51.0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Far3D (ViT-L, 1536*1536)</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td>63.5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Far3D (V2-99, 960*640)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>C</td>
+<td></td>
+<td></td>
+<td>24.4</td>
+<td></td>
+<td></td>
+<td>366ms (Orin, fp16)</td>
+</tr>
+<tr>
+<td>CenterPoint (pillar)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>L</td>
+<td>48.4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CenterPoint (spconv)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>L</td>
+<td>59.5</td>
+<td>60.3</td>
+<td>27.4</td>
+<td>80ms</td>
+<td>10ms, VRAM 1.4GB</td>
+<td>43ms (Orin, fp16)</td>
+</tr>
+<tr>
+<td>TransFusion-L (spconv)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>L</td>
+<td>64.9</td>
+<td>67.5</td>
+<td></td>
+<td>80ms</td>
+<td>10ms, VRAM 1.5GB</td>
+<td></td>
+</tr>
+<tr>
+<td>TransFusion-CL (spconv)</td>
+<td>Yes</td>
+<td></td>
+<td>CL</td>
+<td>68.9</td>
+<td></td>
+<td></td>
+<td>156ms</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BEVFusion-CL (spconv+Swin-T)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>CL</td>
+<td>68.5</td>
+<td>70.2</td>
+<td></td>
+<td>119ms</td>
+<td>20ms</td>
+<td></td>
+</tr>
+<tr>
+<td>BEVFusion-CL (spconv+ResNet50)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>CL</td>
+<td>67.9</td>
+<td></td>
+<td></td>
+<td></td>
+<td>15ms, VRAM 3GB</td>
+<td>55ms (Orin, fp16)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comparison-of-models">Comparison of Models</h3>
+<p>In this section, I estimate Inference Speed of TensorRT with RTX3090.</p>
+<p>We can compare Pytorch(RTX3090) and TensorRT (RTX3090, fp16) from</p>
+<ul>
+<li>BEVFormer small (ResNet101) TensorRT (RTX3090, fp16): 78ms</li>
+<li>BEVFormer small (ResNet101) PyTorch (RTX3090): 196ms</li>
+</ul>
+<p>We can compare TensorRT (Oirn, fp16) and TensorRT (RTX3090, fp16) from</p>
+<ul>
+<li>BEVFusion-CL (spconv+ResNet50) TensorRT (RTX3090, fp16): 15ms</li>
+<li>BEVFusion-CL (spconv+ResNet50) TensorRT (Orin, fp16): 55ms</li>
+</ul>
+<p>From these comparison, we can estimate as follows.</p>
+<ul>
+<li><strong>StreamPETR (ResNet50)</strong> TensorRT (RTX3090, fp16): 36ms * (78ms / 196ms) = 14ms
+<ul>
+<li><strong>StreamPETR (ResNet50)</strong> PyTorch (RTX3090): 36ms</li>
+</ul>
+</li>
+<li><strong>StreamPETR (V2-99, 320*800)</strong> TensorRT (RTX3090, fp16): 80ms * (78ms / 196ms) = 32ms
+<ul>
+<li><strong>StreamPETR (V2-99, 320*800)</strong> PyTorch (RTX3090): 80ms</li>
+</ul>
+</li>
+<li><strong>StreamPETR (ResNet101)</strong> TensorRT (RTX3090, fp16): 156ms * (78ms / 196ms) = 62ms
+<ul>
+<li><strong>StreamPETR (ResNet101)</strong> PyTorch (RTX3090): 156ms</li>
+</ul>
+</li>
+<li><strong>Far3D (V2-99)</strong> TensorRT (RTX3090, fp16): 366ms * (15ms / 55ms) = 99.8ms
+<ul>
+<li><strong>Far3D (V2-99)</strong> TensorRT (Orin, fp16): 366ms</li>
+</ul>
+</li>
+</ul>
+<h2 id="backbone-models">Backbone Models</h2>
+<h3 id="vovnet">VoVnet</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1904.09730">An energy and GPU-computation efficient backbone network for real-time object detection (CVPR workshop 2019)</a></li>
+</ul>
+<p>VoVnet is used for image encoder of image method.
+&ldquo;V2-99&rdquo; means image encoder of VoVNet-99.</p>
+<ul>
+<li>Implementation
+<ul>
+<li><a href="https://github.com/stigma0617/VoVNet.pytorch">Official implementation</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="sparse-convolution">Sparse Convolution</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1711.10275">3D Semantic Segmentation with Submanifold Sparse Convolutional Networks (CVPR2018)</a></li>
+</ul>
+<p>Sparse convolution is used for LiDAR pointcloud encoder.
+Sparse convolution improves the efficiency and scalability of segmentation tasks on sparse 3D data.
+Because Sparse Convolution is both efficiency and high performance, the backbone of Sparce Convolution is used for many models.
+Note that the library of Sparse Convolution often has the issue related to CUDA environment, so if the system like OS are unstable (update many times including CUDA version), I cannot recommend to use Sparse Convolution.</p>
+<ul>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/traveller59/spconv">Spatial Sparse Convolution Library</a></li>
+<li><a href="https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution/tree/master/libraries/3DSparseConvolution">TensorRT implementation</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="pointpillars">PointPillars</h3>
+<ul>
+<li><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Lang_PointPillars_Fast_Encoders_for_Object_Detection_From_Point_Clouds_CVPR_2019_paper.pdf">PointPillars: Fast Encoders for Object Detection from Point Clouds (CVPR2019)</a></li>
+</ul>
+<p>PointPillars is first standard model as LiDAR-based 3D object detection.
+PointPillars represents a breakthrough in real-time 3D object detection by efficiently encoding LiDAR point clouds into a structured grid and using fast 2D convolutions to process them.
+Since Pillar Feature Net is efficient backbone, so it has been used for many models.
+Note that TensorRT implementation of Pillar Feature Net is more stable than Sparse Convolution.</p>
+<p><img src="https://scepter914.github.io/uploads/r/pointpillars_2.png" alt=""></p>
+<ul>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/open-mmlab/mmdetection3d/tree/main/configs/pointpillars">mmdetection3d implementation</a></li>
+<li><a href="https://github.com/NVIDIA-AI-IOT/CUDA-PointPillars/">TensorRT implementation</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="camera-based-models">Camera-based Models</h2>
+<h3 id="bevformer">BEVFormer</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2203.17270">BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)</a></li>
+</ul>
+<p>The BEVFormer framework offers 3D detection based on Bird&rsquo;s-Eye View (BEV) representations for autonomous driving systems using multi-camera inputs and spatiotemporal transformers.</p>
+<p><img src="https://scepter914.github.io/uploads/r/bev_former_2.png" alt=""></p>
+<ul>
+<li><a href="https://scepter914.github.io/survey/perception/vision/000692_bev_former/">My blog (Japanese)</a></li>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/fundamentalvision/BEVFormer">Official implementation</a></li>
+<li><a href="https://github.com/DerryHub/BEVFormer_tensorrt/tree/main">TensorRT implementation</a></li>
+<li><a href="https://github.com/DerryHub/BEVFormer_tensorrt/tree/main/TensorRT">C++ interface</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="streampetr">StreamPETR</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2303.11926">Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023)</a></li>
+</ul>
+<p>StreamPETR introduces an object-centric temporal modeling approach for multi-view 3D object detection, offering a more efficient and scalable solution.
+This is particularly useful for autonomous driving, where real-time performance and high accuracy are essential.</p>
+<p><img src="https://scepter914.github.io/uploads/r/stream_pter_1.png" alt=""></p>
+<ul>
+<li><a href="https://scepter914.github.io/survey/perception/vision/000959_stream_petr/">My blog (Japanese)</a></li>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/exiawsh/StreamPETR/">Official implementation</a></li>
+<li><a href="https://github.com/NVIDIA/DL4AGX/tree/master/AV-Solutions/streampetr-trt">TensorRT implementation</a></li>
+<li><a href="https://github.com/NVIDIA/DL4AGX/issues/54">TensorRT Orin 3.4 fps</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="far3d">Far3D</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2308.09616v2">Far3D: Expanding the Horizon for Surround-View 3D Object Detection (AAAI2024)</a></li>
+</ul>
+<p>Far3D provides a significant advancement in surround-view 3D object detection by expanding the detection horizon to include distant objects.</p>
+<p><img src="https://scepter914.github.io/uploads/r/far3d_3.png" alt=""></p>
+<ul>
+<li><a href="https://scepter914.github.io/survey/perception/vision/000852_far3d/">My blog (Japanese)</a></li>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/megvii-research/Far3D">Official implementation</a></li>
+<li><a href="https://github.com/NVIDIA/DL4AGX/tree/master/AV-Solutions/far3d-trt">TensorRT implementation</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="lidar-based-models">LiDAR-based Models</h2>
+<ul>
+<li>Comparison with each class
+<ul>
+<li>The threshold for class AP is 1.0m of the center distance.</li>
+<li><a href="https://download.openmmlab.com/mmdetection3d/v1.0.0_models/centerpoint/centerpoint_02pillar_second_secfpn_circlenms_4x8_cyclic_20e_nus/centerpoint_02pillar_second_secfpn_circlenms_4x8_cyclic_20e_nus_20220811_031844.log">CenterPoint</a></li>
+<li><a href="https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d_20230322_053447.log">TransFusion-L</a></li>
+</ul>
+</li>
+</ul>
+<table class="mc-table">
+<thead>
+<tr>
+<th></th>
+<th>Car</th>
+<th>Truck</th>
+<th>CV</th>
+<th>Bus</th>
+<th>Tra</th>
+<th>Bar</th>
+<th>Mot</th>
+<th>Bic</th>
+<th>Ped</th>
+<th>Cone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CenterPoint (spconv)</td>
+<td>84.5</td>
+<td>47.9</td>
+<td>7.9</td>
+<td>58.9</td>
+<td>28.1</td>
+<td>62.4</td>
+<td>44.1</td>
+<td>16.0</td>
+<td>76.3</td>
+<td>51.9</td>
+</tr>
+<tr>
+<td>TransFusion-L (spconv)</td>
+<td>87.7</td>
+<td>59.7</td>
+<td>19.3</td>
+<td>72.8</td>
+<td>40.9</td>
+<td>70.0</td>
+<td>72.0</td>
+<td>54.7</td>
+<td>86.5</td>
+<td>73.9</td>
+</tr>
+<tr>
+<td>BEVFusion-CL (spconv)</td>
+<td>88.3</td>
+<td>53.6</td>
+<td>21.8</td>
+<td>73.3</td>
+<td>38.1</td>
+<td>72.4</td>
+<td>76.2</td>
+<td>61.2</td>
+<td>87.4</td>
+<td>78.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="centerpoint">CenterPoint</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2006.11275">CenterPoint: Center-based 3D Object Detection and Tracking (CVPR2021)</a></li>
+</ul>
+<p>CenterPoint is a simple and efficient model for 3D detection, often considered the standard in autonomous driving.
+CenterPoint can choose from spconv (Sparse Convolution) or pillar (Pillar Feature Net) as backbone of LiDAR encoder.</p>
+<p><img src="https://scepter914.github.io/uploads/r/centerpoint_3.png" alt=""></p>
+<ul>
+<li><a href="https://scepter914.github.io/survey/perception/detection3d/000411_centerpoint/">My blog (Japanese)</a></li>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/open-mmlab/mmdetection3d/tree/main/configs/centerpoint">mmdetection3d implementation</a></li>
+<li><a href="https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution/tree/master/CUDA-CenterPoint">TensorRT implementation</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_lidar_centerpoint">ROS2 implementation</a>
+<ul>
+<li>Note that this implementation is based on pillar backbone.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="transfusion">TransFusion</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2203.11496">TransFusion: Robust LiDAR-Camera Fusion for 3D Object Detection with Transformers (CVPR2022)</a></li>
+</ul>
+<p>TransFusion introduces Camera-LiDAR fusion for 3D object detection using a transformer-based architecture and a cross-modal attention mechanism.
+While Camera-LiDAR fusion is not efficient results, the LiDAR-only method using TransFusionHead is an efficient model.
+TransFusion can choose from spconv (Sparse Convolution) or pillar (Pillar Feature Net) as backbone of LiDAR encoder.</p>
+<p><img src="https://scepter914.github.io/uploads/r/transfusion_3.png" alt=""></p>
+<ul>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/XuyangBai/TransFusion">Official implementation</a></li>
+<li><a href="https://github.com/open-mmlab/mmdetection3d/tree/main/projects/BEVFusion">mmdetection3d implementation</a> (LiDAR-only method)</li>
+<li><a href="https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution/tree/master/CUDA-BEVFusion">TensorRT implementation for LiDAR-only method</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_lidar_transfusion">ROS2 implementation</a>
+<ul>
+<li>Note that this implementation is based on pillar backbone.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="bevfusion">BEVFusion</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2205.13542">BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (ICRA2023)</a></li>
+</ul>
+<p>BEVFusion introduces a robust and efficient framework for multi-sensor fusion in autonomous systems. By leveraging a unified Bird’s-Eye View (BEV) representation, the framework simplifies and improves the process of combining data from various sensors (LiDAR, cameras, radar) while supporting multiple tasks such as object detection, tracking, and segmentation in a single pipeline.
+BEVFusion use spconv (Sparse Convolution) as backbone of LiDAR encoder and ResNet or SwinTransformer as backbone of image encoder.</p>
+<p><img src="https://scepter914.github.io/uploads/r/bev_fusion_02.png" alt=""></p>
+<ul>
+<li><a href="https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/">My blog (Japanese)</a></li>
+<li>Implementation:
+<ul>
+<li><a href="https://github.com/mit-han-lab/bevfusion">Official implementation</a></li>
+<li><a href="https://github.com/open-mmlab/mmdetection3d/tree/main/projects/BEVFusion">mmdetection3d implementation</a></li>
+<li><a href="https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution/tree/master/CUDA-BEVFusion">TensorRT implementation</a></li>
+<li><a href="https://github.com/knzo25/bevfusion_ros2">ROS2 implementation</a>
+<ul>
+<li>Note that this implementation is based on spconv backbone.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

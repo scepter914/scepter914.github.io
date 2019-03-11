@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vim on Scepter914 Website</title>
+    <title>vim on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/vim/</link>
-    <description>Recent content in Vim on Scepter914 Website</description>
+    <description>Recent content in vim on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Apr 2018 23:30:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://scepter914.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 11 Sep 2023 00:01:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode Vim で日本語の変換が変になる問題への対処</title>
+      <link>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
+      <description>VSCode Vim で日本語の変換が変になる問題への対処 概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態</description>
+    </item>
     
     <item>
       <title>VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</title>
@@ -17,14 +22,7 @@
       <pubDate>Sun, 29 Apr 2018 23:30:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180429_vim_enter/</guid>
-      <description>やりたいこと @にカーソルがあるとして，
- abcd@efghij  から
- @abcd efghij  にする．
-続けてoを打てば
- abcd @ efghij  となって便利
-解決法 .vimrcに
- nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k  を書く.
-するとノーマルモードでEnter押せば，題意の通りになっているはず</description>
+      <description>やりたいこと @にカーソルがあるとして， abcd@efghij から @abcd efghij にする． 続けてoを打てば abcd @ efghij となって便利 解決法 .vimrcに nnoremap &amp;lt;CR&amp;gt; i&amp;lt;Return&amp;gt;&amp;lt;Esc&amp;gt;^k を書く. するとノーマルモ</description>
     </item>
     
   </channel>

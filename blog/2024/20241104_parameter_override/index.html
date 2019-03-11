@@ -1,0 +1,483 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>デフォルトパラメータとどう付き合うか - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="デフォルトパラメータとどう付き合うか" />
+<meta property="og:description" content="デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2024/20241104_parameter_override/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-11-04T12:00:00+09:00" />
+<meta property="article:modified_time" content="2024-11-04T12:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="デフォルトパラメータとどう付き合うか"/>
+<meta name="twitter:description" content="デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+    
+        
+        
+            <script defer src="https://scepter914.github.io/js/builtin-copy.56e07a74dd440b068ab36af35542ed8960865686c19fb809f38436877ac081570612cc8a913650b0c0e3073a336680c5df960e73bf7b1de83dc6aa996f2db858.js" integrity="sha512-VuB6dN1ECwaKs2rzVULtiWCGVobBn7gJ84Q2h3rAgVcGEsyKkTZQsMDjBzozZoDF35YOc797Heg9xqqZby24WA=="></script>
+        
+    
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#概要">概要</a></li>
+    <li><a href="#勘案">勘案</a>
+      <ul>
+        <li><a href="#1-デフォルトパラメータの書き換えをそのものを避け全てのパラメータを受け渡しの地点で全て確定させる">1. デフォルトパラメータの書き換えをそのものを避け、全てのパラメータを受け渡しの地点で全て確定させる</a></li>
+        <li><a href="#2-デフォルトパラメータ用のファイル--ユーザーが頻繁に変えるところのファイルのみで書き換えを行うようにする">2. デフォルトパラメータ用のファイル + ユーザーが頻繁に変えるところのファイルのみで書き換えを行うようにする</a></li>
+        <li><a href="#3-ディレクトリ階層そのものに親と子の関係を持たせる">3. ディレクトリ階層そのものに親と子の関係を持たせる</a></li>
+      </ul>
+    </li>
+    <li><a href="#今の所のtemplate案">今の所のtemplate案</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="デフォルトパラメータとどう付き合うか">デフォルトパラメータとどう付き合うか</h1>
+<h2 id="概要">概要</h2>
+<ul>
+<li>ロボットや機械学習では大量のパラメータを扱うことになる
+<ul>
+<li>Architect（アーキテクチャを考える人） 1 : developer 10 : User 100 ぐらいの比率であることを考えた時、パラメータはこの100の人々が触ることになるのでかなり慎重に設計する必要がある</li>
+</ul>
+</li>
+<li>一方でパラメータの構成はソフトウェアでの制約条件が緩く、性善説運用されがち
+<ul>
+<li>最終的に大概ぐちゃぐちゃになって、何がなんなのかわからなくなる</li>
+<li>基本はルールで縛ることが多くなってしまう</li>
+<li>が変なルールで縛ると開発者体験が非常に悪くなってしまい、開発者の心が離れてしまう
+<ul>
+<li>User 100を優先した結果、developer 10の開発スピードが悪くなる、みたいのもあるあるな話</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>大体のパラメータは「書き換えをしていくタイプのパラメータの構成」になっていくことが多いが、雑に扱うと意図しない挙動を生みがち
+<ul>
+<li>いわゆる&quot;デフォルトパラメータ&quot;であったり、上位インタフェースのパラメータの書き換えであったり</li>
+<li>パラメータの扱いが適当なケースはままあると思うが、この話題に絞ってどのようにparameterを構成していくかを考えてみる</li>
+<li>基本的には使うソフトウェアで何かしらの成約を受けていることが多いと思われる
+<ul>
+<li>例えばデフォルトパラメータは基本的に使えないようなプログラミング言語も存在する</li>
+<li>絶対的な正解は無くソフトウェアの依存に大きく依存するので、ケースバイケースで考える必要があるのは大前提</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>このあたりを一回色々考える必要に駆られたのでそのメモを残していく
+<ul>
+<li>未来にも使えそうだなと思ったので方針として考えられる候補を書き出してまとめておく</li>
+<li>思いつき次第追記していくつもりではある</li>
+</ul>
+</li>
+</ul>
+<h2 id="勘案">勘案</h2>
+<h3 id="1-デフォルトパラメータの書き換えをそのものを避け全てのパラメータを受け渡しの地点で全て確定させる">1. デフォルトパラメータの書き換えをそのものを避け、全てのパラメータを受け渡しの地点で全て確定させる</h3>
+<ul>
+<li>ROS2 のlaunch fileを例にとってみて、以下のようなlaunch fileとpackageのlaunch fileの例を考えてみる
+<ul>
+<li>launch fileでは何のnode（1アプリケーション）を、どのパラメータで動かすかを一緒に指定できる</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
+<span style="color:#f92672">&lt;launch&gt;</span>
+  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;$(var input/image)&#34;</span> <span style="color:#f92672">/&gt;</span>
+  <span style="color:#f92672">&lt;/include&gt;</span>
+<span style="color:#f92672">&lt;/launch&gt;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- package_a.launch.xml--&gt;</span>
+<span style="color:#f92672">&lt;launch&gt;</span>
+  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_compressed&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+  <span style="color:#75715e">&lt;!-- node --&gt;</span>
+<span style="color:#f92672">&lt;/launch&gt;</span>
+</code></pre></div><ul>
+<li>このような構成の場合、各ファイルでdefault parameterが異なるため argを消したりすると挙動が異なってしまう
+<ul>
+<li>誰かの変更によって、意図しない処理が走る可能性がある状態と言える</li>
+<li>parameterのargを消しても、意図しないdefault parameterによって埋められるのでエラーが起きないことが多い
+<ul>
+<li>ソフトウェアが肥大化してくると、バグの発見が遅れたり、デバッグが困難になりがちな状態になってしまう</li>
+<li>治そうとするときもどこで書き換えが起こっているのかを特定するために、階層の分だけparameterを遡る必要があるためデバッグに時間がかかりがち</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
+<span style="color:#f92672">&lt;launch&gt;</span>
+  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#75715e">&lt;!--&lt;arg name=&#34;input/image&#34; value=&#34;$(var input/image)&#34; /&gt;--&gt;</span>
+    <span style="color:#75715e">&lt;!-- The parameter changes from &#34;~/image_raw&#34; into &#34;~/image_compressed&#34; --&gt;</span>
+  <span style="color:#f92672">&lt;/include&gt;</span>
+<span style="color:#f92672">&lt;/launch&gt;</span>
+</code></pre></div><ul>
+<li>そのためdefault parameterを消して一番上位レイヤーからしかparameter を指定できないようにすると比較的マシになる
+<ul>
+<li>ソフトウェアが意図しない処理のときにfailするようになっていれば、「想定と異なる挙動」はしないだけマシ</li>
+<li>一方で上位レイヤー側が肥大化して管理が面倒になりがちというデメリットがある
+<ul>
+<li>「よく修正するところを直したいだけなのに、使いもしない大量のパラメータの海から探すのが面倒」みたいな構図になりがち</li>
+</ul>
+</li>
+<li>（もちろんconfig file化などはするが、config fileが肥大化するので結局同じ問題には帰着する）</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
+<span style="color:#f92672">&lt;launch&gt;</span>
+  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;$(var input/image)&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#75715e">&lt;!-- If this arg is commented out, then running will fail --&gt;</span>
+  <span style="color:#f92672">&lt;/include&gt;</span>
+<span style="color:#f92672">&lt;/launch&gt;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- package_a.launch.xml--&gt;</span>
+<span style="color:#f92672">&lt;launch&gt;</span>
+  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#f92672">/&gt;</span>
+  <span style="color:#75715e">&lt;!-- omit --&gt;</span>
+<span style="color:#f92672">&lt;/launch&gt;</span>
+</code></pre></div><ul>
+<li>ROS2では起動するソフトウェア（launch file）の中にparameterが記述されるというソフトウェアの成約が存在するので <code>command {起動するファイル} {parameterファイル}</code> のような構成を取れないので、あくまで性善説運用になってしまう</li>
+<li>なので基本的に「デフォルトパラメータの書き換えをそのものを避け、全てのパラメータを受け渡しの地点で全て確定させる」というスタンスを取る時は、ソフトウェアが大規模にならないことが確定している時にしか使いにくいとも言える
+<ul>
+<li>このあたりは「運用を考えた時のソフトウェア選定」とも言える</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-デフォルトパラメータ用のファイル--ユーザーが頻繁に変えるところのファイルのみで書き換えを行うようにする">2. デフォルトパラメータ用のファイル + ユーザーが頻繁に変えるところのファイルのみで書き換えを行うようにする</h3>
+<ul>
+<li>画像処理系の機械学習ライブラリ <a href="https://github.com/open-mmlab/mmdetection">mmdetection</a> を例にとってみる
+<ul>
+<li>configはpythonで記述でき、parameterは書き換えされる仕組みになっている</li>
+</ul>
+</li>
+<li>例として<a href="https://github.com/open-mmlab/mmdetection/blob/v3.3.0/projects/CO-DETR/configs/codino/co_dino_5scale_swin_l_lsj_16xb1_3x_coco.py">CO-DETR config</a>を見てみると、中で<a href="https://github.com/open-mmlab/mmdetection/blob/v3.3.0/projects/CO-DETR/configs/codino/co_dino_5scale_swin_l_lsj_16xb1_1x_coco.py">baseのconfig</a>が定義されている
+<ul>
+<li><a href="https://github.com/open-mmlab/mmdetection/blob/v3.3.0/projects/CO-DETR/configs/codino/co_dino_5scale_swin_l_lsj_16xb1_1x_coco.py">baseのconfig</a> を見ると <a href="https://github.com/open-mmlab/mmdetection/blob/v3.3.0/projects/CO-DETR/configs/codino/co_dino_5scale_r50_lsj_8xb2_1x_coco.py">さらにbaseのconfig</a> が定義されている</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;co_dino_5scale_swin_l_lsj_16xb1_1x_coco.py&#39;</span>]
+model <span style="color:#f92672">=</span> dict(backbone<span style="color:#f92672">=</span>dict(drop_path_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>))
+param_scheduler <span style="color:#f92672">=</span> [dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;MultiStepLR&#39;</span>, milestones<span style="color:#f92672">=</span>[<span style="color:#ae81ff">30</span>])]
+train_cfg <span style="color:#f92672">=</span> dict(max_epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">36</span>)
+</code></pre></div><ul>
+<li>このようなparameterの書き換えは（遡るのが少し面倒とは言え）比較的アーキテクチャの切れ目ごとに定義されており、ある程度configの設計指針を感じられるので問題は起こりにくい</li>
+<li>一方で適当に開発しているプロトタイプ開発などでは、（特に機械学習の研究開発のような場面で）以下のようなファイルが作られがちだったりする</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a.py</span>
+model <span style="color:#f92672">=</span> dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Model_A&#39;</span>)
+<span style="color:#75715e"># Default parameter is defined in class objects.</span>
+<span style="color:#75715e"># class Model_A(BaseDetector):</span>
+<span style="color:#75715e">#     def __init__(</span>
+<span style="color:#75715e">#             self,</span>
+<span style="color:#75715e">#             parameter_a = 2,</span>
+<span style="color:#75715e">#             parameter_b = 3):</span>
+epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v2.py</span>
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a.py&#39;</span>]
+model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v3.py</span>
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_v2.py&#39;</span>]
+model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v4.py</span>
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_v3.py&#39;</span>]
+model <span style="color:#f92672">=</span> dict(parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</code></pre></div><ul>
+<li>このような場合最終的にトレーサビリティがどうなっているのか把握しづらくなっていき、一体今どのパラメータで実行されているのかどんどん把握が難しくなっていく
+<ul>
+<li>（mmdetectionの場合は最終的に定義されたparameter fileが作られており、一応パラメータの再現自体は可能ではあるので「再現性」を問題にするのは微妙にズレていて、あくまで開発者体験が悪くなっているだけというのが正確だと思われる）</li>
+</ul>
+</li>
+<li>一方で書き換え禁止も辛いものがある
+<ul>
+<li>共通のところは <code>_base_</code> を使って共通化していきたいのと、「書き換えをそのものを避ける」のはソフトウェアの仕様上結局reviewなどで指摘する方法ぐらいしかない</li>
+</ul>
+</li>
+<li>運用でカバーするためには
+<ul>
+<li>v1 -&gt; v2 -&gt; v3 -&gt; v4のような書き換えでなく、全てのパラメータの変更をbase fileからの変更を書き加えるようにして、base -&gt; v1, v2, v3, v4 の継承の仕方をして、なるべく書き換えを減らすようにすると多少問題は緩和できる</li>
+<li>ただここはシステム上で弾くとかは結構用意するのが面倒で、いわゆる「運用でカバー」になり、reviewer側の負担はどうしても大きくなる</li>
+<li>共通化の処理は同じ処理にして、パラメータを書き換える場所を固めておくとユーザーフレンドリーだと思う</li>
+<li>つまるところ「木構造において深さをなるべく減らすようなパラメータファイル構成にする」を意識する感じになる
+<ul>
+<li>あくまで&quot;意識する&quot;という性善説ではあり、適当に開発する人がいると管理しきれなくなる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>このようになるべく層が浅い構成にすれば、比較的把握しやすいパラメータ管理になるはず</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model definition</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Model_A</span>(BaseDetector):
+    <span style="color:#66d9ef">def</span> __init__(
+            self,
+            parameter_a: Optional[int],
+            parameter_b: Optional[int],
+            parameter_c: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>):
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_base.py</span>
+model <span style="color:#f92672">=</span> dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Model_A&#39;</span>, parameter_a<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, parameter_b<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+<span style="color:#75715e"># If parameter_c is fixed, it may be OK to use by default parameter.</span>
+epoch <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v2.py</span>
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
+
+<span style="color:#75715e"># User parameter</span>
+parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+
+<span style="color:#75715e"># Overwrite process</span>
+model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v3.py</span>
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
+
+<span style="color:#75715e"># User parameter</span>
+parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+
+<span style="color:#75715e"># Overwrite process</span>
+model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v4.py</span>
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
+
+<span style="color:#75715e"># User parameter</span>
+parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+
+<span style="color:#75715e"># Overwrite process</span>
+model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
+</code></pre></div><ul>
+<li>そもそもパラメータのオーバーライドはなるべくせず、使っていないパラメータは破棄してくのが正しいという話もあるが、これもreviewを頑張っていくしか無いとも言える
+<ul>
+<li>あと「デフォルトパラメータはclassの定義地点のみ使う、パラメータファイルでは上書きするもののみ」という構図が一番綺麗なようには感じる</li>
+<li>多少の肥大化にも耐えられる構成と言えそう</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-ディレクトリ階層そのものに親と子の関係を持たせる">3. ディレクトリ階層そのものに親と子の関係を持たせる</h3>
+<ul>
+<li><a href="https://github.com/mit-han-lab/bevfusion">BEVFusion</a> などで使われている形式
+<ul>
+<li>階層そのものがデフォルトパラメータ -&gt; 上書きの構成を持っているもの</li>
+</ul>
+</li>
+<li>以下の階層の場合で<code>configs/bevfusion/parameter_1.yaml</code> を指定した場合
+<ul>
+<li>
+<ol>
+<li><code>configs/default.yaml</code></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li><code>configs/bevfusion/default.yaml</code></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li><code>configs/bevfusion/parameter_1.yaml</code></li>
+</ol>
+</li>
+<li>の順にパラメータが読み込まれて、上書きされていく</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>- configs/
+  - default.yaml
+  - bevfusion
+    - default.yaml
+    - parameter_1.yaml
+</code></pre><ul>
+<li>利点としては <code>command {parameter file}</code> の形式かつ、parameterのトレースはしやすいという点</li>
+<li>使いにくい点としては、階層構造に縛られるのでそのパラメータから異なる階層のパラメータは読み込むことができない（この制約条件のおかげでトレースがしやすいとも言える）</li>
+</ul>
+<h2 id="今の所のtemplate案">今の所のtemplate案</h2>
+<ul>
+<li>「ディレクトリ階層そのものに親と子の関係を持たせる」と「デフォルトパラメータ用のファイル + ユーザーが頻繁に変えるところのファイルのみで書き換えを行うようにする」を足し算する構成が今の所丸いのでは、というのが一時的な結論</li>
+<li>1 componentとして動作するconfig + それを読み込むデフォルトパラメータ + ユーザーが書き換えるパラメータ の構成
+<ul>
+<li>ユーザーが管理していくところは「ディレクトリ階層そのものに親と子の関係を持たせる」を運用ルールとして定める</li>
+</ul>
+</li>
+<li>構成例</li>
+</ul>
+<pre tabindex="0"><code>- configs/
+  - component/
+    - component_a.py
+- projects/
+  - project_a/
+    - configs/
+      - default.py
+      - model_a/
+        - default.py
+        - experiment_1.py
+        - experiment_2.py
+      - model_b/
+        - default.py
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># projects/project_a/configs/model_a/default.py</span>
+
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;../../../../configs/component/component_a.py&#39;</span>]
+
+<span style="color:#75715e"># default parameter</span>
+parameter_a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+parameter_b <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+parameter_c <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># projects/project_a/configs/model_a/experiment_2.py</span>
+
+_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;./default.py&#39;</span>]
+
+<span style="color:#75715e"># User parameter</span>
+parameter_a <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+parameter_b <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</code></pre></div>
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

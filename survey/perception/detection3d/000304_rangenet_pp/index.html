@@ -1,0 +1,378 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-View 3D Object Detection Network for Autonomous Driving (IROS2019) - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="Multi-View 3D Object Detection Network for Autonomous Driving (IROS2019)" />
+<meta property="og:description" content="概要 Rangenet&#43;&#43;の提案 https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/milioto2019iros.pdf Paper https://www.youtube.com/watch?v=wuokg7MFZyU youtube http://jbehley.github.io/ 著者 https://github.com/PRBonn/lidar-bonnetal github Lidar-only semantic segmentation. Lidarのreal-time procesing, 10fps程度 projection-based methods a spherical projectionを使った2D" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/detection3d/000304_rangenet_pp/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2021-10-10T13:00:00+09:00" />
+<meta property="article:modified_time" content="2021-10-10T13:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Multi-View 3D Object Detection Network for Autonomous Driving (IROS2019)"/>
+<meta name="twitter:description" content="概要 Rangenet&#43;&#43;の提案 https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/milioto2019iros.pdf Paper https://www.youtube.com/watch?v=wuokg7MFZyU youtube http://jbehley.github.io/ 著者 https://github.com/PRBonn/lidar-bonnetal github Lidar-only semantic segmentation. Lidarのreal-time procesing, 10fps程度 projection-based methods a spherical projectionを使った2D"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#概要">概要</a></li>
+        <li><a href="#related-works">Related Works</a></li>
+        <li><a href="#手法">手法</a></li>
+        <li><a href="#実験">実験</a></li>
+        <li><a href="#考察">考察</a></li>
+        <li><a href="#次読むやつ">次読むやつ</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h3 id="概要">概要</h3>
+<ul>
+<li>Rangenet++の提案</li>
+<li><a href="https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/milioto2019iros.pdf">https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/milioto2019iros.pdf</a> Paper
+<ul>
+<li><a href="https://www.youtube.com/watch?v=wuokg7MFZyU">https://www.youtube.com/watch?v=wuokg7MFZyU</a> youtube</li>
+<li><a href="http://jbehley.github.io/">http://jbehley.github.io/</a> 著者</li>
+<li><a href="https://github.com/PRBonn/lidar-bonnetal">https://github.com/PRBonn/lidar-bonnetal</a> github</li>
+</ul>
+</li>
+<li>Lidar-only semantic segmentation.
+<ul>
+<li>Lidarのreal-time procesing, 10fps程度</li>
+<li>projection-based methods
+<ul>
+<li>a spherical projectionを使った2D化: similar to a range image</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>新規性
+<ul>
+<li>post-processingで中間特徴量の離散化やぼけの問題を解消</li>
+<li>artifact（信号処理や画像処理の過程で発生するデータの誤りや信号の歪み）を大きく減少</li>
+<li>BEVのような情報落ちがない</li>
+</ul>
+</li>
+</ul>
+<h3 id="related-works">Related Works</h3>
+<ul>
+<li>流れ
+<ul>
+<li>PointNet -&gt; PointNet++</li>
+<li>TangentConv</li>
+<li>SPLATNet: high-dimensional sparse lattice: not scale</li>
+<li>SuperPoint Graph</li>
+</ul>
+</li>
+<li>Online Lidar
+<ul>
+<li>SqueezeSeg and SqueezeSegV2
+<ul>
+<li>spherical projection, a conditional random field (CRF)</li>
+<li>limit: 90deg, CRFをlabelの探索をすべての点群に対して行うものに変更</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="手法">手法</h3>
+<p><img src="https://scepter914.github.io/uploads/r/rangenet_2.png" alt=""></p>
+<h4 id="iiia--range-image化">III.A . range image化</h4>
+<ul>
+<li>点群 ($p_i$ = (x,y,z)) (3D) -&gt; 球面投影されたデータ (u v) ( = puesudo range image, 2D)</li>
+<li>列: 同時刻 行; 異なる時間のずれは自動車レベルの速度なら無視できる仮定 -&gt; ほんと？</li>
+<li>vehicle motion</li>
+<li>$$ \begin{pmatrix} u \\v \end{pmatrix} = \begin{pmatrix} \frac{1}{2} (1-\arctan (y, x) \pi^{-1} w \\ {1-(\arcsin (z r^{-1})+f_{u p}) f^{-1}) h} \end{pmatrix} $$</li>
+<li>Tensor (5 × h × w) r, x, y, z, and remission
+<ul>
+<li>remission: 解像度減少のこと言ってる？</li>
+</ul>
+</li>
+<li>(u, v)</li>
+</ul>
+<h4 id="iiib--2d-cnn-semantic-segmentation">III.B . 2D CNN semantic segmentation</h4>
+<ul>
+<li>球面投影されたデータ -&gt; Semantic segmantation (2D)</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/rangenet_1.png" alt=""></p>
+<ul>
+<li>SqueezeSeg base: encoder-decoder hour-glass-shaped architecture</li>
+<li>downsampling is 32</li>
+<li>Loss function: $$\mathcal{L}=-\sum_{c=1}^{C} w_{c} y_{c} \log (\hat{y}_{c}), \text { where } w_{c}=\frac{1}{\log (f_{c}+\epsilon) }$$
+<ul>
+<li>fc: inverse of its frequency, よく出てくるラベルの影響力を下げる</li>
+</ul>
+</li>
+<li>アーキテクチャの流れ Darknet53 (Yolov3) -&gt; RangeNet53 -&gt; Rangenet++</li>
+<li>data size
+<ul>
+<li>velodyne 64列を使っているのでh = 64</li>
+<li>w = 2048 - 512で評価</li>
+</ul>
+</li>
+</ul>
+<h4 id="iiic-2dto3d-semantic-transfer">III.C. 2Dto3D semantic transfer</h4>
+<ul>
+<li>Semantic segmantation (2D) -&gt; rawoutput (3D)</li>
+<li>(u, v)と各点群のペアの情報を用いる
+<ul>
+<li>情報lossが無くせる</li>
+</ul>
+</li>
+<li>最後の層見ると特徴量n層？
+<ul>
+<li>1 × 1 convolutionsの層</li>
+</ul>
+</li>
+</ul>
+<h4 id="iiid-3dpost-processing">III.D. 3Dpost-processing</h4>
+<ul>
+<li><del>rawoutput (3D) -&gt; filtered output (3D)</del>
+<ul>
+<li>rawoutput (3D) + rangeImage (2D) -&gt; filtered output (3D)</li>
+</ul>
+</li>
+<li>そのままのoutputだとshadow-like artifactsが出現する
+<ul>
+<li>range image based 3Dpost-processing to clean the point cloud from undesired discretization and inference artifacts, using a fast, GPU-based kNN-search operating on all points.</li>
+</ul>
+</li>
+<li>Efficient Projective Nearest Neighbor Search for Point Labels
+<ul>
+<li>k-Nearest-Neighbor (kNN) base, 速い</li>
+<li>閾値を追加する cut-off閾値 近い点群とする最大距離</li>
+<li>並列化可能で速い
+<ul>
+<li>実装はpytrochのgpu版が用いられている</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data
+<ul>
+<li>Range Image $I_{range}$ of size W × H,</li>
+<li>Label Image $I_{label}$ of predictions of size W × H,</li>
+<li>Ranges R for each point p ∈ P of size N ,</li>
+<li>Image coordinates (u, v) of each point in R.</li>
+</ul>
+</li>
+<li>Result: Labels L consensus for each point of size N .</li>
+<li>algorithm
+<ul>
+<li>Get S^2 neighbors N'</li>
+<li>Get neighbors N</li>
+<li>Fill in real point ranges</li>
+<li>Label neighbors L 0 for each pixel</li>
+<li>Get label neighbors L for each point</li>
+<li>Distances to neighbors D for each point</li>
+<li>Compute inverse Gaussian Kernel</li>
+<li>Weight neighbors with inverse Gaussian kernel</li>
+<li>Find k-nearest neighbors S for each point</li>
+<li>Gather votes.</li>
+<li>Accumulate votes.</li>
+<li>Find maximum consensus.</li>
+</ul>
+</li>
+<li>ハイパラ
+<ul>
+<li>(i) S which the size of the search window</li>
+<li>(ii) k which is number of nearest neighbors</li>
+<li>(iii) cut-off which is the maximum allowed range difference for the k</li>
+<li>(iv) σ for the inverse gaussian.</li>
+</ul>
+</li>
+<li>4パラ総当りは結構しんどそう
+<ul>
+<li>III.Cまでのハイパラにも依存していそう(特に解像度)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/rangenet_3.jpg" alt=""></p>
+<h3 id="実験">実験</h3>
+<ul>
+<li>SemanticKITTI <a href="http://semantic-kitti.org/">http://semantic-kitti.org/</a>
+<ul>
+<li>2019のかなり新しいデータセット</li>
+</ul>
+</li>
+<li>SuMa++ (Semantic SLAM)と合わせてslam+localization
+<ul>
+<li>dynamic objectにたいして取り除くような処理</li>
+</ul>
+</li>
+<li>64*2048 12fps</li>
+<li>border-IoU: how far a point is to the self occlusion of the sensor
+<ul>
+<li>Fig.6の横軸は何？</li>
+</ul>
+</li>
+</ul>
+<h3 id="考察">考察</h3>
+<ul>
+<li>全体として読みやすい
+<ul>
+<li>関連研究がきれいにまとまっている印象</li>
+</ul>
+</li>
+<li>range image base
+<ul>
+<li>実機応用する時、センサ依存が気になる</li>
+<li>そもそもSemantic segmantationをしているけどdetectionに比べるとやっていることがリッチ過ぎる？
+<ul>
+<li>personのdetectionにはゆーてセマセグくらい必要？</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>実験として</li>
+<li>1つのデータセットのみでの評価
+<ul>
+<li>ノイズ等にどのくらい頑健なのか</li>
+</ul>
+</li>
+</ul>
+<h3 id="次読むやつ">次読むやつ</h3>
+<ul>
+<li>J. Behley, C. Stachnis. Efficient Surfel-Based SLAM using 3D Laser Range Data in Urban Environments, Proc. of Robotics: Science and Systems (RSS), 2018.</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

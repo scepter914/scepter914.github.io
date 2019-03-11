@@ -1,0 +1,191 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+||||||| parent of d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+>>>>>>> d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robotics on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/robotics/</link>
+    <description>Recent content in robotics on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Soft Robotics Commercialization: Jamming Grippers from Research to Product (Soft robotics 2016)</title>
+      <link>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</guid>
+      <description>Summary ドラえもんハンドのproduct化で大変だったことまとめ集 ソフトロボティクスを事業化しようとするなら必読 動画 https://www.youtube.com/watch?v=GdJyICIp4t4 https://www.youtube.com/watch?v=KZ0Y2fDZ8Uw https://www.youtube.com/watch?v=zgHSAUEzjn4 Background これまでの世界にimp</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車グリッパ”Magripper”による高速グラスピング</title>
+      <link>https://scepter914.github.io/project/project_magripper_ja/</link>
+      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magripper_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magripper/index-j.html における成果 concept 本研究では、バックドライバビリティが高いグリッパ&amp;quot;Magripper&amp;quot;と、リーチングからシームレスに高</description>
+    </item>
+    
+    <item>
+      <title>High-speed Hitting Grasping with Magripper</title>
+      <link>https://scepter914.github.io/project/project_magripper/</link>
+      <pubDate>Wed, 30 Sep 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magripper/</guid>
+      <description>Summary  Research at http://ishikawa-vision.org/fusion/Magripper/index-e.html concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
+ Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.</description>
+    </item>
+    
+    <item>
+      <title>作業日誌の書く手順</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
+    </item>
+    
+    <item>
+      <title>なぜ作業日誌を書くのか</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
+      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
+    </item>
+    
+    <item>
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/project_magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/Magslider/index-e.html concept    control strategy   In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構 &#39;&#39;Magslider&#39;&#39; による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/project_magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_magslider_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/Magslider/index-j.html における成果 concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;quot;Magslider&amp;quot;による高速衝撃吸</description>
+    </item>
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/project_high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
+    
+  </channel>
+</rss>
+||||||| parent of c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/robotics/</link>
+    <description>Recent content in Robotics on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>作業日誌の書く手順</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
+    </item>
+    
+    <item>
+      <title>なぜ作業日誌を書くのか</title>
+      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
+      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
+      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
+    </item>
+    
+    <item>
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magslider/</guid>
+      <description>Summary  concept   control strategy  In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構&#39;&#39;Magslider&#39;&#39;による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magslider_ja/</guid>
+      <description>Summary concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;rdquo;Magslider&amp;rdquo;による高速衝撃吸収制御を開</description>
+    </item>
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
+    
+  </channel>
+</rss>
+>>>>>>> c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)

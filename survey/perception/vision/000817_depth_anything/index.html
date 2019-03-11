@@ -1,0 +1,388 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01) - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)" />
+<meta property="og:description" content="Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01) Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model &#43; Unsupervisedな学習の手法を取り入" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/vision/000817_depth_anything/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2024-08-11T13:00:00+09:00" />
+<meta property="article:modified_time" content="2024-08-11T13:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)"/>
+<meta name="twitter:description" content="Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01) Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model &#43; Unsupervisedな学習の手法を取り入"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#experiment">Experiment</a></li>
+    <li><a href="#discussion">Discussion</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="depth-anything-unleashing-the-power-of-large-scale-unlabeled-data-arxiv-202401">Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><a href="https://github.com/LiheYoung/Depth-Anything">https://github.com/LiheYoung/Depth-Anything</a></li>
+<li>link
+<ul>
+<li><a href="https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main">https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main</a> model</li>
+<li><a href="https://github.com/spacewalk01/depth-anything-tensorrt">https://github.com/spacewalk01/depth-anything-tensorrt</a> TensorRT実装</li>
+</ul>
+</li>
+<li>from TikTok</li>
+<li>汎用性のある Zero-shot monocular relative depth estimation
+<ul>
+<li>基盤model + Unsupervisedな学習の手法を取り入れてより汎化性能を得た</li>
+</ul>
+</li>
+</ul>
+<h2 id="background">Background</h2>
+<ul>
+<li>multi-dataset joint training</li>
+<li>MiDaS: relative depth information</li>
+<li>ZoeDepth も強いらしい</li>
+</ul>
+<h2 id="method">Method</h2>
+<p><img src="https://scepter914.github.io/uploads/r/depth_anything_2.png" alt=""></p>
+<ul>
+<li>Data
+<ul>
+<li>1.5M labeled images from 6 public datasets</li>
+<li>62 M unlabeled images</li>
+<li>NYUv2 and KITTIは評価用に使わなかった</li>
+<li>Movies and WSVDはクオリティ低</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/depth_anything_1.png" alt=""></p>
+<ul>
+<li>Learning Labeled Images
+<ul>
+<li>MiDaS のreproduce</li>
+</ul>
+</li>
+<li>Unlabeled images
+<ul>
+<li>perturbations
+<ul>
+<li>主に2つ、シンプルながら強かった</li>
+<li>color distortion: color jittering + Gaussian blurring</li>
+<li>spatial distortion: CutMix
+<ul>
+<li>CutMixは 50%にしている</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Labeledで学習したあとだとunlabeledから学習するのが難しい
+<ul>
+<li>TeacherとStudentが同じpre trainスタートだとよりその傾向になる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Semantic-Assisted Depth estimation
+<ul>
+<li>RAM [85] + GroundingDINO [37] + HQ-SAM [26] modelを使用</li>
+</ul>
+</li>
+</ul>
+<h2 id="experiment">Experiment</h2>
+<ul>
+<li>Zero-Shot Relative Depth Estimation</li>
+</ul>
+<table class="mc-table">
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align:right">Params</th>
+<th style="text-align:center">KITTI</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">NYUv2</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Sintel</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">DDAD</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">ETH3D</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">DIODE</th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:right"></td>
+<td style="text-align:center">AbsRel</td>
+<td style="text-align:center">$\delta_1$</td>
+<td style="text-align:center">AbsRel</td>
+<td style="text-align:center">$\delta_1$</td>
+<td style="text-align:center">AbsRel</td>
+<td style="text-align:center">$\delta_1$</td>
+<td style="text-align:center">AbsRel</td>
+<td style="text-align:center">$\delta_1$</td>
+<td style="text-align:center">AbsRel</td>
+<td style="text-align:center">$\delta_1$</td>
+<td style="text-align:center">AbsRel</td>
+<td style="text-align:center">$\delta_1$</td>
+</tr>
+<tr>
+<td>MiDaS</td>
+<td style="text-align:right">345.0M</td>
+<td style="text-align:center">0.127</td>
+<td style="text-align:center">0.850</td>
+<td style="text-align:center">0.048</td>
+<td style="text-align:center"><em>0.980</em></td>
+<td style="text-align:center">0.587</td>
+<td style="text-align:center">0.699</td>
+<td style="text-align:center">0.251</td>
+<td style="text-align:center">0.766</td>
+<td style="text-align:center">0.139</td>
+<td style="text-align:center">0.867</td>
+<td style="text-align:center">0.075</td>
+<td style="text-align:center">0.942</td>
+</tr>
+<tr>
+<td><strong>Ours-S</strong></td>
+<td style="text-align:right">24.8M</td>
+<td style="text-align:center">0.080</td>
+<td style="text-align:center">0.936</td>
+<td style="text-align:center">0.053</td>
+<td style="text-align:center">0.972</td>
+<td style="text-align:center">0.464</td>
+<td style="text-align:center">0.739</td>
+<td style="text-align:center">0.247</td>
+<td style="text-align:center">0.768</td>
+<td style="text-align:center">0.127</td>
+<td style="text-align:center"><strong>0.885</strong></td>
+<td style="text-align:center">0.076</td>
+<td style="text-align:center">0.939</td>
+</tr>
+<tr>
+<td><strong>Ours-B</strong></td>
+<td style="text-align:right">97.5M</td>
+<td style="text-align:center"><em>0.080</em></td>
+<td style="text-align:center"><em>0.939</em></td>
+<td style="text-align:center"><em>0.046</em></td>
+<td style="text-align:center">0.979</td>
+<td style="text-align:center"><strong>0.432</strong></td>
+<td style="text-align:center"><em>0.756</em></td>
+<td style="text-align:center"><em>0.232</em></td>
+<td style="text-align:center"><em>0.786</em></td>
+<td style="text-align:center"><strong>0.126</strong></td>
+<td style="text-align:center"><em>0.884</em></td>
+<td style="text-align:center"><em>0.069</em></td>
+<td style="text-align:center"><em>0.946</em></td>
+</tr>
+<tr>
+<td><strong>Ours-L</strong></td>
+<td style="text-align:right">335.3M</td>
+<td style="text-align:center"><strong>0.076</strong></td>
+<td style="text-align:center"><strong>0.947</strong></td>
+<td style="text-align:center"><strong>0.043</strong></td>
+<td style="text-align:center"><strong>0.981</strong></td>
+<td style="text-align:center"><em>0.458</em></td>
+<td style="text-align:center"><strong>0.760</strong></td>
+<td style="text-align:center"><strong>0.230</strong></td>
+<td style="text-align:center"><strong>0.789</strong></td>
+<td style="text-align:center"><em>0.127</em></td>
+<td style="text-align:center">0.882</td>
+<td style="text-align:center"><strong>0.066</strong></td>
+<td style="text-align:center"><strong>0.952</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Fine-tuning Absolute depth estimation</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/depth_anything_3.png" alt=""></p>
+<ul>
+<li>Semantic segmentation for Cityscapes</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/depth_anything_4.png" alt=""></p>
+<ul>
+<li>Semantic segmentation for ADE20K</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/depth_anything_5.png" alt=""></p>
+<ul>
+<li>Pre-trained models のInference time (ms)</li>
+</ul>
+<table class="mc-table">
+<thead>
+<tr>
+<th style="text-align:left">Model</th>
+<th style="text-align:right">Params</th>
+<th style="text-align:center">V100</th>
+<th style="text-align:center">A100</th>
+<th style="text-align:center">RTX4090 TensorRT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Depth-Anything-Small</td>
+<td style="text-align:right">24.8M</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:left">Depth-Anything-Base</td>
+<td style="text-align:right">97.5M</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:left">Depth-Anything-Large</td>
+<td style="text-align:right">335.3M</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="discussion">Discussion</h2>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

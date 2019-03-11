@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>evaluation on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/evaluation/</link>
+    <description>Recent content in evaluation on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/evaluation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Injecting Planning-Awareness into Prediction and Detection Evaluation (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000558_pi_metrics/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000558_pi_metrics/</guid>
+      <description>Injecting Planning-Awareness into Prediction and Detection Evaluation (IV2022) Summary https://github.com/BorisIvanovic/PlanningAwareEvaluation Detectionとforecastingに使えるPI-metricsの提案 Method 他の手法 task-aware evaluation metrics be: Able to capture asymmetries in downstream tasks. Method-agnostic. Computationally feasible to compute. Interpretable</description>
+    </item>
+    
+    <item>
+      <title>What data do we need for training an AV motion planner? (ICRA2021)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</guid>
+      <description>What data do we need for training an AV motion planner? (ICRA2021) Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine</description>
+    </item>
+    
+    <item>
+      <title>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</link>
+      <pubDate>Tue, 21 Jun 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</guid>
+      <description>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) Summary from Intel + Mobileye RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を</description>
+    </item>
+    
+  </channel>
+</rss>

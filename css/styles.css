@@ -11,10 +11,12 @@ html {
 body {
   font-size: inherit;
   font-weight: 300;
+  line-height: 1.6rem;
 }
 
 p {
   margin: 0;
+
 }
 
 img {
@@ -35,8 +37,8 @@ h1 { font-size: 2.6rem; line-height: 3rem; margin: 1.5rem 0; }
 /* h2 { font-size: 1.4rem; line-height: 2rem; margin: 1.5rem 0; } */
 h2 { font-size: 1.8rem; line-height: 1.5rem; margin: 1.5rem 0; }
 /* h3 { font-size: 1.2rem; line-height: 1.5rem; margin: 1.5rem 0; } */
-h3 { font-size: 1.4rem; line-height: 1.5rem; margin: 2.0rem 0; }
-h4, h5, h6 { font-size: 1rem; line-height: 1.5rem; margin: 1.5rem 0; }
+h3 { font-size: 1.4rem; line-height: 1.5rem; margin: 1.0rem 0; }
+h4, h5, h6 { font-size: 1rem; line-height: 1.5rem; margin: 1.0rem 0; }
 
 main {
   display: block;
@@ -238,7 +240,7 @@ article.li.sm>header {
 
 .article-body pre code {
   display: block;
-  line-height: 1rem;
+  line-height: 1.2rem;
   padding: 1rem;
 }
 
@@ -266,7 +268,7 @@ article.li.sm>header {
   color: #428bca;
 }
 
-.article-body figure { margin: 1.5rem 0; }
+.article-body figure { margin: 2.5rem 0; }
 .article-body figure.left,
 .article-body figure.right {
   width: 15rem;
@@ -280,7 +282,7 @@ article.li.sm>header {
   .article-body figure.left,
   .article-body figure.right {
     float: none;
-    margin: 0;
+    margin: 2.0rem;
     width: auto;
     height: auto;
   }
@@ -295,4 +297,6 @@ article.li.sm>header {
 .article-body figcaption a {
   color: #263238;
 }
+
+
 

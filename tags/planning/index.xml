@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>planning on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/planning/</link>
+    <description>Recent content in planning on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2025 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DRIVE VLM: The Convergence of Autonomous Driving and Large Vision-Language Models (arxiv2024/02, CoRL2024)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</guid>
+      <description>DRIVE VLM: The Convergence of Autonomous Driving and Large Vision-Language Models (arxiv2024/02, CoRL2024) Summary https://github.com/Tsinghua-MARS-Lab/DriveVLM 2024/10/17現在未公開 https://tsinghua-mars-lab.github.io/DriveVLM/ Method DriveVLM-Dual architecture Output Meta-action Decision Waypoints Traditional pipeline = E2E model のこと Integrating 3D Perception. 2Dに投影して、critical objec</description>
+    </item>
+    
+    <item>
+      <title>Senna: Bridging Large Vision-Language Models and End-to-End Autonomous Driving (arxiv 2024/10)</title>
+      <link>https://scepter914.github.io/survey/perception/planning/001034_senna/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/planning/001034_senna/</guid>
+      <description>Senna: Bridging Large Vision-Language Models and End-to-End Autonomous Driving (arxiv 2024/10) Summary VLMとE2E modelを繋ぐフレームワーク Senna を用いた自動運転 DriveVLMの後継 Method Experiment DriveVLM とはそんなに変わらないかな</description>
+    </item>
+    
+  </channel>
+</rss>
