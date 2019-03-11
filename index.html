@@ -82,6 +82,34 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-03-11T00:01:00JST">Mar 11, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">個人用wiki(gollum)を使った研究survey</a></h2>
+  </header>
+
+  
+  <div class="summary">概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
+ これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
+論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
+ 検索にかかるようになるが 面倒すぎて発狂する
+Mendeleyで検索をかける  欲しい機能4へのアプローチとして
+ 全文検索を使える
+ ローカルのpdfを読み込ませて自動でrenameもできる
+ タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった</div>
+
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/" title="個人用wiki(gollum)を使った研究survey">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-10T10:00:00JST">Jan 10, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
@@ -276,30 +304,6 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-29T23:30:00JST">Apr 29, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a></h2>
-  </header>
-
-  
-  <div class="summary">やりたいこと @にカーソルがあるとして，
- abcd@efghij  から
- @abcd efghij  にする．
-続けてoを打てば
- abcd @ efghij  となって便利
-解決法 .vimrcに
- nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k  を書く.
-するとノーマルモードでEnter押せば，題意の通りになっているはず</div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -329,6 +333,8 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
     </div>
     <div class="list-group">
       
+      <a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/" class="list-group-item">個人用wiki(gollum)を使った研究survey</a>
+      
       <a href="https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/" class="list-group-item">Setting Velocity on Joints and Links for Gazebo ver9.6</a>
       
       <a href="https://scepter914.github.io/blog/2019/20190107_tellodetection/" class="list-group-item">TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション</a>
@@ -340,8 +346,6 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <a href="https://scepter914.github.io/blog/2018/20180819_wikiengine/" class="list-group-item">利きwiki 〜Wiki survey〜</a>
       
       <a href="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/" class="list-group-item">gollum on docker</a>
-      
-      <a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/" class="list-group-item">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a>
       
     </div>
   </section>
