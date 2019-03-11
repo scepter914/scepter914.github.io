@@ -35,7 +35,7 @@
     <item>
       <title>個人用wiki(gollum)を使った研究survey</title>
       <link>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</link>
-      <pubDate>Sun, 11 Mar 2018 00:01:00 +0900</pubDate>
+      <pubDate>Sat, 10 Mar 2018 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</guid>
       <description>概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
