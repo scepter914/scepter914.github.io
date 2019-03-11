@@ -94,6 +94,22 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
     </item>
     
     <item>
+      <title>個人用wiki(gollum)を使った研究survey</title>
+      <link>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</link>
+      <pubDate>Sun, 11 Mar 2018 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</guid>
+      <description>概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
+ これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
+論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
+ 検索にかかるようになるが 面倒すぎて発狂する
+Mendeleyで検索をかける  欲しい機能4へのアプローチとして
+ 全文検索を使える
+ ローカルのpdfを読み込ませて自動でrenameもできる
+ タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった</description>
+    </item>
+    
+    <item>
       <title>gollum &#43; reveal.js &#43; pandocによるスライド作成システム</title>
       <link>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</link>
       <pubDate>Sat, 10 Feb 2018 00:05:00 +0900</pubDate>
@@ -128,7 +144,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
       <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
  gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
-  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
+  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 個人wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  追加ページ  個人用wiki(gollum)を使った研究survey  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
     </item>
     
     <item>

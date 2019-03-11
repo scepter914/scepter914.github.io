@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>個人用wiki(gollum)を使った研究survey - Scepter914 Website</title>
+    
+<meta name="description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ 検索にかかるようになるが 面倒すぎて発狂するMendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった">
+
+<meta property="og:title" content="個人用wiki(gollum)を使った研究survey - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ 検索にかかるようになるが 面倒すぎて発狂するMendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
+<meta name="twitter:title" content="個人用wiki(gollum)を使った研究survey - Scepter914 Website">
+<meta name="twitter:description" content="概要  個人用wikiを使った研究survey 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ 検索にかかるようになるが 面倒すぎて発狂するMendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "個人用wiki(gollum)を使った研究survey - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-03-11T00:01:00JST",
+    "dateModified": "2018-03-11T00:01:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
+ これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
+論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
+ 検索にかかるようになるが 面倒すぎて発狂する
+Mendeleyで検索をかける  欲しい機能4へのアプローチとして
+ 全文検索を使える
+ ローカルのpdfを読み込ませて自動でrenameもできる
+ タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった"
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">個人用wiki(gollum)を使った研究survey</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-11T00:01:00JST">Mar 11, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">個人用wiki(gollum)を使った研究survey</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="概要">概要</h2>
+
+<ul>
+<li>個人用wikiを使った研究survey</li>
+<li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a>のシステムを使った研究survey</li>
+</ul>
+
+<h2 id="目的">目的</h2>
+
+<ul>
+<li>あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話</li>
+<li>欲しい機能
+
+<ul>
+<li>1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる</li>
+<li>2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる</li>
+<li>3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている</li>
+<li>4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる</li>
+</ul></li>
+<li>個人wikiを使えば
+
+<ul>
+<li>欲しい機能1: wikiの検索にかける→ 満足</li>
+<li>欲しい機能2: wikiの検索にかける→ 満足</li>
+</ul></li>
+<li>問題は欲しい機能3と4
+
+<ul>
+<li>特に論文書く時，確認用に4が欲しくなる&hellip;</li>
+</ul></li>
+</ul>
+
+<h2 id="他にやってみた手法-失敗談">他にやってみた手法(失敗談)</h2>
+
+<h3 id="分野ごとにwikiのページを作成">分野ごとにwikiのページを作成</h3>
+
+<ul>
+<li>例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る</li>
+<li>欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった
+
+<ul>
+<li>分野を跨いだ論文をどこにあるのか忘れる</li>
+<li>というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった</li>
+</ul></li>
+
+<li><p>ローカルでどのディレクトリにどのpdfがあるかがわからない</p>
+
+<ul>
+<li><p>これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する</p>
+
+<h3 id="論文のpdfのファイル名をtitleにrename">論文のpdfのファイル名をtitleにrename</h3></li>
+</ul></li>
+
+<li><p>欲しい機能4へのアプローチ</p>
+
+<ul>
+<li>検索にかかるようになるが</li>
+
+<li><p>面倒すぎて発狂する</p>
+
+<h3 id="mendeleyで検索をかける">Mendeleyで検索をかける</h3></li>
+</ul></li>
+
+<li><p>欲しい機能4へのアプローチとして</p></li>
+
+<li><p>全文検索を使える</p></li>
+
+<li><p>ローカルのpdfを読み込ませて自動でrenameもできる</p>
+
+<ul>
+<li>タイトルが読み込めない時に辛かった</li>
+<li>直す手間が辛い</li>
+</ul></li>
+
+<li><p>開くのが面倒になってしまった</p>
+
+<ul>
+<li>なんでかよくわかってないけど</li>
+<li>wiki見る -&gt; 名前をコピーする -&gt; mendeleyを起動 -&gt; mendeleyの検索にかける が怠かったのでしょう</li>
+</ul></li>
+
+<li><p>あと容量制限が辛い&hellip;</p>
+
+<ul>
+<li><p>課金しろよって話ですが</p>
+
+<h3 id="一回一回googleに論文名を突っ込む">一回一回Googleに論文名を突っ込む</h3></li>
+</ul></li>
+
+<li><p>大学外のネットワークだと読めない</p></li>
+
+<li><p>やはりノートPCのローカルを参照したい&hellip;</p></li>
+
+<li><p>arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする</p>
+
+<ul>
+<li>ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね</li>
+</ul></li>
+</ul>
+
+<h2 id="試してない他の手法-参考までに">試してない他の手法(参考までに)</h2>
+
+<h3 id="scapbox">scapbox</h3>
+
+<ul>
+<li>参考
+
+<ul>
+<li><a href="https://qiita.com/myaun/items/d84557c30e6c356e37e7">https://qiita.com/myaun/items/d84557c30e6c356e37e7</a></li>
+</ul></li>
+<li>情報は一括で管理したいんじゃ(n度目)
+
+<ul>
+<li>個人wiki立てたらそこに纏めないと情報が発散する&hellip;</li>
+</ul></li>
+<li>欲しい機能4へのアプローチができない(特にリモートなので)</li>
+
+<li><p>アイデアとして使える箇所</p>
+
+<ul>
+<li><p>論文ごとにページを作ってタグで管理する</p>
+
+<ul>
+<li>分野ごとに纏めていた失敗に活かせそう</li>
+
+<li><p>ただ数が増えてくると欲しい機能3を満たせなくなってくる</p>
+
+<h3 id="スライドでまとめる">スライドでまとめる</h3></li>
+</ul></li>
+</ul></li>
+
+<li><p>参考</p>
+
+<ul>
+<li><a href="https://github.com/cvpaperchallenge">https://github.com/cvpaperchallenge</a></li>
+</ul></li>
+
+<li><p>1人用ではオーバーキルかなぁと</p></li>
+
+<li><p>1枚にまとめるのは精読と略読でmemoの量変わるし</p></li>
+
+<li><p>reveal.jsで作成するのはありかもしれない</p></li>
+
+<li><p>結局欲しい機能4へのアプローチができない</p>
+
+<h3 id="githubのissue">githubのissue</h3></li>
+
+<li><p>参考</p>
+
+<ul>
+<li><a href="https://github.com/arXivTimes/arXivTimes">https://github.com/arXivTimes/arXivTimes</a></li>
+</ul></li>
+
+<li><p>Tagで分野, Projectで学会を管理</p></li>
+
+<li><p>issueで論文のアブストをまとめ</p></li>
+
+<li><p>これも欲しい機能4へのアプローチができない</p>
+
+<h3 id="evernote">Evernote</h3></li>
+
+<li><p><a href="http://tieki83.blog106.fc2.com/blog-entry-29.html">http://tieki83.blog106.fc2.com/blog-entry-29.html</a></p></li>
+
+<li><p>やっている事自体はwikiとおんなじ</p>
+
+<h3 id="タブレットでの書き込み">タブレットでの書き込み</h3></li>
+
+<li><p>参考</p>
+
+<ul>
+<li><a href="https://coarsepaper.com/ipad-pro-survey2/">https://coarsepaper.com/ipad-pro-survey2/</a></li>
+<li><a href="https://tabe-phdcareer.com/blog-entry-122.html">https://tabe-phdcareer.com/blog-entry-122.html</a></li>
+</ul></li>
+
+<li><p>ipad使って論文管理するのが一番ナウい気がする</p></li>
+
+<li><p>自分がやらない理由はノートPCとタブレット2台持ちが単純に鞄が重くなるのが嫌だってだけなので，これが解決できる感じになったら後々導入していこうかなぁと思っている</p></li>
+
+<li><p>個人wikiといい感じに絡められると良いんだけどね</p></li>
+</ul>
+
+<h2 id="アプローチ">アプローチ</h2>
+
+<h3 id="何ベースで纏めるか">何ベースで纏めるか</h3>
+
+<ul>
+<li><p>研究テーマごとのsurveyまとめ</p>
+
+<ul>
+<li>どこにpdf置くか迷わない</li>
+
+<li><p>違うテーマで同じ論文を引っ張る時はページだけ作ってオリジナルのmarkdownファイルのリンク貼れば良い</p>
+
+<h3 id="欲しい機能3へのアプローチ">欲しい機能3へのアプローチ</h3></li>
+</ul></li>
+
+<li><p>(gollum特有機能の)下位ページ一覧を活用する</p></li>
+
+<li><p>実はGollumには便利なマクロがある</p>
+
+<ul>
+<li>参考 <a href="https://github.com/gollum/gollum/wiki#macros">https://github.com/gollum/gollum/wiki#macros</a></li>
+</ul></li>
+
+<li><p>GollumのNavigation機能を使う</p></li>
+</ul>
+
+<pre><code> &lt;&lt;Navigation(&quot;label:A&quot;, &quot;research/survey/projectname/a&quot;)&gt;&gt; 
+</code></pre>
+
+<pre><code>- research/survey/projectname/a/\*のファイルの一覧を示す
+- ページ一覧の名前が&quot;label:A&quot;
+</code></pre>
+
+<ul>
+<li>他のgitbaseのwikiでもできそうではある</li>
+</ul>
+
+<h3 id="欲しい機能4へのアプローチ">欲しい機能4へのアプローチ</h3>
+
+<ul>
+<li>通し番号の導入</li>
+<li>まさかのめっちゃローテクでそこそこ快適になってしまった</li>
+<li>wikiと通し番号でリンクできる</li>
+<li>Renameがかなり楽になった</li>
+</ul>
+
+<h2 id="手順">手順</h2>
+
+<h3 id="pdf置く場所">PDF置く場所</h3>
+
+<ul>
+<li>~/research/paper
+
+<ul>
+<li>読み終わった論文を置く場所</li>
+<li>~/research/paper/projectname/
+
+<ul>
+<li>研究テーマごとにディレクトリをわける</li>
+<li>~/research/paper/projectname/pn_00000.pdf
+
+<ul>
+<li>論文のpdf</li>
+<li>pnは研究テーマの略称</li>
+<li>00000は通し番号</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>~/research/paper_nonread
+
+<ul>
+<li>~/research/paper/projectname/ダウンロードしたままの名前.pdf</li>
+</ul></li>
+</ul>
+
+<h3 id="wikiの階層">wikiの階層</h3>
+
+<ul>
+<li>pathtowiki/research/survey/
+
+<ul>
+<li>pathtowiki/research/survey/projectname/projectname.md
+
+<ul>
+<li>同じく研究テーマごとにディレクトリをわける</li>
+<li>pathtowiki/research/survey/projectname/a</li>
+<li>pathtowiki/research/survey/projectname/b</li>
+<li>pathtowiki/research/survey/projectname/c
+
+<ul>
+<li>これら重要順にa &gt; b &gt; c</li>
+<li>重要度に応じてディレクトリを選ぶ</li>
+<li>おおよその目安は
+
+<ul>
+<li>a: 引用する</li>
+<li>b: 引用するか迷うor参考になる</li>
+<li>c: 引用しない</li>
+</ul></li>
+<li>pathtowiki/research/survey/projectname/a/pn_00000_hoge.md
+
+<ul>
+<li>論文のmemoのmarkdownファイル</li>
+<li>hogeは一言でその論文のテーマを付けておく</li>
+<li>例えばpn_00000_yolov3.mdとかになる</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>余談としてprojectnameには雑多なやつをぶち込む用(特に研究テーマには関係ないもの読んだ時用)として
+
+<ul>
+<li>study_robot</li>
+<li>study_cv</li>
+<li>みたいなプロジェクト名つけてる</li>
+</ul></li>
+</ul>
+
+<h3 id="projectname-md">projectname.md</h3>
+
+<pre><code>## memo
+- ggったwordとかのmemo
+## subpage
+### a
+&lt;&lt;Navigation(&quot;label:A&quot;, &quot;research/survey/projectname/a&quot;)&gt;&gt; 
+### b
+&lt;&lt;Navigation(&quot;label:B&quot;, &quot;research/survey/projectname/b&quot;)&gt;&gt; 
+### c
+&lt;&lt;Navigation(&quot;label:C&quot;, &quot;research/survey/projectname/c&quot;)&gt;&gt; 
+</code></pre>
+
+<h3 id="pn-00000-hoge-md">pn_00000_hoge.md</h3>
+
+<pre><code>
+## 論文の題名 &lt;&lt;label:hoge&gt;&gt; &lt;&lt;label:fuga&gt;&gt;
+### 概要
+### 手法
+### 実験
+
+</code></pre>
+
+<h3 id="surveyの手順">surveyの手順</h3>
+
+<ul>
+<li>1.論文を見つけたら
+
+<ul>
+<li>~/research/paper_nonread/projectname/に置いておく</li>
+</ul></li>
+<li>2. wikiにページ作る
+
+<ul>
+<li>pathtowiki/research/survey/projectname/a/pn_00000_hoge.md</li>
+</ul></li>
+<li>3. wikiのページでmemoを書きながら論文を読む
+
+<ul>
+<li>自分の書く論文で引用する時の文章を書いておくと，あとで論文書く時に楽できる(可能性がある)</li>
+</ul></li>
+<li>4.論文を読み終わったら
+
+<ul>
+<li>~/research/paper/projectname/に移す</li>
+<li>~/research/paper/projectname/pn_00000.pdf のように通し番号でrenameする</li>
+</ul></li>
+</ul>
+
+<h3 id="論文の検索">論文の検索</h3>
+
+<ul>
+<li>1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる
+
+<ul>
+<li>wikiの検索にぶちこむ</li>
+</ul></li>
+<li>2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる
+
+<ul>
+<li>wikiの検索にぶちこむ</li>
+</ul></li>
+<li>3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている
+
+<ul>
+<li>pathtowiki/research/survey/projectname/projectname.mdを見る</li>
+</ul></li>
+<li>4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる
+
+<ul>
+<li>pathtowiki/research/survey/projectname/a/pn_00000_hoge.mdのpdfは~/research/paper/projectname/pn_00000.pdfにある</li>
+</ul></li>
+</ul>
+
+<h2 id="結論">結論</h2>
+
+<ul>
+<li>どうやってもsurveyを管理するのは非常に面倒</li>
+<li>論文の内容全部頭に入る頭が欲しい
+
+<ul>
+<li><del>辛い</del></li>
+</ul></li>
+<li>アドバイスとかtwitter等で助言お待ちしてまっす</li>
+</ul>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      
+      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      
+      <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
+      
+      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
+      
+      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
+      
+      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']]
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

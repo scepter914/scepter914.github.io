@@ -244,6 +244,34 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-11T00:01:00JST">Mar 11, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">個人用wiki(gollum)を使った研究survey</a></h2>
+  </header>
+
+  
+  <div class="summary">概要  個人用wikiを使った研究survey 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない
+ これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する
+論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ
+ 検索にかかるようになるが 面倒すぎて発狂する
+Mendeleyで検索をかける  欲しい機能4へのアプローチとして
+ 全文検索を使える
+ ローカルのpdfを読み込ませて自動でrenameもできる
+ タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった</div>
+
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/" title="個人用wiki(gollum)を使った研究survey">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:05:00JST">Feb 10, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
@@ -278,27 +306,6 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
   
   <footer>
     <a href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/" title="gollumの運用Tipsと拡張">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:03:00JST">Feb 10, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180210_gollum_install/">gollumのインストール</a></h2>
-  </header>
-
-  
-  <div class="summary">このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</div>
-
-  
-  <footer>
-    <a href="https://scepter914.github.io/blog/2018/20180210_gollum_install/" title="gollumのインストール">Read More…</a>
   </footer>
   
 </article>
