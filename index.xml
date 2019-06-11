@@ -6,10 +6,28 @@
     <description>Recent content on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 May 2019 13:59:56 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jun 2019 00:04:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gollumの運用Tipsと拡張</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</link>
+      <pubDate>Sun, 09 Jun 2019 00:04:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTips pdf化  markdownをpdfで吐きたい時は様々な場面であると思う 自分用で清書しなくていい場合  ブラウザでpdfを吐く  大学のレポート等，清書する必要が有る場合  pandocを使ってpdfにする https://qiita.com/Kumassy/items/5b6ae6b99df08fb434d9#%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6 この辺とかを参考にした markdownで書けばwikiに組み込めて検索引っかかるようになって情報の一括化が捗る    gitリポジトリについて  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.</description>
+    </item>
+    
+    <item>
+      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
+      <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
+      <description>概要  自分の使っている個人用markdown wikiについての記事  質問されたり環境が変わったら逐次更新しています  個人用wikiについて  なぜwikiを使うのかについて git baseのmarkdownのwiki &amp;ldquo;gollum&amp;rdquo;について  gollum + pandoc + reveal.jsによる環境  gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成, レポート等のpdf作成  更新  2018/02/01 追記 + 長くなったのでページ分けて整理しました 2019/06/09 追記   環境 新  Ubuntu 18.04LTS gem &amp;ndash;version 2.7.6 gollum &amp;ndash;version 4.1.4  旧  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ 環境構築  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張  css等の設定 レポート等のpdf作成  個人wiki&amp;rdquo;gollum&amp;rdquo; + reveal.</description>
+    </item>
     
     <item>
       <title>ロボコンについて</title>
@@ -17,7 +35,7 @@
       <pubDate>Sun, 26 May 2019 13:59:56 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutrobocon/</guid>
-      <description>概要  ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 NHK学生ロボコン2015 ベスト4  RC2016, ABU2016 Chai-Yo  チームリーダー(メンバー, Ecoメカ整備担当) EcoRobot班班長  https://pages.rohm.co.jp/dp-robocon2016-kaibo.html マシンの解説記事  NHK学生ロボコン2016 優勝 ABUロボコン2016 @バンコク，タイ ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017, ABU2017 APPARE  マシン班メカ NHK学生ロボコン2017 準優勝 ABUロボコン2017 @東京 ベスト8   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  https://deviceplus.jp/events/kanto-haru-robocon-2017-interview/ 立ち上げ側のインタビュー記事   学生ロボコンOBとして  記事を書いたり，取材のお手伝い等をしています．  NHK高専ロボコン  高専ロボコン2016  デバイスプラス取材手伝い，解剖計画のコメント https://pages.</description>
+      <description>概要  ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を 2019/05/27地点の情報  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 NHK学生ロボコン2015 ベスト4  RC2016, ABU2016 Chai-Yo  チームリーダー(メンバー, Ecoメカ整備担当) EcoRobot班班長  https://pages.rohm.co.jp/dp-robocon2016-kaibo.html マシンの解説記事  NHK学生ロボコン2016 優勝 ABUロボコン2016 @バンコク，タイ ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017, ABU2017 APPARE  マシン班メカ NHK学生ロボコン2017 準優勝 ABUロボコン2017 @東京 ベスト8   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  https://deviceplus.jp/events/kanto-haru-robocon-2017-interview/ 立ち上げ側のインタビュー記事   学生ロボコンOBとして  記事を書いたり，取材のお手伝い等をしています．  NHK高専ロボコン  高専ロボコン2016  デバイスプラス取材手伝い，解剖計画のコメント https://pages.</description>
     </item>
     
     <item>
@@ -78,7 +96,7 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
       <pubDate>Tue, 01 Jan 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 研究分野/興味  ロボット工学, コンピュータビジョン 1000fpsの高速画像処理を用いた高速ロボットのシステム設計 ダイナミックなマニピュレーションを実現する高速ロボット制御 塑性変形制御, 力制御の理論 高速画像処理の物流応用，無人航空機(UAV)応用   Biography Academic background  2014&amp;frasl;4-2018&amp;frasl;3 東京大学  理科1類 → 工学部精密工学科(神保小谷研究室)  2018&amp;frasl;4-Now 東京大学大学院  情報理工学研究科 創造情報学専攻(石川妹尾研究室)  Internship  2017&amp;frasl;08-2018&amp;frasl;03 日立製作所 研究補助員 2018&amp;frasl;4-2019&amp;frasl;03 Preferred Networks Part-time Engineer   Work Experience  TBD  研究 国内学会  田中 敬，妹尾 拓，石川 正俊： 高速アクティブビジョンを用いたマルチカメラトラッキングシステム，第19回計測自動制御学会システムインテグレーション部門講演会（SI2018），（大阪，2018.12.15），講演論文集，pp. 3002&amp;ndash; 3005(2018). 田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018． 小林 由弥, 庭野 恭彰, 田中 敬, 赤尾 旭彦, 小谷 潔, 神保 泰彦: 定量的な光刺激による一次視覚野のα波の応答評価 電気学会論文誌Ｃ（電子・情報・システム部門誌），2018．  Other avtivity ロボコン (2014-2017)  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械屋としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞 他ロボコン活動について  CAD用マウス(2017&amp;frasl;04-)  https://cadingmouse.</description>
+      <description>Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 研究分野/興味  ロボット工学, コンピュータビジョン 1000fpsの高速画像処理を用いた高速ロボットのシステム設計 ダイナミックなマニピュレーションを実現する高速ロボット制御 塑性変形制御, 力制御の理論 高速画像処理の物流応用，無人航空機(UAV)応用   Biography Academic background  2014&amp;frasl;4-2018&amp;frasl;3 東京大学  理科1類 → 工学部精密工学科(神保小谷研究室)  2018&amp;frasl;4-Now 東京大学大学院  情報理工学研究科 創造情報学専攻(石川妹尾研究室)   Work Experience  Internship  2017&amp;frasl;08-2018&amp;frasl;03 日立製作所 研究補助員 2018&amp;frasl;4-2019&amp;frasl;03 Preferred Networks Part-time Engineer   研究 国内学会  田中 敬，妹尾 拓，石川 正俊： 高速ビジョンシステムを用いたUAVヘの荷物受け渡しシステムの開発，ロボティクス・メカトロニクス講演会2019（ROBOMECH2019），講演論文集，2P2-I06，2019． 田中 敬，妹尾 拓，石川 正俊： 高速アクティブビジョンを用いたマルチカメラトラッキングシステム，第19回計測自動制御学会システムインテグレーション部門講演会（SI2018）講演論文集，pp. 3002&amp;ndash; 3005 ，2018. 田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018． 小林 由弥, 庭野 恭彰, 田中 敬, 赤尾 旭彦, 小谷 潔, 神保 泰彦: 定量的な光刺激による一次視覚野のα波の応答評価 電気学会論文誌Ｃ（電子・情報・システム部門誌），2018．  Other avtivity ロボコン (2014-2017)  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械部分担当としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞 ロボコン活動詳細  使っているツール  Linux(Ubuntu) Vim C++  OpenCV, openFrameworks  Python  Chainer  CAD(SolidEdge, SOLIDWORKS, Fusion360) gollum wiki, reveal.</description>
     </item>
     
     <item>
@@ -139,32 +157,12 @@ Environment  Ubuntu18.04LTS ROS: Melodic Gazebo 9.6  参考 http://gazebosim.org
     </item>
     
     <item>
-      <title>gollumの運用Tipsと拡張</title>
-      <link>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</link>
-      <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTIps  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.com/gollum/gollum/tree/master/lib/gollum/public/gollum/cssにあるのを参考にしながら適当に 自分のローカルだと/var/lib/gems/2.3.0/gems/gollum-4.1.0/lib/gollum/public/gollum/cssだったのでご参考までに   PlantUML  PlantUMLとは  Graphvizのモデリング言語 フローチャート組む時に使ったりしている 詳しくはggってください  環境構築  公式 https://github.</description>
-    </item>
-    
-    <item>
       <title>gollumのインストール</title>
       <link>https://scepter914.github.io/blog/2018/20180210_gollum_install/</link>
       <pubDate>Sat, 10 Feb 2018 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum_install/</guid>
-      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp;amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</description>
-    </item>
-    
-    <item>
-      <title>個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</title>
-      <link>https://scepter914.github.io/blog/2018/20180210_gollum/</link>
-      <pubDate>Sat, 10 Feb 2018 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
-      <description>概要  個人用wikiについてのあれこれ なぜwikiを使うのか gollum + reveal.js環境
- gollumのセットアップ，カスタマイズ reveal.js (+pandoc)によるスライド作成  2018/2/1 追記 + 長くなったのでページ分けて整理しました
-  環境  Ubuntu 16.04LTS  gitやエディタが使える状態なもの  gem &amp;ndash;version 2.5.2.1 gollum &amp;ndash;version 4.1.0  下位ページ  なぜ個人wikiを使うのか 個人wiki&amp;rdquo;gollum&amp;rdquo;のインストール 個人wiki&amp;rdquo;gollum&amp;rdquo;の運用Tipsと拡張 個人wiki&amp;rdquo;gollum&amp;rdquo; + reveal.js + pandocによるスライド作成システム  追加ページ  個人用wiki(gollum)を使った研究survey  あとがき 環境構築自体ちょっと昔にやって微妙にうろ覚えでこの記事を書いたので， 間違っているところとかある場合はtwitter等で連絡して頂けると幸いです．</description>
+      <description>このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseでmarkdownのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp;amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</description>
     </item>
     
     <item>
