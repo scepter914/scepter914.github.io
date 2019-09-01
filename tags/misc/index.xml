@@ -6,7 +6,8 @@
     <description>Recent content in Misc on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 May 2019 13:59:56 +0900</lastBuildDate>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Fri, 30 Aug 2019 13:59:56 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +15,10 @@
     <item>
       <title>ロボコンについて</title>
       <link>https://scepter914.github.io/aboutrobocon/</link>
-      <pubDate>Sun, 26 May 2019 13:59:56 +0900</pubDate>
+      <pubDate>Fri, 30 Aug 2019 13:59:56 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutrobocon/</guid>
-      <description>概要  ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を 2019/05/27地点の情報  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 NHK学生ロボコン2015 ベスト4  RC2016, ABU2016 Chai-Yo  チームリーダー(メンバー, Ecoメカ整備担当) EcoRobot班班長  https://pages.rohm.co.jp/dp-robocon2016-kaibo.html マシンの解説記事  NHK学生ロボコン2016 優勝 ABUロボコン2016 @バンコク，タイ ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017, ABU2017 APPARE  マシン班メカ NHK学生ロボコン2017 準優勝 ABUロボコン2017 @東京 ベスト8   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  https://deviceplus.jp/events/kanto-haru-robocon-2017-interview/ 立ち上げ側のインタビュー記事   学生ロボコンOBとして  記事を書いたり，取材のお手伝い等をしています．  NHK高専ロボコン  高専ロボコン2016  デバイスプラス取材手伝い，解剖計画のコメント https://pages.</description>
+      <description>概要 ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を 2019/05/27地点の情報 RoboTech(2014-2017) RoboTech 2014er 機械屋 NHK学生ロボコン(2015-</description>
     </item>
     
     <item>
@@ -26,7 +27,7 @@
       <pubDate>Wed, 02 Jan 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ  Profile  Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest  Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Robot control for dynamic manipulation Deformation Control, theory of force control Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV)   Biography Academic background  2014&amp;frasl;04-2018&amp;frasl;03 Dept.</description>
+      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Robot control for dynamic manipulation Deformation Control, theory of force control Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV) Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03</description>
     </item>
     
     <item>
@@ -35,7 +36,7 @@
       <pubDate>Tue, 01 Jan 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile  田中 敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 研究分野/興味  ロボット工学, コンピュータビジョン 1000fpsの高速画像処理を用いた高速ロボットのシステム設計 ダイナミックなマニピュレーションを実現する高速ロボット制御 塑性変形制御, 力制御の理論 高速画像処理の物流応用，無人航空機(UAV)応用   Biography Academic background  2014&amp;frasl;04-2018&amp;frasl;03 東京大学  理科1類 → 工学部精密工学科(神保小谷研究室)  2018&amp;frasl;04-Now 東京大学大学院  情報理工学研究科 創造情報学専攻(石川妹尾研究室)   Work Experience  Internship  2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer   研究 国際学会  Satoshi Tanaka, Taku Senoo, and Masatoshi Ishikawa: High-speed UAV Delivery System with Non-stop Parcel Handover Using High-speed Visual Control, 2019 IEEE Intelligent Transportation Systems Conference (ITSC19) (Auckland, 2019.</description>
+      <description>Profile 田中 敬(たなか さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 研究分野/興味 ロボット工学, コンピュータビジョン 1000</description>
     </item>
     
     <item>
@@ -44,10 +45,7 @@
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
-      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</description>
+      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
     </item>
     
   </channel>

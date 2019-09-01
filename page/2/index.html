@@ -90,9 +90,7 @@
   </header>
 
   
-  <div class="summary">概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&hellip;&hellip;  空白を無視するんなら線入れて欲しい&hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位)
- 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位)
- 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト</div>
+  <div class="summary">概要 情報管理についてsurveyした記事 個人wiki用に色々調べたり使ってみたことのまとめ 表が見づらいのはHugoの仕様っぽいのでお許しを&</div>
 
   
   <footer>
@@ -113,9 +111,7 @@
   </header>
 
   
-  <div class="summary">前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
- 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
- コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1.</div>
+  <div class="summary">前置き mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探して</div>
 
   
   <footer>
@@ -136,15 +132,12 @@
   </header>
 
   
-  <div class="summary">やりたいこと @にカーソルがあるとして，
- abcd@efghij  から
- @abcd efghij  にする．
-続けてoを打てば
- abcd @ efghij  となって便利
-解決法 .vimrcに
- nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k  を書く.
-するとノーマルモードでEnter押せば，題意の通りになっているはず</div>
+  <div class="summary">やりたいこと @にカーソルがあるとして， abcd@efghij から @abcd efghij にする． 続けてoを打てば abcd @ efghij となって便利 解決法 .vimrcに nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k を書く. するとノーマルモ</div>
 
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/" title="VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする">Read More…</a>
+  </footer>
   
 </article>
 </li>
@@ -160,7 +153,7 @@
   </header>
 
   
-  <div class="summary">このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.</div>
+  <div class="summary">このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開</div>
 
   
   <footer>
@@ -181,7 +174,7 @@
   </header>
 
   
-  <div class="summary">このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseでmarkdownのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</div>
+  <div class="summary">このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目 個人用wiki 個人用wikiとして 色々探した結果</div>
 
   
   <footer>
@@ -202,7 +195,7 @@
   </header>
 
   
-  <div class="summary"> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </div>
+  <div class="summary">リダイレクト 書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理</div>
 
   
 </article>
@@ -219,11 +212,12 @@
   </header>
 
   
-  <div class="summary">自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</div>
+  <div class="summary">自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</div>
 
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2017/20171230_startblog/" title="blog開設">Read More…</a>
+  </footer>
   
 </article>
 </li>
@@ -253,7 +247,7 @@
 
   <section class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
+      <div class="panel-title"> Blog Recent Posts </div>
     </div>
     <div class="list-group">
       
@@ -339,7 +333,7 @@ MathJax.Hub.Config({
 
     <footer class="l-footer">
       <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <p>&copy; Scepter914 2019</p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
           <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>

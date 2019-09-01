@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>gollumの運用Tipsと拡張 - Scepter914 Website</title>
     
-<meta name="description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目  運用のTips pdf化  markdownをpdfで吐きたい時は様々な場面であると思う 自分用で清書しなくていい場合  ブラウザでpdfを吐く 楽  大学のレポート等，清書する必要が有る場合  pandocを使ってpdfにする markdownで書けばwikiに組み込めて検索引っかかるようになって情報の一括化が捗る  参考  https://qiita.com/Kumassy/items/5b6ae6b99df08fb434d9    gitリポジトリについて  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.">
+<meta name="description" content="このページは 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目 運用のTips pdf化 markdownをpdfで">
 
 <meta property="og:title" content="gollumの運用Tipsと拡張 - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2018/20180210_gollum_tips/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目  運用のTips pdf化  markdownをpdfで吐きたい時は様々な場面であると思う 自分用で清書しなくていい場合  ブラウザでpdfを吐く 楽  大学のレポート等，清書する必要が有る場合  pandocを使ってpdfにする markdownで書けばwikiに組み込めて検索引っかかるようになって情報の一括化が捗る  参考  https://qiita.com/Kumassy/items/5b6ae6b99df08fb434d9    gitリポジトリについて  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.">
+<meta property="og:description" content="このページは 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目 運用のTips pdf化 markdownをpdfで">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2018/20180210_gollum_tips/">
 <meta name="twitter:title" content="gollumの運用Tipsと拡張 - Scepter914 Website">
-<meta name="twitter:description" content="このページは  個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目  運用のTips pdf化  markdownをpdfで吐きたい時は様々な場面であると思う 自分用で清書しなくていい場合  ブラウザでpdfを吐く 楽  大学のレポート等，清書する必要が有る場合  pandocを使ってpdfにする markdownで書けばwikiに組み込めて検索引っかかるようになって情報の一括化が捗る  参考  https://qiita.com/Kumassy/items/5b6ae6b99df08fb434d9    gitリポジトリについて  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &amp;ndash;config config.rb &amp;ndash;css &amp;ndash;allow-uploads &amp;ndash;show-all &amp;ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github.">
+<meta name="twitter:description" content="このページは 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理の3ページ目 運用のTips pdf化 markdownをpdfで">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目  運用のTips pdf化  markdownをpdfで吐きたい時は様々な場面であると思う 自分用で清書しなくていい場合  ブラウザでpdfを吐く 楽  大学のレポート等，清書する必要が有る場合  pandocを使ってpdfにする markdownで書けばwikiに組み込めて検索引っかかるようになって情報の一括化が捗る  参考  https://qiita.com/Kumassy/items/5b6ae6b99df08fb434d9    gitリポジトリについて  gitリポジトリを大きくし過ぎない  重くなる あんまり大きいpdfやmp4等をcommitしないようにする wikiに関係ないディレクトリ等(次のページの拡張系の諸々)は.gitignoreに追加する 履歴が必要ないならrebase -iするのも手   gollumの拡張 custom.cssとconfig.rb  custom.cssとconfig.rbをwikiディレクトリに置く  自分の設定ファイル https://github.com/scepter914/gollum_files  wiki起動時は  gollum &ndash;config config.rb &ndash;css &ndash;allow-uploads &ndash;show-all &ndash;mathjax  自分の設定ファイル  config  mediawiki の色付き表を使えるようにした  css  編集枠を大きく ページの幅ひろく サイドバー狭く 行間狭く   設定ファイルが反映されてない時  gitがmasterであることを確認する  railsやcssを勉強すれば好きにカスタマイズができる(白目) cssのカスタマイズ  https://github."
+    "description": "このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 運用のTips pdf化 markdownをpdfで"
   }
 </script>
 
@@ -324,7 +324,7 @@
 
   <section class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
+      <div class="panel-title"> Blog Recent Posts </div>
     </div>
     <div class="list-group">
       
@@ -396,7 +396,7 @@ MathJax.Hub.Config({
 
     <footer class="l-footer">
       <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <p>&copy; Scepter914 2019</p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
           <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
