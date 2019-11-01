@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/aboutmeja/</loc>
+    <lastmod>2019-10-31T23:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/aboutrobocon/</loc>
     <lastmod>2019-08-30T13:59:56+09:00</lastmod>
   </url>
@@ -40,11 +45,6 @@
   <url>
     <loc>https://scepter914.github.io/aboutme/</loc>
     <lastmod>2019-01-02T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scepter914.github.io/aboutmeja/</loc>
-    <lastmod>2019-01-01T23:59:59+09:00</lastmod>
   </url>
   
   <url>
@@ -89,7 +89,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/aboutme/</loc>
-    <lastmod>2019-08-30T13:59:56+09:00</lastmod>
+    <lastmod>2019-10-31T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,7 +101,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/</loc>
-    <lastmod>2019-08-30T13:59:56+09:00</lastmod>
+    <lastmod>2019-10-31T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,7 +125,7 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/misc/</loc>
-    <lastmod>2019-08-30T13:59:56+09:00</lastmod>
+    <lastmod>2019-10-31T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -161,7 +161,7 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2019-08-30T13:59:56+09:00</lastmod>
+    <lastmod>2019-10-31T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
