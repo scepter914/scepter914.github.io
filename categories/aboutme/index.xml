@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/</link>
+      <pubDate>Thu, 31 Oct 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/</guid>
+      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot control for dynamic manipulation Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV) Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering,</description>
+    </item>
+    
+    <item>
       <title>自己紹介</title>
       <link>https://scepter914.github.io/aboutmeja/</link>
       <pubDate>Thu, 31 Oct 2019 23:59:59 +0900</pubDate>
@@ -28,15 +37,6 @@
       
       <guid>https://scepter914.github.io/aboutrobocon/</guid>
       <description>概要 ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を 2019/05/27地点の情報 RoboTech(2014-2017) RoboTech 2014er 機械屋 NHK学生ロボコン(2015-</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Wed, 02 Jan 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot control for dynamic manipulation Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV) Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering,</description>
     </item>
     
   </channel>

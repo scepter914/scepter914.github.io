@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/</link>
+      <pubDate>Thu, 31 Oct 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/</guid>
+      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot control for dynamic manipulation Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV) Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering,</description>
+    </item>
+    
+    <item>
       <title>自己紹介</title>
       <link>https://scepter914.github.io/aboutmeja/</link>
       <pubDate>Thu, 31 Oct 2019 23:59:59 +0900</pubDate>
@@ -82,15 +91,6 @@
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
       <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Wed, 02 Jan 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot control for dynamic manipulation Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV) Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering,</description>
     </item>
     
     <item>
