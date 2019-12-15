@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Thu, 31 Oct 2019 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,28 +15,55 @@
     <item>
       <title>About me</title>
       <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Thu, 31 Oct 2019 23:59:59 +0900</pubDate>
+      <pubDate>Fri, 13 Dec 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Research Field / Interest Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot control for dynamic manipulation Application of high-speed image processing for logistics, Unmanned Aerial Vehicle(UAV) Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering,</description>
+      <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Biography Academic background 2018&amp;frasl;04-Now Ishikawa Senoo Lab, Department of Creative Informatics, Graduate School of Information Science and Technology 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering, The University of Tokyo 2017&amp;frasl;04-2018&amp;frasl;03 Kotani Lab, Research Center for Advanced Sceience and Technology Work Experience Internship 2018&amp;frasl;04-2019&amp;frasl;04 Internship</description>
     </item>
     
     <item>
       <title>自己紹介</title>
       <link>https://scepter914.github.io/aboutmeja/</link>
-      <pubDate>Thu, 31 Oct 2019 23:59:59 +0900</pubDate>
+      <pubDate>Fri, 13 Dec 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile 田中 敬(たなか さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 研究分野/興味 ロボット工学, コンピュータビジョン 1000</description>
+      <description>Profile 田中 敬(たなか さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 東京大学 理科1類 → 工学部精密工学科(神保小谷研究</description>
     </item>
     
     <item>
-      <title>ロボコンについて</title>
-      <link>https://scepter914.github.io/aboutrobocon/</link>
-      <pubDate>Fri, 30 Aug 2019 13:59:56 +0900</pubDate>
+      <title>Interest</title>
+      <link>https://scepter914.github.io/project/hobby/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/aboutrobocon/</guid>
-      <description>概要 ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を 2019/05/27地点の情報 RoboTech(2014-2017) RoboTech 2014er 機械屋 NHK学生ロボコン(2015-</description>
+      <guid>https://scepter914.github.io/project/hobby/</guid>
+      <description>Soccer I have played soccer for over 15 years. I play as attacker, mainly Second Top and Side Midfielder. History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代). As a person, I like Du Yu(杜預)</description>
+    </item>
+    
+    <item>
+      <title>Robocon</title>
+      <link>https://scepter914.github.io/project/robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/robocon/</guid>
+      <description> RoboTech(2014-2017)  RoboTech, the team for robot contest at The University of Tokyo. Belonged to mechanic section. worked as the team leader of RoboTech in 2016  winner of National Championships(NHK Robocon), and participated in the international robot contest &amp;ldquo;ABU Robocon2016&amp;rdquo; as Representation from Japan At ABU Robocon2016, We were 2nd-RunnerUp and we were commened for ABU Robocon award.   </description>
+    </item>
+    
+    <item>
+      <title>ロボコン</title>
+      <link>https://scepter914.github.io/project/roboconja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/roboconja/</guid>
+      <description>概要 ロボコンに関する活動のまとめ 2019/12/09地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルである</description>
+    </item>
+    
+    <item>
+      <title>趣味</title>
+      <link>https://scepter914.github.io/project/hobbyja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/hobbyja/</guid>
+      <description>サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</description>
     </item>
     
     <item>
