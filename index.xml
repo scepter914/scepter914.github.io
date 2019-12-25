@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 14 Dec 2019 00:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2019 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutmeja/</link>
+      <pubDate>Tue, 24 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutmeja/</guid>
+      <description>Profile 田中 敬(たなか さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 東京大学 理科1類 → 工学部精密工学科(神保小谷研究</description>
+    </item>
     
     <item>
       <title>オウロ・プレットへの行き方</title>
@@ -28,15 +37,6 @@
       
       <guid>https://scepter914.github.io/aboutme/</guid>
       <description>日本語ページ Profile Satoshi Tanaka Ishikawa Senoo Lab M2, Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo Biography Academic background 2018&amp;frasl;04-Now Ishikawa Senoo Lab, Department of Creative Informatics, Graduate School of Information Science and Technology 2014&amp;frasl;04-2018&amp;frasl;03 Dept. of Precison Engineering, The University of Tokyo 2017&amp;frasl;04-2018&amp;frasl;03 Kotani Lab, Research Center for Advanced Sceience and Technology Work Experience Internship 2018&amp;frasl;04-2019&amp;frasl;04 Internship</description>
-    </item>
-    
-    <item>
-      <title>自己紹介</title>
-      <link>https://scepter914.github.io/aboutmeja/</link>
-      <pubDate>Fri, 13 Dec 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile 田中 敬(たなか さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 Biography Academic background 2014&amp;frasl;04-2018&amp;frasl;03 東京大学 理科1類 → 工学部精密工学科(神保小谷研究</description>
     </item>
     
     <item>
