@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Scepter914 Website</title>
+    <title>Scepter914 Website</title>
     <link>https://scepter914.github.io/categories/</link>
-    <description>Recent content in Categories on Scepter914 Website</description>
+    <description>Recent content on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
@@ -13,48 +13,12 @@
     
     
     <item>
-      <title></title>
-      <link>https://scepter914.github.io/categories/</link>
+      <title>オウロ・プレットへの行き方</title>
+      <link>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</link>
       <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Aboutme</title>
-      <link>https://scepter914.github.io/categories/aboutme/</link>
-      <pubDate>Tue, 24 Dec 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/aboutme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robocon</title>
-      <link>https://scepter914.github.io/categories/robocon/</link>
-      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/robocon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Works</title>
-      <link>https://scepter914.github.io/categories/works/</link>
-      <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/works/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>個人wiki</title>
-      <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
-      <pubDate>Sun, 09 Jun 2019 00:04:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
-      <description></description>
+      <guid>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</guid>
+      <description>概要 ブラジルのベロオリゾンテ(Belo Horizonte)からオウロ・プレット(Ouro Preto)への行き方でバスを使わない方法について 2</description>
     </item>
     
   </channel>
