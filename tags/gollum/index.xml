@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 09 Jun 2019 00:04:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:03:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/gollum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決</description>
+    </item>
     
     <item>
       <title>gollumの運用Tipsと拡張</title>
@@ -27,7 +36,7 @@
       <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
-      <description>概要 自分の使っている個人用markdown wikiについての記事 質問されたり環境が変わったら逐次更新しています 個人用wikiについて なぜwi</description>
+      <description>概要 ！注意！ gollum ver5.0になり大きな変更がされました あくまで参考程度に使用してください 自分の使っている個人用markdown wikiについ</description>
     </item>
     
     <item>

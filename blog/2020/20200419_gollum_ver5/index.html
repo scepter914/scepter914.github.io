@@ -6,16 +6,70 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.40.1" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scepter914.github.io/tags/vim/index.xml">
 
-<link rel="canonical" href="https://scepter914.github.io/tags/vim/">
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2020/20200419_gollum_ver5/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Vim - Scepter914 Website</title>
+    <title>gollum version5 - Scepter914 Website</title>
     
+<meta name="description" content="概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決">
+
+<meta property="og:title" content="gollum version5 - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2020/20200419_gollum_ver5/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2020/20200419_gollum_ver5/">
+<meta name="twitter:title" content="gollum version5 - Scepter914 Website">
+<meta name="twitter:description" content="概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "gollum version5 - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2020-04-19T00:03:00JST",
+    "dateModified": "2020-04-19T00:03:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決"
+  }
+</script>
+
+
     <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
     
 
@@ -79,41 +133,121 @@
 <div class="row">
   <div class="col-md-8">
 
-    
-    <header class="page-header">
-      <h1>Vim</h1>
-    </header>
-    
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">gollum version5</li>
+      </ol>
+    </nav>
 
-    <ul class="p-articles">
-      
-      <li><article class="li">
+    <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-29T23:30:00JST">Apr 29, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-04-19T00:03:00JST">Apr 19, 2020</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a></h2>
+
+    <h1 class="title">gollum version5</h1>
   </header>
 
   
-  <div class="summary">やりたいこと @にカーソルがあるとして， abcd@efghij から @abcd efghij にする． 続けてoを打てば abcd @ efghij となって便利 解決法 .vimrcに nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k を書く. するとノーマルモ</div>
 
-  
-  <footer>
-    <a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/" title="VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする">Read More…</a>
+  <div class="article-body">
+
+<h2 id="概要">概要</h2>
+
+<ul>
+<li>個人wikiのgollumのversionが4.1.4 to 5.0.1</li>
+<li>ver4のままだと動かないので色々直す必要がある</li>
+<li>参考
+
+<ul>
+<li><a href="https://github.com/gollum/gollum/wiki/5.0-release-notes">https://github.com/gollum/gollum/wiki/5.0-release-notes</a></li>
+<li>基本的にこれを読めば解決する</li>
+</ul></li>
+</ul>
+
+<h2 id="遭遇したエラー">遭遇したエラー</h2>
+
+<h3 id="ページのリンクが崩壊する">ページのリンクが崩壊する</h3>
+
+<ul>
+<li>lenient-tag-lookupオプションを起動する</li>
+</ul>
+
+<pre><code> gollum --config config.rb --lenient-tag-lookup &amp;
+</code></pre>
+
+<h3 id="レイアウトが崩れる">レイアウトが崩れる</h3>
+
+<ul>
+<li>主にsidebarが変な挙動する
+
+<ul>
+<li>幅が狭くなって左側に寄る減少が起こる</li>
+</ul></li>
+<li>css customをonにしているとなる</li>
+<li>結論としてブラウザのキャッシュが悪さをしていた
+
+<ul>
+<li>chromeならctrl-f5をすればよい</li>
+</ul></li>
+</ul>
+
+<h3 id="sudo-gem-install-gollumが通らない">sudo gem install gollumが通らない</h3>
+
+<ul>
+<li>wsl on windowsで起こった</li>
+<li>cmakeが通らない</li>
+<li>sudo apt install openssl-devel</li>
+</ul>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/gollum/">gollum</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
   </footer>
-  
+
 </article>
-</li>
-      
-    </ul>
+
 
     
-
-
   </div>
+
   <div class="col-md-4">
     <aside class="l-sidebar">
 
@@ -122,8 +256,6 @@
       <div class="panel-title"> Blog Recent Posts </div>
     </div>
     <div class="list-group">
-      
-      <a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/" class="list-group-item">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a>
       
     </div>
   </section>
