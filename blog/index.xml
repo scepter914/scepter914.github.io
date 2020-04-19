@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Page layout collapse in gollum ver5 </title>
+      <link>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</link>
+      <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
+      <description> Error  For user of custom css  gollum &amp;ndash;css  When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.   How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes   </description>
+    </item>
+    
+    <item>
       <title>オウロ・プレットへの行き方</title>
       <link>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</link>
       <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
