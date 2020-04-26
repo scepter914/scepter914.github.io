@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Scepter914 Website</title>
+    <link>https://scepter914.github.io/categories/research/</link>
+    <description>Recent content in Research on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Sat, 18 Apr 2020 23:59:59 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publication</title>
+      <link>https://scepter914.github.io/project/research/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research/</guid>
+      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Taku Senoo, and Masatoshi Ishikawa: Non-Stop Handover of Parcel to Airborne UAV Based on High-Speed Visual Object Tracking, 2019 19th International Conference on Advanced Robotics (ICAR) (Belo Horizonte, 2019.</description>
+    </item>
+    
+    <item>
+      <title>研究成果</title>
+      <link>https://scepter914.github.io/project/research_ja/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research_ja/</guid>
+      <description>研究分野 人間より器用かつ速くタスクを達成する，物理世界とインタラクションする自動ロボットシステムの構築 ロボット工学, コンピュータビジョン 10</description>
+    </item>
+    
+  </channel>
+</rss>
