@@ -3,13 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</loc>
-    <lastmod>2020-04-19T00:03:00+09:00</lastmod>
+    <loc>https://scepter914.github.io/project/magslider/</loc>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/project/magslider_ja/</loc>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/project/high_speed_delivery_ja/</loc>
+    <lastmod>2020-05-20T20:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/project/high_speed_delivery/</loc>
+    <lastmod>2020-05-20T20:58:59+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/aboutme/</loc>
-    <lastmod>2020-04-18T23:59:59+09:00</lastmod>
+    <lastmod>2020-05-19T23:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/aboutmeja/</loc>
+    <lastmod>2020-05-19T23:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</loc>
+    <lastmod>2020-04-19T00:03:00+09:00</lastmod>
   </url>
   
   <url>
@@ -19,11 +44,6 @@
   
   <url>
     <loc>https://scepter914.github.io/project/research_ja/</loc>
-    <lastmod>2020-04-18T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scepter914.github.io/aboutmeja/</loc>
     <lastmod>2020-04-18T23:59:59+09:00</lastmod>
   </url>
   
@@ -135,7 +155,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/aboutme/</loc>
-    <lastmod>2020-04-18T23:59:59+09:00</lastmod>
+    <lastmod>2020-05-19T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,6 +178,12 @@
   </url>
   
   <url>
+    <loc>https://scepter914.github.io/tags/deformation-control/</loc>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/tags/docker/</loc>
     <lastmod>2018-05-21T00:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -170,8 +196,20 @@
   </url>
   
   <url>
+    <loc>https://scepter914.github.io/tags/high-speed-vision/</loc>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/magnet-gear/</loc>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/tags/misc/</loc>
-    <lastmod>2020-04-18T23:59:59+09:00</lastmod>
+    <lastmod>2020-05-19T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -189,13 +227,13 @@
   
   <url>
     <loc>https://scepter914.github.io/project/</loc>
-    <lastmod>2020-04-18T23:59:59+09:00</lastmod>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/categories/research/</loc>
-    <lastmod>2020-04-18T23:59:59+09:00</lastmod>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -219,7 +257,7 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2020-04-19T00:03:00+09:00</lastmod>
+    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -232,6 +270,12 @@
   <url>
     <loc>https://scepter914.github.io/tags/travel/</loc>
     <lastmod>2019-12-14T00:01:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/tags/uav-delivery/</loc>
+    <lastmod>2020-05-20T20:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   

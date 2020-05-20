@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magslider/</guid>
+      <description>Summary  concept   control strategy  In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構&#39;&#39;Magslider&#39;&#39;による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magslider_ja/</guid>
+      <description>Summary concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;rdquo;Magslider&amp;rdquo;による高速衝撃吸収制御を開</description>
+    </item>
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
     
     <item>
       <title>Publication</title>
@@ -18,7 +54,7 @@
       <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/research/</guid>
-      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Taku Senoo, and Masatoshi Ishikawa: Non-Stop Handover of Parcel to Airborne UAV Based on High-Speed Visual Object Tracking, 2019 19th International Conference on Advanced Robotics (ICAR) (Belo Horizonte, 2019.</description>
+      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Keisuke Koyama, Taku Senoo, and Masatoshi Ishikawa: Adaptive Visual Shock Absorber with Visual-based Maxwell Model Using Magnetic Gear, The 2020 International Conference on Robotics and Automation (ICRA2020) (Paris, 2020.</description>
     </item>
     
     <item>
@@ -54,7 +90,7 @@
       <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/roboconja/</guid>
-      <description>概要 ロボコンに関する活動のまとめ 2019/12/09地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
+      <description>概要 ロボコンに関する活動のまとめ 2020/05/01地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
     </item>
     
     <item>

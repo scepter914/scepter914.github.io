@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,19 @@
     <item>
       <title>About me</title>
       <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
       <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Rngineering  Apr.</description>
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutmeja/</link>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutmeja/</guid>
+      <description>Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background 2018&amp;frasl;04-2020&amp;frasl;03 東京大学大</description>
     </item>
     
     <item>
@@ -27,7 +36,7 @@
       <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/research/</guid>
-      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Taku Senoo, and Masatoshi Ishikawa: Non-Stop Handover of Parcel to Airborne UAV Based on High-Speed Visual Object Tracking, 2019 19th International Conference on Advanced Robotics (ICAR) (Belo Horizonte, 2019.</description>
+      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Keisuke Koyama, Taku Senoo, and Masatoshi Ishikawa: Adaptive Visual Shock Absorber with Visual-based Maxwell Model Using Magnetic Gear, The 2020 International Conference on Robotics and Automation (ICRA2020) (Paris, 2020.</description>
     </item>
     
     <item>
@@ -37,15 +46,6 @@
       
       <guid>https://scepter914.github.io/project/research_ja/</guid>
       <description>研究分野 人間より器用かつ速くタスクを達成する，物理世界とインタラクションする自動ロボットシステムの構築 ロボット工学, コンピュータビジョン 10</description>
-    </item>
-    
-    <item>
-      <title>自己紹介</title>
-      <link>https://scepter914.github.io/aboutmeja/</link>
-      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background 2018&amp;frasl;04-2020&amp;frasl;03 東京大学大</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@
       <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/roboconja/</guid>
-      <description>概要 ロボコンに関する活動のまとめ 2019/12/09地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
+      <description>概要 ロボコンに関する活動のまとめ 2020/05/01地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
     </item>
     
     <item>
