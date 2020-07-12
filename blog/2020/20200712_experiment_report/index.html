@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+
+<link rel="canonical" href="https://scepter914.github.io/blog/2020/20200712_experiment_report/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>ロボット系に参考になるかもしれない作業日誌の書き方 - Scepter914 Website</title>
+    
+<meta name="description" content="概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を">
+
+<meta property="og:title" content="ロボット系に参考になるかもしれない作業日誌の書き方 - Scepter914 Website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://scepter914.github.io/blog/2020/20200712_experiment_report/">
+<meta property="og:image" content="https://scepter914.github.io/images/default.png">
+<meta property="og:site_name" content="Scepter914 Website">
+<meta property="og:description" content="概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scepter914 Website">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2020/20200712_experiment_report/">
+<meta name="twitter:title" content="ロボット系に参考になるかもしれない作業日誌の書き方 - Scepter914 Website">
+<meta name="twitter:description" content="概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を">
+<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scepter914.github.io/"
+    },
+    "headline": "ロボット系に参考になるかもしれない作業日誌の書き方 - Scepter914 Website",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scepter914.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2020-07-12T22:00:00JST",
+    "dateModified": "2020-07-12T22:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scepter914 Website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scepter914 Website",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scepter914.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を"
+  }
+</script>
+
+
+    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://scepter914.github.io/aboutme">About me (EN)</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/aboutmeja">About me (JA)</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/project/">Project</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">ロボット系に参考になるかもしれない作業日誌の書き方</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-07-12T22:00:00JST">Jul 12, 2020</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">ロボット系に参考になるかもしれない作業日誌の書き方</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="概要">概要</h2>
+
+<ul>
+<li>作業日誌（実験の作業ログ）の書き方についてのポエム</li>
+<li>今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を付けるのが後からの参照性がいいのかなぁって思っているというのを書き残してみた</li>
+<li>誰かの参考になれば幸いです</li>
+</ul>
+
+<h2 id="個人的な思想">個人的な思想</h2>
+
+<h3 id="なぜ作業日誌を書くのか">なぜ作業日誌を書くのか</h3>
+
+<ul>
+<li>どの変更をいつ加えてどのように変わったのか、の情報を全部覚えておけないから</li>
+<li>再現率の低いバグの再現条件の洗い出しのため
+
+<ul>
+<li>再現しにくいバグの情報をかき集める時に「数カ月前の実験の時どうだったっけ」ってなることがある</li>
+</ul></li>
+<li>後（時には半年後レベルで）から変更したときの挙動の変わり方を参照したいから
+
+<ul>
+<li>研究では論文書く時に見直した記憶がある</li>
+</ul></li>
+<li>git使っていればそれが作業日誌にならない？
+
+<ul>
+<li>ならないと思ってる</li>
+<li>変更に対してどう結果が変わったかを書く必要がある</li>
+<li>gitのコミットで結果は書かない気がする</li>
+</ul></li>
+</ul>
+
+<h3 id="書き残す上での前提">書き残す上での前提</h3>
+
+<ul>
+<li>どこに書き残しているの？
+
+<ul>
+<li>僕は <a href="https://scepter914.github.io/blog/2018/20180210_gollum/">個人のwiki</a>に書いている</li>
+<li>別になんでもいいと思うけど、何かしらで検索機能を有しているアプリ等を想定している</li>
+</ul></li>
+<li>この手の作業日誌で意識していること
+
+<ul>
+<li>とにかく箇条書きで書きなぐる</li>
+<li>綺麗に書こうと思わない、コマンドをコピペする、変更したパラメータをコピペする</li>
+</ul></li>
+<li>実験の作業日誌において表は使わない方がいいと思っている
+
+<ul>
+<li>これが綺麗にまとめようという意識が働いて書きなぐる精神が消える</li>
+<li>あとスライド形式で作業日誌書くのとかは違うやろって個人的に思っている</li>
+<li>以下みたいな表はそれっぽく見えるのは分かるけど、書きなぐって後から検索すれば良くない？って個人的には思っている
+
+<ul>
+<li>まとめながら作業日誌書くのが辛いと思っているけど、スーパー要領がいい人ならできる気もする
+
+<ul>
+<li>少なくとも僕はできない</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>時間</th>
+<th>内容</th>
+<th>作業</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>14:00</td>
+<td>タスクA</td>
+<td>パラメータを変えた</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<ul>
+<li>(余談)
+
+<ul>
+<li>なんで表形式が多いのかなぁと思ってふと「作業日誌　書き方」でggってみたら表形式しか出てこなくて地獄を感じた</li>
+<li>日報というものが世の中ではWordとExcelに支配されているらしいと学んだ</li>
+<li>単純作業の繰り返しの報告書なら表形式でいいも思うけど、バグが次から次へ湧いてくるロボット開発には向いてないと僕は思うのです</li>
+</ul></li>
+</ul>
+
+<h2 id="手順">手順</h2>
+
+<h3 id="1-まずその日の実験で何するかを考える">1. まずその日の実験で何するかを考える</h3>
+
+<ul>
+<li>所謂実験計画書みたいな奴に当たる
+
+<ul>
+<li>計画書とかをちゃんと作るくらいなら作業したほうがいいので箇条書きで十分
+
+<ul>
+<li>実験計画書と実験報告書が分かれていたら、面倒になって計画書が雑になって報告書も雑になる（というかやらなくなる）</li>
+</ul></li>
+<li>箇条書きぐらいはした方が無駄な作業をする率が減るとは思うので、個人的にはその程度のコストはかける派</li>
+<li>個人的には前日の夜に書きまとめるのが好きだけど、その日の朝でもいいとは思う（朝辛い人並みの意見</li>
+</ul></li>
+<li>以下の例が研究室感あるのは僕が修士2年間ずっとやってたので慣れていただけ（この日誌自体はフィクションです
+
+<ul>
+<li>これが書けている状態で実験を始める</li>
+</ul></li>
+</ul>
+
+<pre><code>
+# 2020/04/01 実験
+
+## todo
+
+- 動作確認
+    - 03/28に動かなくなったのでチェック
+- カメラのパラメータ調整
+    - トラッキング性能が落ちている気がする
+    - 閾値を変えて調整
+- 制御パラメータのチューニング
+    - 追従性能の確認
+        - 1m/s
+        - 2m/s
+- タスクA
+    - object Aで試してみがらパラメータ調整
+    - object B
+- タスクB
+    - object Aで試してみる
+    - object Bで試してみる
+
+## 作業log
+
+### 動作確認
+
+### 制御のパラメータチューニング
+
+## 残タスク
+
+
+</code></pre>
+
+<h3 id="2-実験の作業日誌を書いていく">2. 実験の作業日誌を書いていく</h3>
+
+<ul>
+<li>個人的には以下のの形式でまとめていくのが好き</li>
+</ul>
+
+<pre><code>### 始めた時間: やりたいタスク
+- (時間): 変更点
+    - その結果どうなったか
+    - 考察
+    - issue: 新たに出た問題
+    - logfile: 20200401_hogelog.txt
+</code></pre>
+
+<ul>
+<li>題名（ 始めた時間: やりたいタスク）
+
+<ul>
+<li>目次(gollumでいうところのTOC)を見るとその日にやったタスクが一目で分かるので嬉しい</li>
+</ul></li>
+<li>箇条書きの一段落目: 時間と変更点
+
+<ul>
+<li>タスクに対してどうアプローチしたかがわかる</li>
+<li>時間を書いた方がいいときの例としては動画を撮っている時、logを取っている時とか
+
+<ul>
+<li>作業日誌、変更点とlogや動画の対応が取れるのが嬉しい</li>
+</ul></li>
+</ul></li>
+<li>箇条書きの二段落目: その結果どうなったか、考察等を書きなぐっていく、logファイルのメモ
+
+<ul>
+<li>あと新しく出たバグを書き残す←多人数開発だとめっちゃ重要
+
+<ul>
+<li>issue: 新たに出たバグ</li>
+<li>tips: 発見した、聞いたりしたtips</li>
+<li>みたいに表記を固定しておくとページ内検索に引っかかりやすいのでおすすめ</li>
+</ul></li>
+</ul></li>
+<li>例としては以下の例になる
+
+<ul>
+<li>以下では面倒になって結構端折っているが、自分の個人wikiの修士時代の実験logを見てみると一日の実験で大体200-300行くらい書いていた</li>
+</ul></li>
+</ul>
+
+<pre><code>
+# 2020/04/01 実験
+
+## todo
+
+- 動作確認
+    - 03/28に動かなくなったのでチェック
+- カメラのパラメータ調整
+    - トラッキング性能が落ちている気がする
+    - 閾値を変えて調整
+- 制御パラメータのチューニング
+    - 追従性能の確認
+        - 1m/s
+        - 2m/s
+- タスクA
+    - object Aで試してみがらパラメータ調整
+    - object B
+- タスクB
+    - object Aで試してみる
+    - object Bで試してみる
+
+## 作業log
+
+### 10:00 動作確認
+
+- 電源入れて動作
+    - 動かず
+- テスターでチェック
+    - モータ2 to MD1で断線していた
+    - tips: 助教曰くここが焼けやすいとのこと
+        - issue: 電流制限落とす？
+- ケーブルの変更
+    - 動くようになった
+    - issue: ケーブルが短くて可動範囲に足りてない
+        - ケーブルを追加購入する
+
+### 13:00 カメラのパラメータ調整
+
+- 閾値 125 -&gt; 145
+    - 追従性上がった
+    - 適当にテストしてオッケー
+
+### 14:00 制御パラメータのチューニング
+
+- 追従性能の確認
+- 1m/s
+- 13:20 k 10 d 2
+    - 追従性悪い
+    - videoあり
+- 13:30 k 100 d 20
+    - 良くなった気がする
+    - log 20200401_k100d20.log
+- 13:30 k 150 d 25
+    - これでひとまずいけばいいと思う
+- 2m/s
+- 14:30 k 150 d 25
+    - うーん
+- 14:40 k 200 d 30
+    - やりすぎ？
+- 14:50 k 180 d 30
+    - こんなもんかな
+
+### 16:00 ミーティング
+
+- hoge
+
+### 17:00 タスクA
+
+- 実験再開
+- object Aで試してみがらパラメータ調整
+- とりあえず実装したやつを試してみる
+- 17:40 逆に動きだした、緊急停止
+    - 正負反対だった
+    - 直した
+- 正常に動いたけど遅い
+- 18:00 速度上限上げた 5 -&gt; 7
+    - videoあり
+    - まだ速度が足らない
+- 明日は速度を上げて実験するところから
+
+## 残タスク
+
+</code></pre>
+
+<h3 id="3-実験後">3. 実験後</h3>
+
+<ul>
+<li>最後に残タスクを確認する
+
+<ul>
+<li>新しく出たissueも見ながら</li>
+<li>= 次の日の実験todoになる</li>
+</ul></li>
+</ul>
+
+<pre><code>## 残タスク
+
+- ケーブルを追加購入する
+- 電流制限落とす
+- 制御パラメータのチューニング
+    - 追従性能の確認
+        - 4m/s タスクAに必要になったのでもっとはやいやつ試してみる
+- タスクA
+    - object A
+    - object B
+- タスクB
+    - object Aで試してみる
+    - object Bで試してみる
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/">個人wiki</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scepter914.github.io/tags/robotics/">robotics</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"> Blog Recent Posts </div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
+      
+      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
+      
+      <a href="https://scepter914.github.io/categories/research" class="list-group-item">research</a>
+      
+      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
+      
+      <a href="https://scepter914.github.io/categories/blog" class="list-group-item">blog</a>
+      
+      <a href="https://scepter914.github.io/categories/robocon" class="list-group-item">robocon</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
+      
+      <a href="https://scepter914.github.io/tags/robotics" class="list-group-item">robotics</a>
+      
+      <a href="https://scepter914.github.io/tags/high-speed-vision" class="list-group-item">high-speed-vision</a>
+      
+      <a href="https://scepter914.github.io/tags/deformation-control" class="list-group-item">deformation-control</a>
+      
+      <a href="https://scepter914.github.io/tags/magnet-gear" class="list-group-item">magnet-gear</a>
+      
+      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
+      
+      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
+      
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      
+      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      
+      <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']]
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>&copy; Scepter914 2019</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 19 Apr 2020 00:03:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 22:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
+      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
+      <pubDate>Sun, 12 Jul 2020 22:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
+      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
+    </item>
     
     <item>
       <title>gollum version5</title>
@@ -36,7 +45,7 @@
       <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180210_gollum/</guid>
-      <description>概要 ！注意！ gollum ver5.0になり大きな変更がされました あくまで参考程度に使用してください 自分の使っている個人用markdown wikiについ</description>
+      <description>概要 ！注意！ gollum ver5.0になり大きな変更がされました 2020/07/12追記 version5.0 対応 あくまで参考程度に使用してください 自分の使っている個人用</description>
     </item>
     
     <item>

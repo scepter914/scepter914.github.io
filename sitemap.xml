@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2020/20200712_experiment_report/</loc>
+    <lastmod>2020-07-12T22:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/blog/2020/20200711_blog/</loc>
     <lastmod>2020-07-11T00:01:00+09:00</lastmod>
   </url>
@@ -153,32 +158,26 @@
   </url>
   
   <url>
-    <loc>https://scepter914.github.io/categories/</loc>
-    <lastmod>2019-12-14T00:01:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://scepter914.github.io/categories/aboutme/</loc>
     <lastmod>2020-05-19T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://scepter914.github.io/tags/blog/</loc>
+    <loc>https://scepter914.github.io/categories/blog/</loc>
     <lastmod>2020-07-11T00:01:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2020-07-11T00:01:00+09:00</lastmod>
+    <lastmod>2020-07-12T22:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/categories/</loc>
-    <lastmod>2019-12-14T00:01:00+09:00</lastmod>
+    <lastmod>2020-05-19T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -219,12 +218,6 @@
   </url>
   
   <url>
-    <loc>https://scepter914.github.io/tags/misc/</loc>
-    <lastmod>2020-05-19T23:59:59+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://scepter914.github.io/tags/openframeworks/</loc>
     <lastmod>2019-01-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -261,6 +254,12 @@
   </url>
   
   <url>
+    <loc>https://scepter914.github.io/tags/robotics/</loc>
+    <lastmod>2020-07-12T22:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/tags/ros/</loc>
     <lastmod>2019-01-10T10:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -268,25 +267,19 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2020-07-11T00:01:00+09:00</lastmod>
+    <lastmod>2020-07-12T22:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2020-07-11T00:01:00+09:00</lastmod>
+    <lastmod>2019-01-07T01:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/tags/travel/</loc>
     <lastmod>2019-12-14T00:01:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://scepter914.github.io/tags/uav-delivery/</loc>
-    <lastmod>2020-05-20T20:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -304,7 +297,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</loc>
-    <lastmod>2020-04-19T00:03:00+09:00</lastmod>
+    <lastmod>2020-07-12T22:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

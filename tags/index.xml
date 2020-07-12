@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 11 Jul 2020 00:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jan 2019 01:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Blog</title>
-      <link>https://scepter914.github.io/tags/blog/</link>
-      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/blog/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Chainer</title>
@@ -76,15 +67,6 @@
     </item>
     
     <item>
-      <title>Misc</title>
-      <link>https://scepter914.github.io/tags/misc/</link>
-      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/misc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Openframeworks</title>
       <link>https://scepter914.github.io/tags/openframeworks/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
@@ -112,6 +94,15 @@
     </item>
     
     <item>
+      <title>Robotics</title>
+      <link>https://scepter914.github.io/tags/robotics/</link>
+      <pubDate>Sun, 12 Jul 2020 22:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ros</title>
       <link>https://scepter914.github.io/tags/ros/</link>
       <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
@@ -126,15 +117,6 @@
       <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/travel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uav Delivery</title>
-      <link>https://scepter914.github.io/tags/uav-delivery/</link>
-      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/uav-delivery/</guid>
       <description></description>
     </item>
     

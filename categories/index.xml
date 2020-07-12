@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 14 Dec 2019 00:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://scepter914.github.io/categories/</link>
-      <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Aboutme</title>
@@ -27,6 +18,15 @@
       <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/categories/aboutme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://scepter914.github.io/categories/blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
@@ -60,7 +60,7 @@
     <item>
       <title>個人wiki</title>
       <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
-      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
+      <pubDate>Sun, 12 Jul 2020 22:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
       <description></description>
