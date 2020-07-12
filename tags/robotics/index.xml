@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 12 Jul 2020 22:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 01:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
       <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
-      <pubDate>Sun, 12 Jul 2020 22:00:00 +0900</pubDate>
+      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
       <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
