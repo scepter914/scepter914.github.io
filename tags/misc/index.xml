@@ -6,36 +6,82 @@
     <description>Recent content in Misc on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 May 2019 13:59:56 +0900</lastBuildDate>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Tue, 19 May 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ロボコンについて</title>
-      <link>https://scepter914.github.io/aboutrobocon/</link>
-      <pubDate>Sun, 26 May 2019 13:59:56 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutrobocon/</guid>
-      <description>概要  ロボコンに関する活動のまとめ ロボコン勢向けの書き方なのはご了承を 2019/05/27地点の情報  RoboTech(2014-2017)  RoboTech 2014er 機械屋 NHK学生ロボコン(2015-2017)に参加 RC2015 ROBOMINTON  サーブ機班メカ、シャトルリリース担当 NHK学生ロボコン2015 ベスト4  RC2016, ABU2016 Chai-Yo  チームリーダー(メンバー, Ecoメカ整備担当) EcoRobot班班長  https://pages.rohm.co.jp/dp-robocon2016-kaibo.html マシンの解説記事  NHK学生ロボコン2016 優勝 ABUロボコン2016 @バンコク，タイ ベスト4  準決勝中国に敗退 2nd RunnerUp、ABU大賞受賞   RC2017, ABU2017 APPARE  マシン班メカ NHK学生ロボコン2017 準優勝 ABUロボコン2017 @東京 ベスト8   関東春ロボコン  関東春ロボコン2017委員会 立ち上げメンバー  https://deviceplus.jp/events/kanto-haru-robocon-2017-interview/ 立ち上げ側のインタビュー記事   学生ロボコンOBとして  記事を書いたり，取材のお手伝い等をしています．  NHK高専ロボコン  高専ロボコン2016  デバイスプラス取材手伝い，解剖計画のコメント https://pages.</description>
-    </item>
-    
-    <item>
       <title>About me</title>
       <link>https://scepter914.github.io/aboutme/</link>
-      <pubDate>Wed, 02 Jan 2019 23:59:59 +0900</pubDate>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>日本語ページ  Profile  Satoshi Tanaka The University of Tokyo  Department of Creative Informatics, Graduate School of Information Science and Technology Ishikawa Senoo Lab M2  Research Field / Interest  Robotics, Computer Vision System integration of high-speed robot using 1000fps high-speed image processing Robot control for dynamic manipulation Deformation Control, theory of force control Application of high-speed image processing for logistics, Unmanned aerial vehicle(UAV)   Biography Academic background  2014&amp;frasl;4- The University of Tokyo  2016&amp;frasl;4-2018&amp;frasl;3 Dept.</description>
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Rngineering  Apr.</description>
     </item>
     
     <item>
       <title>自己紹介</title>
       <link>https://scepter914.github.io/aboutmeja/</link>
-      <pubDate>Tue, 01 Jan 2019 23:59:59 +0900</pubDate>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutmeja/</guid>
-      <description>Profile  田中敬(たなか　さとし) 東京大学大学院 情報理工学研究科 創造情報学専攻 M2 石川妹尾研究室 研究分野/興味  ロボット工学, コンピュータビジョン 1000fpsの高速画像処理を用いた高速ロボットのシステム設計 ダイナミックなマニピュレーションを実現する高速ロボット制御 塑性変形制御, 力制御の理論 高速画像処理の物流応用，無人航空機(UAV)応用   Biography Academic background  2014&amp;frasl;4-2018&amp;frasl;3 東京大学  理科1類 → 工学部精密工学科(神保小谷研究室)  2018&amp;frasl;4-Now 東京大学大学院  情報理工学研究科 創造情報学専攻(石川妹尾研究室)   Work Experience  Internship  2017&amp;frasl;08-2018&amp;frasl;03 日立製作所 研究補助員 2018&amp;frasl;4-2019&amp;frasl;03 Preferred Networks Part-time Engineer   研究 国内学会  田中 敬，妹尾 拓，石川 正俊： 高速ビジョンシステムを用いたUAVヘの荷物受け渡しシステムの開発，ロボティクス・メカトロニクス講演会2019（ROBOMECH2019），講演論文集，2P2-I06，2019． 田中 敬，妹尾 拓，石川 正俊： 高速アクティブビジョンを用いたマルチカメラトラッキングシステム，第19回計測自動制御学会システムインテグレーション部門講演会（SI2018）講演論文集，pp. 3002&amp;ndash; 3005 ，2018. 田中敬, 小林由弥, 小谷潔, 神保泰彦: 環境情報と複合現実を組み込んだBrain-Computer Interfaceの構築 電気学会医用・生体工学研究会，MBE-18-024，2018． 小林 由弥, 庭野 恭彰, 田中 敬, 赤尾 旭彦, 小谷 潔, 神保 泰彦: 定量的な光刺激による一次視覚野のα波の応答評価 電気学会論文誌Ｃ（電子・情報・システム部門誌），2018．  Other avtivity ロボコン (2014-2017)  ロボコンサークルのRoboTechで活動 2015年から2017年まで機械部分担当としてNHK学生ロボコンに参加 2016年大会チームリーダー，国内大会優勝，世界大会(ABUロボコン)ベスト4，ABUロボコン大賞受賞 ロボコン活動詳細  使っているツール  Linux(Ubuntu) Vim C++  OpenCV, openFrameworks  Python  Chainer  CAD(SolidEdge, SOLIDWORKS, Fusion360) gollum wiki, reveal.</description>
+      <description>Profile 田中 敬(たなか さとし) 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Biography Work Experience 2020&amp;frasl;04-Now 株式会社ティアフォー Perception Engineer Internship 2018&amp;frasl;04-2019&amp;frasl;03 Preferred Networks Part-time Engineer 2017&amp;frasl;08-2018&amp;frasl;03 株式会社日立製作所 研究補助員 Academic background 2018&amp;frasl;04-2020&amp;frasl;03 東京大学大</description>
+    </item>
+    
+    <item>
+      <title>Publication</title>
+      <link>https://scepter914.github.io/project/research/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research/</guid>
+      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Keisuke Koyama, Taku Senoo, and Masatoshi Ishikawa: Adaptive Visual Shock Absorber with Visual-based Maxwell Model Using Magnetic Gear, The 2020 International Conference on Robotics and Automation (ICRA2020) (Paris, 2020.</description>
+    </item>
+    
+    <item>
+      <title>研究成果</title>
+      <link>https://scepter914.github.io/project/research_ja/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research_ja/</guid>
+      <description>研究分野 人間より器用かつ速くタスクを達成する，物理世界とインタラクションする自動ロボットシステムの構築 ロボット工学, コンピュータビジョン 10</description>
+    </item>
+    
+    <item>
+      <title>Interest</title>
+      <link>https://scepter914.github.io/project/hobby/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/hobby/</guid>
+      <description>Soccer I have played soccer for over 15 years. I play as attacker, mainly Second Top and Side Midfielder. History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代). As a person, I like Du Yu(杜預)</description>
+    </item>
+    
+    <item>
+      <title>Robocon</title>
+      <link>https://scepter914.github.io/project/robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/robocon/</guid>
+      <description> RoboTech(2014-2017)  RoboTech, the team for robot contest at The University of Tokyo. Belonged to mechanic section. worked as the team leader of RoboTech in 2016  winner of National Championships(NHK Robocon), and participated in the international robot contest &amp;ldquo;ABU Robocon2016&amp;rdquo; as Representation from Japan At ABU Robocon2016, We were 2nd-RunnerUp and we were commened for ABU Robocon award.   </description>
+    </item>
+    
+    <item>
+      <title>ロボコン</title>
+      <link>https://scepter914.github.io/project/roboconja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/roboconja/</guid>
+      <description>概要 ロボコンに関する活動のまとめ 2020/05/01地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</description>
+    </item>
+    
+    <item>
+      <title>趣味</title>
+      <link>https://scepter914.github.io/project/hobbyja/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/hobbyja/</guid>
+      <description>サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</description>
     </item>
     
     <item>
@@ -44,10 +90,7 @@
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
-      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</description>
+      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
     </item>
     
   </channel>

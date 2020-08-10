@@ -6,6 +6,7 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
     <lastBuildDate>Mon, 07 Jan 2019 01:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -21,6 +22,15 @@
     </item>
     
     <item>
+      <title>Deformation Control</title>
+      <link>https://scepter914.github.io/tags/deformation-control/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/deformation-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Docker</title>
       <link>https://scepter914.github.io/tags/docker/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
@@ -32,18 +42,27 @@
     <item>
       <title>Gollum</title>
       <link>https://scepter914.github.io/tags/gollum/</link>
-      <pubDate>Sun, 09 Jun 2019 00:04:00 +0900</pubDate>
+      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/gollum/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Misc</title>
-      <link>https://scepter914.github.io/tags/misc/</link>
-      <pubDate>Sun, 26 May 2019 13:59:56 +0900</pubDate>
+      <title>High Speed Vision</title>
+      <link>https://scepter914.github.io/tags/high-speed-vision/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/misc/</guid>
+      <guid>https://scepter914.github.io/tags/high-speed-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Magnet Gear</title>
+      <link>https://scepter914.github.io/tags/magnet-gear/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/magnet-gear/</guid>
       <description></description>
     </item>
     
@@ -75,11 +94,11 @@
     </item>
     
     <item>
-      <title>Robocon</title>
-      <link>https://scepter914.github.io/tags/robocon/</link>
-      <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
+      <title>Robotics</title>
+      <link>https://scepter914.github.io/tags/robotics/</link>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/robocon/</guid>
+      <guid>https://scepter914.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     
@@ -89,6 +108,15 @@
       <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/ros/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>https://scepter914.github.io/tags/travel/</link>
+      <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/travel/</guid>
       <description></description>
     </item>
     

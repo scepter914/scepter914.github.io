@@ -45,11 +45,19 @@
             <ul class="nav navbar-nav navbar-right">
               
               
-              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              <li><a href="https://scepter914.github.io/aboutme">About me (EN)</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/aboutmeja">About me (JA)</a></li>
               
               
               
               <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/project/">Project</a></li>
               
               
               
@@ -82,21 +90,19 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-08-19T17:00:00JST">Aug 19, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-04-19T00:03:00JST">Apr 19, 2020</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180819_wikiengine/">利きwiki 〜Wiki survey〜</a></h2>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2020/20200419_gollum_ver5/">gollum version5</a></h2>
   </header>
 
   
-  <div class="summary">概要  情報管理についてsurveyした記事  個人wiki用に色々調べたり使ってみたことのまとめ  表が見づらいのはHugoの仕様っぽいのでお許しを&hellip;&hellip;  空白を無視するんなら線入れて欲しい&hellip;  全然埋まってないけど，力尽きたので気が向いたら追記する 更新  2018/08/19 ver1   お勧め早見表  ついでに何で連絡を取り合うとかのチーム開発的な話も(ほぼ自分へのmemo)  1人  オフラインだけでいい  Gollum or Gitit  オフラインとオンライン両方使いたい  すぐに使いたい: Github 環境構築がんばれる: Gollum or Gitit  オンラインだけでいい  ドキュメントクラウドサービスからお好きなのを   多人数  単発プロジェクト(数日単位)
- 例  エンジニア同士での旅行する時の旅の栞 勉強会  基本的にサーバー建てるのはオーバーキルなことが多い(メンテコストに見合ってない)のでクラウド型にする 1ファイルで済む(旅行とかだと): HackMD  共有が非常に楽なのと共同編集が捗るのでHackMDがお勧め  複数ファイルに分けたい: Github  議論でオンラインで共同書き込みしたいときはHackMDで書いてから，クラウドwikiにログを移す形式がいい気がする   単発プロジェクト(数カ月単位)
- 例  Maker Faireに単発でものを展示する  Github, Google Drive データ(pdfとか): google drive等のクラウド SNS: Line(もしくはMessenger)  slackはオーバーキルな気がする   大きいプロジェクト</div>
+  <div class="summary">概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決</div>
 
   
   <footer>
-    <a href="https://scepter914.github.io/blog/2018/20180819_wikiengine/" title="利きwiki 〜Wiki survey〜">Read More…</a>
+    <a href="https://scepter914.github.io/blog/2020/20200419_gollum_ver5/" title="gollum version5">Read More…</a>
   </footer>
   
 </article>
@@ -105,21 +111,36 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-05-21T00:00:00JST">May 21, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-04-18T00:03:00JST">Apr 18, 2020</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/">gollum on docker</a></h2>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/">Page layout collapse in gollum ver5</a></h2>
   </header>
 
   
-  <div class="summary">前置き  mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探してみる  案外存在しないっぽい  https://hub.docker.com/r/blackglory/rugged-gollum/~/dockerfile/
- 自分の環境が悪いせいなのか，検索ができないバグが存在した．  https://github.com/zachlatta/gollum-docker/blob/master/Dockerfile
- コンパイルが通らなかった これをbaseに書いてみた   出来たもの  自分でDockerfileを書いた  https://github.com/scepter914/gollum_filesにアップロードした ついでにconfig.rbとcustom.cssとかもここにアップロードした   FROM ruby:2.3.1-alpine RUN \ # Refresh package list apk update \ # Install build dependencies &amp;&amp; apk add --no-cache --virtual build-deps \ # Equivalent of Debian's build-essential alpine-sdk \ # Install actual dependencies &amp;&amp; apk add --no-cache git icu-dev libidn-dev ruby-dev\ # add package for wikicloth &amp;&amp; gem install idn-ruby\ # version &amp;&amp; gem install twitter-text -v &quot;1.</div>
+  <div class="summary"> Error  For user of custom css  gollum &ndash;css  When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.   How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes   </div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-12-14T00:01:00JST">Dec 14, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/">オウロ・プレットへの行き方</a></h2>
+  </header>
+
+  
+  <div class="summary">概要 ブラジルのベロオリゾンテ(Belo Horizonte)からオウロ・プレット(Ouro Preto)への行き方でバスを使わない方法について 2</div>
 
   
   <footer>
-    <a href="https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/" title="gollum on docker">Read More…</a>
+    <a href="https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/" title="オウロ・プレットへの行き方">Read More…</a>
   </footer>
   
 </article>
@@ -128,43 +149,19 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-29T23:30:00JST">Apr 29, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-12-09T23:59:59JST">Dec 9, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/project/">project</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180429_vim_enter/">VimのノーマルモードでEnter押すとカーソル位置に改行を入れるようにする</a></h2>
+    <h2 class="title"><a href="https://scepter914.github.io/project/hobby/">Interest</a></h2>
   </header>
 
   
-  <div class="summary">やりたいこと @にカーソルがあるとして，
- abcd@efghij  から
- @abcd efghij  にする．
-続けてoを打てば
- abcd @ efghij  となって便利
-解決法 .vimrcに
- nnoremap &lt;CR&gt; i&lt;Return&gt;&lt;Esc&gt;^k  を書く.
-するとノーマルモードでEnter押せば，題意の通りになっているはず</div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:05:00JST">Feb 10, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/">gollum &#43; reveal.js &#43; pandocによるスライド作成システム</a></h2>
-  </header>
-
-  
-  <div class="summary">このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目  スライド作成をwikiに噛ましたい  パワポで一々開いて「あのスライドどこだっけー」ってやりたくない  検索性がアレ  wikiの中にスライドの情報を突っ込みたい  wikiに噛ませれば検索性が上がるだろう  そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは  Markdownでスライドさっと作成できれば便利だし  Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん  reveal.js  Markdown記法でスライドを作成できる神ツール 詳しくは色々とggってください 公式 https://revealjs.com/#/  pandoc  reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル Markdown別ファイルにするにはローカルサーバーを立てる必要がある ぶっちゃけめんどくさい そこでpandocを使う pandoc  文書を別の形式に変える神ツール 詳しくはggってください 今回はfrom markdown to revealjsを使います   環境構築  reveal.js install  apt-get install wkhtmltopdf 参考 公式 https://github.com/hakimel/reveal.js/#installation git clone https://github.com/hakimel/reveal.js.git  pandoc install  sudo apt-get install pandoc  reveal.jsディレクトリをwikiの下に置く  wiki/ └ reveal.</div>
+  <div class="summary">Soccer I have played soccer for over 15 years. I play as attacker, mainly Second Top and Side Midfielder. History I like Romance of the Three Kingdoms(三国志) and the age of provincial wars in Japan(戦国時代). As a person, I like Du Yu(杜預)</div>
 
   
   <footer>
-    <a href="https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/" title="gollum &#43; reveal.js &#43; pandocによるスライド作成システム">Read More…</a>
+    <a href="https://scepter914.github.io/project/hobby/" title="Interest">Read More…</a>
   </footer>
   
 </article>
@@ -173,19 +170,36 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-02-10T00:03:00JST">Feb 10, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-12-09T23:59:59JST">Dec 9, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/project/">project</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180210_gollum_install/">gollumのインストール</a></h2>
+    <h2 class="title"><a href="https://scepter914.github.io/project/robocon/">Robocon</a></h2>
   </header>
 
   
-  <div class="summary">このページは  個人用wiki(gollum) + reveal.jsによる情報一括管理の2ページ目  個人用wiki 個人用wikiとして  色々探した結果gollumというwikiにたどり着いた https://github.com/gollum/gollum 公式リポジトリ https://github.com/gollum/gollum/wiki 公式wiki  Gollumの特徴  かなりシンプルなwikiでGit baseでmarkdownのwiki Git操作ができる事が割と前提  非エンジニア用wikiにはなりにくい この記事では一人運用前提で話します  Gitリポジトリでファイルを管理する  wikiの階層構造 = リポジトリ内のディレクトリの階層構造 データベースでなく只のファイルなので，移植もしやすく可塑性に富む wikiのページ = 1ファイルなので，お好きなエディタでゴリゴリ書いていける  長文書く時に，結構嬉しい   Git commitで変更が反映される仕様  Web上でも変更可能(Web上の変更 = add &amp; commit)  Markdownで書ける  プラグイン的なのを入れるとMediawiki文法も書ける  数式はLaTeXっぽく書ける  mathjaxで本家LaTeXと微妙に文法が違う  その気になってrailsを書けば拡張可能  あんまり日本語記事は少ない印象，拡張する時は英語で調べないと基本でてこない 一応configあたりでrailsの関数をゴニョっと書くとなんとかなる(白目)  サーバー立てる以外にも，PCごとにgollumをインストールして，Gitリポジトリだけリモートに置いておくという方式も取れる  サーバーよく分からなくてもwikiを立てられる Backupはリモートリポジトリが兼ねる   環境構築 install  Windowsでも建てられるっぽいけど，バグバグしいかもしれない・・・？(情報求む)</div>
+  <div class="summary"> RoboTech(2014-2017)  RoboTech, the team for robot contest at The University of Tokyo. Belonged to mechanic section. worked as the team leader of RoboTech in 2016  winner of National Championships(NHK Robocon), and participated in the international robot contest &ldquo;ABU Robocon2016&rdquo; as Representation from Japan At ABU Robocon2016, We were 2nd-RunnerUp and we were commened for ABU Robocon award.   </div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-12-09T23:59:59JST">Dec 9, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/project/">project</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/project/roboconja/">ロボコン</a></h2>
+  </header>
+
+  
+  <div class="summary">概要 ロボコンに関する活動のまとめ 2020/05/01地点の情報 RoboTech(2014-2017) 東京大学でNHK学生ロボコン，及びABUロボコンの優勝を目指すサークルRob</div>
 
   
   <footer>
-    <a href="https://scepter914.github.io/blog/2018/20180210_gollum_install/" title="gollumのインストール">Read More…</a>
+    <a href="https://scepter914.github.io/project/roboconja/" title="ロボコン">Read More…</a>
   </footer>
   
 </article>
@@ -194,16 +208,20 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-24T00:01:00JST">Jan 24, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-12-09T23:59:59JST">Dec 9, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/project/">project</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180124_gollum/">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</a></h2>
+    <h2 class="title"><a href="https://scepter914.github.io/project/hobbyja/">趣味</a></h2>
   </header>
 
   
-  <div class="summary"> リダイレクト  書き直しました 個人用wiki(gollum) + reveal.jsによる情報一括管理  </div>
+  <div class="summary">サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</div>
 
+  
+  <footer>
+    <a href="https://scepter914.github.io/project/hobbyja/" title="趣味">Read More…</a>
+  </footer>
   
 </article>
 </li>
@@ -211,19 +229,62 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-12-30T00:00:00JST">Dec 30, 2017</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-06-09T00:04:00JST">Jun 9, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scepter914.github.io/blog/2017/20171230_startblog/">blog開設</a></h2>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/">gollumの運用Tipsと拡張</a></h2>
   </header>
 
   
-  <div class="summary">自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</div>
+  <div class="summary">このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 運用のTips pdf化 markdownをpdfで</div>
 
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/" title="gollumの運用Tipsと拡張">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-06-09T00:01:00JST">Jun 9, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2018/20180210_gollum/">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</a></h2>
+  </header>
+
+  
+  <div class="summary">概要 ！注意！ gollum ver5.0になり大きな変更がされました 2020/07/12追記 version5.0 対応 あくまで参考程度に使用してください 自分の使っている個人用</div>
+
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2018/20180210_gollum/" title="個人用wiki(gollum) &#43; reveal.jsによる情報一括管理">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-03-11T00:01:00JST">Mar 11, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">個人用wiki(gollum)を使った研究survey</a></h2>
+  </header>
+
+  
+  <div class="summary">概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究s</div>
+
+  
+  <footer>
+    <a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/" title="個人用wiki(gollum)を使った研究survey">Read More…</a>
+  </footer>
   
 </article>
 </li>
@@ -239,7 +300,7 @@
     
 
     
-    <li class="disabled"><a href="#">Next</a></li>
+    <li><a href="https://scepter914.github.io/page/3/">Next</a></li>
     
 
   </ul>
@@ -253,23 +314,23 @@
 
   <section class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
+      <div class="panel-title"> Blog Recent Posts </div>
     </div>
     <div class="list-group">
       
-      <a href="https://scepter914.github.io/blog/2018/20180210_gollum_tips/" class="list-group-item">gollumの運用Tipsと拡張</a>
+      <a href="https://scepter914.github.io/blog/2020/20200725_howtologging/" class="list-group-item">作業日誌の書く手順</a>
       
-      <a href="https://scepter914.github.io/blog/2018/20180210_gollum/" class="list-group-item">個人用wiki(gollum) &#43; reveal.jsによる情報一括管理</a>
+      <a href="https://scepter914.github.io/blog/2020/20200725_whydairylog/" class="list-group-item">なぜ作業日誌を書くのか</a>
       
-      <a href="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/" class="list-group-item">個人用wiki(gollum)を使った研究survey</a>
+      <a href="https://scepter914.github.io/blog/2020/20200712_experiment_report/" class="list-group-item">ロボット系に参考になるかもしれない作業日誌の書き方</a>
       
-      <a href="https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/" class="list-group-item">Setting Velocity on Joints and Links for Gazebo ver9.6</a>
+      <a href="https://scepter914.github.io/blog/2020/20200711_blog/" class="list-group-item">最近あったこと</a>
       
-      <a href="https://scepter914.github.io/blog/2019/20190107_tellodetection/" class="list-group-item">TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション</a>
+      <a href="https://scepter914.github.io/blog/2020/20200419_gollum_ver5/" class="list-group-item">gollum version5</a>
       
-      <a href="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/" class="list-group-item">Tensegrity Simulation</a>
+      <a href="https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/" class="list-group-item">Page layout collapse in gollum ver5</a>
       
-      <a href="https://scepter914.github.io/blog/2018/20180210_whywiki/" class="list-group-item">なぜ個人wikiを使うのか</a>
+      <a href="https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/" class="list-group-item">オウロ・プレットへの行き方</a>
       
     </div>
   </section>
@@ -285,7 +346,13 @@
       
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
       
+      <a href="https://scepter914.github.io/categories/research" class="list-group-item">research</a>
+      
       <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
+      
+      <a href="https://scepter914.github.io/categories/blog" class="list-group-item">blog</a>
+      
+      <a href="https://scepter914.github.io/categories/robocon" class="list-group-item">robocon</a>
       
     </div>
   </section>
@@ -298,7 +365,13 @@
       
       <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
       
-      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      <a href="https://scepter914.github.io/tags/robotics" class="list-group-item">robotics</a>
+      
+      <a href="https://scepter914.github.io/tags/high-speed-vision" class="list-group-item">high-speed-vision</a>
+      
+      <a href="https://scepter914.github.io/tags/deformation-control" class="list-group-item">deformation-control</a>
+      
+      <a href="https://scepter914.github.io/tags/magnet-gear" class="list-group-item">magnet-gear</a>
       
       <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
       
@@ -309,12 +382,6 @@
       <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
       
       <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
-      
-      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
-      
-      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
-      
-      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
       
     </div>
   </section>
@@ -339,7 +406,7 @@ MathJax.Hub.Config({
 
     <footer class="l-footer">
       <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <p>&copy; Scepter914 2019</p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
           <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>

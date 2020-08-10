@@ -6,6 +6,7 @@
     <description>Recent content in Robocon on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
     <lastBuildDate>Sat, 30 Dec 2017 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/robocon/index.xml" rel="self" type="application/rss+xml" />
@@ -17,10 +18,7 @@
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
-      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します．
-このblog作った理由は，かなり変なもので． 「高専ロボコンの交流会行って，個人wiki(gollum)の情報管理環境+reveal.jsのスライド作成システムを紹介したらそこそこ話としてウケて，記事にして欲しいという要望が出た」 っていうものです． なんじゃそりゃって思われるかも知れないですが，本当だから仕方ない．
-はてなとか，外部blogサイトにblog開設しなかったのはちょっと環境構築やってみたかったからだけです． というかもはやただの趣味です． これもなんじゃそりゃって思われるかも知れないですが，本当だから仕方ない． でもこのレベルのblogサイトくらいなら，Webについて何も知らない人でも年末休みの2日割いたら割とさくっと立てられた(？)，のでおすすめです．(？) 因みにこのサイトはHugoと呼ばれるWebジェネレータで作りました． 早くてストレス貯まらなくていい感じです．
-ということでblog開設したら力尽きたので，次回本題のgollum+reveal.jsについて話そうと思います．</description>
+      <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
     </item>
     
   </channel>

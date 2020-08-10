@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uav Delivery on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/uav-delivery/</link>
+    <description>Recent content in Uav Delivery on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Wed, 20 May 2020 20:59:59 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/tags/uav-delivery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</title>
+      <link>https://scepter914.github.io/project/high_speed_delivery_ja/</link>
+      <pubDate>Wed, 20 May 2020 20:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/high_speed_delivery_ja/</guid>
+      <description>Summary http://ishikawa-vision.org/fusion/UAVdelivery/index-j.htmlにおける成果 無人航空機</description>
+    </item>
+    
+    <item>
+      <title>High speed supply station for UAV delivery system</title>
+      <link>https://scepter914.github.io/project/high_speed_delivery/</link>
+      <pubDate>Wed, 20 May 2020 20:58:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/high_speed_delivery/</guid>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/UAVdelivery/index-e.html  Although research on physical distribution using unmanned aerial vehicles (UAVs) has seen increasingly significant interest, the task of automatically loading a parcel onto a UAV has not been researched adequately. In this study, to design an automatic UAV delivery system, we achieved the task of non-stop handover of a parcel to an airborne UAV. For the handover task, we developed a novel tracking system with high-speed, multi-camera vision using cameras with different frame rates.</description>
+    </item>
+    
+  </channel>
+</rss>

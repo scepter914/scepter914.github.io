@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/blog/</link>
+    <description>Recent content in Blog on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Sat, 11 Jul 2020 00:01:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>最近あったこと</title>
+      <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200711_blog/</guid>
+      <description>概要 ブログって銘打ってるのに技術忘備録しか書いてないからたまにはね。 リモートワークに適応するのにひいこらひいこら言っていたこの3か月のできご</description>
+    </item>
+    
+  </channel>
+</rss>

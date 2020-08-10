@@ -6,7 +6,8 @@
     <description>Recent content in Categories on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 May 2019 13:59:56 +0900</lastBuildDate>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Tue, 19 May 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +15,36 @@
     <item>
       <title>Aboutme</title>
       <link>https://scepter914.github.io/categories/aboutme/</link>
-      <pubDate>Sun, 26 May 2019 13:59:56 +0900</pubDate>
+      <pubDate>Tue, 19 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/categories/aboutme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://scepter914.github.io/categories/blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://scepter914.github.io/categories/research/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robocon</title>
+      <link>https://scepter914.github.io/categories/robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/robocon/</guid>
       <description></description>
     </item>
     
@@ -32,7 +60,7 @@
     <item>
       <title>個人wiki</title>
       <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
-      <pubDate>Sun, 09 Jun 2019 00:04:00 +0900</pubDate>
+      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
       <description></description>

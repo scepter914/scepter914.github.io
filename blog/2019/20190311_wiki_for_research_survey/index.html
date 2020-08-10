@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>個人用wiki(gollum)を使った研究survey - Scepter914 Website</title>
     
-<meta name="description" content="概要  個人用wikiを使った研究surveyのお話 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&amp;gt; 名前をコピーする -&amp;gt; mendeleyを起動 -&amp;gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&amp;hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&amp;hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita.">
+<meta name="description" content="概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究s">
 
 <meta property="og:title" content="個人用wiki(gollum)を使った研究survey - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="概要  個人用wikiを使った研究surveyのお話 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&amp;gt; 名前をコピーする -&amp;gt; mendeleyを起動 -&amp;gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&amp;hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&amp;hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita.">
+<meta property="og:description" content="概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究s">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/">
 <meta name="twitter:title" content="個人用wiki(gollum)を使った研究survey - Scepter914 Website">
-<meta name="twitter:description" content="概要  個人用wikiを使った研究surveyのお話 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &amp;ldquo;ローカルの環境においてあるPDFを&amp;rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&amp;hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&amp;rdquo;Grasping&amp;rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&amp;gt; 名前をコピーする -&amp;gt; mendeleyを起動 -&amp;gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&amp;hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&amp;hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita.">
+<meta name="twitter:description" content="概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) &#43; reveal.jsによる情報一括管理のシステムを使った研究s">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "概要  個人用wikiを使った研究surveyのお話 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究survey  目的  あの論文なんだっけってなりたくないので，Surveyのメモをいい感じに管理したいっていうお話 欲しい機能  1. (論文の名前を覚えている時) 論文のmemoがどこにあるか見つけられる 2. (論文のキーワードを覚えている時) 論文のmemoがどこにあるか見つけられる 3. (論文の検索ワードを覚えていない時用に) 研究テーマごとに論文のmemoが重要度である程度ソートされている 4. (元論文を見たいときに) &ldquo;ローカルの環境においてあるPDFを&rdquo;見れる  個人wikiを使えば  欲しい機能1: wikiの検索にかける→ 満足 欲しい機能2: wikiの検索にかける→ 満足  問題は欲しい機能3と4  特に論文書く時，確認用に4が欲しくなる&hellip;   他にやってみた手法(失敗談) 分野ごとにwikiのページを作成  例えば&rdquo;Grasping&rdquo;ならresearch/grasping.mdみたいなページを作る 欲しい機能3にて: どこにmemoがあるかわからなくなることが多々あった  分野を跨いだ論文をどこにあるのか忘れる というか論文読んだあとにmemo書く時，どこに置くかを考えることに消耗してしまった  ローカルでどのディレクトリにどのpdfがあるかがわからない  これも論文読んだ後，pdfをどこに置くかを考えるのに消耗する   論文のpdfのファイル名をtitleにrename  欲しい機能4へのアプローチ  検索にかかるようになるが 面倒すぎて発狂する   Mendeleyで検索をかける  欲しい機能4へのアプローチとして 全文検索を使える ローカルのpdfを読み込ませて自動でrenameもできる  タイトルが読み込めない時に辛かった 直す手間が辛い  開くのが面倒になってしまった  なんでかよくわかってないけど wiki見る -&gt; 名前をコピーする -&gt; mendeleyを起動 -&gt; mendeleyの検索にかける が怠かったのでしょう  あと容量制限が辛い&hellip;  課金しろよって話ですが   一回一回Googleに論文名を突っ込む  大学外のネットワークだと読めない やはりノートPCのローカルを参照したい&hellip; arxiv中心の分野ならwikiのmemoでリンク置いておけば良い気はする  ていうかリンクをwikiのmemo張っておけば，pdfのファイル名の数字でローカルの検索かけられるよね   試してない他の手法(参考までに) scapbox  参考  https://qiita."
+    "description": "概要 個人用wikiを使った研究surveyのお話 個人用wiki(gollum) + reveal.jsによる情報一括管理のシステムを使った研究s"
   }
 </script>
 
@@ -99,11 +99,19 @@
             <ul class="nav navbar-nav navbar-right">
               
               
-              <li><a href="https://scepter914.github.io/aboutme">About me</a></li>
+              <li><a href="https://scepter914.github.io/aboutme">About me (EN)</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/aboutmeja">About me (JA)</a></li>
               
               
               
               <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
+              
+              
+              
+              <li><a href="https://scepter914.github.io/project/">Project</a></li>
               
               
               
@@ -580,7 +588,7 @@
 
   <section class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
+      <div class="panel-title"> Blog Recent Posts </div>
     </div>
     <div class="list-group">
       
@@ -598,7 +606,13 @@
       
       <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
       
+      <a href="https://scepter914.github.io/categories/research" class="list-group-item">research</a>
+      
       <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
+      
+      <a href="https://scepter914.github.io/categories/blog" class="list-group-item">blog</a>
+      
+      <a href="https://scepter914.github.io/categories/robocon" class="list-group-item">robocon</a>
       
     </div>
   </section>
@@ -611,7 +625,13 @@
       
       <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
       
-      <a href="https://scepter914.github.io/tags/misc" class="list-group-item">misc</a>
+      <a href="https://scepter914.github.io/tags/robotics" class="list-group-item">robotics</a>
+      
+      <a href="https://scepter914.github.io/tags/high-speed-vision" class="list-group-item">high-speed-vision</a>
+      
+      <a href="https://scepter914.github.io/tags/deformation-control" class="list-group-item">deformation-control</a>
+      
+      <a href="https://scepter914.github.io/tags/magnet-gear" class="list-group-item">magnet-gear</a>
       
       <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
       
@@ -622,12 +642,6 @@
       <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
       
       <a href="https://scepter914.github.io/tags/openframeworks" class="list-group-item">openframeworks</a>
-      
-      <a href="https://scepter914.github.io/tags/robocon" class="list-group-item">robocon</a>
-      
-      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
-      
-      <a href="https://scepter914.github.io/tags/vim" class="list-group-item">vim</a>
       
     </div>
   </section>
@@ -652,7 +666,7 @@ MathJax.Hub.Config({
 
     <footer class="l-footer">
       <div class="container">
-        <p><span class="h-logo">&copy; Scepter914 Website</span></p>
+        <p>&copy; Scepter914 2019</p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
           <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>

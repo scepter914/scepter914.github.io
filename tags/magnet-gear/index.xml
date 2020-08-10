@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magnet Gear on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/magnet-gear/</link>
+    <description>Recent content in Magnet Gear on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Wed, 20 May 2020 23:59:59 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/tags/magnet-gear/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adaptive Visual Shock Absorber with Magslider</title>
+      <link>https://scepter914.github.io/project/magslider/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magslider/</guid>
+      <description>Summary  concept   control strategy  In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+    </item>
+    
+    <item>
+      <title>磁石歯車を用いた直動機構&#39;&#39;Magslider&#39;&#39;による高速衝撃吸収制御</title>
+      <link>https://scepter914.github.io/project/magslider_ja/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magslider_ja/</guid>
+      <description>Summary concept control strategy 本研究ではしなやかな制御を目指して、磁石歯車を用いた直動機構&amp;rdquo;Magslider&amp;rdquo;による高速衝撃吸収制御を開</description>
+    </item>
+    
+  </channel>
+</rss>
