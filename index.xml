@@ -112,6 +112,24 @@
     </item>
     
     <item>
+      <title>Publication</title>
+      <link>https://scepter914.github.io/project/research/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research/</guid>
+      <description>Research Field  Robotics, Computer Vision  System integration of high-speed robot using 1000fps high-speed image processing Deformation Control, robot force control for dynamic manipulation Application of high-speed visual control for logistics, Unmanned Aerial Vehicle(UAV)   International Conference (First Author)  Satoshi Tanaka, Keisuke Koyama, Taku Senoo, and Masatoshi Ishikawa: Adaptive Visual Shock Absorber with Visual-based Maxwell Model Using Magnetic Gear, The 2020 International Conference on Robotics and Automation (ICRA2020) (Paris, 2020.</description>
+    </item>
+    
+    <item>
+      <title>研究成果</title>
+      <link>https://scepter914.github.io/project/research_ja/</link>
+      <pubDate>Sat, 18 Apr 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/research_ja/</guid>
+      <description>研究分野 人間より器用かつ速くタスクを達成する，物理世界とインタラクションする自動ロボットシステムの構築 ロボット工学, コンピュータビジョン 10</description>
+    </item>
+    
+    <item>
       <title>Page layout collapse in gollum ver5</title>
       <link>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</link>
       <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
