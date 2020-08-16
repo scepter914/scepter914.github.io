@@ -18,7 +18,7 @@
       <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
-      <description>前置き mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探して</description>
+      <description>前置き 追記: 内容更新 gollum version5対応 mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollum</description>
     </item>
     
   </channel>

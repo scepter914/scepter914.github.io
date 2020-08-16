@@ -88,11 +88,6 @@
   </url>
   
   <url>
-    <loc>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</loc>
-    <lastmod>2019-06-09T00:04:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://scepter914.github.io/blog/2018/20180210_gollum/</loc>
     <lastmod>2019-06-09T00:01:00+09:00</lastmod>
   </url>
@@ -140,6 +135,11 @@
   <url>
     <loc>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</loc>
     <lastmod>2018-02-10T00:05:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</loc>
+    <lastmod>2018-02-10T00:04:00+09:00</lastmod>
   </url>
   
   <url>

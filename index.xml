@@ -108,7 +108,7 @@
       <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
-      <description>概要 個人wikiのgollumのversionが4.1.4 to 5.0.1 ver4のままだと動かないので色々直す必要がある 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基本的にこれを読めば解決</description>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
     </item>
     
     <item>
@@ -163,15 +163,6 @@
       
       <guid>https://scepter914.github.io/project/hobbyja/</guid>
       <description>サッカー 幼稚園〜大学と長くやってるスポーツ ボランチ→トップ下→サイドハーフ→ウイング 大学のサークル HotSpurs 21期 歴史 三国志 魏推し 人物: 杜預, 曹操,</description>
-    </item>
-    
-    <item>
-      <title>gollumの運用Tipsと拡張</title>
-      <link>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</link>
-      <pubDate>Sun, 09 Jun 2019 00:04:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
-      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 運用のTips pdf化 markdownをpdfで</description>
     </item>
     
     <item>
@@ -243,7 +234,7 @@
       <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</guid>
-      <description>前置き mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollumのDockerfileが欲しい 探して</description>
+      <description>前置き 追記: 内容更新 gollum version5対応 mediawikiフォーマットで書くのに必要なwikiclothがinstallされたGollum</description>
     </item>
     
     <item>
@@ -262,6 +253,15 @@
       
       <guid>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</guid>
       <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開</description>
+    </item>
+    
+    <item>
+      <title>gollumの運用Tipsと拡張</title>
+      <link>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</link>
+      <pubDate>Sat, 10 Feb 2018 00:04:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</guid>
+      <description>このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の3ページ目 追記: 内容更新 gollum version5対応 pdf化 ma</description>
     </item>
     
     <item>
