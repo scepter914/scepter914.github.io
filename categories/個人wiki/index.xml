@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 00:03:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gollum version5</title>
+      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
+      <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
+      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
+    </item>
     
     <item>
       <title>作業日誌の書く手順</title>
@@ -37,15 +46,6 @@
       
       <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
       <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
-    </item>
-    
-    <item>
-      <title>gollum version5</title>
-      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
-      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
-      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
     </item>
     
     <item>

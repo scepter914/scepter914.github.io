@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 19 Apr 2020 00:03:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 00:03:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/gollum/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>gollum version5</title>
       <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
-      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
+      <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
       <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>

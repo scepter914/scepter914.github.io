@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</loc>
+    <lastmod>2020-08-15T00:03:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/blog/2020/20200725_howtologging/</loc>
     <lastmod>2020-07-24T02:00:00+09:00</lastmod>
   </url>
@@ -50,11 +55,6 @@
   <url>
     <loc>https://scepter914.github.io/aboutmeja/</loc>
     <lastmod>2020-05-19T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</loc>
-    <lastmod>2020-04-19T00:03:00+09:00</lastmod>
   </url>
   
   <url>
@@ -171,7 +171,7 @@
   
   <url>
     <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2020-07-24T02:00:00+09:00</lastmod>
+    <lastmod>2020-08-15T00:03:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -201,7 +201,7 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/gollum/</loc>
-    <lastmod>2020-04-19T00:03:00+09:00</lastmod>
+    <lastmod>2020-08-15T00:03:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -267,7 +267,7 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2020-07-24T02:00:00+09:00</lastmod>
+    <lastmod>2020-08-15T00:03:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -297,7 +297,7 @@
   
   <url>
     <loc>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</loc>
-    <lastmod>2020-07-24T02:00:00+09:00</lastmod>
+    <lastmod>2020-08-15T00:03:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
