@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scepter914.github.io/project/magripper/</loc>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</loc>
     <lastmod>2020-08-15T00:03:00+09:00</lastmod>
   </url>
@@ -189,7 +194,7 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/deformation-control/</loc>
-    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -206,14 +211,20 @@
   </url>
   
   <url>
+    <loc>https://scepter914.github.io/tags/gripper/</loc>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://scepter914.github.io/tags/high-speed-vision/</loc>
-    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/tags/magnet-gear/</loc>
-    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -231,13 +242,13 @@
   
   <url>
     <loc>https://scepter914.github.io/project/</loc>
-    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scepter914.github.io/categories/research/</loc>
-    <lastmod>2020-05-20T23:59:59+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -255,7 +266,7 @@
   
   <url>
     <loc>https://scepter914.github.io/tags/robotics/</loc>
-    <lastmod>2020-07-24T02:00:00+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -267,7 +278,7 @@
   
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2020-08-15T00:03:00+09:00</lastmod>
+    <lastmod>2020-09-30T23:59:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
