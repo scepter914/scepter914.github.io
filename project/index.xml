@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Wed, 30 Sep 2020 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>磁石歯車グリッパ”Magripper”による高速グラスピング</title>
+      <link>https://scepter914.github.io/project/magripper_ja/</link>
+      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/magripper_ja/</guid>
+      <description>Summary concept 本研究では、バックドライバビリティが高いグリッパ&amp;rdquo;Magripper&amp;rdquo;と、リーチングからシームレスに高速グラスピ</description>
+    </item>
     
     <item>
       <title>High-speed Hitting Grasping with Magripper</title>
