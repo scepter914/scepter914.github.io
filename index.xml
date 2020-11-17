@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Mon, 05 Oct 2020 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2020 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/</link>
+      <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/</guid>
+      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+    </item>
     
     <item>
       <title>磁石歯車グリッパ”Magripper”による高速グラスピング</title>
