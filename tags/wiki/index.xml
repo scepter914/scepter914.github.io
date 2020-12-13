@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wiki on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/wiki/</link>
+    <description>Recent content in Wiki on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Scepter914 2019</copyright>
+    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://scepter914.github.io/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>wikiの(個人的見解による)運用の仕方お勧め〜</title>
+      <link>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</guid>
+      <description>概要 最近良く「markdownで色々情報を残すのが便利なのはわかったんだけど、Toolを何使うと便利なの？」と聞かれるので、blogにしてお</description>
+    </item>
+    
+  </channel>
+</rss>

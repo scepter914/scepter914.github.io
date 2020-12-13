@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Tue, 17 Nov 2020 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>wikiの(個人的見解による)運用の仕方お勧め〜</title>
+      <link>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</guid>
+      <description>概要 最近良く「markdownで色々情報を残すのが便利なのはわかったんだけど、Toolを何使うと便利なの？」と聞かれるので、blogにしてお</description>
+    </item>
     
     <item>
       <title>About me</title>
@@ -18,7 +27,7 @@
       <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/</guid>
-      <description>Profile  Name: Satoshi Tanaka Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Contacts: Twitter Github Hobby  Biography Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship  Apr. 2018 - Apr. 2019 Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018 Internship at Hitachi, Ltd as a research assistant   Academic background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+      <description>Biography Profile Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Work Experience Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Perception Algorithms Engineer Internship Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant Academic background Master&amp;rsquo;s Degree in Information Science and Engineering, the University</description>
     </item>
     
     <item>
