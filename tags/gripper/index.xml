@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gripper on Scepter914 Website</title>
+    <title>gripper on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/gripper/</link>
-    <description>Recent content in Gripper on Scepter914 Website</description>
+    <description>Recent content in gripper on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/magripper_ja/</guid>
-      <description>Summary concept 本研究では、バックドライバビリティが高いグリッパ&amp;rdquo;Magripper&amp;rdquo;と、リーチングからシームレスに高速グラスピ</description>
+      <description>Summary concept 本研究では、バックドライバビリティが高いグリッパ&amp;quot;Magripper&amp;quot;と、リーチングからシームレスに高速グラスピング</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Wed, 30 Sep 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/magripper/</guid>
-      <description>Summary  concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
+      <description>Summary  concept  In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
  Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.</description>
     </item>
     

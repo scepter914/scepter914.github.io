@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
+      "@id":"https:\/\/scepter914.github.io\/"
     },
     "headline": "TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
+      "url": "https:\/\/scepter914.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,12 +60,12 @@
       "name": "Scepter914 Website",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
+        "url": "https:\/\/scepter914.github.io\/images/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "概要 ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくもの"
+    "description": "概要 ChainerCVのdetection example \x2b tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくもの"
   }
 </script>
 
@@ -160,181 +160,141 @@
 
   
 
-  <div class="article-body">
-
-<h2 id="概要">概要</h2>
-
+  <div class="article-body"><h2 id="概要">概要</h2>
 <ul>
 <li>ChainerCVのdetection example + tellopyでトイドローンを自動で動かしてみたお話</li>
 <li>アプリケーションとしては人についていくものプログラムを作った</li>
 <li>！注意！
-
 <ul>
 <li>安全面は各自の自己責任でお願いします
-
 <ul>
 <li>周りに人が居ないか，ぶつかっても壊れるようなものがないかを確認してください</li>
-</ul></li>
+</ul>
+</li>
 <li>(ドローン自体の個体差等があるため)コードそのままコピペしても動くとは限りません</li>
 <li>コードはあくまで参考程度にし，自己責任で一行づつ実装してください</li>
 <li>そうしないと思わぬ事故が起こりえます(実際デバッグしている時，結構怖かったです)</li>
-</ul></li>
+</ul>
+</li>
 <li>2019/01/07 ver1.0
-
 <ul>
 <li>2019/01/08 ver1.1 コメント追加</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="まえがき">まえがき</h2>
-
 <p>何か作って発表しないと単位が降ってこない授業を履修していたので，何か作る必要が生じていた．
 「ﾃﾞｨｰﾌﾟﾗｰﾆﾝｸﾞ，ﾊﾔｯﾃﾙ」くらいのノリで作ったブツで発表したものがあったのでWeb記事に供養したというお話．</p>
-
 <p>あんまり大したこともしていないし，この記事の中身もそんなにないけど強いて言うのであれば，
 &ldquo;転がっている学習済モデルを使って&rdquo;(重要)，ﾃﾞｨｰﾌﾟを何かにくっつけたアプリケーションは，
 大した技術力もいらずかつ短時間でそれっぽく見えるなにかを作れるってことかなぁ．</p>
-
 <p>関連研究のsurveyとかは特にしていないので，やり方被っている某がある可能性大．
 なので，もし知っている方がいたらTwitter等で教えていただけると助かります．
 あと研究界隈だとドローンって表記せずUAVとかマルチコプターとか言う気がするけど，これはあくまでお遊びなのでドローン表記で．</p>
-
 <h2 id="ソースコード">ソースコード</h2>
-
 <ul>
 <li><a href="https://github.com/scepter914/TelloFollowingPerson">https://github.com/scepter914/TelloFollowingPerson</a></li>
-<li><del> 書き散らしただけでリファクタリング全くしてないコードなのはご容赦を </del></li>
+<li><!-- raw HTML omitted --> 書き散らしただけでリファクタリング全くしてないコードなのはご容赦を <!-- raw HTML omitted --></li>
 </ul>
-
-<h2 id="環境構築-version">環境構築 &amp;&amp; version</h2>
-
+<h2 id="環境構築--version">環境構築 &amp;&amp; version</h2>
 <ul>
 <li>READMEに書いたのでそちらを参照を</li>
 </ul>
-
 <h2 id="処理の流れ">処理の流れ</h2>
-
 <ol>
 <li>host PCからTelloに制御信号を送って初期位置へ移動させる</li>
 <li>Telloから画像を取得,host PCに画像を送る</li>
 <li>ChainerCVでObject Detectionをして，トラッキング対象物(人)の検出と画像内位置を取得</li>
 <li>取得したデータでTelloの移動制御を行い，hostPCからTelloを移動させる信号を送る</li>
 </ol>
-
 <h3 id="telloとは">Telloとは</h3>
-
 <p>DJIから販売されているトイドローン．
 Amazonから買えて1万円超えくらい．
 Pythonから叩けるので遊ぶのに便利．
 ggるといろいろ記事が出てくる．</p>
-
 <ul>
 <li>参考
-
 <ul>
 <li><a href="https://www.droneskyfish.com/entry/tello-fly">https://www.droneskyfish.com/entry/tello-fly</a> 手動で動かす参考</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="telloの自動制御">Telloの自動制御</h3>
-
 <p>pythonでtelloを動かすライブラリのTelloPyを使った．
 ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い．
 これだけで結構遊べる気がする．</p>
-
-<pre><code class="language-python3">import tellopy
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#f92672">import</span> tellopy
 help(tellopy)
-</code></pre>
-
-<p>を見ればなんとなく中身が分かる．
+</code></pre></div><p>を見ればなんとなく中身が分かる．
 というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．</p>
-
 <ul>
 <li>参考
-
 <ul>
 <li><a href="https://github.com/hanyazou/TelloPy">https://github.com/hanyazou/TelloPy</a></li>
 <li><a href="https://www.mitomoyo.com/entry/2018/06/22/010142">https://www.mitomoyo.com/entry/2018/06/22/010142</a> teellopy+keras</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="object-detection-task">Object Detection Task</h3>
-
 <p>使ったライブラリはChainerCV，なので使うフレームワークはChainer．
 ChainerCVはDeepの学習済モデルとか含めてよしなにexampleから簡単に動かせるライブラリ．実際くっそ楽．
 今回はChainerCVのObject Detectionのサンプルコードを利用する．
 Object Detectionはざっくりいうとinputの画像に対して，
 オブジェクトを検出して「四角で囲んだここにはhogeがある」って言ってくれるタスクのこと．</p>
-
 <p>そして今回使ったアルゴリズムはみんな大好きYOLO(You Only Look Once)．
 YOLOはObject Detectionタスクのアルゴリズムの一種．
 詳しくは論文読んでください．</p>
-
 <p>Detectionのコードは<a href="https://github.com/chainer/chainercv/tree/master/examples/yolo">https://github.com/chainer/chainercv/tree/master/examples/yolo</a>にあるdemo.pyほとんどそのまま．
 ここではFPSを上げたかったのでsampleにあったYolo v2 tinyを使った．
 ここでうだうだ説明するよりChainerCVの実装を読んだ方が早いのであとは省略．</p>
-
 <p>あとなぜだかよくわからんけどexampleのコードをそのまま動かしたら</p>
-
 <pre><code>
 File &quot;demo.py&quot;, line 7, in &lt;module&gt;
 from chainercv.experimental.links import YOLOv2Tiny
 ImportError: cannot import name 'YOLOv2Tiny'
 
-</code></pre>
-
-<p>とerrorが出たので，でっちあげでファイルコピってimport周りを少し書き換えた．(非常にクソ解法)</p>
-
+</code></pre><p>とerrorが出たので，でっちあげでファイルコピってimport周りを少し書き換えた．(非常にクソ解法)</p>
 <ul>
-<li><p>追記 2019/01/08(コメント貰ったので捕捉)</p>
-
+<li>
+<p>追記 2019/01/08(コメント貰ったので捕捉)</p>
 <ul>
 <li>Yolov2tinyはRelease前だったからでした</li>
 <li>git cloneして pip install -e chainercv/</li>
-</ul></li>
-
-<li><p>参考</p>
-
+</ul>
+</li>
+<li>
+<p>参考</p>
 <ul>
 <li><a href="https://github.com/chainer/chainercv">https://github.com/chainer/chainercv</a> ChainerCV</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="telloの移動制御">Telloの移動制御</h3>
-
 <ul>
-<li>くっそ<del> 稚拙 </del>シンプルな実装</li>
+<li>くっそ<!-- raw HTML omitted --> 稚拙 <!-- raw HTML omitted -->シンプルな実装</li>
 <li>Detectionによってbounding boxの座標，ラベルが求まるので，(複数人映っている可能性も考慮して)人間(label == 14)がラベルのものの重心位置とbounding boxの平均面積を算出</li>
 <li>左右，上下: 重心位置が画面の中心にくるように，(適当なゲインを調整して)上下左右に移動する</li>
 <li>前後: 平均面積がある閾値になるように，(適当なゲインを調整して)前後に移動する
-
 <ul>
 <li>人に近づくとbounding boxの面積は大きくなる，人から遠ざかるとbounding boxの面積は小さくなる</li>
-</ul></li>
-<li><del> 図を作るのすらもめんどい </del></li>
 </ul>
-
+</li>
+<li><!-- raw HTML omitted --> 図を作るのすらもめんどい <!-- raw HTML omitted --></li>
+</ul>
 <h3 id="他に参考にしたもの">他に参考にしたもの</h3>
-
 <ul>
 <li><a href="http://robonchu.hatenablog.com/entry/2018/10/09/215542">http://robonchu.hatenablog.com/entry/2018/10/09/215542</a> yolo + tello</li>
 <li><a href="https://github.com/mutsuyuki/DroneControllByYOLOv2">https://github.com/mutsuyuki/DroneControllByYOLOv2</a> yolo + tello ジェスチャー</li>
 <li><a href="https://github.com/Ubotica/telloCV/">https://github.com/Ubotica/telloCV/</a> tello * CV</li>
 </ul>
-
 <h2 id="結果">結果</h2>
-
 <p>それっぽく動いたけれど，自分のノートPCのCPU onlyでDetectionの推論が0.15fpsで結構しんどい気持ちになった．
 自分のコードの書き方が悪いのかもしれないけど，単純にスペック不足&hellip;？</p>
-
 <h2 id="他感想的な">他感想的な</h2>
-
 <h3 id="実装に関して">実装に関して</h3>
-
 <ul>
 <li>当たり前だけど一気にやらずに一個一個実装していった(テストコードも特にリファクタリングしていないのでGithubに乗せたままな気がする)</li>
 <li>順番としては
-
 <ol>
 <li>ChainerCVのYoloのdemoをそのまま動かす</li>
 <li>videoから画像を取ってきてYoloのdemoに突っ込むのでFPSを確認</li>
@@ -345,23 +305,19 @@ ImportError: cannot import name 'YOLOv2Tiny'
 <li>ドローンからとってきた画像でDetectionしてみる</li>
 <li>ドローンからとってきた画像で制御指定値の算出を確認(実際にドローンを動かしていない)</li>
 <li>実際に人に付いていくデモをしてみる</li>
-</ol></li>
+</ol>
+</li>
 <li>こんな感じで実装した．</li>
 </ul>
-
 <h3 id="トイドローンについて">トイドローンについて</h3>
-
 <ul>
 <li>バッテリー持ち</li>
 </ul>
-
 <p>すぐにバッテリーが切れるので，案外デバッグ(というよりパラメータ調整)が捗らなかった．
 充電待ちの時間が結構あったので，もし時間に迫られる+何かを作らないといけない，みたいなシチュエーションだとあんまりトイドローンを使うのはおすすめできないかも．</p>
-
 <ul>
 <li>デバッグ</li>
 </ul>
-
 <p>デバッグがマジで怖い&hellip;
 例えば本来whileを抜けるはずなのに抜けないバグを仕込んで，着陸しようとしないとかいうバグを仕込んでしまったバカがいたわけです．
 Telloはありがたいことにバッテリーがすぐ切れるので，充電切れによりことなきを得たけど．もし数十分飛んでたらどないしようと思った．
@@ -466,9 +422,9 @@ Telloはありがたいことにバッテリーがすぐ切れるので，充電
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
       
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
       
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
       
     </div>
   </section>

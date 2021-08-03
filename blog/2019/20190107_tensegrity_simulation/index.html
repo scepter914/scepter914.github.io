@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 
@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Tensegrity Simulation - Scepter914 Website</title>
     
-<meta name="description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta name="description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
 
 <meta property="og:title" content="Tensegrity Simulation - Scepter914 Website">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta property="og:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
 <meta name="twitter:url" content="https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/">
 <meta name="twitter:title" content="Tensegrity Simulation - Scepter914 Website">
-<meta name="twitter:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
+<meta name="twitter:description" content="What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d&#43;K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n&#43;1} ← $  $ xn&#43;(xn-x_{n-1})&#43;Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 &#43; x_1)/2.">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
+      "@id":"https:\/\/scepter914.github.io\/"
     },
     "headline": "Tensegrity Simulation - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
+      "url": "https:\/\/scepter914.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,12 +60,12 @@
       "name": "Scepter914 Website",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
+        "url": "https:\/\/scepter914.github.io\/images/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2."
+    "description": "What is this  Blog of https:\/\/github.com\/scepter914\/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d\x2bK_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n\x2b1} ← $  $ xn\x2b(xn-x_{n-1})\x2bΔt^2F_n\/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 \x2b x_1)\/2."
   }
 </script>
 
@@ -160,39 +160,29 @@
 
   
 
-  <div class="article-body">
-
-<h2 id="what-is-this">What is this</h2>
-
+  <div class="article-body"><h2 id="what-is-this">What is this</h2>
 <ul>
 <li>Blog of <a href="https://github.com/scepter914/Tensegrity-simulation">https://github.com/scepter914/Tensegrity-simulation</a></li>
 </ul>
-
 <h2 id="methods">Methods</h2>
-
 <h3 id="sequence">Sequence</h3>
-
 <ol>
 <li>Initialize position of particles and parameters</li>
 <li>Loop
-
 <ol>
 <li>Initialize force of each particle</li>
 <li>Update force of each particle from spring</li>
 <li>Update position of each particle</li>
 <li>Satisfy distance constraints of each strut</li>
 <li>Update collision of ground</li>
-</ol></li>
 </ol>
-
+</li>
+</ol>
 <h3 id="each-particles">Each Particles</h3>
-
 <ul>
 <li>f = Mg</li>
 </ul>
-
 <h3 id="spring">Spring</h3>
-
 <ul>
 <li>$f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$</li>
 <li>$K_s$ : spring constant</li>
@@ -202,123 +192,110 @@
 <li>$K_d$ : damper constant</li>
 <li>$v_0$,$v_1$ : velocity of particles</li>
 </ul>
-
 <h3 id="update-particles">Update particles</h3>
-
 <ul>
 <li>Verlet Integration</li>
 <li>$x_{n+1} ← $
-
 <ul>
 <li>$ xn+(xn-x_{n-1})+Δt^2F_n/m$</li>
 <li>xn is $x_n$ (it is rendering error)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="strut">Strut</h3>
-
 <ul>
 <li>$x_0$ ←  $(x_0 + x_1)/2.0$ - $(l_0/2.0)$ $d$
-
 <ul>
 <li>d : the unit vector toward the other particle</li>
 <li>$l_0$ is the rest length.</li>
-</ul></li>
+</ul>
+</li>
 <li>This update does not move the center of gravity of the strut.</li>
 </ul>
-
 <h3 id="update-collision-of-graound">Update collision of graound</h3>
-
 <p>If the z value of a particle is under the particle radius, the particle
 have to jump. I use the Position-based method for collision against
 the ground.</p>
-
 <ul>
 <li>$ z_{n+1} = r $</li>
 <li>$ zn ← r + z_{n+1} - zn $
-
 <ul>
 <li>zn is $z_n$ (it is rendering error)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>z is the z position of a particle. r is the radius of particles.</p>
-
 <p>For x, y, I add friction for collision.</p>
-
 <ul>
 <li>$xn=xn+(x_{n+1}-xn)(1.0-u)$$</li>
 <li>$yn = yn + (y_{n+1} - yn)(1.0 - u) $</li>
 </ul>
-
 <h3 id="parameters">Parameters</h3>
-
 <ul>
-<li><p>item Common value</p>
-
+<li>
+<p>item Common value</p>
 <ul>
 <li>$M$ = 0.20</li>
 <li>$\Delta t$ = 0.010</li>
 <li>$r$ = 5.0</li>
 <li>$u$ = 0.80</li>
-</ul></li>
-
-<li><p>video1</p>
-
+</ul>
+</li>
+<li>
+<p>video1</p>
 <ul>
 <li>$x$ = (-400.0, 200.0, 250.0)</li>
 <li>$v$ = (-0.70, 0.80, 0.50)</li>
 <li>$ K_s$ = 20.0</li>
 <li>$ K_b$ = 5.0</li>
 <li>$ g $ = -9.8</li>
-</ul></li>
-
-<li><p>Video2</p>
-
+</ul>
+</li>
+<li>
+<p>Video2</p>
 <ul>
 <li>$x$ = (-500.0, 800.0, 250.0)</li>
 <li>$v$ = (-0.30, 1.00, 0.40)</li>
 <li>$ K_s$ = 20.0</li>
 <li>$ K_b$ = 5.0</li>
 <li>$ g $ = -9.8</li>
-</ul></li>
-
-<li><p>Video3</p>
-
+</ul>
+</li>
+<li>
+<p>Video3</p>
 <ul>
 <li>$x$ = (-500.0, 800.0, 250.0)</li>
 <li>$v$ = (-0.30, 1.00, 0.40)</li>
 <li>$ K_s$ = 20.0</li>
 <li>$ K_b$ = 5.0</li>
 <li>$ g $ = -0.98</li>
-</ul></li>
-
-<li><p>Video4</p>
-
+</ul>
+</li>
+<li>
+<p>Video4</p>
 <ul>
 <li>$x$ = (-500.0, 800.0, 250.0)</li>
 <li>$v$ = (-0.30, 1.00, 0.40)</li>
 <li>$ K_s$ = 1.1</li>
 <li>$ K_b$ = 0.6</li>
 <li>$ g $ = -0.98</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="make-movie">make movie</h3>
-
 <ul>
 <li>run
-
 <ul>
 <li>make</li>
 <li>make run</li>
-</ul></li>
+</ul>
+</li>
 <li>make movie
-
 <ul>
 <li>cd bin/data</li>
 <li>ffmpeg -r 200 -i image %05d.png -vcodec libx264 -pix fmt yuv420p -r 200 out.mp4</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -419,9 +396,9 @@ the ground.</p>
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
       
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
       
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
       
     </div>
   </section>

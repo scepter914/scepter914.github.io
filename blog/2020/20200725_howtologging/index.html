@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
+      "@id":"https:\/\/scepter914.github.io\/"
     },
     "headline": "作業日誌の書く手順 - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
+      "url": "https:\/\/scepter914.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,7 +60,7 @@
       "name": "Scepter914 Website",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
+        "url": "https:\/\/scepter914.github.io\/images/logo.png",
         "width": 600,
         "height": 60
       }
@@ -160,47 +160,41 @@
 
   
 
-  <div class="article-body">
-
-<h2 id="このページは">このページは</h2>
-
+  <div class="article-body"><h2 id="このページは">このページは</h2>
 <ul>
 <li><a href="https://scepter914.github.io/blog/2020/20200712_experiment_report">ロボット系に参考になるかもしれない作業日誌の書き方</a>の2ページ目</li>
 <li>実際にどういう手順で作業日誌を残しているか、について</li>
 <li>以下の一例はmarkdown</li>
 </ul>
-
 <h2 id="1-まずその日の実験で何するかを考える">1. まずその日の実験で何するかを考える</h2>
-
 <ul>
 <li>所謂実験計画書みたいな奴に当たる
-
 <ul>
 <li>計画書とかをちゃんと作るくらいなら作業したほうがいいので箇条書きで十分
-
 <ul>
 <li>実験計画書と実験報告書が分かれていたら、面倒になって計画書が雑になって報告書も雑になる（というかやらなくなる）</li>
-</ul></li>
+</ul>
+</li>
 <li>箇条書きぐらいはした方が無駄な作業をする率が減るとは思うので、個人的にはその程度のコストはかける派</li>
 <li>個人的には前日の夜に書きまとめるのが好きだけど、その日の朝でもいいとは思う（朝辛い人並みの意見</li>
-</ul></li>
+</ul>
+</li>
 <li>タスクのグルーピング
-
 <ul>
 <li>タスクのグルーピングを予め検討しておくことで時間の節約になる</li>
 <li>パラメータ調整とかでよく発生する気がするけど、一つ一つバラバラにやるより一気にやったほうが楽になる系のタスクはこの地点でまとめておく
-
 <ul>
 <li>実際に取り組む前にタスクのやる順番を入れ替えて楽しようねっていうだけの話</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>以下の例が研究室感あるのは僕が修士2年間ずっとやってたので慣れていただけ（この日誌自体はフィクションです
-
 <ul>
 <li>これが書けている状態で実験を始める</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <pre><code>
 # 2020/04/01 実験
 
@@ -231,56 +225,49 @@
 ## 残タスク
 
 
-</code></pre>
-
-<h2 id="2-実験の作業日誌を書いていく">2. 実験の作業日誌を書いていく</h2>
-
+</code></pre><h2 id="2-実験の作業日誌を書いていく">2. 実験の作業日誌を書いていく</h2>
 <ul>
 <li>個人的には以下のの形式でまとめていくのが好き</li>
 </ul>
-
 <pre><code>### 始めた時間: やりたいタスク
 - (時間): 変更点
     - その結果どうなったか
     - 考察
     - issue: 新たに出た問題
     - logfile: 20200401_hogelog.txt
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>題名（ 始めた時間: やりたいタスク）
-
 <ul>
 <li>目次(gollumでいうところのTOC)を見るとその日にやったタスクが一目で分かるので嬉しい</li>
-</ul></li>
+</ul>
+</li>
 <li>箇条書きの一段落目: 時間と変更点
-
 <ul>
 <li>タスクに対してどうアプローチしたかがわかる</li>
 <li>時間を書いた方がいいときの例としては動画を撮っている時、logを取っている時とか
-
 <ul>
 <li>作業日誌、変更点とlogや動画の対応が取れるのが嬉しい</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>箇条書きの二段落目: その結果どうなったか、考察等を書きなぐっていく、logファイルのメモ
-
 <ul>
 <li>あと新しく出たバグを書き残す←多人数開発だとめっちゃ重要
-
 <ul>
 <li>issue: 新たに出たバグ</li>
 <li>tips: 発見した、聞いたりしたtips</li>
 <li>みたいに表記を固定しておくとページ内検索に引っかかりやすいのでおすすめ</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>例としては以下の例になる
-
 <ul>
 <li>以下では面倒になって結構端折っているが、自分の個人wikiの修士時代の実験logを見てみると一日の実験で大体200-300行くらい書いていた</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <pre><code>
 # 2020/04/01 実験
 
@@ -363,19 +350,15 @@
 
 ## 残タスク
 
-</code></pre>
-
-<h2 id="3-実験後">3. 実験後</h2>
-
+</code></pre><h2 id="3-実験後">3. 実験後</h2>
 <ul>
 <li>最後に残タスクを確認する
-
 <ul>
 <li>新しく出たissueも見ながら</li>
 <li>= 次の日の実験todoになる</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <pre><code>## 残タスク
 
 - ケーブルを追加購入する
@@ -389,8 +372,7 @@
 - タスクB
     - object Aで試してみる
     - object Bで試してみる
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     
@@ -489,9 +471,9 @@
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
       
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
       
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
       
     </div>
   </section>

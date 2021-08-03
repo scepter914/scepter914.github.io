@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Scepter914 Website</title>
@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rosbagのtopicを大量にremapするshell script</title>
+      <link>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</link>
+      <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</guid>
+      <description>概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大</description>
+    </item>
     
     <item>
       <title>個人的なwiki運用の一案</title>
@@ -72,7 +81,7 @@
       <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
-      <description> Error  For user of custom css  gollum &amp;ndash;css  When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.   How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes   </description>
+      <description>Error  For user of custom css  gollum &amp;ndash;css   When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.    How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes    </description>
     </item>
     
     <item>
@@ -126,7 +135,7 @@
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
-      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground   Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)   Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
+      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
     </item>
     
     <item>

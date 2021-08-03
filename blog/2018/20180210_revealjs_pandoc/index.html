@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
+      "@id":"https:\/\/scepter914.github.io\/"
     },
-    "headline": "gollum &#43; reveal.js &#43; pandocによるスライド作成システム - Scepter914 Website",
+    "headline": "gollum \x2b reveal.js \x2b pandocによるスライド作成システム - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
+      "url": "https:\/\/scepter914.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,12 +60,12 @@
       "name": "Scepter914 Website",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
+        "url": "https:\/\/scepter914.github.io\/images/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "このページは 個人用wiki(gollum) + reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開"
+    "description": "このページは 個人用wiki(gollum) \x2b reveal.jsによる情報一括管理の4ページ目 スライド作成をwikiに噛ましたい パワポで一々開"
   }
 </script>
 
@@ -160,99 +160,84 @@
 
   
 
-  <div class="article-body">
-
-<h2 id="このページは">このページは</h2>
-
+  <div class="article-body"><h2 id="このページは">このページは</h2>
 <ul>
 <li><a href="https://scepter914.github.io/blog/2018/20180210_gollum">個人用wiki(gollum) + reveal.jsによる情報一括管理</a>の4ページ目</li>
 </ul>
-
 <h2 id="スライド作成をwikiに噛ましたい">スライド作成をwikiに噛ましたい</h2>
-
 <ul>
 <li>パワポで一々開いて「あのスライドどこだっけー」ってやりたくない
-
 <ul>
 <li>検索性がアレ</li>
-</ul></li>
+</ul>
+</li>
 <li>wikiの中にスライドの情報を突っ込みたい
-
 <ul>
 <li>wikiに噛ませれば検索性が上がるだろう</li>
-</ul></li>
+</ul>
+</li>
 <li>そもそもMarkdownでスライド作れるツールを使うとハッピーなのでは
-
 <ul>
 <li>Markdownでスライドさっと作成できれば便利だし</li>
-</ul></li>
+</ul>
+</li>
 <li>Markdownファイルとしてwikiでページをつくって，それをスライドに変換する流れにすればいいじゃん</li>
 </ul>
-
-<h2 id="reveal-js">reveal.js</h2>
-
+<h2 id="revealjs">reveal.js</h2>
 <ul>
 <li>Markdown記法でスライドを作成できる神ツール</li>
 <li>詳しくは色々とggってください</li>
 <li>公式 <a href="https://revealjs.com/#/">https://revealjs.com/#/</a></li>
 </ul>
-
 <h2 id="pandoc">pandoc</h2>
-
 <ul>
 <li>reveal.jsはhtmlファイルの中にMarkdown記法で書いていくスタイル</li>
 <li>Markdown別ファイルにするにはローカルサーバーを立てる必要がある</li>
 <li>ぶっちゃけめんどくさい</li>
 <li>そこでpandocを使う</li>
 <li>pandoc
-
 <ul>
 <li>文書を別の形式に変える神ツール</li>
 <li>詳しくはggってください</li>
 <li>今回はfrom markdown to revealjsを使います</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="環境構築">環境構築</h2>
-
 <ul>
 <li>reveal.js install
-
 <ul>
 <li>apt-get install wkhtmltopdf</li>
 <li>参考 公式 <a href="https://github.com/hakimel/reveal.js/#installation">https://github.com/hakimel/reveal.js/#installation</a></li>
 <li>git clone <a href="https://github.com/hakimel/reveal.js.git">https://github.com/hakimel/reveal.js.git</a></li>
-</ul></li>
+</ul>
+</li>
 <li>pandoc install
-
 <ul>
 <li>sudo apt-get install pandoc</li>
-</ul></li>
+</ul>
+</li>
 <li>reveal.jsディレクトリをwikiの下に置く</li>
 </ul>
-
 <pre><code>wiki/
 　└ reveal.js/
 　　├ css
 　　├ js
 　　├ lib
 　　└ pic
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>.gitignoreに/reveal.jsを追加する</li>
 <li>自分の設定ファイル <a href="https://github.com/scepter914/gollum_config">https://github.com/scepter914/gollum_config</a>のslide_default.htmlをダウンロード
-
 <ul>
 <li>適当な場所に置く(自分は$HOME/wiki/uploads/code/pandoc_template/slide_default.htmlに置いている)</li>
-</ul></li>
+</ul>
+</li>
 <li>slide.shを作成する
-
 <ul>
 <li>ファイル場所は適宜</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <pre><code>var=`grep -ic '# ' $1`
 echo &quot;スライド数&quot;$var  
 cp $1 ~/wiki/reveal.js/index.md
@@ -260,38 +245,30 @@ cp -r ./pic ~/wiki/reveal.js/
 cd ~/wiki/reveal.js/
 pandoc -f markdown index.md -t revealjs -V theme:black --template=$HOME/wiki/uploads/code/pandoc_template/slide_default.html --highlight-style=espresso --slide-level=2 -o index.html
 google-chrome index.html
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>.bashrc等に
-
 <ul>
-<li>alias slide=&ldquo;$HOME/wiki/uploads/code/slide.sh&rdquo;</li>
+<li>alias slide=&quot;$HOME/wiki/uploads/code/slide.sh&rdquo;</li>
 <li>を追加</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="スライド作成">スライド作成</h2>
-
 <ol>
 <li>wiki内でスライド用のディレクトリを作成する
-
 <ul>
 <li>階層構造は以下の通り</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <pre><code>slide/
 　├ hoge.md
 　└ pic/
 　　├ image.jpg
 　　└ image2.jpg
-</code></pre>
-
-<ol>
+</code></pre><ol start="2">
 <li>mdファイルを作成する(hoge.mdとする)</li>
 </ol>
-
 <pre><code>% タイトル
 % 名前
 % 日付
@@ -336,41 +313,40 @@ google-chrome index.html
 
 - video
 &lt;video data-autoplay src=&quot;pic/video.mp4&quot;&gt;&lt;/video&gt;
-</code></pre>
-
-<ul>
-<li>2. slide.sh hoge.md で起動するはず</li>
+</code></pre><ul>
+<li>
+<ol start="2">
+<li>slide.sh hoge.md で起動するはず</li>
+</ol>
+</li>
 </ul>
-
-<h2 id="reveal-jsのtips">reveal.jsのTips</h2>
-
+<h2 id="revealjsのtips">reveal.jsのTips</h2>
 <ul>
 <li>/picでなく/uploadsに画像等を纏めたい場合
-
 <ul>
 <li>uploads/image.jpeg</li>
 <li>revealjs内に，uploads全てをコピーする</li>
 <li>slide.shを適宜書き換えてください</li>
-</ul></li>
+</ul>
+</li>
 <li>よく使う操作
-
 <ul>
 <li>s 時間やスライドの表示</li>
-</ul></li>
+</ul>
+</li>
 <li>凝ったスライド作りたい時
-
 <ul>
 <li>凝るにはhtmlのtemplateを頑張ればおーけー</li>
 <li>というかcss頑張ってください</li>
 <li>というかパワポ使え感</li>
-</ul></li>
+</ul>
+</li>
 <li>表題で大文字化を無効
-
 <ul>
 <li>theme の css で表題のスタイルに text-transform: uppercase; を無効にする</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <pre><code>&lt;style type=&quot;text/css&quot;&gt;
   .reveal h1,
   .reveal h2,
@@ -381,17 +357,15 @@ google-chrome index.html
     text-transform: none;
   }
 &lt;/style&gt;
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>PDF印刷
-
 <ul>
 <li>URLの最後に?print-pdfと書き加えるとPDF用のレイアウトになる</li>
 <li>ブラウザの印刷機能でPDFに変換</li>
 <li>なんか白くて変な場合は 背景のグラフィック にチェックを入れる(Chromeの場合?)</li>
 <li>画像だけが分かれちゃった場合は画像のサイズを小さくする。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -494,9 +468,9 @@ google-chrome index.html
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
       
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
       
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
       
     </div>
   </section>

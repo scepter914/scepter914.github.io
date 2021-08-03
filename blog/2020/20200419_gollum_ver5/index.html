@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"https://scepter914.github.io/"
+      "@id":"https:\/\/scepter914.github.io\/"
     },
     "headline": "gollum version5 - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
-      "url": "https://scepter914.github.io/images/default.png",
+      "url": "https:\/\/scepter914.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,12 +60,12 @@
       "name": "Scepter914 Website",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://scepter914.github.io/images/logo.png",
+        "url": "https:\/\/scepter914.github.io\/images/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基"
+    "description": "概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https:\/\/github.com\/scepter914\/gollum_files の対応 参考 https:\/\/github.com\/gollum\/gollum\/wiki\/5.0-release-notes 基"
   }
 </script>
 
@@ -160,82 +160,68 @@
 
   
 
-  <div class="article-body">
-
-<h2 id="概要">概要</h2>
-
+  <div class="article-body"><h2 id="概要">概要</h2>
 <ul>
 <li>個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate
-
 <ul>
 <li>ver4のままだと動かないので色々直す必要がある</li>
 <li><a href="https://github.com/scepter914/gollum_files">https://github.com/scepter914/gollum_files</a> の対応</li>
-</ul></li>
+</ul>
+</li>
 <li>参考
-
 <ul>
 <li><a href="https://github.com/gollum/gollum/wiki/5.0-release-notes">https://github.com/gollum/gollum/wiki/5.0-release-notes</a></li>
 <li>基本的にこれを読めば解決する</li>
-</ul></li>
+</ul>
+</li>
 <li>更新
-
 <ul>
 <li>2020/04/19 ver1</li>
 <li>2020/08/15 追記</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="遭遇したエラー">遭遇したエラー</h2>
-
 <h3 id="ページのリンクが崩壊する">ページのリンクが崩壊する</h3>
-
 <ul>
 <li>lenient-tag-lookupオプションを起動する</li>
 </ul>
-
 <pre><code> gollum --config config.rb --lenient-tag-lookup &amp;
-</code></pre>
-
-<h3 id="レイアウトが崩れる">レイアウトが崩れる</h3>
-
+</code></pre><h3 id="レイアウトが崩れる">レイアウトが崩れる</h3>
 <ul>
 <li>主にsidebarが変な挙動する
-
 <ul>
 <li>幅が狭くなって左側に寄る減少が起こる</li>
-</ul></li>
+</ul>
+</li>
 <li>css customをonにしているとなる</li>
 <li>結論としてブラウザのキャッシュが悪さをしていた
-
 <ul>
 <li>chromeならctrl-f5をすればよい</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="sudo-gem-install-gollumが通らない">sudo gem install gollumが通らない</h3>
-
 <ul>
 <li>wsl on windowsで起こった</li>
 <li>cmakeが通らない</li>
 <li>sudo apt install openssl-devel</li>
 </ul>
-
 <h2 id="config-fileの対応">config fileの対応</h2>
-
 <ul>
 <li><a href="https://github.com/gollum/gollum/wiki/5.0-release-notes">https://github.com/gollum/gollum/wiki/5.0-release-notes</a></li>
 <li>一部無くなった機能があったりしたのでconfig系を修正
-
 <ul>
 <li>css</li>
 <li>config,rb</li>
-</ul></li>
+</ul>
+</li>
 <li>docker対応
-
 <ul>
 <li>rubyのversionを上げる必要があった</li>
 <li>buildし直してdocker hubへ登録した</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -336,9 +322,9 @@
       
       <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
       
-      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
+      <a href="https://scepter914.github.io/tags/ros" class="list-group-item">ros</a>
       
-      <a href="https://scepter914.github.io/tags/docker" class="list-group-item">docker</a>
+      <a href="https://scepter914.github.io/tags/chainer" class="list-group-item">chainer</a>
       
     </div>
   </section>

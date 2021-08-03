@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gollum on Scepter914 Website</title>
+    <title>gollum on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/gollum/</link>
-    <description>Recent content in Gollum on Scepter914 Website</description>
+    <description>Recent content in gollum on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
@@ -27,7 +27,7 @@
       <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
-      <description> Error  For user of custom css  gollum &amp;ndash;css  When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.   How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes   </description>
+      <description>Error  For user of custom css  gollum &amp;ndash;css   When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.    How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes    </description>
     </item>
     
     <item>

@@ -1,16 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ros on Scepter914 Website</title>
+    <title>ROS on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/ros/</link>
-    <description>Recent content in Ros on Scepter914 Website</description>
+    <description>Recent content in ROS on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Thu, 10 Jan 2019 10:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/ros/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rosbagのtopicを大量にremapするshell script</title>
+      <link>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</link>
+      <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</guid>
+      <description>概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大</description>
+    </item>
     
     <item>
       <title>Setting Velocity on Joints and Links for Gazebo ver9.6</title>

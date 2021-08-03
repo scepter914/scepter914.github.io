@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Scepter914 Website</title>
@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Tue, 17 Nov 2020 23:59:59 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>個人wiki</title>
+      <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
+      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aboutme</title>
@@ -22,20 +31,20 @@
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>https://scepter914.github.io/categories/blog/</link>
-      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Research</title>
       <link>https://scepter914.github.io/categories/research/</link>
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/categories/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://scepter914.github.io/categories/blog/</link>
+      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
@@ -54,15 +63,6 @@
       <pubDate>Thu, 10 Jan 2019 10:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/categories/works/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>個人wiki</title>
-      <link>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</link>
-      <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki/</guid>
       <description></description>
     </item>
     
