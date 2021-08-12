@@ -45,7 +45,7 @@
       <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
-      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Perception Algorithms Engineer    Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Perception Algorithms Engineer      Twitter: @scepter914  Github: @scepter914  Blog: scepter914.github.io   Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@
       <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
-      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Perception Algorithms Engineer Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic</description>
+      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Perception Algorithms Engineer Twitter: @scepter914 Github: @scepter914 Blog: scepter914.github.io Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@
       <pubDate>Wed, 30 Sep 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/magripper/</guid>
-      <description>Summary  concept  In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
+      <description>Summary  concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.
  Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.</description>
     </item>
     
@@ -127,7 +127,7 @@
       <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/magslider/</guid>
-      <description>Summary  Researched at http://ishikawa-vision.org/fusion/Magslider/index-e.html concept   control strategy  In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
+      <description>Summary  Researched at http://ishikawa-vision.org/fusion/Magslider/index-e.html concept    control strategy   In this study, a visual shock absorber capable of adapting to free-fall objects with various weights and speeds is designed and realized. An experiment was conducted for the receiving of balls in free-fall and the adaptive shock absorber succeeded in adaptively receiving the light wood ball with different velocities. To realize an adaptive visual shock absorber, the framework using three elements were developed.</description>
     </item>
     
     <item>
