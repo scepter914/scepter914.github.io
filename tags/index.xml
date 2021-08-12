@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 12 Aug 2021 23:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rust</title>
+      <link>https://scepter914.github.io/tags/rust/</link>
+      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ROS</title>
