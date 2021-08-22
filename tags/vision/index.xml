@@ -21,5 +21,14 @@
       <description>概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時</description>
     </item>
     
+    <item>
+      <title>Rustでカメラから取得した画像に対して画像処理をする</title>
+      <link>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</link>
+      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
+      <description>概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ないので防備録がてら残しておく pngとかの画像から読み込ん</description>
+    </item>
+    
   </channel>
 </rss>
