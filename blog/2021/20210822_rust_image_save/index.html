@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="https://scepter914.github.io/blog/2021/20210804_rosbag_remap/">
+<link rel="canonical" href="https://scepter914.github.io/blog/2021/20210822_rust_image_save/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>rosbagのtopicを大量にremapするshell script - Scepter914 Website</title>
+    <title>Rustでの画像保存の高速化 - Scepter914 Website</title>
     
-<meta name="description" content="概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大">
+<meta name="description" content="概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時">
 
-<meta property="og:title" content="rosbagのtopicを大量にremapするshell script - Scepter914 Website">
+<meta property="og:title" content="Rustでの画像保存の高速化 - Scepter914 Website">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/blog/2021/20210804_rosbag_remap/">
+<meta property="og:url" content="https://scepter914.github.io/blog/2021/20210822_rust_image_save/">
 <meta property="og:image" content="https://scepter914.github.io/images/default.png">
 <meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大">
+<meta property="og:description" content="概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/blog/2021/20210804_rosbag_remap/">
-<meta name="twitter:title" content="rosbagのtopicを大量にremapするshell script - Scepter914 Website">
-<meta name="twitter:description" content="概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大">
+<meta name="twitter:url" content="https://scepter914.github.io/blog/2021/20210822_rust_image_save/">
+<meta name="twitter:title" content="Rustでの画像保存の高速化 - Scepter914 Website">
+<meta name="twitter:description" content="概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時">
 <meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"https:\/\/scepter914.github.io\/"
     },
-    "headline": "rosbagのtopicを大量にremapするshell script - Scepter914 Website",
+    "headline": "Rustでの画像保存の高速化 - Scepter914 Website",
     "image": {
       "@type": "ImageObject",
       "url": "https:\/\/scepter914.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2021-08-03T00:03:00JST",
-    "dateModified": "2021-08-03T00:03:00JST",
+    "datePublished": "2021-08-22T23:00:00JST",
+    "dateModified": "2021-08-22T23:00:00JST",
     "author": {
       "@type": "Person",
       "name": "Scepter914 Website"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大"
+    "description": "概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https:\/\/github.com\/scepter914\/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時"
   }
 </script>
 
@@ -143,107 +143,59 @@
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
         
-        <li class="active">rosbagのtopicを大量にremapするshell script</li>
+        <li class="active">Rustでの画像保存の高速化</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-08-03T00:03:00JST">Aug 3, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-08-22T23:00:00JST">Aug 22, 2021</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/blog/">blog</a></li>
       
     </ul>
 
-    <h1 class="title">rosbagのtopicを大量にremapするshell script</h1>
+    <h1 class="title">Rustでの画像保存の高速化</h1>
   </header>
 
   
 
   <div class="article-body"><h2 id="概要">概要</h2>
 <ul>
-<li>rosbagのtopicを大量にremapするshell scriptを作った
+<li>image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する</li>
+<li><a href="https://github.com/scepter914/camera-image-processing-template">https://github.com/scepter914/camera-image-processing-template</a> 実装とかはここに置いた</li>
+</ul>
+<h2 id="実装">実装</h2>
 <ul>
-<li>脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大量のremapが必要になった時とかに使うとか</li>
+<li>ちまちまライブラリを製作している時に見つけた<a href="https://github.com/zmwangx/rust-ffmpeg/blob/master/examples/dump-frames.rs">https://github.com/zmwangx/rust-ffmpeg/blob/master/examples/dump-frames.rs</a> の画像保存が結構高速だったので使ってみる</li>
 </ul>
-</li>
-<li>rosbagからtopicを抽出してrosbagを作り直す等も考えたけど面倒だったのでshell scriptでごまかした
+<pre><code>fn save_file(frame: &amp;Video, index: usize) -&gt; std::result::Result&lt;(), std::io::Error&gt; {
+    let mut file = File::create(format!(&quot;frame{}.ppm&quot;, index))?;
+    file.write_all(format!(&quot;P6\n{} {}\n255\n&quot;, frame.width(), frame.height()).as_bytes())?;
+    file.write_all(frame.data(0))?;
+    Ok(())
+}
+</code></pre><ul>
+<li>image::RGBImageから変換する関数を実装して、 以前<a href="https://scepter914.github.io/blog/2021/20210813_rust_image_processing/">https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</a> の時に作った <a href="https://github.com/scepter914/camera-image-processing-template">https://github.com/scepter914/camera-image-processing-template</a> でbenchmark取ってみた</li>
+</ul>
+<pre><code>Camera /dev/video0: 1920 * 1080, 50 FPS
+save ppm by directly
+Process 21.945 msec
+save png by image
+Process 94.467 msec
+</code></pre><pre><code>Camera /dev/video0: 640 * 360, 330 FPS
+save ppm by directly
+Process 3.509 msec
+save png by image
+Process 8.609 msec
+</code></pre><ul>
+<li>結果としては大体2-4倍の高速化ができたので満足
 <ul>
-<li>&ldquo;rosbag topic filter&rdquo; &ldquo;rosbag topic extract&rdquo; &ldquo;rosbag topic&rdquo; でいい感じなのがパッと見つからなかったので、shell scriptでいいやってなった</li>
+<li>一方でdataの大きさは3倍くらいになっていたのでトレードオフになっている点には注意</li>
 </ul>
 </li>
 </ul>
-<h2 id="環境等">環境等</h2>
-<ul>
-<li>環境
-<ul>
-<li>Ubuntu20.04 LTS</li>
-<li>ROS1 noetic</li>
-<li>(自分はfish shellのbass command使った)</li>
-</ul>
-</li>
-<li>Reference
-<ul>
-<li><a href="https://answers.ros.org/question/9248/how-do-you-remap-a-topic/">https://answers.ros.org/question/9248/how-do-you-remap-a-topic/</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="shell-scriptを作成する">shell scriptを作成する</h2>
-<ul>
-<li><a href="https://github.com/scepter914/rosbag_remap_script">https://github.com/scepter914/rosbag_remap_script</a> に作った</li>
-<li>
-<ol>
-<li>rosbag_remap.shを作成</li>
-</ol>
-<ul>
-<li>remap用の文字列作ってrosbagに食わせている何も変哲もないscript</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-FILE_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span>
-
-TOPIC_LIST<span style="color:#f92672">=(</span>
-/tf
-/tf_static
-/perception/object_recognition/objects
-/perception/object_recognition/tracking/objects
-/perception/object_recognition/detection/objects
-/localization/twist
-<span style="color:#f92672">)</span>
-
-TOPIC_FILTER<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
-<span style="color:#66d9ef">for</span> TOPIC in <span style="color:#e6db74">${</span>TOPIC_LIST[@]<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">do</span>
-  TOPIC_FILTER<span style="color:#f92672">+=</span>$TOPIC
-  TOPIC_FILTER<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34;:=/tmp&#34;</span>
-  TOPIC_FILTER<span style="color:#f92672">+=</span>$TOPIC
-  TOPIC_FILTER<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34; &#34;</span>
-<span style="color:#66d9ef">done</span>
-rosbag play $FILE_NAME --clock $TOPIC_FILTER
-
-</code></pre></div><ul>
-<li>
-<ol start="2">
-<li>rosbag infoで叩いて出てきたtopic一覧から要らないtopicをTOPIC_LISTの所に並べていく</li>
-</ol>
-</li>
-<li>
-<ol start="3">
-<li>実行権限</li>
-</ol>
-</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod a+x rosbag_remap.sh
-</code></pre></div><ul>
-<li>
-<ol start="4">
-<li>実行</li>
-</ol>
-</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./rosbag_remap.sh file.bag
-</code></pre></div></div>
+</div>
 
   <footer class="article-footer">
     
@@ -258,7 +210,9 @@ rosbag play $FILE_NAME --clock $TOPIC_FILTER
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://scepter914.github.io/tags/ros/">ros</a></li>
+          <li><a href="https://scepter914.github.io/tags/rust/">rust</a></li>
+          
+          <li><a href="https://scepter914.github.io/tags/vision/">vision</a></li>
           
         </ul>
       </div>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on Scepter914 Website</title>
-    <link>https://scepter914.github.io/tags/rust/</link>
-    <description>Recent content in rust on Scepter914 Website</description>
+    <title>vision on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/vision/</link>
+    <description>Recent content in vision on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
     <lastBuildDate>Sun, 22 Aug 2021 23:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://scepter914.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scepter914.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
       <description>概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時</description>
-    </item>
-    
-    <item>
-      <title>Rustでカメラから取得した画像に対して画像処理をする</title>
-      <link>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</link>
-      <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
-      <description>概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ないので防備録がてら残しておく pngとかの画像から読み込ん</description>
     </item>
     
   </channel>

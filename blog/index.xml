@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Thu, 12 Aug 2021 23:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Aug 2021 23:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rustでの画像保存の高速化</title>
+      <link>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</link>
+      <pubDate>Sun, 22 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
+      <description>概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時</description>
+    </item>
     
     <item>
       <title>Rustでカメラから取得した画像に対して画像処理をする</title>
