@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 22 Aug 2021 23:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 03 Sep 2021 01:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使ってて良かった家電・ガジェット類の紹介</title>
+      <link>https://scepter914.github.io/blog/2021/20210903_gadget/</link>
+      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210903_gadget/</guid>
+      <description>概要 使ってて良かった家電・ガジェット類の紹介 同僚に「買ってよかったランキングを聞かせてくれ」と聞かれたのを思い出したので あとそもそもPC周り</description>
+    </item>
     
     <item>
       <title>Rustでの画像保存の高速化</title>
