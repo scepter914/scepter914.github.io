@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Fri, 03 Sep 2021 01:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Sep 2021 13:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
+      <link>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
+      <description>概要 動画像処理において、カメラinput・mp4動画・1枚の画像を使いながらデバッグすることが多いと思う（特にロボット系は） 画像処理は共通で</description>
+    </item>
     
     <item>
       <title>使ってて良かった家電・ガジェット類の紹介</title>
