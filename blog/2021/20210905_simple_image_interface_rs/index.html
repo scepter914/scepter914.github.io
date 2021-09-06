@@ -330,8 +330,20 @@ Caused by:
   the remote server responded with an error: max upload size is: 10485760
 </code></pre><ul>
 <li>ので動画の長さを1/5くらいにする必要があった</li>
+<li>2021/09/07 追記
+<ul>
+<li><a href="https://github.com/scepter914/simple-image-interface-rs/pull/1">https://github.com/scepter914/simple-image-interface-rs/pull/1</a></li>
+<li>ライブラリとして登録するファイルの指定方法があることをPRで教えてもらった</li>
+<li>Cargo.tomlにこういうのを追記
+<ul>
+<li>もしくはexcludeでやればいいっぽい（将来的にこっちかな）</li>
 </ul>
-<h2 id="最後に">最後に</h2>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>include = [&quot;src/lib.rs&quot;, &quot;LICENSE&quot;, &quot;README.md&quot;]
+</code></pre><h2 id="最後に">最後に</h2>
 <ul>
 <li>crateの利用、PRお待ちしております</li>
 </ul>
