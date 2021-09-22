@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 05 Sep 2021 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Sep 2021 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/aboutme/</link>
+      <pubDate>Mon, 20 Sep 2021 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
+      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Sensing/Perception Engineer      Twitter: @scepter914  Github: @scepter914  Blog: scepter914.github.io   Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutme/aboutmeja/</link>
+      <pubDate>Mon, 20 Sep 2021 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
+      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Twitter: @scepter914 Github: @scepter914 Blog: scepter914.github.io Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研</description>
+    </item>
     
     <item>
       <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
@@ -64,24 +82,6 @@
       
       <guid>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</guid>
       <description>概要 最近良く「markdownで色々情報を残すのが便利なのはわかったんだけど、Toolを何使うと便利なの？」と聞かれるので、blogにしてお</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://scepter914.github.io/aboutme/aboutme/</link>
-      <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
-      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Perception Algorithms Engineer      Twitter: @scepter914  Github: @scepter914  Blog: scepter914.github.io   Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
-    </item>
-    
-    <item>
-      <title>自己紹介</title>
-      <link>https://scepter914.github.io/aboutme/aboutmeja/</link>
-      <pubDate>Tue, 17 Nov 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
-      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Perception Algorithms Engineer Twitter: @scepter914 Github: @scepter914 Blog: scepter914.github.io Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所</description>
     </item>
     
     <item>
