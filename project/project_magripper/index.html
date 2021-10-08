@@ -1,167 +1,231 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en-us">
+<head>
     <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.68.3" />
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet"
+        href='https://scepter914.github.io/css/frameworks.css?20211009044428' />
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet" href='https://scepter914.github.io/css/github.css?20211009044428' />
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet" href='https://scepter914.github.io/css/user.css?20211009044428'/>
 
+    
+    <link crossorigin="anonymous" media="(prefers-color-scheme: dark)" rel="stylesheet"
+        href="https://scepter914.github.io/css/dark.css" />
+    
 
+    
+    
+    <link crossorigin="anonymous" media="all" rel="stylesheet"
+        href="https://scepter914.github.io/css/lightbox.css" />
+    
+    <link crossorigin="anonymous" media="all" rel="stylesheet"
+        href="https://scepter914.github.io/css/syntax-highlight.css" />
+    
 
-<link rel="canonical" href="https://scepter914.github.io/project/project_magripper/">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="" />
+    <meta name="keywords"
+        content="robotics, high-speed vision, magnet gear, deformation control, gripper" />
+    <link rel="canonical" href="https://scepter914.github.io/project/project_magripper/" />
 
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="High-speed Hitting Grasping with Magripper - Scepter914 Website" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="https://scepter914.github.io/" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:image" content="https://scepter914.github.io/">
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    
+    <meta property="og:url" content="https://scepter914.github.io/project/project_magripper/"/>
+    <meta property="og:site_name" content="Scepter914 Website"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="High-speed Hitting Grasping with Magripper" />
+    <meta property="og:description" content=""/>
+    
+    <meta property="article:published_time" content="2020-09-30 23:59:59 &#43;0900 JST" />
+    
+
+    
+    
+
+    
+    
+
     <title>High-speed Hitting Grasping with Magripper - Scepter914 Website</title>
-    
-<meta name="description" content="Summary  concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed. Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.">
-
-<meta property="og:title" content="High-speed Hitting Grasping with Magripper - Scepter914 Website">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://scepter914.github.io/project/project_magripper/">
-<meta property="og:image" content="https://scepter914.github.io/images/default.png">
-<meta property="og:site_name" content="Scepter914 Website">
-<meta property="og:description" content="Summary  concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed. Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scepter914 Website">
-<meta name="twitter:url" content="https://scepter914.github.io/project/project_magripper/">
-<meta name="twitter:title" content="High-speed Hitting Grasping with Magripper - Scepter914 Website">
-<meta name="twitter:description" content="Summary  concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed. Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.">
-<meta name="twitter:image" content="https://scepter914.github.io/images/default.png">
 
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scepter914.github.io\/"
-    },
-    "headline": "High-speed Hitting Grasping with Magripper - Scepter914 Website",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scepter914.github.io\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2020-09-30T23:59:59JST",
-    "dateModified": "2020-09-30T23:59:59JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scepter914 Website"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scepter914 Website",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scepter914.github.io\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "Summary  concept   In this study, Magripper, a highly backdrivable gripper, and hitting grasping, high-speed grasping framework, are developed to achieve high-speed hitting grasping executed seamlessly from reaching. The gripper is designed to achieve both high speediness and environmental adaptability. To realize high-speed hitting grasping with Magripper, the framework using three elements were developed.\n Designed Magripper, a highly backdrivable gripper Implemented deformation control based the Zener model in Magripper Proposed the concept of hitting grasping using Magripper  Magripper We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability."
-  }
-</script>
+
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href='https://scepter914.github.io/favicon.ico'>
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico'/>
+    <meta name="theme-color" content="#1e2327">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+    </script>
 
 
-    <link href="https://scepter914.github.io/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
     
     
 
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scepter914.github.io/">Scepter914 Website</a>
-          </div>
 
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="https://scepter914.github.io/aboutme/aboutme">About me (EN)</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/aboutme/aboutmeja">About me (JA)</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/blog/">Blog</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/project/">Project</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/categories/">Categorie</a></li>
-              
-              
-              
-              <li><a href="https://scepter914.github.io/tags/">Tags</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
 
+
+
+</head>
+
+
+<body class="env-production emoji-size-boost page-responsive page-profile">
+  <div class="position-relative js-header-wrapper ">
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+        <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+    <header class="Header py-lg-0 js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+        <div class="Header-item d-none d-lg-flex">
+            <a class="Header-link" href="https://scepter914.github.io/" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                    <path style="fill-rule:evenodd" d="M 8,0 C 3.58,0 0,3.58 0,8 c 0,3.54 2.29,6.53 5.47,7.59 0.4,0.07 0.55,-0.17 0.55,-0.38 0,-0.19 -0.077797,-1.481017 -0.077797,-2.151017 C 5.9433346,12.597005 6.1160655,11.824118 6.56,11.53 4.78,11.33 3.8013559,10.978983 3.5810169,7.6647458 3.9355372,4.6446549 5.3653277,3.8240736 8.0538984,3.639661 10.967753,3.8102868 12.141357,4.4459308 12.425085,7.6477967 12.255593,10.378813 11.25,11.33 9.47,11.53 c 0.29,0.25 0.54,0.73 0.54,1.48 0,1.07 -0.01,1.93 -0.01,2.2 0,0.21 0.15,0.46 0.55,0.38 C 13.806446,14.490656 15.999121,11.437004 16,8 16,3.58 12.42,0 8,0 Z" />
+                    <rect style="fill-rule:evenodd" ry="0.23728813" y="6.3898306" x="6.0169492" height="1.0847455" width="3.9830508"/>
+                </svg>
+                <span class="site-title-text">Scepter914 Website</span>
+            </a>
         </div>
-      </nav>
+        <div
+            class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+                role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox"
+                aria-expanded="false">
+                <div class="position-relative">
+                </div>
+            </div>
+        </div>
+        <nav class="d-flex" aria-label="Global">
+            <a class="js-selected-navigation-item Header-link py-lg-3">&nbsp;</a>
+        </nav>
+        <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative" style="margin-right: auto;">
+            <a class="Header-link" href="https://scepter914.github.io/" aria-label="Homepage"
+                data-ga-click="Header, go to dashboard, icon:logo">
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+                    width="32" aria-hidden="true">
+                    <path style="fill-rule:evenodd" d="M 8,0 C 3.58,0 0,3.58 0,8 c 0,3.54 2.29,6.53 5.47,7.59 0.4,0.07 0.55,-0.17 0.55,-0.38 0,-0.19 -0.077797,-1.481017 -0.077797,-2.151017 C 5.9433346,12.597005 6.1160655,11.824118 6.56,11.53 4.78,11.33 3.8013559,10.978983 3.5810169,7.6647458 3.9355372,4.6446549 5.3653277,3.8240736 8.0538984,3.639661 10.967753,3.8102868 12.141357,4.4459308 12.425085,7.6477967 12.255593,10.378813 11.25,11.33 9.47,11.53 c 0.29,0.25 0.54,0.73 0.54,1.48 0,1.07 -0.01,1.93 -0.01,2.2 0,0.21 0.15,0.46 0.55,0.38 C 13.806446,14.490656 15.999121,11.437004 16,8 16,3.58 12.42,0 8,0 Z" />
+                    <rect style="fill-rule:evenodd" ry="0.23728813" y="6.3898306" x="6.0169492" height="1.0847455" width="3.9830508"/>
+                </svg>
+                <span class="site-title-text">Scepter914 Website</span>
+            </a>
+        </div>
+        
+        
     </header>
+</div>
 
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
+<div id="start-of-content" class="show-on-focus"></div>
+<div id="js-flash-container">
+</div>
 
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scepter914.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scepter914.github.io/project/" itemprop="url"><span itemprop="title">project</span></a></li>
-        
-        <li class="active">High-speed Hitting Grasping with Magripper</li>
-      </ol>
-    </nav>
+  <div class="application-main " data-commit-hovercards-enabled="">
+    <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+        <main id="js-repo-pjax-container" data-pjax-container="">
+            <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-lg-4 "> 
+                <div class="repohead-details-container clearfix container-lg p-responsive d-lg-block"> 
+                    <div class="d-flex">
+                        <h1 class="public css-truncate float-none flex-auto width-fit pl-0">
+                            <a class="avatar mr-1" href="https://scepter914.github.io/about/">
+                            
+                                <img src="http://localhost:1313/pic/20200920_carrot.png" class="avatar-user" width="26" height="26" title="scepter914">
+                            
+                            </a>
 
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-30T23:59:59JST">Sep 30, 2020</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scepter914.github.io/project/">project</a></li>
-      
-    </ul>
+                            <strong itemprop="name"><a href="https://scepter914.github.io/project/project_magripper/">High-speed Hitting Grasping with Magripper</a></strong>
 
-    <h1 class="title">High-speed Hitting Grasping with Magripper</h1>
-  </header>
+                            
 
-  
+                            
+                            <div class="text-small text-gray">
+                                    <div class="f6 text-gray mt-1">
+                                        
+                                        <a class="muted-link mr-3 d-inline-block" href="https://scepter914.github.io/tags/robotics">
+                                            
+<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+  <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+</svg>
 
-  <div class="article-body"><img src=https://scepter914.github.io/pic/iros2020.png width="700px">
-<h2 id="summary">Summary</h2>
+                                            robotics
+                                        </a>
+                                        
+                                        <a class="muted-link mr-3 d-inline-block" href="https://scepter914.github.io/tags/high-speed-vision">
+                                            
+<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+  <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+</svg>
+
+                                            high-speed vision
+                                        </a>
+                                        
+                                        <a class="muted-link mr-3 d-inline-block" href="https://scepter914.github.io/tags/magnet-gear">
+                                            
+<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+  <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+</svg>
+
+                                            magnet gear
+                                        </a>
+                                        
+                                        <a class="muted-link mr-3 d-inline-block" href="https://scepter914.github.io/tags/deformation-control">
+                                            
+<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+  <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+</svg>
+
+                                            deformation control
+                                        </a>
+                                        
+                                        <a class="muted-link mr-3 d-inline-block" href="https://scepter914.github.io/tags/gripper">
+                                            
+<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+  <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+</svg>
+
+                                            gripper
+                                        </a>
+                                        
+                                    </div>
+                            </div>
+
+                            
+                            <div class="d-block text-small text-gray">
+                                <span class="d-inline-block">
+                                    Created at <time datetime="2020-09-30 23:59" class="no-wrap">
+                                        2020-09-30 23:59</time>
+                                </span>
+
+                                
+                                </span>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
+                <div class="repository-content ">
+                    <div class="Box mt-3 position-relative">
+                        <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+                            <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                                416 Words
+                                
+                            </div>
+                        </div>
+
+                        <div id="readme" class="Box-body readme blob instapaper_body js-code-block-container">
+                            <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><img src=https://scepter914.github.io/pic/iros2020.png width="700px">
+<h2 id="summary">Summary<a class="anchor" aria-hidden="true" href="#summary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li>concept</li>
 </ul>
@@ -176,14 +240,14 @@ To realize high-speed hitting grasping with Magripper, the framework using three
 <li>Implemented deformation control based the Zener model in Magripper</li>
 <li>Proposed the concept of hitting grasping using Magripper</li>
 </ol>
-<h3 id="magripper">Magripper</h3>
+<h3 id="magripper">Magripper<a class="anchor" aria-hidden="true" href="#magripper"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <p>We introduce a magnetic gear and developed Magripper, a highly backdrivable 1-actuator gripper, to achieve both high speed and environmental adaptability.
 Backdrivability and high-speed operation at the moment of contact are realized by using a DD-motor, the magnetic gear, and link mechanism.
 Magripper is composed of one actuator and can be fabricated at relatively low cost, making it suitable for factory automation applications.</p>
-<h3 id="implementation-of-deformation-control-based-the-zener-model">Implementation of deformation control based the Zener model</h3>
+<h3 id="implementation-of-deformation-control-based-the-zener-model">Implementation of deformation control based the Zener model<a class="anchor" aria-hidden="true" href="#implementation-of-deformation-control-based-the-zener-model"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <p>We implemented deformation control based the Zener model in Magripper as backdrive control and improve its adaptability to dynamic manipulation.
 By mounting the Zener model, which can switch between the Maxwell model and Voigt model with parameters, on the gripper, we successfully achieved both grasping task and adaptability to environment with higher backdrivability.</p>
-<h3 id="hitting-grasping">Hitting grasping</h3>
+<h3 id="hitting-grasping">Hitting grasping<a class="anchor" aria-hidden="true" href="#hitting-grasping"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <p>We proposed the concept of hitting grasping using Magripper, which is grasping manipulation with hitting of the environment and objects, and experimentally demonstrate its implementation in a high-speed robot system.
 Overall, seamless reaching and fast grasping on the assumption of hitting objects and the environment are achieved.
 In this manner, a different approach from the static and quasi-static approaches to avoid hitting environment could be used.</p>
@@ -194,126 +258,134 @@ These could be achieved using only servo control via only encoder information wi
 <div style="text-align:center">
 <img src=https://scepter914.github.io/pic/casino_experiment_sup_white_sup.png width="500px">
 </div>
-<h2 id="reference">Reference</h2>
+<h2 id="reference">Reference<a class="anchor" aria-hidden="true" href="#reference"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li>Satoshi Tanaka, Keisuke Koyama, Taku Senoo, Makoto Shimojo, and Masatoshi Ishikawa: High-speed Hitting Grasping with Magripper, a Highly Backdrivable Gripper using Magnetic Gear and Plastic Deformation Control, 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2020) (Las Vegas, 2020.10.25-29), Proceedings, pp. 9137 - 9143. <font color="red"> [2020 IEEE Robotics and Automation Society Japan Joint Chapter Young Award] </font></li>
 </ul>
+</article>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="Box mt-3 position-relative">
+                        <div class="Box-body instapaper_body">
+                            <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
+                            <h2>See Also</h2>
+                            <ul class="mt-2">
+                                
+                                <li class="p-1">
+                                    <div>
+                                    <a href="https://scepter914.github.io/project/project_magslider/">Adaptive Visual Shock Absorber with Magslider</a>
+                                    <time datetime="2020-05-20 23:59" class="no-wrap text-small ml-1">
+                                        (2020-05-20 23:59)
+                                    </time>
+                                    </div>
+                                    <div class="text-small text-gray mb-1 mt-1">
+                                        
+                                    </div>
+                                </li>
+                                
+                                <li class="p-1">
+                                    <div>
+                                    <a href="https://scepter914.github.io/project/project_magslider_ja/">磁石歯車を用いた直動機構 &#39;&#39;Magslider&#39;&#39; による高速衝撃吸収制御</a>
+                                    <time datetime="2020-05-20 23:59" class="no-wrap text-small ml-1">
+                                        (2020-05-20 23:59)
+                                    </time>
+                                    </div>
+                                    <div class="text-small text-gray mb-1 mt-1">
+                                        
+                                    </div>
+                                </li>
+                                
+                                <li class="p-1">
+                                    <div>
+                                    <a href="https://scepter914.github.io/project/project_high_speed_delivery_ja/">高速ビジョンシステムを用いた無人航空機ヘの荷物受け渡しシステムの開発</a>
+                                    <time datetime="2020-05-20 20:59" class="no-wrap text-small ml-1">
+                                        (2020-05-20 20:59)
+                                    </time>
+                                    </div>
+                                    <div class="text-small text-gray mb-1 mt-1">
+                                        
+                                    </div>
+                                </li>
+                                
+                                <li class="p-1">
+                                    <div>
+                                    <a href="https://scepter914.github.io/project/project_high_speed_delivery/">High speed supply station for UAV delivery system</a>
+                                    <time datetime="2020-05-20 20:58" class="no-wrap text-small ml-1">
+                                        (2020-05-20 20:58)
+                                    </time>
+                                    </div>
+                                    <div class="text-small text-gray mb-1 mt-1">
+                                        
+                                    </div>
+                                </li>
+                                
+                                <li class="p-1">
+                                    <div>
+                                    <a href="https://scepter914.github.io/blog/2020/20200725_howtologging/">作業日誌の書く手順</a>
+                                    <time datetime="2020-07-24 02:00" class="no-wrap text-small ml-1">
+                                        (2020-07-24 02:00)
+                                    </time>
+                                    </div>
+                                    <div class="text-small text-gray mb-1 mt-1">
+                                        
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            </article>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
 </div>
 
-  <footer class="article-footer">
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">CATEGORIES</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/categories/research/">Research</a></li>
-          
+
+<script
+    src='https://scepter914.github.io/js/syntax-highlight-title.js'
+    crossorigin="anonymous"
+    type="application/javascript">
+</script>
+
+
+
+
+
+
+
+  <div class="footer container-lg width-full p-responsive" role="contentinfo">
+    <div
+        class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+        <ul
+            class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+            <li class="mr-3 mr-lg-0">© 2021 scepter914. </li>
+            <li class="mr-3 mr-lg-0">Theme by <a href="https://github.com/MeiK2333/github-style"><span>github-style</span></a> (<a href="https://github.com/suihan74/github-style"><span>customized</span></a>)</li>
+            <li class="mr-3 mr-lg-0"><a href="https://scepter914.github.io/privacy">Privacy</a></li>
         </ul>
-      </div>
-    </section>
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scepter914.github.io/tags/robotics/">robotics</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/high-speed-vision/">high-speed vision</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/magnet-gear/">magnet gear</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/deformation-control/">deformation control</a></li>
-          
-          <li><a href="https://scepter914.github.io/tags/gripper/">gripper</a></li>
-          
+
+        <a aria-label="Homepage" title="Scepter914 Website" class="footer-octicon d-none d-lg-block mx-lg-4"
+            href="https://scepter914.github.io/">
+            <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24"
+                aria-hidden="true">
+                <path style="fill-rule:evenodd" d="M 8,0 C 3.58,0 0,3.58 0,8 c 0,3.54 2.29,6.53 5.47,7.59 0.4,0.07 0.55,-0.17 0.55,-0.38 0,-0.19 -0.077797,-1.481017 -0.077797,-2.151017 C 5.9433346,12.597005 6.1160655,11.824118 6.56,11.53 4.78,11.33 3.8013559,10.978983 3.5810169,7.6647458 3.9355372,4.6446549 5.3653277,3.8240736 8.0538984,3.639661 10.967753,3.8102868 12.141357,4.4459308 12.425085,7.6477967 12.255593,10.378813 11.25,11.33 9.47,11.53 c 0.29,0.25 0.54,0.73 0.54,1.48 0,1.07 -0.01,1.93 -0.01,2.2 0,0.21 0.15,0.46 0.55,0.38 C 13.806446,14.490656 15.999121,11.437004 16,8 16,3.58 12.42,0 8,0 Z" />
+                <rect style="fill-rule:evenodd" ry="0.23728813" y="6.3898306" x="6.0169492" height="1.0847455" width="3.9830508"/>
+                
+            </svg>
+        </a>
+        <ul
+            class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
         </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
-</article>
-
-
-    
-  </div>
-
-  <div class="col-md-4">
-    <aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title"> Blog Recent Posts </div>
     </div>
-    <div class="list-group">
-      
+    <div class="d-flex flex-justify-center pb-6">
+        <span class="f6 text-gray-light"></span>
     </div>
-  </section>
+</div>
 
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/categories/%E5%80%8B%E4%BA%BAwiki" class="list-group-item">個人wiki</a>
-      
-      <a href="https://scepter914.github.io/categories/research" class="list-group-item">research</a>
-      
-      <a href="https://scepter914.github.io/categories/aboutme" class="list-group-item">aboutme</a>
-      
-      <a href="https://scepter914.github.io/categories/works" class="list-group-item">works</a>
-      
-      <a href="https://scepter914.github.io/categories/blog" class="list-group-item">blog</a>
-      
-      <a href="https://scepter914.github.io/categories/robocon" class="list-group-item">robocon</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scepter914.github.io/tags/robotics" class="list-group-item">robotics</a>
-      
-      <a href="https://scepter914.github.io/tags/gollum" class="list-group-item">gollum</a>
-      
-      <a href="https://scepter914.github.io/tags/high-speed-vision" class="list-group-item">high-speed-vision</a>
-      
-      <a href="https://scepter914.github.io/tags/deformation-control" class="list-group-item">deformation-control</a>
-      
-      <a href="https://scepter914.github.io/tags/magnet-gear" class="list-group-item">magnet-gear</a>
-      
-      <a href="https://scepter914.github.io/tags/rust" class="list-group-item">rust</a>
-      
-      <a href="https://scepter914.github.io/tags/vision" class="list-group-item">vision</a>
-      
-      <a href="https://scepter914.github.io/tags/gripper" class="list-group-item">gripper</a>
-      
-      <a href="https://scepter914.github.io/tags/pandoc" class="list-group-item">pandoc</a>
-      
-      <a href="https://scepter914.github.io/tags/reveal.js" class="list-group-item">reveal.js</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -324,26 +396,25 @@ MathJax.Hub.Config({
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-  </div>
-</div>
 
-      </div>
-    </main>
+<script crossorigin="anonymous"
+    type="application/javascript" src="https://scepter914.github.io/js/frameworks.js"></script>
 
-    <footer class="l-footer">
-      <div class="container">
-        <p>&copy; Scepter914 2019</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
+<script crossorigin="anonymous"
+    type="application/javascript" src="https://scepter914.github.io/js/github-bootstrap.js"></script>
+<script src="https://scepter914.github.io/js/stop.js"></script>
+<script src="https://scepter914.github.io/js/contributions.js"></script>
 
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+
+  
+  
+  <script src="https://scepter914.github.io/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    lightbox.option({
+      'disableScrolling': true
+    })
+  </script>
+  
+</body>
+
 </html>
-
