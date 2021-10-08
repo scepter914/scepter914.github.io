@@ -31,16 +31,25 @@
     </item>
     
     <item>
-      <title>gadget</title>
-      <link>https://scepter914.github.io/tags/gadget/</link>
-      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
+      <title>works</title>
+      <link>https://scepter914.github.io/tags/works/</link>
+      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/gadget/</guid>
+      <guid>https://scepter914.github.io/tags/works/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ROS</title>
+      <title>diary</title>
+      <link>https://scepter914.github.io/tags/diary/</link>
+      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ros</title>
       <link>https://scepter914.github.io/tags/ros/</link>
       <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
       
@@ -58,38 +67,20 @@
     </item>
     
     <item>
-      <title>deformation control</title>
-      <link>https://scepter914.github.io/tags/deformation-control/</link>
+      <title>control</title>
+      <link>https://scepter914.github.io/tags/control/</link>
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/deformation-control/</guid>
+      <guid>https://scepter914.github.io/tags/control/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>gripper</title>
-      <link>https://scepter914.github.io/tags/gripper/</link>
+      <title>project</title>
+      <link>https://scepter914.github.io/tags/project/</link>
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/gripper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>high-speed vision</title>
-      <link>https://scepter914.github.io/tags/high-speed-vision/</link>
-      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/high-speed-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>magnet gear</title>
-      <link>https://scepter914.github.io/tags/magnet-gear/</link>
-      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/magnet-gear/</guid>
+      <guid>https://scepter914.github.io/tags/project/</guid>
       <description></description>
     </item>
     
@@ -103,20 +94,29 @@
     </item>
     
     <item>
-      <title>gollum</title>
-      <link>https://scepter914.github.io/tags/gollum/</link>
-      <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
+      <title>high-speed vision</title>
+      <link>https://scepter914.github.io/tags/high-speed-vision/</link>
+      <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/gollum/</guid>
+      <guid>https://scepter914.github.io/tags/high-speed-vision/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>travel</title>
-      <link>https://scepter914.github.io/tags/travel/</link>
-      <pubDate>Sat, 14 Dec 2019 00:01:00 +0900</pubDate>
+      <title>aboutme</title>
+      <link>https://scepter914.github.io/tags/aboutme/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/tags/travel/</guid>
+      <guid>https://scepter914.github.io/tags/aboutme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robocon</title>
+      <link>https://scepter914.github.io/tags/robocon/</link>
+      <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/robocon/</guid>
       <description></description>
     </item>
     
@@ -139,29 +139,11 @@
     </item>
     
     <item>
-      <title>chainer</title>
-      <link>https://scepter914.github.io/tags/chainer/</link>
-      <pubDate>Mon, 07 Jan 2019 01:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/chainer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>openframeworks</title>
       <link>https://scepter914.github.io/tags/openframeworks/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/openframeworks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://scepter914.github.io/tags/docker/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
