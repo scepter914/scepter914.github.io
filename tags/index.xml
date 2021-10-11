@@ -7,10 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 05 Sep 2021 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 Oct 2021 13:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>diary</title>
+      <link>https://scepter914.github.io/tags/diary/</link>
+      <pubDate>Mon, 11 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>detection3d</title>
+      <link>https://scepter914.github.io/tags/detection3d/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/detection3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prediction</title>
+      <link>https://scepter914.github.io/tags/prediction/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sensor_fusion</title>
+      <link>https://scepter914.github.io/tags/sensor_fusion/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/sensor_fusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tracking</title>
+      <link>https://scepter914.github.io/tags/tracking/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/tracking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vision</title>
+      <link>https://scepter914.github.io/tags/vision/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/vision/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>rust</title>
@@ -22,29 +76,11 @@
     </item>
     
     <item>
-      <title>vision</title>
-      <link>https://scepter914.github.io/tags/vision/</link>
-      <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>works</title>
       <link>https://scepter914.github.io/tags/works/</link>
       <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/works/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diary</title>
-      <link>https://scepter914.github.io/tags/diary/</link>
-      <pubDate>Fri, 03 Sep 2021 01:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/diary/</guid>
       <description></description>
     </item>
     

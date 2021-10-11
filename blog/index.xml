@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 05 Sep 2021 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 Oct 2021 13:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blogのupdate</title>
+      <link>https://scepter914.github.io/blog/2021/20211011_blog_update/</link>
+      <pubDate>Mon, 11 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2021/20211011_blog_update/</guid>
+      <description>Blogの見た目を変えました HugoのthemeをBegからgithub-styleに変更しました 理由としては Begがメンテナンスされてなさ</description>
+    </item>
     
     <item>
       <title>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</title>
