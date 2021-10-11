@@ -14,37 +14,37 @@
     
     <item>
       <title>Multimodal Trajectory Predictions for Autonomous Driving using Deep Convolutional Networks (ICRA2019)</title>
-      <link>https://scepter914.github.io/blog/survey/perception/prediction/000361_uber_prediction_mtp/</link>
+      <link>https://scepter914.github.io/survey/perception/prediction/000361_uber_prediction_mtp/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/survey/perception/prediction/000361_uber_prediction_mtp/</guid>
+      <guid>https://scepter914.github.io/survey/perception/prediction/000361_uber_prediction_mtp/</guid>
       <description>Summary Raster mapを用いた1 agent multi-modal prediction https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/prediction/models/mtp.py github code 確率とともに複数経路(= multi-modal) を出力できるように拡張 single modalだと行きもしないところのpathが出てくる Method i: a</description>
     </item>
     
     <item>
       <title>Multiple Trajectory Prediction with Deep Temporal and Spatial Convolutional Neural Networks (IROS2020)</title>
-      <link>https://scepter914.github.io/blog/survey/perception/prediction/000448_tcn_prediction/</link>
+      <link>https://scepter914.github.io/survey/perception/prediction/000448_tcn_prediction/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/survey/perception/prediction/000448_tcn_prediction/</guid>
+      <guid>https://scepter914.github.io/survey/perception/prediction/000448_tcn_prediction/</guid>
       <description>summary temporal convolutional networks (TCNs) を用いたPredictionの提案 Method 軽くて良さげな全体framework mobilenetなのがrealtimeを考慮していて良い</description>
     </item>
     
     <item>
       <title>The Importance of Prior Knowledge in Precise Multimodal Prediction (IROS2020)</title>
-      <link>https://scepter914.github.io/blog/survey/perception/prediction/000444_uber_reinforce/</link>
+      <link>https://scepter914.github.io/survey/perception/prediction/000444_uber_reinforce/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/survey/perception/prediction/000444_uber_reinforce/</guid>
+      <guid>https://scepter914.github.io/survey/perception/prediction/000444_uber_reinforce/</guid>
       <description>summary UberによるPrediction framework REINFORCE の提案 Mapや交通ルールから好ましい予測のoutputを出したいが、基本的に微分不可能 REINFORCE gradient estim</description>
     </item>
     
     <item>
       <title>Uncertainty-aware Short-term Motion Prediction of Traffic Actors for Autonomous Driving (arxiv2018, WACV2020)</title>
-      <link>https://scepter914.github.io/blog/survey/perception/prediction/000360_uber_prediction/</link>
+      <link>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/survey/perception/prediction/000360_uber_prediction/</guid>
+      <guid>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</guid>
       <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
     </item>
     

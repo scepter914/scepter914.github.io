@@ -14,10 +14,10 @@
     
     <item>
       <title>Let’s Get Dirty: GAN Based Data Augmentation for Camera Lens Soiling Detection in Autonomous Driving (WACV2021)</title>
-      <link>https://scepter914.github.io/blog/survey/perception/vision/000345_lets_dirty/</link>
+      <link>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/survey/perception/vision/000345_lets_dirty/</guid>
+      <guid>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</guid>
       <description>Summary https://openaccess.thecvf.com/content/WACV2021/papers/Uricar_Lets_Get_Dirty_GAN_Based_Data_Augmentation_for_Camera_Lens_WACV_2021_paper.pdf レンズの汚れをマスクしたデータセットを公開する予定 https://github.com/uricamic/soiling 2021/02/06地点で未公開 魚眼レンズの汚れたデータ・セット あるデータ・セットに</description>
     </item>
     

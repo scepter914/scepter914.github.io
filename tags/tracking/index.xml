@@ -14,10 +14,10 @@
     
     <item>
       <title>EagerMOT: 3D Multi-Object Tracking via Sensor Fusion (ICRA2021)</title>
-      <link>https://scepter914.github.io/blog/survey/perception/tracking/000298_eager_mot/</link>
+      <link>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/survey/perception/tracking/000298_eager_mot/</guid>
+      <guid>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</guid>
       <description>summary Cameraだけ/LiDARだけ/Camera-Lidarに対応している Sensor FusionのTracking フレームワーク (i) fusion of 3D and 2D evidence that merges detections</description>
     </item>
     
