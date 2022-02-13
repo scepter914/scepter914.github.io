@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 13 Feb 2022 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 12 Feb 2022 13:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/tags/works/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>RustでRosbag2から画像を抽出するcrate</title>
       <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
-      <pubDate>Sun, 13 Feb 2022 13:00:00 +0900</pubDate>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
       <description>概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち上げなくてもrosbagの画像を読み込むことができる</description>
