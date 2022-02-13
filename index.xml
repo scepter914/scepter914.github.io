@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Mon, 11 Oct 2021 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 Feb 2022 13:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RustでRosbag2から画像を抽出するcrate</title>
+      <link>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</link>
+      <pubDate>Sun, 13 Feb 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
+      <description>概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち上げなくてもrosbagの画像を読み込むことができる</description>
+    </item>
     
     <item>
       <title>Blogのupdate</title>
@@ -144,7 +153,7 @@
       <pubDate>Mon, 20 Sep 2021 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
-      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Sensing/Perception Engineer     Twitter: @scepter914  Github: @scepter914  Blog: scepter914.github.io   -- Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Sensing/Perception Engineer     Twitter: @scepter914  Github: @scepter914  Blog: scepter914.github.io   --- Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
     </item>
     
     <item>
@@ -153,7 +162,7 @@
       <pubDate>Mon, 20 Sep 2021 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
-      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Twitter: @scepter914 Github: @scepter914 Blog: scepter914.github.io -- Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所</description>
+      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Twitter: @scepter914 Github: @scepter914 Blog: scepter914.github.io --- Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所</description>
     </item>
     
     <item>
