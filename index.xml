@@ -7,18 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 19 Feb 2022 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 30 Apr 2022 23:59:59 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>VSCodeのTerminals in the editor areaの設定</title>
-      <link>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</link>
-      <pubDate>Sat, 19 Feb 2022 13:00:00 +0900</pubDate>
+      <title>About me</title>
+      <link>https://scepter914.github.io/aboutme/aboutme/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
       
-      <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
-      <description>概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直した 環境 Ubuntu20.04LTS VSCode: 1.64.2 参考ページ https://dev.classmethod.jp/articles/202107-vscode-terminal-on-edit-area/ settingの変更 デフ</description>
+      <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
+      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, TIER IV, Inc.  Autonomous Driving Sensing/Perception Engineer    Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
+    </item>
+    
+    <item>
+      <title>LaneFusion: 3D detection with HD map</title>
+      <link>https://scepter914.github.io/project/project_lanefusion/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_lanefusion/</guid>
+      <description>Summary concept In this study, LaneFusion, a 3D object detection framework employing LiDAR and HD map fusion using a vector map, are developed to overcome the problem that existing detection model often infer objects heading in opposite.
+Method Through a offline rasterization and a online rasterization, LaneFusion overcomes the problem that the vector map format is difficult to input into current mainstream convolutional neural networks (CNNs).
+experiments We confirmed that the proposed method increased the 3D average precision (AP) and average orientation similarity (AOS) of the vehicle class by up to 6.</description>
+    </item>
+    
+    <item>
+      <title>LaneFusion: 地図を用いた3d detection</title>
+      <link>https://scepter914.github.io/project/project_lanefusion_ja/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_lanefusion_ja/</guid>
+      <description>Summary concept 本研究では、Objectの反対方向への推測を抑えることを目的とした、LiDARとベクターマップを使用した3D detection、&amp;ldq</description>
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>https://scepter914.github.io/aboutme/aboutmeja/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
+      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background</description>
     </item>
     
     <item>
@@ -154,24 +183,6 @@
       
       <guid>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</guid>
       <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://scepter914.github.io/aboutme/aboutme/</link>
-      <pubDate>Mon, 20 Sep 2021 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
-      <description>Biography Profile  Name: Satoshi Tanaka Apr. 2020 - Now, Tier IV, Inc.  Autonomous Driving Sensing/Perception Engineer     Twitter: @scepter914  Github: @scepter914  Blog: scepter914.github.io   --- Work Experience  Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
-    </item>
-    
-    <item>
-      <title>自己紹介</title>
-      <link>https://scepter914.github.io/aboutme/aboutmeja/</link>
-      <pubDate>Mon, 20 Sep 2021 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
-      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Twitter: @scepter914 Github: @scepter914 Blog: scepter914.github.io --- Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所</description>
     </item>
     
     <item>
