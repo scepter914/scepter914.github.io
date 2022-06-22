@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 10 Oct 2021 13:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jun 2022 13:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</link>
+      <pubDate>Tue, 21 Jun 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</guid>
+      <description>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) Summary from Intel + Mobileye RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を</description>
+    </item>
     
     <item>
       <title>Center-based 3D Object Detection and Tracking (araxiv 2020/06, CVPR2021)</title>
@@ -127,15 +136,6 @@
       
       <guid>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</guid>
       <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</guid>
-      <description>MTBF Model for AVs - From Perception Errors to Vehicle-Level Failures (IV2022) Summary from Intel + Mobileye RSS modelはPerception errorを考慮していなかったため、perception system error と vehicle-level failures (= collision) を</description>
     </item>
     
   </channel>
