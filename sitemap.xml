@@ -1,429 +1,259 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://scepter914.github.io/tags/evaluation/</loc>
-    <lastmod>2022-06-21T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</loc>
-    <lastmod>2022-06-21T13:00:00+09:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://scepter914.github.io/</loc>
     <lastmod>2022-06-21T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/evaluation/</loc>
+    <lastmod>2022-06-21T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</loc>
+    <lastmod>2022-06-21T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/survey/</loc>
     <lastmod>2022-06-21T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/</loc>
     <lastmod>2022-06-21T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/aboutme/aboutme/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/aboutme/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_lanefusion/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_lanefusion_ja/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/aboutme/aboutmeja/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/rust/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/vision/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/works/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2021/20211011_blog_update/</loc>
     <lastmod>2021-10-11T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/diary/</loc>
     <lastmod>2021-10-11T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000411_centerpoint/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/detection3d/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/sensor_fusion/000297_sensor_dropout/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000307_lunet/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000304_rangenet_pp/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/prediction/000361_uber_prediction_mtp/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/prediction/000448_tcn_prediction/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000295_mvlidarnet_nvidia/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000299_once_dataset/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/sensing/calibration/000356_camera_lidar_calib/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/prediction/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/sensor_fusion/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/prediction/000444_uber_reinforce/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/tracking/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</loc>
     <lastmod>2021-09-05T13:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2021/20210903_gadget/</loc>
     <lastmod>2021-09-03T01:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</loc>
     <lastmod>2021-08-22T23:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</loc>
     <lastmod>2021-08-12T23:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/ros/</loc>
     <lastmod>2021-08-03T00:03:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</loc>
     <lastmod>2021-08-03T00:03:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/wiki/</loc>
     <lastmod>2020-12-13T02:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</loc>
     <lastmod>2020-12-13T02:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/control/</loc>
     <lastmod>2020-10-05T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/project/</loc>
     <lastmod>2020-10-05T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/robotics/</loc>
     <lastmod>2020-10-05T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_magripper_ja/</loc>
     <lastmod>2020-10-05T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_magripper/</loc>
     <lastmod>2020-09-30T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</loc>
     <lastmod>2020-08-15T00:03:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20200725_howtologging/</loc>
     <lastmod>2020-07-24T02:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20200725_whydairylog/</loc>
     <lastmod>2020-07-24T01:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20200712_experiment_report/</loc>
     <lastmod>2020-07-12T01:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20200711_blog/</loc>
     <lastmod>2020-07-11T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_magslider/</loc>
     <lastmod>2020-05-20T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/high-speed-vision/</loc>
     <lastmod>2020-05-20T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_magslider_ja/</loc>
     <lastmod>2020-05-20T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_high_speed_delivery_ja/</loc>
     <lastmod>2020-05-20T20:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_high_speed_delivery/</loc>
     <lastmod>2020-05-20T20:58:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</loc>
     <lastmod>2020-04-18T00:03:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2019/20191214_howtogo_ouropleto/</loc>
     <lastmod>2019-12-14T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/aboutme/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_hobby/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_robocon/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/robocon/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_roboconja/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_hobbyja/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/pandoc/</loc>
     <lastmod>2019-06-09T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/reveal.js/</loc>
     <lastmod>2019-06-09T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180210_gollum/</loc>
     <lastmod>2019-06-09T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2019/20190311_wiki_for_research_survey/</loc>
     <lastmod>2019-03-11T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2019/20190110_gazebo_set_val/</loc>
     <lastmod>2019-01-10T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2019/20190107_tellodetection/</loc>
     <lastmod>2019-01-07T01:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/openframeworks/</loc>
     <lastmod>2019-01-07T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</loc>
     <lastmod>2019-01-07T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180210_whywiki/</loc>
     <lastmod>2018-11-21T00:02:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180819_wikiengine/</loc>
     <lastmod>2018-08-19T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</loc>
     <lastmod>2018-05-21T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/tags/vim/</loc>
     <lastmod>2018-04-29T23:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180429_vim_enter/</loc>
     <lastmod>2018-04-29T23:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180210_revealjs_pandoc/</loc>
     <lastmod>2018-02-10T00:05:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180210_gollum_tips/</loc>
     <lastmod>2018-02-10T00:04:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180210_gollum_install/</loc>
     <lastmod>2018-02-10T00:03:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180124_gollum/</loc>
     <lastmod>2018-01-24T00:01:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/blog/2017/20171230_startblog/</loc>
     <lastmod>2017-12-30T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://scepter914.github.io/categories/</loc>
   </url>
-  
 </urlset>

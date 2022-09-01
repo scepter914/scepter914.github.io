@@ -6,12 +6,7 @@
     <description>Recent content in sensor_fusion on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sun, 10 Oct 2021 13:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://scepter914.github.io/tags/sensor_fusion/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 10 Oct 2021 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/sensor_fusion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Investigating the Effect of Sensor Modalities in Multi-Sensor Detection-Prediction Models (NeurIPS 2020 Workshop)</title>
       <link>https://scepter914.github.io/survey/perception/sensor_fusion/000297_sensor_dropout/</link>
