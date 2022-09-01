@@ -6,16 +6,11 @@
     <description>Recent content in vscode on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Sat, 19 Feb 2022 13:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://scepter914.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 12 Feb 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VSCodeのTerminals in the editor areaの設定</title>
+      <title>VSCodeのterminal tabの設定をする</title>
       <link>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</link>
-      <pubDate>Sat, 19 Feb 2022 13:00:00 +0900</pubDate>
+      <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
       <description>概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直した 環境 Ubuntu20.04LTS VSCode: 1.64.2 参考ページ https://dev.classmethod.jp/articles/202107-vscode-terminal-on-edit-area/ settingの変更 デフ</description>
