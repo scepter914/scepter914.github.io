@@ -1,0 +1,14 @@
+
+---
+type: 'list'
+---
+
+This is scepter914 website. \
+[About me](https://scepter914.github.io/aboutme/aboutme/)
+
+{{< icon name="twitter" link="https://twitter.com/scepter914" >}}
+{{< icon name="github" link="https://github.com/scepter914" >}}
+
+
+{{< terms-cloud terms="tags" >}}
+
