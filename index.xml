@@ -6,7 +6,16 @@
     <description>Recent content on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Sep 2022 01:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</link>
+      <pubDate>Sat, 10 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</guid>
+      <description>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05) Summary https://bevfusion.mit.edu/ 公式 https://github.com/mit-han-lab/bevfusion mmdet base、waymo, nuscenes で評価 pretrained modelがある https://www.youtube.com/watch?v=uCAka90si9E BEV特徴量空間でfusionするCam</description>
+    </item>
+    
     <item>
       <title>Blog の update</title>
       <link>https://scepter914.github.io/blog/2022/20220901_blog_update/</link>
@@ -538,15 +547,6 @@ Method Through a offline rasterization and a online rasterization, LaneFusion ov
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
       <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</guid>
-      <description>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05) Summary https://bevfusion.mit.edu/ 公式 https://github.com/mit-han-lab/bevfusion mmdet base、waymo, nuscenes で評価 pretrained modelがある https://www.youtube.com/watch?v=uCAka90si9E BEV特徴量空間でfusionするCam</description>
     </item>
     
   </channel>

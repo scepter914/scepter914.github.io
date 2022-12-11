@@ -6,7 +6,16 @@
     <description>Recent content in detection3d on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</link>
+      <pubDate>Sat, 10 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</guid>
+      <description>BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation (arxiv2022/05) Summary https://bevfusion.mit.edu/ 公式 https://github.com/mit-han-lab/bevfusion mmdet base、waymo, nuscenes で評価 pretrained modelがある https://www.youtube.com/watch?v=uCAka90si9E BEV特徴量空間でfusionするCam</description>
+    </item>
+    
     <item>
       <title>Center-based 3D Object Detection and Tracking (araxiv 2020/06, CVPR2021)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000411_centerpoint/</link>
