@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2022-12-10T13:00:00+09:00</lastmod>
+    <lastmod>2022-12-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/vision/000692_bev_former/</loc>
+    <lastmod>2022-12-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/</loc>
+    <lastmod>2022-12-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2022-12-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/vision/</loc>
+    <lastmod>2022-12-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</loc>
     <lastmod>2022-12-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/detection3d/</loc>
-    <lastmod>2022-12-10T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2022-12-10T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
     <lastmod>2022-12-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2022/20220901_blog_update/</loc>
@@ -62,9 +68,6 @@
     <loc>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/tags/vision/</loc>
-    <lastmod>2022-02-12T13:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/tags/works/</loc>
     <lastmod>2022-02-12T13:00:00+09:00</lastmod>
   </url><url>
@@ -77,7 +80,7 @@
     <loc>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/survey/perception/sensor_fusion/000297_sensor_dropout/</loc>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</loc>

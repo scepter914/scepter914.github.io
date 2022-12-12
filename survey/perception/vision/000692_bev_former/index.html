@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sensor_fusion - Scepter914 Website</title>
+    <title>BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022) - Scepter914 Website</title>
 
     
 
@@ -27,18 +27,20 @@
     
 
     
-        <meta property="og:title" content="sensor_fusion" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://scepter914.github.io/tags/sensor_fusion/" />
+        <meta property="og:title" content="BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)" />
+<meta property="og:description" content="BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022) Summary https://github.com/fundamentalvision/BEVFormer Attention base でのMulti-cameraからBird&rsquo;s-Eye-View Representation を得る" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/vision/000692_bev_former/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2022-12-11T13:00:00+09:00" />
+<meta property="article:modified_time" content="2022-12-11T13:00:00+09:00" />
 
 
     
 
     
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="sensor_fusion"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)"/>
+<meta name="twitter:description" content="BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022) Summary https://github.com/fundamentalvision/BEVFormer Attention base でのMulti-cameraからBird&rsquo;s-Eye-View Representation を得る"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -113,7 +115,7 @@
                     
                         <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
                     
-                </li><li class="navbar-item pure-menu-item ">
+                </li><li class="navbar-item pure-menu-item insection">
                     
                         <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
                     
@@ -133,19 +135,57 @@
                     <a href="https://scepter914.github.io/survey">Survey</a>
                 </li></ul>
 </div><div id="content" class="content-margin">
-                <div>
-    <h1>sensor_fusion</h1>
+                
     
-        <ul class="list-layout">
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/">Investigating the Effect of Sensor Modalities in Multi-Sensor Detection-Prediction Models (NeurIPS 2020 Workshop)</a>
-                    <span>2021/10/10</span>
-                </li>
-            
-        </ul>
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#experiment">Experiment</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
     
+    
+    <h1 id="bevformer-learning-birds-eye-view-representation-from-multi-camera-images-via-spatiotemporal-transformers-eccv2022">BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><a href="https://github.com/fundamentalvision/BEVFormer">https://github.com/fundamentalvision/BEVFormer</a></li>
+<li>Attention base でのMulti-cameraからBird&rsquo;s-Eye-View Representation を得る研究
+<ul>
+<li>最近の流行りになったきっかけの一つ</li>
+</ul>
+</li>
+</ul>
+<h2 id="method">Method</h2>
+<ul>
+<li>やっていることはtransformerの形にどう食わせるかっていうだけ</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/bev_former_1.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/bev_former_2.png" alt=""></p>
+<h2 id="experiment">Experiment</h2>
+<ul>
+<li>これからのbaseline</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/bev_former_3.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/bev_former_4.png" alt=""></p>
+<ul>
+<li>V100で2fpsとかなので、Robot用途だと結構厳しい</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/bev_former_5.png" alt=""></p>
+
+</article>
 </div>
+
 
                 
                     
