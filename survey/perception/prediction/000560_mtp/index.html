@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>prediction - Scepter914 Website</title>
+    <title>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022) - Scepter914 Website</title>
 
     
 
@@ -27,18 +27,20 @@
     
 
     
-        <meta property="og:title" content="prediction" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://scepter914.github.io/tags/prediction/" />
+        <meta property="og:title" content="MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)" />
+<meta property="og:description" content="MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022) Summary from Carnegie mellon and nvidia https://www.youtube.com/watch?v=ydQ9IPbX_-A multi-hypothesis tracking and prediction framework の提案 tracking results を複数持つことでpredictionの性能を上げる tracking errors が prediction performance に与える影響の解析も行って" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/prediction/000560_mtp/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2022-12-15T13:00:00+09:00" />
+<meta property="article:modified_time" content="2022-12-15T13:00:00+09:00" />
 
 
     
 
     
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="prediction"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)"/>
+<meta name="twitter:description" content="MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022) Summary from Carnegie mellon and nvidia https://www.youtube.com/watch?v=ydQ9IPbX_-A multi-hypothesis tracking and prediction framework の提案 tracking results を複数持つことでpredictionの性能を上げる tracking errors が prediction performance に与える影響の解析も行って"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -113,7 +115,7 @@
                     
                         <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
                     
-                </li><li class="navbar-item pure-menu-item ">
+                </li><li class="navbar-item pure-menu-item insection">
                     
                         <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
                     
@@ -133,39 +135,157 @@
                     <a href="https://scepter914.github.io/survey">Survey</a>
                 </li></ul>
 </div><div id="content" class="content-margin">
-                <div>
-    <h1>prediction</h1>
+                
     
-        <ul class="list-layout">
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/prediction/000361_uber_prediction_mtp/">Multimodal Trajectory Predictions for Autonomous Driving using Deep Convolutional Networks (ICRA2019)</a>
-                    <span>2021/10/10</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/prediction/000448_tcn_prediction/">Multiple Trajectory Prediction with Deep Temporal and Spatial Convolutional Neural Networks (IROS2020)</a>
-                    <span>2021/10/10</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/prediction/000444_uber_reinforce/">The Importance of Prior Knowledge in Precise Multimodal Prediction (IROS2020)</a>
-                    <span>2021/10/10</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/">Uncertainty-aware Short-term Motion Prediction of Traffic Actors for Autonomous Driving (arxiv2018, WACV2020)</a>
-                    <span>2021/10/10</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/prediction/000560_mtp/">MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)</a>
-                    <span>2022/12/15</span>
-                </li>
-            
-        </ul>
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#experiment">Experiment</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
     
+    
+    <h1 id="mtp-multi-hypothesis-tracking-and-prediction-for-reduced-error-propagation-iv2022">MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>from Carnegie mellon and nvidia</li>
+<li><a href="https://www.youtube.com/watch?v=ydQ9IPbX_-A">https://www.youtube.com/watch?v=ydQ9IPbX_-A</a></li>
+<li>multi-hypothesis tracking and prediction framework の提案
+<ul>
+<li>tracking results を複数持つことでpredictionの性能を上げる</li>
+</ul>
+</li>
+<li>tracking errors が prediction performance に与える影響の解析も行っていたり、実験条件がかなり詳細</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_11.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_1.png" alt=""></p>
+<h2 id="background">Background</h2>
+<ul>
+<li>tracking errors
+<ul>
+<li>Identity Switches (IDS)</li>
+<li>Fragments (FRAG)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_2.png" alt=""></p>
+<ul>
+<li>Assessment
+<ul>
+<li>datasetごとによくまとまっている</li>
+<li>KITTI: 10 past frame</li>
+<li>nuScenes: 12 future frame, 4 past frame (2fps * 2)</li>
+</ul>
+</li>
+<li>Errorの種類の解析
+<ul>
+<li>IDS causes large prediction errors</li>
+<li>Wrongly-tracked FRAG can also cause errors</li>
+<li>Under-tracked FRAG causes missing predictions</li>
+<li>Spurious tracks cause false positives</li>
+</ul>
+</li>
+<li>tracking errors が prediction performance に与える影響の解析
+<ul>
+<li>かなり悪影響を与えている</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_3.png" alt=""></p>
+<ul>
+<li>近いobjectで起こっているのも問題</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_4.png" alt=""></p>
+<h2 id="method">Method</h2>
+<ul>
+<li>framework
+<ul>
+<li>Multi-Hypothesis Data Association (MHDA)
+<ul>
+<li>Murty&rsquo;s H-best assignment</li>
+<li>Hungarian algorithm のtop H lowest cost を計算</li>
+</ul>
+</li>
+<li>Trajectory Sampling
+<ul>
+<li>K-Means++ を用いてpredictしたtrajectoryのsamplingをおこなう</li>
+<li>外れ値処理と計算効率のため</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_5.png" alt=""></p>
+<h2 id="experiment">Experiment</h2>
+<ul>
+<li>AB3DMOT + PTP</li>
+<li>score up
+<ul>
+<li>使用しているアルゴリズム
+<ul>
+<li>AB3DMOT for tracking</li>
+<li>PTP for trajectory prediction</li>
+</ul>
+</li>
+<li>H: trajectoryの数</li>
+<li>k: predictionの数</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_7.png" alt=""></p>
+<ul>
+<li>IDS FRAG起こっていたtracked objectでのpredictionの結果
+<ul>
+<li>めちゃくちゃ良くなっている</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_6.png" alt=""></p>
+<ul>
+<li>ちゃんとframeごとのplotもやっている</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_8.png" alt=""></p>
+<ul>
+<li>Run time
+<ul>
+<li>H = 5で十分じゃない？</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_9.png" alt=""></p>
+<ul>
+<li>Re-trackingとの比較
+<ul>
+<li>R. Yu and Z. Zhou, “Towards Robust Human Trajectory Prediction in Raw Videos,” arXiv:2108.08259, 2021.
+<ul>
+<li><a href="https://github.com/rui-yu-public/Retracking-by-Prediction">https://github.com/rui-yu-public/Retracking-by-Prediction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>更に他の論文との比較
+<ul>
+<li>SimpleTrack+AgentFormer が強い</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/mtp_10.png" alt=""></p>
+
+</article>
 </div>
+
 
                 
                     

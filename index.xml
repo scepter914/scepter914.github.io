@@ -6,7 +6,16 @@
     <description>Recent content on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022)</title>
+      <link>https://scepter914.github.io/survey/perception/prediction/000560_mtp/</link>
+      <pubDate>Thu, 15 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/prediction/000560_mtp/</guid>
+      <description>MTP: Multi-hypothesis Tracking and Prediction for Reduced Error Propagation (IV2022) Summary from Carnegie mellon and nvidia https://www.youtube.com/watch?v=ydQ9IPbX_-A multi-hypothesis tracking and prediction framework の提案 tracking results を複数持つことでpredictionの性能を上げる tracking errors が prediction performance に与える影響の解析も行って</description>
+    </item>
+    
     <item>
       <title>Simple-BEV: What Really Matters for Multi-Sensor BEV Perception? (arxiv 2022/09)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000683_simple_bev/</link>
