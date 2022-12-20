@@ -6,7 +6,16 @@
     <description>Recent content on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepFusion: A Robust and Modular 3D Object Detector for Lidars, Cameras and Radars (IROS2022)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000709_deepfusion_bosch/</link>
+      <pubDate>Mon, 19 Dec 2022 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000709_deepfusion_bosch/</guid>
+      <description>DeepFusion: A Robust and Modular 3D Object Detector for Lidars, Cameras and Radars (IROS2022) Summary moduleのように扱える BEV baseのCamera-LiDAR-Radar fusion 3d detection 定性評価で細かく解析 LiDAR only だと縦</description>
+    </item>
+    
     <item>
       <title>aiMotive Dataset: A Multimodal Dataset for Robust Autonomous Driving with Long-Range Perception (arxiv 2022/11)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000689_aimotive_dataset/</link>
