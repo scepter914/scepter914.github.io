@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2022-12-19T13:00:00+09:00</lastmod>
+    <lastmod>2022-12-20T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</loc>
+    <lastmod>2022-12-20T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/</loc>
+    <lastmod>2022-12-20T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2022-12-20T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/vision/</loc>
+    <lastmod>2022-12-20T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000709_deepfusion_bosch/</loc>
     <lastmod>2022-12-19T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/detection3d/</loc>
-    <lastmod>2022-12-19T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2022-12-19T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
     <lastmod>2022-12-19T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000689_aimotive_dataset/</loc>
@@ -33,9 +39,6 @@
     <lastmod>2022-12-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/vision/000692_bev_former/</loc>
-    <lastmod>2022-12-11T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/vision/</loc>
     <lastmod>2022-12-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000606_bev_fusion/</loc>

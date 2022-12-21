@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>vision - Scepter914 Website</title>
+    <title>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) - Scepter914 Website</title>
 
     
 
@@ -27,18 +27,20 @@
     
 
     
-        <meta property="og:title" content="vision" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://scepter914.github.io/tags/vision/" />
+        <meta property="og:title" content="MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)" />
+<meta property="og:description" content="MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) Summary https://github.com/Megvii-BaseDetection/BEVDepth [[000705_bev_depth]] の後継、軽量version 軽量なBEV-base Camera 3d detection CPUでも動作するレベルで軽量 CPUでも数10msとかで動作" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/vision/000721_matrixvt/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2022-12-20T13:00:00+09:00" />
+<meta property="article:modified_time" content="2022-12-20T13:00:00+09:00" />
 
 
     
 
     
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="vision"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)"/>
+<meta name="twitter:description" content="MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) Summary https://github.com/Megvii-BaseDetection/BEVDepth [[000705_bev_depth]] の後継、軽量version 軽量なBEV-base Camera 3d detection CPUでも動作するレベルで軽量 CPUでも数10msとかで動作"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -113,7 +115,7 @@
                     
                         <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
                     
-                </li><li class="navbar-item pure-menu-item ">
+                </li><li class="navbar-item pure-menu-item insection">
                     
                         <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
                     
@@ -133,54 +135,136 @@
                     <a href="https://scepter914.github.io/survey">Survey</a>
                 </li></ul>
 </div><div id="content" class="content-margin">
-                <div>
-    <h1>vision</h1>
+                
     
-        <ul class="list-layout">
-            
-                <li>
-                    <a href="https://scepter914.github.io/blog/2021/20210813_rust_image_processing/">Rustでカメラから取得した画像に対して画像処理をする</a>
-                    <span>2021/08/12</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/blog/2021/20210822_rust_image_save/">Rustでの画像保存の高速化</a>
-                    <span>2021/08/22</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/">画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した</a>
-                    <span>2021/09/05</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/">Let’s Get Dirty: GAN Based Data Augmentation for Camera Lens Soiling Detection in Autonomous Driving (WACV2021)</a>
-                    <span>2021/10/10</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/">RustでRosbag2から画像を抽出するcrate</a>
-                    <span>2022/02/12</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/vision/000707_beverse/">BEVerse: Unified Perception and Prediction in Birds-Eye-View for Vision-Centric Autonomous Driving (arxiv2022/05)</a>
-                    <span>2022/12/11</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/vision/000692_bev_former/">BEVFormer: Learning Bird’s-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers (ECCV2022)</a>
-                    <span>2022/12/11</span>
-                </li>
-            
-                <li>
-                    <a href="https://scepter914.github.io/survey/perception/vision/000721_matrixvt/">MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)</a>
-                    <span>2022/12/20</span>
-                </li>
-            
-        </ul>
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#experiment">Experiment</a></li>
+    <li><a href="#discussion">Discussion</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
     
+    
+    <h1 id="matrixvt-efficient-multi-camera-to-bev-transformation-for-3d-perception-arxiv202211">MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><a href="https://github.com/Megvii-BaseDetection/BEVDepth">https://github.com/Megvii-BaseDetection/BEVDepth</a></li>
+<li>[[000705_bev_depth]] の後継、軽量version</li>
+<li>軽量なBEV-base Camera 3d detection
+<ul>
+<li>CPUでも動作するレベルで軽量</li>
+<li>CPUでも数10msとかで動作、CUDAなら数ms</li>
+</ul>
+</li>
+<li>contribution: Lift-Splat paradigm を活かしながら計算量を削減
+<ul>
+<li>Prime Extraction, Ring &amp; Ray Decomposition による 計算量の削減</li>
+<li>Feature Transportation Matrix (FTM) によるメモリ・計算量削減</li>
+</ul>
+</li>
+</ul>
+<h2 id="method">Method</h2>
+<ul>
+<li>全体
+<ul>
+<li>Backbone: extract image features</li>
+<li>DepthNet: a depth predictor is adopted to predict categorical depth distribution for each feature pixel to obtain the depth prediction.</li>
+<li>Prime Extraction module: obtain the Prime Feature and the Prime Depth, which is the compressed feature and depth</li>
+<li>BEV Feature: Use by Prime Feature, Prime Depth, and the
+pre-defined Ring &amp; Ray Matrices</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_3.png" alt=""></p>
+<ul>
+<li>既存手法との違い</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_1.png" alt=""></p>
+<ul>
+<li>splat operation</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_9.png" alt=""></p>
+<ul>
+<li>横の方がcontextを含んでいる
+<ul>
+<li>Prime Feature Extractor (PFE) についての説明</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_2.png" alt=""></p>
+<ul>
+<li>“Ring and Ray” Decomposition
+<ul>
+<li>a polar coordinate の考えを導入</li>
+<li>the image feature required for a specific BEV grid can be located by direction and distance</li>
+<li>計算量の削減
+<ul>
+<li>from: WI × Nd × HB × WB</li>
+<li>to: (WI + Nd) × HB × WB</li>
+<li>30 to 50 times 少ない</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="experiment">Experiment</h2>
+<ul>
+<li>Nuscenes val set
+<ul>
+<li>test setじゃないのが気になる</li>
+<li>汎化性能が犠牲になっている可能性はある</li>
+<li>BEVDepthと同じ性能を出せている
+<ul>
+<li>Low resolution: Res-50 + BEV feature size 128 × 128, C= 80</li>
+<li>High resolution: V2-99 + BEV feature size 256 × 256, Cは不明</li>
+</ul>
+</li>
+<li>MF = Multi frame fusion</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_4.png" alt=""></p>
+<ul>
+<li>BEV segmentationでも高性能
+<ul>
+<li>BEVFormerと同等の性能</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_5.png" alt=""></p>
+<ul>
+<li>軽量化
+<ul>
+<li>恐らく上記の結果はC=80でS3</li>
+<li>CPUでも数10msとかで動作する</li>
+<li>CUDAなら数ms</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_6.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_7.png" alt=""></p>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_8.png" alt=""></p>
+<ul>
+<li>param</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/matrixvt_10.png" alt=""></p>
+<h2 id="discussion">Discussion</h2>
+
+</article>
 </div>
+
 
                 
                     
