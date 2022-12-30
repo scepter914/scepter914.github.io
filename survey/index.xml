@@ -205,5 +205,14 @@
       <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</guid>
+      <description>What data do we need for training an AV motion planner? (ICRA2021) Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine</description>
+    </item>
+    
   </channel>
 </rss>
