@@ -13,7 +13,7 @@
       <pubDate>Tue, 20 Dec 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</guid>
-      <description>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) Summary https://github.com/Megvii-BaseDetection/BEVDepth [[000705_bev_depth]] の後継、軽量version 軽量なBEV-base Camera 3d detection CPUでも動作するレベルで軽量 CPUでも数10msとかで動作</description>
+      <description>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11) Summary https://github.com/Megvii-BaseDetection/BEVDepth BEVDepthの後継、軽量version 軽量なBEV-base Camera 3d detection CPUでも動作するレベルで軽量 CPUでも数10</description>
     </item>
     
     <item>
