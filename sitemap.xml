@@ -8,10 +8,13 @@
     <loc>https://scepter914.github.io/blog/</loc>
     <lastmod>2023-09-11T00:01:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/tags/diary/</loc>
+    <loc>https://scepter914.github.io/tags/</loc>
     <lastmod>2023-09-11T00:01:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
+    <loc>https://scepter914.github.io/tags/vim/</loc>
+    <lastmod>2023-09-11T00:01:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/vscode/</loc>
     <lastmod>2023-09-11T00:01:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</loc>
@@ -56,6 +59,9 @@
     <loc>https://scepter914.github.io/blog/2022/20220901_blog_update/</loc>
     <lastmod>2022-09-01T01:00:00+09:00</lastmod>
   </url><url>
+    <loc>https://scepter914.github.io/tags/diary/</loc>
+    <lastmod>2022-09-01T01:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/tags/evaluation/</loc>
     <lastmod>2022-06-21T13:00:00+09:00</lastmod>
   </url><url>
@@ -79,9 +85,6 @@
   </url><url>
     <loc>https://scepter914.github.io/aboutme/aboutmeja/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/vscode/</loc>
-    <lastmod>2022-02-20T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</loc>
     <lastmod>2022-02-20T13:00:00+09:00</lastmod>
@@ -268,9 +271,6 @@
   </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180521_gollum_on_docker/</loc>
     <lastmod>2018-05-21T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/vim/</loc>
-    <lastmod>2018-04-29T23:30:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2018/20180429_vim_enter/</loc>
     <lastmod>2018-04-29T23:30:00+09:00</lastmod>
