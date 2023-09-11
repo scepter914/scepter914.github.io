@@ -6,7 +6,16 @@
     <description>Recent content in diary on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Sep 2022 01:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:01:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode Vim で日本語の変換が変になる問題の対処</title>
+      <link>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</link>
+      <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
+      <description>事象 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態で、日本語入力をすると変換で変になる現象が起こった 変換した直後に、日本語を入力し</description>
+    </item>
+    
     <item>
       <title>Blog の update</title>
       <link>https://scepter914.github.io/blog/2022/20220901_blog_update/</link>
