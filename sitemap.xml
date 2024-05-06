@@ -3,7 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://scepter914.github.io/</loc>
-    <lastmod>2024-02-08T21:00:00+09:00</lastmod>
+    <lastmod>2024-05-06T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/aboutmeja/</loc>
+    <lastmod>2024-05-06T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/</loc>
+    <lastmod>2024-05-06T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/project_depth_anything_ros/</loc>
+    <lastmod>2024-05-06T10:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/</loc>
     <lastmod>2024-02-08T21:00:00+09:00</lastmod>
@@ -77,22 +86,10 @@
     <loc>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</loc>
     <lastmod>2022-06-21T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/aboutme/aboutme/</loc>
-    <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/aboutme/</loc>
-    <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/project/project_lanefusion/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/project/project_lanefusion_ja/</loc>
-    <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/project/</loc>
-    <lastmod>2022-04-30T23:59:59+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/aboutme/aboutmeja/</loc>
     <lastmod>2022-04-30T23:59:59+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</loc>

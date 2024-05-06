@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scepter914 Website</title>
+    <title>About me on Scepter914 Website</title>
     <link>https://scepter914.github.io/</link>
-    <description>Recent content on Scepter914 Website</description>
+    <description>Recent content in About me on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Feb 2024 21:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 May 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me (Japanese)</title>
+      <link>https://scepter914.github.io/project/aboutmeja/</link>
+      <pubDate>Mon, 06 May 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
+      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; Twitter: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background 2018/04-2020/03 東京大学大学院 修士課</description>
+    </item>
+    
+    <item>
+      <title>DepthAnything-ROS</title>
+      <link>https://scepter914.github.io/project/project_depth_anything_ros/</link>
+      <pubDate>Mon, 06 May 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_depth_anything_ros/</guid>
+      <description>Summary   Developed by hobby coding.
+  Repository: https://github.com/scepter914/DepthAnything-ROS
+  Made prototype ROS2 package of DepthAnything with TensorRT C++.
+ DepthAnything is one of the high performance monocular depth estimation.    This work is covered by official github repository and its gallary.
+  Performance results
+     Model Params RTX2070 TensorRT     Depth-Anything-Small 24.8M 27 ms, VRAM 300MB   Depth-Anything-Base 97.</description>
+    </item>
+    
     <item>
       <title>DepthAnythingのROS2 packageを作った</title>
       <link>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</link>
@@ -116,15 +139,6 @@
     </item>
     
     <item>
-      <title>About me</title>
-      <link>https://scepter914.github.io/aboutme/aboutme/</link>
-      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/aboutme/</guid>
-      <description>Biography Profile  Name: Satoshi Tanaka     &amp;nbsp;&amp;nbsp; Twitter: @scepter914   &amp;nbsp;&amp;nbsp; Github: @scepter914   Work Experience  Apr. 2020 - Now, TIER IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship  Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant    Academic Background  Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo  Apr.</description>
-    </item>
-    
-    <item>
       <title>LaneFusion: 3D detection with HD map</title>
       <link>https://scepter914.github.io/project/project_lanefusion/</link>
       <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
@@ -141,15 +155,6 @@ Method Through a offline rasterization and a online rasterization, LaneFusion ov
       
       <guid>https://scepter914.github.io/project/project_lanefusion_ja/</guid>
       <description>Summary concept Researched at TIER IV, Inc. concept 本研究では、Objectの反対方向への推測を抑えることを目的とした、LiDARとベクターマップを使用した3D detectio</description>
-    </item>
-    
-    <item>
-      <title>自己紹介</title>
-      <link>https://scepter914.github.io/aboutme/aboutmeja/</link>
-      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/aboutme/aboutmeja/</guid>
-      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; Twitter: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background 2018/04-2020/03 東京大学大学院 修士課</description>
     </item>
     
     <item>

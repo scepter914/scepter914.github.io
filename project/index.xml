@@ -6,7 +6,30 @@
     <description>Recent content in Projects on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Apr 2022 23:59:59 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 May 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me (Japanese)</title>
+      <link>https://scepter914.github.io/project/aboutmeja/</link>
+      <pubDate>Mon, 06 May 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
+      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; Twitter: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background 2018/04-2020/03 東京大学大学院 修士課</description>
+    </item>
+    
+    <item>
+      <title>DepthAnything-ROS</title>
+      <link>https://scepter914.github.io/project/project_depth_anything_ros/</link>
+      <pubDate>Mon, 06 May 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_depth_anything_ros/</guid>
+      <description>Summary   Developed by hobby coding.
+  Repository: https://github.com/scepter914/DepthAnything-ROS
+  Made prototype ROS2 package of DepthAnything with TensorRT C++.
+ DepthAnything is one of the high performance monocular depth estimation.    This work is covered by official github repository and its gallary.
+  Performance results
+     Model Params RTX2070 TensorRT     Depth-Anything-Small 24.8M 27 ms, VRAM 300MB   Depth-Anything-Base 97.</description>
+    </item>
+    
     <item>
       <title>LaneFusion: 3D detection with HD map</title>
       <link>https://scepter914.github.io/project/project_lanefusion/</link>
