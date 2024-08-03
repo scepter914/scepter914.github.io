@@ -207,6 +207,15 @@
     
     <item>
       <title></title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</guid>
+      <description>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01) Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかり</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
