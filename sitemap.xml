@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</loc>
+    <lastmod>2024-08-02T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/detection3d/</loc>
+    <lastmod>2024-08-02T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/</loc>
+    <lastmod>2024-08-02T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2024-08-02T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/</loc>
     <lastmod>2024-05-06T12:00:00+09:00</lastmod>
   </url><url>
@@ -23,9 +35,6 @@
     <loc>https://scepter914.github.io/tags/ros2/</loc>
     <lastmod>2024-02-08T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2024-02-08T21:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/tags/vision/</loc>
     <lastmod>2024-02-08T21:00:00+09:00</lastmod>
   </url><url>
@@ -44,13 +53,7 @@
     <loc>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</loc>
     <lastmod>2022-12-20T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2022-12-20T13:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000709_deepfusion_bosch/</loc>
-    <lastmod>2022-12-19T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/detection3d/</loc>
     <lastmod>2022-12-19T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000689_aimotive_dataset/</loc>
@@ -292,8 +295,6 @@
   </url><url>
     <loc>https://scepter914.github.io/blog/2017/20171230_startblog/</loc>
     <lastmod>2017-12-30T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</loc>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</loc>
   </url><url>

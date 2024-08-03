@@ -6,7 +6,16 @@
     <description>Recent content in Surveys on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Dec 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</link>
+      <pubDate>Fri, 02 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</guid>
+      <description>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01) Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかり</description>
+    </item>
+    
     <item>
       <title>MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception (arxiv2022/11)</title>
       <link>https://scepter914.github.io/survey/perception/vision/000721_matrixvt/</link>
@@ -203,15 +212,6 @@
       
       <guid>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</guid>
       <description>Summary from Uber 1 agentごとの静的地図+他の車両など動的状況をラスタライズ化した画像をinputとした1 agent, single-modal prediction Background Method Input Rasterized input RGBの3chのデータ 道路</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</guid>
-      <description>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01) Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかり</description>
     </item>
     
     <item>
