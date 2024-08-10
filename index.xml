@@ -655,6 +655,15 @@ Method Through a offline rasterization and a online rasterization, LaneFusion ov
     
     <item>
       <title></title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</guid>
+      <description>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12) Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手く</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
