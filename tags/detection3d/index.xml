@@ -6,7 +6,16 @@
     <description>Recent content in detection3d on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</link>
+      <pubDate>Sat, 10 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</guid>
+      <description>Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手くいっている 詳細の</description>
+    </item>
+    
     <item>
       <title>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</link>

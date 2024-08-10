@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://scepter914.github.io/tags/detection3d/</loc>
+    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</loc>
+    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/</loc>
+    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/tags/prediction/</loc>
     <lastmod>2024-08-04T10:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/prediction/000835_simpl/</loc>
     <lastmod>2024-08-04T10:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2024-08-04T10:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2024-08-04T10:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</loc>
-    <lastmod>2024-08-02T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/detection3d/</loc>
     <lastmod>2024-08-02T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/</loc>
@@ -298,8 +301,6 @@
   </url><url>
     <loc>https://scepter914.github.io/blog/2017/20171230_startblog/</loc>
     <lastmod>2017-12-30T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</loc>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</loc>
   </url><url>
