@@ -6,7 +6,16 @@
     <description>Recent content in detection3d on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</guid>
+      <description>Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label によるFew data 3D detection https://github.com/BraveGroup/PointSAM-for-MixSup contribution semantic point</description>
+    </item>
+    
     <item>
       <title>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</link>

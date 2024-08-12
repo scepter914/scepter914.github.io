@@ -6,7 +6,34 @@
     <description>Recent content in Surveys on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</guid>
+      <description>Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model + Unsupervisedな学習の手法を取り入れてより汎化性能を得た</description>
+    </item>
+    
+    <item>
+      <title>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</guid>
+      <description>Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label によるFew data 3D detection https://github.com/BraveGroup/PointSAM-for-MixSup contribution semantic point</description>
+    </item>
+    
+    <item>
+      <title>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</guid>
+      <description>Summary https://www.youtube.com/watch?v=QNub6PYMp1k Method 非常にイケているUI 所謂 pseudo label の 分布の表現も必要っぽい Experiment Discussion</description>
+    </item>
+    
     <item>
       <title>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</link>
@@ -85,7 +112,7 @@
       <pubDate>Sun, 11 Dec 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/vision/000707_beverse/</guid>
-      <description>BEVerse: Unified Perception and Prediction in Birds-Eye-View for Vision-Centric Autonomous Driving (arxiv2022/05) Summary https://arxiv.org/pdf/2205.09743.pdf https://github.com/zhangyp15/BEVerse Multi-Camera BEV perception 3d detection, motion prediction, semantic map のmulti-task learning semantic map は mapのみでobjectは含まない motion prediction はsegmentatio</description>
+      <description>Summary https://arxiv.org/pdf/2205.09743.pdf https://github.com/zhangyp15/BEVerse Multi-Camera BEV perception 3d detection, motion prediction, semantic map のmulti-task learning semantic map は mapのみでobjectは含まない motion prediction はsegmentationの表現で行われている Multi-frame,</description>
     </item>
     
     <item>

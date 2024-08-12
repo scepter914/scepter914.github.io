@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://scepter914.github.io/tags/detection3d/</loc>
-    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+    <loc>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</loc>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</loc>
-    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+    <loc>https://scepter914.github.io/tags/detection3d/</loc>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</loc>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</loc>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2024-08-10T13:00:00+09:00</lastmod>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/vision/</loc>
+    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</loc>
     <lastmod>2024-08-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/prediction/</loc>
@@ -42,9 +54,6 @@
     <lastmod>2024-02-08T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/ros2/</loc>
-    <lastmod>2024-02-08T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/vision/</loc>
     <lastmod>2024-02-08T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/works/</loc>
