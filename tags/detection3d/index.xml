@@ -13,7 +13,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</guid>
-      <description>Summary https://xuxw98.github.io/DSPDet3D/ PruningしながらFPNする機構を備えたsmall object 3D detection real-time object detectionも考慮 https://github.com/xuxw98/DSPDet3D mmdet base https://www.youtube.com/watch?v=Wq-cIRnKhw0 Method Pruning 全体 Experiment Discussion</description>
+      <description>3D Small Object Detection with Dynamic Spatial Pruning (ECCV2024) Summary https://xuxw98.github.io/DSPDet3D/ PruningしながらFPNする機構を備えたsmall object 3D detection real-time object detectionも考慮 https://github.com/xuxw98/DSPDet3D mmdet base https://www.youtube.com/watch?v=Wq-cIRnKhw0 Method Pruning 全体 Experiment Discussion</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</guid>
-      <description>Summary Open-Vocabulary 3D Object Detection https://github.com/djamahl99/findnpropagate contribute 2D VLM を用いたfrustum base手法 Greedy Box Seeker frustumからsegmentしてspaceをsearchする Greedy Box Oracle multi-view alignment and density ranking で</description>
+      <description>Find n’ Propagate: Open-Vocabulary 3D Object Detection in Urban Environments (arxiv 2024/03, ECCV2024) Summary Open-Vocabulary 3D Object Detection https://github.com/djamahl99/findnpropagate contribute 2D VLM を用いたfrustum base手法 Greedy Box Seeker frustumからsegmentしてspaceをsea</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</guid>
-      <description>Summary from google 2D labelだけで3D detectionをするframeworkの提案 画像の特徴量を3D側に伝える工夫 https://github.com/kuanchihhuang/VG-W3D Method Background 3D Object Detection using Weak Labels のsurvey</description>
+      <description>Weakly Supervised 3D Object Detection via Multi-Level Visual Guidance (ECCV2024) Summary from google 2D labelだけで3D detectionをするframeworkの提案 画像の特徴量を3D側に伝える工夫 https://github.com/kuanchihhuang/VG-W3D Method Background 3D Object Detection</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</guid>
-      <description>Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label によるFew data 3D detection https://github.com/BraveGroup/PointSAM-for-MixSup contribution semantic point</description>
+      <description>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024) Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label による</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Sat, 10 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</guid>
-      <description>Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手くいっている 詳細の</description>
+      <description>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12) Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手く</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Fri, 02 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</guid>
-      <description>Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかりやすい Impact score順 Wa</description>
+      <description>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01) Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかり</description>
     </item>
     
     <item>

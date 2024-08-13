@@ -13,7 +13,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</guid>
-      <description>Summary https://xuxw98.github.io/DSPDet3D/ PruningしながらFPNする機構を備えたsmall object 3D detection real-time object detectionも考慮 https://github.com/xuxw98/DSPDet3D mmdet base https://www.youtube.com/watch?v=Wq-cIRnKhw0 Method Pruning 全体 Experiment Discussion</description>
+      <description>3D Small Object Detection with Dynamic Spatial Pruning (ECCV2024) Summary https://xuxw98.github.io/DSPDet3D/ PruningしながらFPNする機構を備えたsmall object 3D detection real-time object detectionも考慮 https://github.com/xuxw98/DSPDet3D mmdet base https://www.youtube.com/watch?v=Wq-cIRnKhw0 Method Pruning 全体 Experiment Discussion</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</guid>
-      <description>Summary Open-Vocabulary 3D Object Detection https://github.com/djamahl99/findnpropagate contribute 2D VLM を用いたfrustum base手法 Greedy Box Seeker frustumからsegmentしてspaceをsearchする Greedy Box Oracle multi-view alignment and density ranking で</description>
+      <description>Find n’ Propagate: Open-Vocabulary 3D Object Detection in Urban Environments (arxiv 2024/03, ECCV2024) Summary Open-Vocabulary 3D Object Detection https://github.com/djamahl99/findnpropagate contribute 2D VLM を用いたfrustum base手法 Greedy Box Seeker frustumからsegmentしてspaceをsea</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/evaluation/000558_pi_metrics/</guid>
-      <description>Summary https://github.com/BorisIvanovic/PlanningAwareEvaluation Detectionとforecastingに使えるPI-metricsの提案 Method 他の手法 task-aware evaluation metrics be: Able to capture asymmetries in downstream tasks. Method-agnostic. Computationally feasible to compute. Interpretable by humans. MPCみたい</description>
+      <description>Injecting Planning-Awareness into Prediction and Detection Evaluation (IV2022) Summary https://github.com/BorisIvanovic/PlanningAwareEvaluation Detectionとforecastingに使えるPI-metricsの提案 Method 他の手法 task-aware evaluation metrics be: Able to capture asymmetries in downstream tasks. Method-agnostic. Computationally feasible to compute. Interpretable</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</guid>
-      <description>Summary from google 2D labelだけで3D detectionをするframeworkの提案 画像の特徴量を3D側に伝える工夫 https://github.com/kuanchihhuang/VG-W3D Method Background 3D Object Detection using Weak Labels のsurvey</description>
+      <description>Weakly Supervised 3D Object Detection via Multi-Level Visual Guidance (ECCV2024) Summary from google 2D labelだけで3D detectionをするframeworkの提案 画像の特徴量を3D側に伝える工夫 https://github.com/kuanchihhuang/VG-W3D Method Background 3D Object Detection</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</guid>
-      <description>Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine tuneしたらrange</description>
+      <description>What data do we need for training an AV motion planner? (ICRA2021) Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</guid>
-      <description>Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model + Unsupervisedな学習の手法を取り入れてより汎化性能を得た</description>
+      <description>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01) Summary https://github.com/LiheYoung/Depth-Anything link https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main model https://github.com/spacewalk01/depth-anything-tensorrt TensorRT実装 from TikTok 汎用性のある Zero-shot monocular relative depth estimation 基盤model + Unsupervisedな学習の手法を取り入</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</guid>
-      <description>Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label によるFew data 3D detection https://github.com/BraveGroup/PointSAM-for-MixSup contribution semantic point</description>
+      <description>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024) Summary MixSupを使ったsemantic point clustersの利用 + PointSAM(3D Panoptic segmentation)使ったpseudo label による</description>
     </item>
     
     <item>
@@ -85,7 +85,7 @@
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</guid>
-      <description>Summary https://www.youtube.com/watch?v=QNub6PYMp1k Method 非常にイケているUI 所謂 pseudo label の 分布の表現も必要っぽい Experiment Discussion</description>
+      <description>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01) Summary https://www.youtube.com/watch?v=QNub6PYMp1k Method 非常にイケているUI 所謂 pseudo label の 分布の表現も必要っぽい Experiment Discussion</description>
     </item>
     
     <item>
@@ -94,7 +94,7 @@
       <pubDate>Sat, 10 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000862_frnet/</guid>
-      <description>Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手くいっている 詳細の</description>
+      <description>FRNet: Frustum-Range Networks for Scalable LiDAR Segmentation (arxiv2023/12) Summary https://github.com/Xiangxu-0103/FRNet https://xiangxu-0103.github.io/FRNet Frustum basedな 3D semantic segmentation Method KNN post-processing の差 Experiment 可視化 https://www.youtube.com/watch?v=PvmnaMKnZrc https://www.youtube.com/watch?v=4m5sG-XsYgw https://www.youtube.com/watch?v=-aM_NaZLP8M incorrectの量が減っている score Semi-supervised: 少ないデータセットでもちゃんと上手く</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@
       <pubDate>Sun, 04 Aug 2024 10:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/prediction/000835_simpl/</guid>
-      <description>Summary https://www.youtube.com/watch?v=_8-6ccopZMM https://github.com/HKUST-Aerial-Robotics/SIMPL?tab=readme-ov-file Transformer base prediction Method Experiment 3060Ti 250Actorでも20ms程度はめっちゃ使い勝手は良さそう 可視化の動画めっちゃ良さげに見える</description>
+      <description>SIMPL: A Simple and Efficient Multi-agent Motion Prediction Baseline for Autonomous Driving (arxiv2024/02, RA-L 2024) Summary https://www.youtube.com/watch?v=_8-6ccopZMM https://github.com/HKUST-Aerial-Robotics/SIMPL?tab=readme-ov-file Transformer base prediction Method Experiment 3060Ti 250Actorでも20ms程度はめっちゃ使い勝手は良さそう 可視化の動画めっちゃ良さげに見え</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Fri, 02 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</guid>
-      <description>Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかりやすい Impact score順 Wa</description>
+      <description>A Survey on Autonomous Driving Datasets: Data Statistic, Annotation, and Outlook (arxiv2024/01) Summary https://github.com/daniel-bogdoll/ad-datasets 元になったrepository Method 結構偏りが激しいし、結局nuScenesが良さげに見える task一覧としてわかり</description>
     </item>
     
     <item>
