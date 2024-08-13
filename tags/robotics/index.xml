@@ -6,7 +6,16 @@
     <description>Recent content in robotics on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2020 23:59:59 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Soft Robotics Commercialization: Jamming Grippers from Research to Product (Soft robotics 2016)</title>
+      <link>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</guid>
+      <description>Summary ドラえもんハンドのproduct化で大変だったことまとめ集 ソフトロボティクスを事業化しようとするなら必読 動画 https://www.youtube.com/watch?v=GdJyICIp4t4 https://www.youtube.com/watch?v=KZ0Y2fDZ8Uw https://www.youtube.com/watch?v=zgHSAUEzjn4 Background これまでの世界にimp</description>
+    </item>
+    
     <item>
       <title>磁石歯車グリッパ”Magripper”による高速グラスピング</title>
       <link>https://scepter914.github.io/project/project_magripper_ja/</link>

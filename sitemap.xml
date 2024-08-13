@@ -2,22 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</loc>
-    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/detection3d/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/evaluation/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/evaluation/000558_pi_metrics/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/robotics/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</loc>
+    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</loc>
     <lastmod>2024-08-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</loc>
     <lastmod>2024-08-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</loc>
-    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2024-08-11T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
     <lastmod>2024-08-11T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/vision/</loc>
@@ -97,9 +118,6 @@
   </url><url>
     <loc>https://scepter914.github.io/tags/diary/</loc>
     <lastmod>2022-09-01T01:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/evaluation/</loc>
-    <lastmod>2022-06-21T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/evaluation/000543_mtbf/</loc>
     <lastmod>2022-06-21T13:00:00+09:00</lastmod>
@@ -195,9 +213,6 @@
     <lastmod>2020-10-05T23:59:59+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/project/</loc>
-    <lastmod>2020-10-05T23:59:59+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/robotics/</loc>
     <lastmod>2020-10-05T23:59:59+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/project/project_magripper_ja/</loc>

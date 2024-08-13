@@ -6,7 +6,34 @@
     <description>Recent content in detection3d on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/detection3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Small Object Detection with Dynamic Spatial Pruning (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</guid>
+      <description>Summary https://xuxw98.github.io/DSPDet3D/ PruningしながらFPNする機構を備えたsmall object 3D detection real-time object detectionも考慮 https://github.com/xuxw98/DSPDet3D mmdet base https://www.youtube.com/watch?v=Wq-cIRnKhw0 Method Pruning 全体 Experiment Discussion</description>
+    </item>
+    
+    <item>
+      <title>Find n’ Propagate: Open-Vocabulary 3D Object Detection in Urban Environments (arxiv 2024/03, ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000846_findn_propagate/</guid>
+      <description>Summary Open-Vocabulary 3D Object Detection https://github.com/djamahl99/findnpropagate contribute 2D VLM を用いたfrustum base手法 Greedy Box Seeker frustumからsegmentしてspaceをsearchする Greedy Box Oracle multi-view alignment and density ranking で</description>
+    </item>
+    
+    <item>
+      <title>Weakly Supervised 3D Object Detection via Multi-Level Visual Guidance (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</guid>
+      <description>Summary from google 2D labelだけで3D detectionをするframeworkの提案 画像の特徴量を3D側に伝える工夫 https://github.com/kuanchihhuang/VG-W3D Method Background 3D Object Detection using Weak Labels のsurvey</description>
+    </item>
+    
     <item>
       <title>MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR2024)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000928_mixsup/</link>

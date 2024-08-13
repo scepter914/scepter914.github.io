@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>detection3d</title>
       <link>https://scepter914.github.io/tags/detection3d/</link>
-      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/detection3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>evaluation</title>
+      <link>https://scepter914.github.io/tags/evaluation/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/evaluation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robotics</title>
+      <link>https://scepter914.github.io/tags/robotics/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     
@@ -80,15 +98,6 @@
     </item>
     
     <item>
-      <title>evaluation</title>
-      <link>https://scepter914.github.io/tags/evaluation/</link>
-      <pubDate>Tue, 21 Jun 2022 13:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/evaluation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>rust</title>
       <link>https://scepter914.github.io/tags/rust/</link>
       <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
@@ -148,15 +157,6 @@
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>robotics</title>
-      <link>https://scepter914.github.io/tags/robotics/</link>
-      <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     
