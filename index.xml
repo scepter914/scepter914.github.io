@@ -53,6 +53,15 @@
     </item>
     
     <item>
+      <title>What data do we need for training an AV motion planner? (ICRA2021)</title>
+      <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
+      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</guid>
+      <description>Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine tuneしたらrange</description>
+    </item>
+    
+    <item>
       <title>Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (arxiv 2024/01)</title>
       <link>https://scepter914.github.io/survey/perception/vision/000817_depth_anything/</link>
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
@@ -732,15 +741,6 @@ Method Through a offline rasterization and a online rasterization, LaneFusion ov
       
       <guid>https://scepter914.github.io/blog/2017/20171230_startblog/</guid>
       <description>自分の自己紹介用のwebサイト兼blog開設しました． まだ工事中感が否めませんが，まぁ人様に公開できるレベルになったので公開します． このbl</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://scepter914.github.io/survey/perception/evaluation/000575_data_for_planning/</guid>
-      <description>What data do we need for training an AV motion planner? (ICRA2021) Summary from Lyft どういうperceptionのobjectが影響しているのかを解析した論文 Method data種類 Range and field-of-view Geometric accuracy Addressing domain shift Experiment data fine</description>
     </item>
     
   </channel>
