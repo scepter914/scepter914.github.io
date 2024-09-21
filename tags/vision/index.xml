@@ -31,7 +31,7 @@
       <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</guid>
-      <description>概要 DepthAnything のROS2 packageを作った それに対する感想や周辺Toolを作った話をつらつら 作ったもののlink https://github.com/scepter914/DepthAnything-ROS https://github.com/scepter914/ros-useful-tools/tree/main/nuscenes_rosbag 作ったもの DepthAnything-ROS 可視化 data: nuScenes Fine tu</description>
+      <description>DepthAnythingのROS2 packageを作った 概要 DepthAnything のROS2 packageを作った それに対する感想や周辺Toolを作った話をつ</description>
     </item>
     
     <item>

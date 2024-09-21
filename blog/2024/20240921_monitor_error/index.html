@@ -28,7 +28,7 @@
 
     
         <meta property="og:title" content="モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題" />
-<meta property="og:description" content="Contents 問題 突然複数monitorで映らなくなってしまい、nvidia driverを再インストールしてみるものの、suspendからの復帰でモニタ" />
+<meta property="og:description" content="モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題 概要 モニターにunknown monit" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://scepter914.github.io/blog/2024/20240921_monitor_error/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-09-21T20:00:00+09:00" />
@@ -40,7 +40,7 @@
     
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題"/>
-<meta name="twitter:description" content="Contents 問題 突然複数monitorで映らなくなってしまい、nvidia driverを再インストールしてみるものの、suspendからの復帰でモニタ"/>
+<meta name="twitter:description" content="モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題 概要 モニターにunknown monit"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -136,9 +136,10 @@
         
             <nav id="TableOfContents">
   <ul>
+    <li><a href="#概要">概要</a></li>
     <li><a href="#contents">Contents</a>
       <ul>
-        <li><a href="#問題">問題</a></li>
+        <li><a href="#きっかけ">きっかけ</a></li>
         <li><a href="#環境">環境</a></li>
         <li><a href="#解決法">解決法</a></li>
         <li><a href="#参考">参考</a></li>
@@ -156,8 +157,14 @@
 <article class="line-numbers">
     
     
-    <h2 id="contents">Contents</h2>
-<h3 id="問題">問題</h3>
+    <h1 id="モニターにunknown-monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題">モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題</h1>
+<h2 id="概要">概要</h2>
+<ul>
+<li>モニターにunknown monitorが検出されて、suspendからの復帰でモニターの接続が壊れた</li>
+<li>それの解決法</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<h3 id="きっかけ">きっかけ</h3>
 <p>突然複数monitorで映らなくなってしまい、nvidia driverを再インストールしてみるものの、suspendからの復帰でモニターの接続が壊れてしまった
 解像度がおかしくなってモニターの検出自体も失敗していそうだった
 色々見てみると、モニターにunknown monitorが検出されており、とりあえずこれがよくなさそうではある</p>

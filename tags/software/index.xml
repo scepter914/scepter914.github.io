@@ -13,7 +13,7 @@
       <pubDate>Sat, 21 Sep 2024 20:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2024/20240921_monitor_error/</guid>
-      <description>Contents 問題 突然複数monitorで映らなくなってしまい、nvidia driverを再インストールしてみるものの、suspendからの復帰でモニタ</description>
+      <description>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題 概要 モニターにunknown monit</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
-      <description>概要 Rust製可視化ツールのrerunを使って、mmdetection3dの可視化をしてみた Contents 経緯 ある日githubを巡回していた時に見つけ</description>
+      <description>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる 概要 Rust製可視化ツールのrerunを使って、mmd</description>
     </item>
     
   </channel>
