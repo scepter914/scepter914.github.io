@@ -6,11 +6,20 @@
     <description>Recent content in software on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 19:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 20:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題</title>
+      <link>https://scepter914.github.io/blog/2024/20240921_monitor_error/</link>
+      <pubDate>Sat, 21 Sep 2024 20:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20240921_monitor_error/</guid>
+      <description>Contents 問題 突然複数monitorで映らなくなってしまい、nvidia driverを再インストールしてみるものの、suspendからの復帰でモニタ</description>
+    </item>
+    
     <item>
       <title>Rust製可視化ツールのrerunを使ってmmdetection3dの可視化をしてみる</title>
       <link>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</link>
-      <pubDate>Sat, 17 Aug 2024 19:00:00 +0900</pubDate>
+      <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</guid>
       <description>概要 Rust製可視化ツールのrerunを使って、mmdetection3dの可視化をしてみた Contents 経緯 ある日githubを巡回していた時に見つけ</description>
