@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2024 20:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Oct 2024 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>detection3d</title>
+      <link>https://scepter914.github.io/tags/detection3d/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/detection3d/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>software</title>
       <link>https://scepter914.github.io/tags/software/</link>
@@ -31,15 +40,6 @@
       <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>detection3d</title>
-      <link>https://scepter914.github.io/tags/detection3d/</link>
-      <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/detection3d/</guid>
       <description></description>
     </item>
     

@@ -8,6 +8,42 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Detecting As Labeling: Rethinking LiDAR-camera Fusion in 3D Object Detection (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000972_detecting_as_labeling/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000972_detecting_as_labeling/</guid>
+      <description>Detecting As Labeling: Rethinking LiDAR-camera Fusion in 3D Object Detection (ECCV2024) Summary from Phigent Robotics CTOが Baidu -&amp;gt; Horizon Robotics の経歴 https://github.com/HuangJunJie2017/BEVDet Camera LiDAR 3D detection において、Camera pipelineはlabel推定にしか使わないようにした</description>
+    </item>
+    
+    <item>
+      <title>On-the-fly Category Discovery for LiDAR Semantic Segmentation (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/001003_ocdss/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/001003_ocdss/</guid>
+      <description>On-the-fly Category Discovery for LiDAR Semantic Segmentation (ECCV2024) Summary Unknown objectのための LiDAR Semantic Segmentationに必要なカテゴライズの導入 Method Baseは &amp;ldquo;On-the-fly Category Discovery (CVPR 2023)&amp;rdquo; https://github.com/PRIS-CV/On-the-fly-Category-Discovery 解きたいタスクの違い (a)</description>
+    </item>
+    
+    <item>
+      <title>Towards Stable 3D Object Detection (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/000969_towards_stable/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/000969_towards_stable/</guid>
+      <description>Towards Stable 3D Object Detection (ECCV2024) Summary https://github.com/jbwang1997/StabilityIndex from Nankai University + KargoBot Inc. （自動運転企業） 3D detectionにおける時系列の安定性を考慮したMetrics、Stability Index (SI) の提案</description>
+    </item>
+    
+    <item>
+      <title>UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/prediction/000993_unitraj/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/prediction/000993_unitraj/</guid>
+      <description>UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction (ECCV2024) Summary https://vita-epfl.github.io/UniTraj/ https://github.com/vita-epfl/UniTraj prediction taskを統一的に扱えるフレームワークの提案 巨大なデータでpredictionを学習したら、結局データの大きさが</description>
+    </item>
+    
+    <item>
       <title>モニターにunknown monitorが検出されてsuspendからの復帰でモニターの接続が壊れる問題</title>
       <link>https://scepter914.github.io/blog/2024/20240921_monitor_error/</link>
       <pubDate>Sat, 21 Sep 2024 20:00:00 +0900</pubDate>

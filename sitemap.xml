@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000972_detecting_as_labeling/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/detection3d/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/001003_ocdss/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/detection3d/000969_towards_stable/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/prediction/000993_unitraj/</loc>
+    <lastmod>2024-10-27T10:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/blog/</loc>
     <lastmod>2024-09-21T20:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/software/</loc>
-    <lastmod>2024-09-21T20:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
     <lastmod>2024-09-21T20:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2024/20240921_monitor_error/</loc>
@@ -35,9 +53,6 @@
     <loc>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</loc>
     <lastmod>2024-08-12T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/tags/detection3d/</loc>
-    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/tags/evaluation/</loc>
     <lastmod>2024-08-12T13:00:00+09:00</lastmod>
   </url><url>
@@ -51,9 +66,6 @@
     <lastmod>2024-08-12T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/robotics/000838_jamming_gripper/</loc>
-    <lastmod>2024-08-12T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/survey/</loc>
     <lastmod>2024-08-12T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000942_vg_w3d/</loc>
