@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2024 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Nov 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vision</title>
+      <link>https://scepter914.github.io/tags/vision/</link>
+      <pubDate>Fri, 01 Nov 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/vision/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>detection3d</title>
       <link>https://scepter914.github.io/tags/detection3d/</link>
@@ -58,15 +67,6 @@
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/robotics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vision</title>
-      <link>https://scepter914.github.io/tags/vision/</link>
-      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/vision/</guid>
       <description></description>
     </item>
     

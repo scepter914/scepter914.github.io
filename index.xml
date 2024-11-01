@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000992_catsam/</link>
+      <pubDate>Fri, 01 Nov 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000992_catsam/</guid>
+      <description>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024) Summary https://xiaoaoran.github.io/projects/CAT-SAM https://github.com/weihao1115/cat-sam &amp;ldquo;a ConditionAl Tuning network&amp;rdquo; for SAM SAMに additional pipelineを追加して、元のSAMはfrozenしてadaptationする研究 Method architecture a</description>
+    </item>
+    
+    <item>
       <title>Detecting As Labeling: Rethinking LiDAR-camera Fusion in 3D Object Detection (ECCV2024)</title>
       <link>https://scepter914.github.io/survey/perception/detection3d/000972_detecting_as_labeling/</link>
       <pubDate>Sun, 27 Oct 2024 10:00:00 +0900</pubDate>
