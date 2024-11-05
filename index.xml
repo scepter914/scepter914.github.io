@@ -13,7 +13,7 @@
       <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2024/20241104_parameter_override/</guid>
-      <description>概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人） 1 : developer 10 : User 100 ぐらいの比率であること</description>
+      <description>デフォルトパラメータをどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）</description>
     </item>
     
     <item>
@@ -234,7 +234,7 @@
       <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
-      <description>概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態で、日本語入力をすると変換で変になる現象</description>
+      <description>VSCode Vim で日本語の変換が変になる問題への対処 概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態</description>
     </item>
     
     <item>
@@ -315,7 +315,7 @@
       <pubDate>Thu, 01 Sep 2022 01:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2022/20220901_blog_update/</guid>
-      <description>Blogの見た目を再び変えました なんかgithub-styleがしっくり着てなかったので変更 要件としては ダークモードがある ごちゃごちゃしてい</description>
+      <description>Blog の update Blogの見た目を再び変えました なんかgithub-styleがしっくり着てなかったので変更 要件としては ダークモードがある ごちゃごちゃ</description>
     </item>
     
     <item>
@@ -352,7 +352,7 @@ Method Through a offline rasterization and a online rasterization, LaneFusion ov
       <pubDate>Sun, 20 Feb 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
-      <description>概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直した 環境 Ubuntu20.04LTS VSCode: 1.64.2 参考ページ https://dev.classmethod.jp/articles/202107-vscode-terminal-on-edit-area/ settingの変更 デフ</description>
+      <description>VSCodeのterminal tabの設定をする 概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直し</description>
     </item>
     
     <item>
@@ -361,7 +361,7 @@ Method Through a offline rasterization and a online rasterization, LaneFusion ov
       <pubDate>Sat, 12 Feb 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2022/20220213_rust_rosbag2_loader/</guid>
-      <description>概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち上げなくてもrosbagの画像を読み込むことができる</description>
+      <description>RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち</description>
     </item>
     
     <item>

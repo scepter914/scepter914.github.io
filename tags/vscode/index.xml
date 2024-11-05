@@ -13,7 +13,7 @@
       <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2023/20230911_vscode_vim_japanese/</guid>
-      <description>概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態で、日本語入力をすると変換で変になる現象</description>
+      <description>VSCode Vim で日本語の変換が変になる問題への対処 概要 VSCode Vim で日本語の変換が変になる問題への対処 環境 Ubuntu 22.04 VSCode v1.82.0 VSCode Vimのextensionを入れている状態</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sun, 20 Feb 2022 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2022/20220220_vscode_terminal/</guid>
-      <description>概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直した 環境 Ubuntu20.04LTS VSCode: 1.64.2 参考ページ https://dev.classmethod.jp/articles/202107-vscode-terminal-on-edit-area/ settingの変更 デフ</description>
+      <description>VSCodeのterminal tabの設定をする 概要 VSCode v1.58 (2021/06) で対応された &amp;ldquo;Terminals in the editor area&amp;rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直し</description>
     </item>
     
   </channel>
