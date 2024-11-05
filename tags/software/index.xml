@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Nov 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>デフォルトパラメータをどう付き合うか</title>
+      <title>デフォルトパラメータとどう付き合うか</title>
       <link>https://scepter914.github.io/blog/2024/20241104_parameter_override/</link>
       <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2024/20241104_parameter_override/</guid>
-      <description>デフォルトパラメータをどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）</description>
+      <description>デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）</description>
     </item>
     
     <item>
