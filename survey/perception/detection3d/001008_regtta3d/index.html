@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blogのupdate - Scepter914 Website</title>
+    <title>RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024) - Scepter914 Website</title>
 
     
 
@@ -27,20 +27,20 @@
     
 
     
-        <meta property="og:title" content="Blogのupdate" />
-<meta property="og:description" content="Blogのupdate Blogの見た目を変えました HugoのthemeをBegからgithub-styleに変更しました 理由としては Begが" />
+        <meta property="og:title" content="RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024)" />
+<meta property="og:description" content="RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024) Summary Test-time adaptationを用いた3D detection Domain adaptation Regressionを中心に少ないparameterでtuningできる Method Domain" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://scepter914.github.io/blog/2021/20211011_blog_update/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-10-11T13:00:00+09:00" />
-<meta property="article:modified_time" content="2021-10-11T13:00:00+09:00" />
+<meta property="og:url" content="https://scepter914.github.io/survey/perception/detection3d/001008_regtta3d/" /><meta property="article:section" content="survey" />
+<meta property="article:published_time" content="2024-11-14T10:00:00+09:00" />
+<meta property="article:modified_time" content="2024-11-14T10:00:00+09:00" />
 
 
     
 
     
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blogのupdate"/>
-<meta name="twitter:description" content="Blogのupdate Blogの見た目を変えました HugoのthemeをBegからgithub-styleに変更しました 理由としては Begが"/>
+<meta name="twitter:title" content="RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024)"/>
+<meta name="twitter:description" content="RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024) Summary Test-time adaptationを用いた3D detection Domain adaptation Regressionを中心に少ないparameterでtuningできる Method Domain"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -103,11 +103,11 @@
                     
                         <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
                     
-                </li><li class="navbar-item pure-menu-item insection">
+                </li><li class="navbar-item pure-menu-item ">
                     
                         <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
                     
-                </li><li class="navbar-item pure-menu-item ">
+                </li><li class="navbar-item pure-menu-item insection">
                     
                         <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
                     
@@ -129,7 +129,9 @@
         
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#blogの見た目を変えました">Blogの見た目を変えました</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#experiment">Experiment</a></li>
   </ul>
 </nav>
         
@@ -142,24 +144,51 @@
 <article class="line-numbers">
     
     
-    <h1 id="blogのupdate">Blogのupdate</h1>
-<h2 id="blogの見た目を変えました">Blogの見た目を変えました</h2>
+    <h1 id="regtta3d-better-regression-makes-better-test-time-adaptive-3d-object-detection-eccv2024">RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024)</h1>
+<h2 id="summary">Summary</h2>
 <ul>
-<li>HugoのthemeをBegからgithub-styleに変更しました</li>
-<li>理由としては
+<li>Test-time adaptationを用いた3D detection Domain adaptation
 <ul>
-<li>Begがメンテナンスされてなさそうだったから</li>
-<li>最近諸々をダークモードで見ているので、Webサイトもダークモードに寄せたかった</li>
-<li>らへん</li>
+<li>Regressionを中心に少ないparameterでtuningできる</li>
 </ul>
 </li>
-<li>移行作業自体は1日もかからなかった
+</ul>
+<h2 id="method">Method</h2>
 <ul>
-<li>この辺はやっぱりmarkdownをコンパイルする形式の良いところだなと思う</li>
+<li>Domain adaptation分類
+<ul>
+<li>よくまとまっていて非常にわかりやすい</li>
 </ul>
 </li>
-<li>ついでに論文surveyもblogと一本化しました</li>
 </ul>
+<p><img src="https://scepter914.github.io/uploads/r/regtta3d_2.png" alt=""></p>
+<ul>
+<li>Regression layers が一番効いている
+<ul>
+<li>&ldquo;This is because in the autonomous driving scenario, there exists a large difference between categories such as car and pedestrian, the source model can already achieve high classification accuracy and the main factor for limiting the detection accuracy is the inaccurate regression results. Based on the observation, in this work, we focus on studying how to only adapt the parameters of regression layers and make better regression.&rdquo;</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/regtta3d_3.png" alt=""></p>
+<ul>
+<li>Whole architecture</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/regtta3d_1.png" alt=""></p>
+<ul>
+<li>pipeline
+<ul>
+<li>Noise-consistency pseudo label generation</li>
+<li>Confidence-guided regression refinement</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/regtta3d_4.png" alt=""></p>
+<h2 id="experiment">Experiment</h2>
+<ul>
+<li>model: SECOND-IoU</li>
+<li>Result</li>
+</ul>
+<p><img src="https://scepter914.github.io/uploads/r/regtta3d_5.png" alt=""></p>
 
 </article>
 </div>

@@ -13,7 +13,7 @@
       <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</guid>
-      <description>概要 rosbagのtopicを大量にremapするshell scriptを作った 脳死 rosbag record -a して、後でセンサ入力しか要らないことに気がついて大</description>
+      <description>rosbagのtopicを大量にremapするshell script 概要 rosbagのtopicを大量にremapするshell scriptを作った 脳</description>
     </item>
     
     <item>

@@ -94,7 +94,7 @@
       <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
-      <description>概要 動画像処理において、カメラinput・mp4動画・1枚の画像を使いながらデバッグすることが多いと思う（特にロボット系は） 画像処理は共通で</description>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@
       <pubDate>Sun, 22 Aug 2021 23:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2021/20210822_rust_image_save/</guid>
-      <description>概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまちまライブラリを製作している時</description>
+      <description>Rustでの画像保存の高速化 概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまち</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Thu, 12 Aug 2021 23:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2021/20210813_rust_image_processing/</guid>
-      <description>概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ないので防備録がてら残しておく pngとかの画像から読み込ん</description>
+      <description>Rustでカメラから取得した画像に対して画像処理をする 概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ない</description>
     </item>
     
   </channel>

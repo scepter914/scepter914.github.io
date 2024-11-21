@@ -6,7 +6,16 @@
     <description>Recent content in Surveys on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Nov 2024 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/survey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024)</title>
+      <link>https://scepter914.github.io/survey/perception/detection3d/001008_regtta3d/</link>
+      <pubDate>Thu, 14 Nov 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/detection3d/001008_regtta3d/</guid>
+      <description>RegTTA3D: Better Regression Makes Better Test-time Adaptive 3D Object Detection (ECCV2024) Summary Test-time adaptationを用いた3D detection Domain adaptation Regressionを中心に少ないparameterでtuningできる Method Domain</description>
+    </item>
+    
     <item>
       <title>CAT-SAM: Conditional Tuning for Few-Shot Adaptation of Segment Anything Model (ECCV2024)</title>
       <link>https://scepter914.github.io/survey/perception/vision/000992_catsam/</link>

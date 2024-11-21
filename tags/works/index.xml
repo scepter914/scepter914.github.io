@@ -31,7 +31,7 @@
       <pubDate>Sun, 05 Sep 2021 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</guid>
-      <description>概要 動画像処理において、カメラinput・mp4動画・1枚の画像を使いながらデバッグすることが多いと思う（特にロボット系は） 画像処理は共通で</description>
+      <description>画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚</description>
     </item>
     
     <item>
