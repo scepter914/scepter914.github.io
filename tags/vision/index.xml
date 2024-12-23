@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000959_stream_petr/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000959_stream_petr/</guid>
+      <description>Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection (ECCV2023) Summary Multi-Camera 3D detection 実行速度も早く、multi-Camera 3D detection の中だと今一番強いまである https://github.com/exiawsh/StreamPETR/ https://github.com/NVIDIA/DL4AGX/tree/master/AV-Solutions/streampetr-trt TensorRT実装もある Method Experiment RTX3090 で動</description>
+    </item>
+    
+    <item>
       <title>OW-Adapter: Human-Assisted Open-World Object Detection with a Few Examples (IEEE Transaction on visualization and computer graphics 2024/01)</title>
       <link>https://scepter914.github.io/survey/perception/vision/000895_ow_adapter/</link>
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
