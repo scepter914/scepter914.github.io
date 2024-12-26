@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://scepter914.github.io/blog/</loc>
+    <lastmod>2024-12-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</loc>
+    <lastmod>2024-12-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/</loc>
+    <lastmod>2024-12-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/vision/</loc>
+    <lastmod>2024-12-23T23:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/vision/000852_far3d/</loc>
     <lastmod>2024-12-22T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/</loc>
-    <lastmod>2024-12-22T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/</loc>
-    <lastmod>2024-12-22T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/tags/vision/</loc>
     <lastmod>2024-12-22T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/detection3d/</loc>
@@ -19,9 +25,6 @@
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/001008_regtta3d/</loc>
     <lastmod>2024-11-14T10:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/blog/</loc>
-    <lastmod>2024-11-04T12:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/tags/software/</loc>
     <lastmod>2024-11-04T12:00:00+09:00</lastmod>

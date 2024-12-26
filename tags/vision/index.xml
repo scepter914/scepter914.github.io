@@ -6,7 +6,18 @@
     <description>Recent content in vision on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Dec 2024 13:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Dec 2024 23:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey for real-time 3D detection in autonomous driving</title>
+      <link>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</link>
+      <pubDate>Mon, 23 Dec 2024 23:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</guid>
+      <description>Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
+Based on the performance comparison, following models of the multi-camera 3D detection stand out:
+ StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
+    </item>
+    
     <item>
       <title>Far3D: Expanding the Horizon for Surround-View 3D Object Detection (AAAI2024)</title>
       <link>https://scepter914.github.io/survey/perception/vision/000852_far3d/</link>
