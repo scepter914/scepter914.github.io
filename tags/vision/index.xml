@@ -64,6 +64,15 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
+      <title>SAM 2: Segment Anything in Images and Videos (arxiv 2024/07)</title>
+      <link>https://scepter914.github.io/survey/perception/vision/000907_sam_v2/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/survey/perception/vision/000907_sam_v2/</guid>
+      <description>SAM 2: Segment Anything in Images and Videos (arxiv 2024/07) Summary https://github.com/facebookresearch/segment-anything-2 参考 https://speakerdeck.com/tenten0727/segment-anything-model-2?slide=5 Method dataset Experiment 高速化 FPSが結構出てるのすごい Model Size (M) Speed (FPS) SA-V test (J&amp;amp;F) MOSE val (J&amp;amp;F) LVOS v2 (J&amp;amp;F) sam2_hiera_tiny 38.9 47.2 75.0 70.9 75.3 sam2_hiera_small 46 43.3 (53.0 compiled*) 74.9 71.5 76.4 sam2_hiera_base_plus 80.8 34.8 (43.8 compiled*) 74.7 72.8 75.8</description>
+    </item>
+    
+    <item>
       <title>DepthAnythingのROS2 packageを作った</title>
       <link>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</link>
       <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>

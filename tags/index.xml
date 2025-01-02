@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Dec 2024 23:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jan 2025 10:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>planning</title>
+      <link>https://scepter914.github.io/tags/planning/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prediction</title>
+      <link>https://scepter914.github.io/tags/prediction/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/prediction/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>vision</title>
       <link>https://scepter914.github.io/tags/vision/</link>
@@ -71,15 +89,6 @@
     </item>
     
     <item>
-      <title>prediction</title>
-      <link>https://scepter914.github.io/tags/prediction/</link>
-      <pubDate>Sun, 04 Aug 2024 10:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/prediction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ROS2</title>
       <link>https://scepter914.github.io/tags/ros2/</link>
       <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
@@ -130,15 +139,6 @@
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/tags/sensor_fusion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tracking</title>
-      <link>https://scepter914.github.io/tags/tracking/</link>
-      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/tags/tracking/</guid>
       <description></description>
     </item>
     
