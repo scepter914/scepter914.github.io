@@ -6,55 +6,6 @@
     <description>Recent content in Blogs on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-<<<<<<< HEAD
-    <copyright>&amp;copy; Scepter914 2019</copyright>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
-||||||| parent of 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
-    <lastBuildDate>Sun, 19 Apr 2020 00:03:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Sat, 11 Jul 2020 00:01:00 +0900</lastBuildDate>
->>>>>>> 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
-||||||| parent of c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
-    <lastBuildDate>Sat, 11 Jul 2020 00:01:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Sun, 12 Jul 2020 22:00:00 +0900</lastBuildDate>
->>>>>>> c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
-||||||| parent of c8f7bde (rebuilding site 2020年  7月 12日 日曜日 23:06:24 JST)
-    <lastBuildDate>Sun, 12 Jul 2020 22:00:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Sun, 12 Jul 2020 01:00:00 +0900</lastBuildDate>
->>>>>>> c8f7bde (rebuilding site 2020年  7月 12日 日曜日 23:06:24 JST)
-||||||| parent of b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
-    <lastBuildDate>Sun, 12 Jul 2020 01:00:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
->>>>>>> b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
-||||||| parent of 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
-    <lastBuildDate>Fri, 24 Jul 2020 02:00:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Sat, 15 Aug 2020 00:03:00 +0900</lastBuildDate>
->>>>>>> 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
-||||||| parent of 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
-    <lastBuildDate>Sat, 15 Aug 2020 00:03:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
->>>>>>> 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
-||||||| parent of d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
-    <lastBuildDate>Sun, 13 Dec 2020 02:00:00 +0900</lastBuildDate>
-=======
-    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
->>>>>>> d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
-||||||| parent of 3e9709a (update)
-    <copyright>&amp;copy; Scepter914 2019</copyright>
-    <lastBuildDate>Tue, 03 Aug 2021 00:03:00 +0900</lastBuildDate>
-=======
     <lastBuildDate>Mon, 23 Dec 2024 23:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Survey for real-time 3D detection in autonomous driving</title>
@@ -66,7 +17,6 @@
 Based on the performance comparison, following models of the multi-camera 3D detection stand out:
  StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
     </item>
->>>>>>> 3e9709a (update)
     
     <item>
       <title>デフォルトパラメータとどう付き合うか</title>
@@ -186,23 +136,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-||||||| parent of 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
-=======
-||||||| parent of 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
-=======
-      <title>wikiの(個人的見解による)運用の仕方お勧め〜</title>
-||||||| parent of 409c587 (rebuilding site 2020年 12月 13日 日曜日 13:47:35 JST)
-      <title>wikiの(個人的見解による)運用の仕方お勧め〜</title>
-=======
-||||||| parent of d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
-=======
       <title>rosbagのtopicを大量にremapするshell script</title>
       <link>https://scepter914.github.io/blog/2021/20210804_rosbag_remap/</link>
       <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
@@ -212,9 +145,7 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
->>>>>>> d230fc9 (rebuilding site 2021年  8月  4日 水曜日 06:14:28 JST)
       <title>個人的なwiki運用の一案</title>
->>>>>>> 409c587 (rebuilding site 2020年 12月 13日 日曜日 13:47:35 JST)
       <link>https://scepter914.github.io/blog/2020/20201212_wiki_recommended/</link>
       <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
       
@@ -223,7 +154,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
->>>>>>> 1a084ad (rebuilding site 2020年 12月 13日 日曜日 13:28:01 JST)
       <title>gollum version5</title>
       <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
       <pubDate>Sat, 15 Aug 2020 00:03:00 +0900</pubDate>
@@ -233,7 +163,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
->>>>>>> 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
       <title>作業日誌の書く手順</title>
       <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
       <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
@@ -252,27 +181,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
-||||||| parent of b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
-=======
-      <title>作業日誌の書く手順</title>
-      <link>https://scepter914.github.io/blog/2020/20200725_howtologging/</link>
-      <pubDate>Fri, 24 Jul 2020 02:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200725_howtologging/</guid>
-      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の2ページ目 実際にどういう手順で作業日誌を残しているか、について 以下の一例はm</description>
-    </item>
-    
-    <item>
-      <title>なぜ作業日誌を書くのか</title>
-      <link>https://scepter914.github.io/blog/2020/20200725_whydairylog/</link>
-      <pubDate>Fri, 24 Jul 2020 01:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200725_whydairylog/</guid>
-      <description>このページは ロボット系に参考になるかもしれない作業日誌の書き方の1ページ目 実験報告書、作業日誌を残す個人的な思想について なぜ作業日誌を書くの</description>
-    </item>
-    
-    <item>
->>>>>>> b55826c (rebuilding site 2020年  7月 25日 土曜日 05:29:49 JST)
       <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
       <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
       <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
@@ -282,18 +190,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
-||||||| parent of c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
-=======
-      <title>ロボット系に参考になるかもしれない作業日誌の書き方</title>
-      <link>https://scepter914.github.io/blog/2020/20200712_experiment_report/</link>
-      <pubDate>Sun, 12 Jul 2020 01:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200712_experiment_report/</guid>
-      <description>概要 作業日誌（実験の作業ログ）の書き方についてのポエム 今までロボコン・研究等でロボットを使った実験をやってきて、個人的にはこういう作業日誌を</description>
-    </item>
-    
-    <item>
->>>>>>> c7d732d (rebuilding site 2020年  7月 12日 日曜日 23:05:09 JST)
       <title>最近あったこと</title>
       <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
       <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
@@ -303,40 +199,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
-<<<<<<< HEAD
-||||||| parent of 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
-=======
-      <title>最近あったこと</title>
-      <link>https://scepter914.github.io/blog/2020/20200711_blog/</link>
-      <pubDate>Sat, 11 Jul 2020 00:01:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200711_blog/</guid>
-      <description>概要 ブログって銘打ってるのに技術忘備録しか書いてないからたまにはね。 リモートワークに適応するのにひいこらひいこら言っていたこの3か月のできご</description>
-    </item>
-    
-    <item>
->>>>>>> 5fb96e3 (rebuilding site 2020年  7月 11日 土曜日 02:51:59 JST)
-      <title>gollum version5</title>
-      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
-      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
-      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
-    </item>
-    
-    <item>
-||||||| parent of 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
-      <title>gollum version5</title>
-      <link>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</link>
-      <pubDate>Sun, 19 Apr 2020 00:03:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/blog/2020/20200419_gollum_ver5/</guid>
-      <description>概要 個人wikiのgollumのversionを4.1.4 to 5.0.1 にupdate ver4のままだと動かないので色々直す必要がある https://github.com/scepter914/gollum_files の対応 参考 https://github.com/gollum/gollum/wiki/5.0-release-notes 基</description>
-    </item>
-    
-    <item>
-=======
->>>>>>> 2f021c5 (rebuilding site 2020年  8月 16日 日曜日 18:12:50 JST)
       <title>Page layout collapse in gollum ver5</title>
       <link>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</link>
       <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
