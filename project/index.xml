@@ -6,7 +6,25 @@
     <description>Recent content in Projects on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Jun 2025 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</title>
+      <link>https://scepter914.github.io/project/project_awml/</link>
+      <pubDate>Sat, 21 Jun 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_awml/</guid>
+      <description>Summary  Worked on TIER IV, Inc. Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645   In this paper, we introduce AWML, a framework designed to support MLOps for robotics. AWML provides a machine learning infrastructure for autonomous driving, supporting not only the deployment of trained models to robotic systems, but also an active learning pipeline that incorporates auto-labeling, semi-auto-labeling, and data mining techniques. We explain the whole design of software and strategy for robotics MLOps and show the benchmark our models on our datasets.</description>
+    </item>
+    
+    <item>
+      <title>AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</title>
+      <link>https://scepter914.github.io/project/project_awml_ja/</link>
+      <pubDate>Sat, 21 Jun 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_awml_ja/</guid>
+      <description>Summary TIER IV, Inc. における成果 Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 ロボティクス分野におけるMLOpsを支援するフレームワーク「AWML」を開発。 自律走行向けの機械学習インフラと</description>
+    </item>
+    
     <item>
       <title>mmcarrot</title>
       <link>https://scepter914.github.io/project/project_mmcarrot/</link>

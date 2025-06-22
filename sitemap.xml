@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://scepter914.github.io/project/project_awml/</loc>
+    <lastmod>2025-06-21T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/project_awml_ja/</loc>
+    <lastmod>2025-06-21T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/</loc>
+    <lastmod>2025-06-21T12:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</loc>
     <lastmod>2025-01-02T10:00:00+09:00</lastmod>
   </url><url>
@@ -81,9 +90,6 @@
     <lastmod>2024-08-17T12:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/project/project_mmcarrot/</loc>
-    <lastmod>2024-08-17T12:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/project/</loc>
     <lastmod>2024-08-17T12:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000951_dspdet3d/</loc>

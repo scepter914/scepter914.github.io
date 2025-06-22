@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</title>
+      <link>https://scepter914.github.io/project/project_awml/</link>
+      <pubDate>Sat, 21 Jun 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_awml/</guid>
+      <description>Summary  Worked on TIER IV, Inc. Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645   In this paper, we introduce AWML, a framework designed to support MLOps for robotics. AWML provides a machine learning infrastructure for autonomous driving, supporting not only the deployment of trained models to robotic systems, but also an active learning pipeline that incorporates auto-labeling, semi-auto-labeling, and data mining techniques. We explain the whole design of software and strategy for robotics MLOps and show the benchmark our models on our datasets.</description>
+    </item>
+    
+    <item>
+      <title>AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</title>
+      <link>https://scepter914.github.io/project/project_awml_ja/</link>
+      <pubDate>Sat, 21 Jun 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_awml_ja/</guid>
+      <description>Summary TIER IV, Inc. における成果 Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 ロボティクス分野におけるMLOpsを支援するフレームワーク「AWML」を開発。 自律走行向けの機械学習インフラと</description>
+    </item>
+    
+    <item>
       <title>DRIVE VLM: The Convergence of Autonomous Driving and Large Vision-Language Models (arxiv2024/02, CoRL2024)</title>
       <link>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</link>
       <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
