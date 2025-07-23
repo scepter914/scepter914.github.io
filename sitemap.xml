@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://scepter914.github.io/</loc>
+    <lastmod>2025-07-22T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/aboutmeja/</loc>
+    <lastmod>2025-07-22T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/</loc>
+    <lastmod>2025-07-22T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/project_rethink_3ddetection/</loc>
+    <lastmod>2025-07-22T12:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/project_rethink_3ddetection_ja/</loc>
+    <lastmod>2025-07-22T12:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/project/project_awml/</loc>
     <lastmod>2025-06-21T12:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/project/project_awml_ja/</loc>
-    <lastmod>2025-06-21T12:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://scepter914.github.io/project/</loc>
     <lastmod>2025-06-21T12:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/planning/000981_drivevlm/</loc>
@@ -86,9 +98,6 @@
     <loc>https://scepter914.github.io/blog/2024/20240817_rerun_mmdet3d/</loc>
     <lastmod>2024-08-17T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/</loc>
-    <lastmod>2024-08-17T12:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/project/project_mmcarrot/</loc>
     <lastmod>2024-08-17T12:00:00+09:00</lastmod>
   </url><url>
@@ -140,10 +149,10 @@
     <loc>https://scepter914.github.io/survey/perception/detection3d/000843_autonomous_driving_dataset_survey/</loc>
     <lastmod>2024-08-02T13:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/project/aboutmeja/</loc>
-    <lastmod>2024-05-06T12:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://scepter914.github.io/project/project_depth_anything_ros/</loc>
+    <lastmod>2024-05-06T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/project/project_depth_anything_ros_ja/</loc>
     <lastmod>2024-05-06T10:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2024/20240208_depth_anything_ros/</loc>

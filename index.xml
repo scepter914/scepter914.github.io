@@ -6,7 +6,34 @@
     <description>Recent content in About me on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jul 2025 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me (Japanese)</title>
+      <link>https://scepter914.github.io/project/aboutmeja/</link>
+      <pubDate>Tue, 22 Jul 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
+      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; X: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 &amp;nbsp;&amp;nbsp; Linkedin: @scepter914 Work Experience 2025/08- フリーランスエンジニア 2020/04-2025/07 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補</description>
+    </item>
+    
+    <item>
+      <title>Rethink 3D Object Detection from Physical World</title>
+      <link>https://scepter914.github.io/project/project_rethink_3ddetection/</link>
+      <pubDate>Tue, 22 Jul 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_rethink_3ddetection/</guid>
+      <description>Summary  Worked on TIER IV, Inc. arXiv paper: https://arxiv.org/abs/2507.00190   High-accuracy and low-latency 3D object detection is essential for autonomous driving systems. While previous studies on 3D object detection often evaluate performance based on mean average precision (mAP) and latency, they typically fail to address the trade-off between speed and accuracy, such as 60.0 mAP at 100 ms vs 61.0 mAP at 500 ms. A quantitative assessment of the trade-offs between different hardware devices and accelerators remains unexplored, despite being critical for real-time applications.</description>
+    </item>
+    
+    <item>
+      <title>Rethink 3D Object Detection from Physical World</title>
+      <link>https://scepter914.github.io/project/project_rethink_3ddetection_ja/</link>
+      <pubDate>Tue, 22 Jul 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_rethink_3ddetection_ja/</guid>
+      <description>Summary TIER IV, Inc. における成果 arXiv paper: https://arxiv.org/abs/2507.00190 高精度かつ低遅延な3D物体検出は自動運転システムにとって不可欠ですが、これまでの3D物体検出に関する研究ではmAP</description>
+    </item>
+    
     <item>
       <title>AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</title>
       <link>https://scepter914.github.io/project/project_awml/</link>
@@ -298,15 +325,6 @@ Based on the performance comparison, following models of the multi-camera 3D det
     </item>
     
     <item>
-      <title>About me (Japanese)</title>
-      <link>https://scepter914.github.io/project/aboutmeja/</link>
-      <pubDate>Mon, 06 May 2024 12:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
-      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; Twitter: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background 2018/04-2020/03 東京大学大学院 修士課</description>
-    </item>
-    
-    <item>
       <title>DepthAnything-ROS</title>
       <link>https://scepter914.github.io/project/project_depth_anything_ros/</link>
       <pubDate>Mon, 06 May 2024 10:00:00 +0900</pubDate>
@@ -318,6 +336,15 @@ Based on the performance comparison, following models of the multi-camera 3D det
  DepthAnything is one of the high performance monocular depth estimation.    This work is covered by official github repository and its gallary.
   Performance results
      Model Params RTX2070 TensorRT     Depth-Anything-Small 24.8M 27 ms, VRAM 300MB   Depth-Anything-Base 97.</description>
+    </item>
+    
+    <item>
+      <title>DepthAnything-ROS</title>
+      <link>https://scepter914.github.io/project/project_depth_anything_ros_ja/</link>
+      <pubDate>Mon, 06 May 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/project_depth_anything_ros_ja/</guid>
+      <description>Summary 趣味開発 Repository: https://github.com/scepter914/DepthAnything-ROS TensorRT C++ を用いて、DepthAnything の ROS2 パッケージのプロトタイプを作成。 DepthAnything は高性能な単眼深度推定手法の1つ 本プロジェクトは</description>
     </item>
     
     <item>
