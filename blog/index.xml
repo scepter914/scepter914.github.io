@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Dec 2024 23:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Aug 2025 09:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimal MLOps Checklist</title>
+      <link>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</link>
+      <pubDate>Mon, 11 Aug 2025 09:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</guid>
+      <description>Minimal MLOps Checklist 概要 自分用のメモ 1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト コ</description>
+    </item>
+    
     <item>
       <title>Survey for real-time 3D detection in autonomous driving</title>
       <link>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</link>

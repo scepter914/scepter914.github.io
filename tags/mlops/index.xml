@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mlops on Scepter914 Website</title>
+    <link>https://scepter914.github.io/tags/mlops/</link>
+    <description>Recent content in mlops on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Aug 2025 09:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimal MLOps Checklist</title>
+      <link>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</link>
+      <pubDate>Mon, 11 Aug 2025 09:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</guid>
+      <description>Minimal MLOps Checklist 概要 自分用のメモ 1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト コ</description>
+    </item>
+    
+  </channel>
+</rss>

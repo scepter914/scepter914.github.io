@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Jul 2025 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Minimal MLOps Checklist</title>
+      <link>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</link>
+      <pubDate>Mon, 11 Aug 2025 09:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</guid>
+      <description>Minimal MLOps Checklist 概要 自分用のメモ 1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト コ</description>
+    </item>
+    
+    <item>
       <title>About me (Japanese)</title>
       <link>https://scepter914.github.io/project/aboutmeja/</link>
       <pubDate>Tue, 22 Jul 2025 12:00:00 +0900</pubDate>

@@ -1,0 +1,571 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minimal MLOps Checklist - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="Minimal MLOps Checklist" />
+<meta property="og:description" content="Minimal MLOps Checklist 概要 自分用のメモ 1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト コ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2025/20250811_mininal_mlops/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-08-11T09:00:00+09:00" />
+<meta property="article:modified_time" content="2025-08-11T09:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Minimal MLOps Checklist"/>
+<meta name="twitter:description" content="Minimal MLOps Checklist 概要 自分用のメモ 1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト コ"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+    
+        
+        
+            <script defer src="https://scepter914.github.io/js/builtin-copy.56e07a74dd440b068ab36af35542ed8960865686c19fb809f38436877ac081570612cc8a913650b0c0e3073a336680c5df960e73bf7b1de83dc6aa996f2db858.js" integrity="sha512-VuB6dN1ECwaKs2rzVULtiWCGVobBn7gJ84Q2h3rAgVcGEsyKkTZQsMDjBzozZoDF35YOc797Heg9xqqZby24WA=="></script>
+        
+    
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#概要">概要</a></li>
+    <li><a href="#1-目的">1. 目的</a></li>
+    <li><a href="#2-アプリケーションを作成する">2. アプリケーションを作成する</a></li>
+    <li><a href="#3-ml-基盤ソフトウェアを構築する">3. ML 基盤ソフトウェアを構築する</a>
+      <ul>
+        <li><a href="#31-ml基盤ソフトウェアの構築">3.1. ML基盤ソフトウェアの構築</a></li>
+        <li><a href="#32-モデルレジストリを構築する">3.2. モデルレジストリを構築する</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-アプリケーションのversioningを開始しreleaseプロセスを整備する">4. アプリケーションのversioningを開始し、releaseプロセスを整備する</a>
+      <ul>
+        <li><a href="#41-運用に必要な-model-versioning-定義">4.1. 運用に必要な model versioning 定義</a></li>
+        <li><a href="#42-アプリケーションのreleaseプロセスの整備">4.2. アプリケーションのreleaseプロセスの整備</a></li>
+        <li><a href="#43-releaseするための結合テストを構築する">4.3. releaseするための結合テストを構築する</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-自分たちのデータセットを構築する">5. 自分たちのデータセットを構築する</a>
+      <ul>
+        <li><a href="#51-datasetの定義">5.1. datasetの定義</a></li>
+        <li><a href="#52-dataset-schema-versioning-の定義">5.2. dataset schema versioning の定義</a></li>
+        <li><a href="#53-document作成">5.3. Document作成</a></li>
+        <li><a href="#54-dataset-apiを作成する">5.4. Dataset APIを作成する</a></li>
+        <li><a href="#55-データセットを構築する">5.5. データセットを構築する</a></li>
+        <li><a href="#56-自分たちのデータセットを使って学習をする">5.6. 自分たちのデータセットを使って学習をする</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-data-drivenな開発によって性能を上げる">6. Data-drivenな開発によって性能を上げる</a></li>
+    <li><a href="#7-projectへ提供するモデルの性能をあげるためのmlops-pipeline開発">7. Projectへ提供するモデルの性能をあげるためのMLOps pipeline開発</a>
+      <ul>
+        <li><a href="#71-model-versioning-の構築">7.1. Model versioning の構築</a></li>
+        <li><a href="#72-fine-tuning-pipelineの構築">7.2. fine-tuning pipelineの構築</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-モデルの性能を上げる">8. モデルの性能を上げる</a></li>
+    <li><a href="#9-以降">9. 以降</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="minimal-mlops-checklist">Minimal MLOps Checklist</h1>
+<h2 id="概要">概要</h2>
+<ul>
+<li>自分用のメモ</li>
+<li>1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト
+<ul>
+<li>コストを下げるため、全自動ではなく手動の操作を許して、MLOpsを必要最低限回すのに必要なものだけ構築する</li>
+<li>自動運転とかLLMのサービスとかだとエンジニア何十人で構築するだけの投資ができるけど、そうではない分野の方が多数。そういった事業で足りないところが無いかのチェックリスト</li>
+<li>0から構築する場合は上から順に構築すれば良い</li>
+</ul>
+</li>
+<li>時間とれたら一個一個ちゃんと解説書いて、技術同人誌にする（多分）</li>
+</ul>
+<h2 id="1-目的">1. 目的</h2>
+<ul>
+<li>MLOpsが大事なのはわかるが、MLOpsエンジニアではない人が組むにはコストがかかりすぎる</li>
+</ul>
+<p>MLflow、Kubeflowといった名前は聞いたことあるものの、それらを使いこなすまでの時間が取りにくい
+勉強するコストの大きい技術は導入したくない、ある新しい技術を導入した時にはその技術を文化として根付かせるコストが発生する
+「MLOps人材を雇用するほど余裕が無いが、事業がスケールできるようなソフトウェア基盤は作りたい」という需要があるはず</p>
+<ul>
+<li>MLOpsで扱われる話題が大規模AIプロダクトの話なことが多く、minimalにスタートしたい時の情報が中々探しにくい</li>
+</ul>
+<p>MLOpsを調べるとgoogleが発表しているものがよく検索にひっかかるが、MLOpsのフェーズが
+レベル0: 手動プロセス、レベル1: MLパイプラインの自動化、レベル2: CI/CDパイプラインの自動化
+と分類されていたりする
+多くの機械学習を使ったプロダクトを作成している時に起きている課題において、これらの自動化はオーバーエンジニアリングであることが多い、「頑張ってMLOpsのソフトウェア基盤を構築したが、結局MLエンジニアに使われなかった」というケースも多い
+もともとMLOpsはDevOpsにおける Dev vs Ops の対立を防ぐ活動をMLに広げるものだったけど、結果として MLエンジニア「Opsのために作られたソフトウェアが使いにくくて、MLのアルゴリズム開発が全く捗らない」 vs Ops「せっかくMLOpsが回るようにソフトウェアを構築したのに、MLエンジニアがMLOpsの重要性を理解していないから使おうとしない」という ML vs Opsの構図になったりする</p>
+<h2 id="2-アプリケーションを作成する">2. アプリケーションを作成する</h2>
+<ul>
+<li>基盤を作る前に「そもそも作るアプリケーションが本当に必要なのか？」を検証する必要がある
+<ul>
+<li>= プロトタイピング</li>
+</ul>
+</li>
+<li>ビジネスを行うドメインからのフィードバックをもらう
+<ul>
+<li>ML関係なく、ビジネスを行うドメインのやり方に合わせる</li>
+<li>ここでは機械学習側の意見は考えなくて良い</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-ml-基盤ソフトウェアを構築する">3. ML 基盤ソフトウェアを構築する</h2>
+<h3 id="31-ml基盤ソフトウェアの構築">3.1. ML基盤ソフトウェアの構築</h3>
+<ul>
+<li>まず手始めに「学習 -&gt; 学習済モデルをupdate」のパイプラインを構築
+<ul>
+<li>ML 基盤ソフトウェアの構築を通じて、「ローカルで良い実験結果が出る-&gt;本番環境への適用、に時間がかかる」という問題の解消を目指す</li>
+<li>データサイエンティストや各種アルゴリズムを考えるリサーチャーが作るソフトウェアと、実際にプロダクトとして運用されるソフトウェアにはギャップがあるので、基盤ソフトウェアの構築を行ってそのギャップをなるべく小さくする</li>
+</ul>
+</li>
+<li>公開されている github リポジトリを確認</li>
+<li>再現性ある状態にするためにまずはdocker環境に載せる</li>
+<li>READMEを整備して、どのエンジニアが作業しても再現する状態にする</li>
+<li>configを1つにまとめる
+<ul>
+<li>「学習済モデルと1つにまとまったconfig fileを他のエンジニアに渡したら、 <code>python eval.py &lt;config file&gt; &lt;checkpoint file&gt;</code> で全く同じ結果が得られる」という状態にする</li>
+</ul>
+</li>
+<li>学習のlogを保存する
+<ul>
+<li>ML 基盤ソフトウェアのコミット情報、どのGPU、GPUの並列度、で学習したか、などの情報もlogに保存しておく</li>
+</ul>
+</li>
+<li>この地点で以下のファイルを管理すれば、「再現する」状況になる
+<ul>
+<li>学習 model（pytorchのcheckpoint）</li>
+<li>config file</li>
+<li>学習時のlog（評価結果が書いてある）</li>
+</ul>
+</li>
+<li>testを構築する</li>
+</ul>
+<h3 id="32-モデルレジストリを構築する">3.2. モデルレジストリを構築する</h3>
+<ul>
+<li>最小コストでモデル管理基盤を構築するために、GitLFS + Custom Transfer Agenetで構築する
+<ul>
+<li>実際の置き場はS3など</li>
+</ul>
+</li>
+<li>階層構造としては一例として、<code>model-registry/{algorithm}-{option}/{model_scope}/{version}/</code> のように定義
+<ul>
+<li>model scopeとして、&ldquo;base&rdquo; は base model のことで、汎用的に使うモデルとする</li>
+<li><a href="https://github.com/open-mmlab/mmdetection">https://github.com/open-mmlab/mmdetection</a> ベースの2D object detectionを用いたときは以下のようにモデル管理基盤へ登録する</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>- model-registry/
+  - YOLOX-l/
+    - base/
+      - README.md
+      - 0.1/
+        - config.yaml
+        - checkpoint.pth
+        - checkpoint.onnx
+        - log.txt
+</code></pre><h2 id="4-アプリケーションのversioningを開始しreleaseプロセスを整備する">4. アプリケーションのversioningを開始し、releaseプロセスを整備する</h2>
+<ul>
+<li>アプリケーションのreleaseプロセスを整備する
+<ul>
+<li>「バグ報告・解析 -&gt; 再学習してモデルをreleaseする -&gt; アプリケーション側の修正 -&gt; アプリケーションをrelease」というサイクルの構築を目指す</li>
+</ul>
+</li>
+</ul>
+<h3 id="41-運用に必要な-model-versioning-定義">4.1. 運用に必要な model versioning 定義</h3>
+<ul>
+<li><code>{algorithm}-{option}/base/X.Y</code></li>
+<li>X: application側にとっての major model version
+<ul>
+<li>前処理後処理の変更に伴ってモデルの入力や出力が変更、層の種類を変更してアーキテクチャが変更、などからapplication側の変更も伴う場合には major versionを上げる</li>
+</ul>
+</li>
+<li>Y: Base model の minor version（学習設定のバージョン）
+<ul>
+<li>学習パラメータ、使用データセットの変更が含まれる</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-アプリケーションのreleaseプロセスの整備">4.2. アプリケーションのreleaseプロセスの整備</h3>
+<ul>
+<li>モデルインリリースを採用
+<ul>
+<li>config fileでモデルを指定できるようにする</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">model</span>:
+  <span style="color:#f92672">detection2d</span>:
+    <span style="color:#f92672">root_url</span>: <span style="color:#e6db74">&#34;{S3のURL}&#34;</span>
+    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;base/1.2&#34;</span>
+</code></pre></div><ul>
+<li>Docker build の構築
+<ul>
+<li>modelを入れたdocker imageの構築</li>
+</ul>
+</li>
+<li>deployされたものを置く場所を作る
+<ul>
+<li>S3など</li>
+</ul>
+</li>
+<li>リリース用scriptを用意する</li>
+<li>(option) Edge AI向けのreleaseを整備する
+<ul>
+<li>TensorRTなどの高速化</li>
+<li>量子化</li>
+</ul>
+</li>
+</ul>
+<h3 id="43-releaseするための結合テストを構築する">4.3. releaseするための結合テストを構築する</h3>
+<ul>
+<li>アプリケーション側にCI/CDを構築する
+<ul>
+<li>全てを自動化しようとはしない
+<ul>
+<li>「可視化画像を自動で生成 -&gt; 人力の確認をする」ぐらいのセミオートを目指す</li>
+</ul>
+</li>
+<li>バージョンの前後変化を確認できるようにして、MLモデルの品質が確認されてから本番投入されるような仕組みを整える</li>
+<li>もし閾値のようなものを設定できる場合、検証セットで緩やかな閾値＋前バージョンと比較する厳しめの閾値、のようなものが設定できるとbetter</li>
+<li>「アプリケーションとしてNGになるケースを弾く」をメインに結合テストを組む
+<ul>
+<li>NGになっていけない条件があれば、そのインテグレーションテストを実装する</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="44-運用開始">4.4. 運用開始</h4>
+<ul>
+<li>運用をしてみて改良をする</li>
+</ul>
+<h2 id="5-自分たちのデータセットを構築する">5. 自分たちのデータセットを構築する</h2>
+<h3 id="51-datasetの定義">5.1. datasetの定義</h3>
+<ul>
+<li>dataset schema を作成する
+<ul>
+<li>今後みんなが参照するインターフェイスになるので、設計は慎重に</li>
+</ul>
+</li>
+<li>survey
+<ul>
+<li>デファクトスタンダードになっている dataset schema に沿うだけで、様々なOSSの恩恵を受けられる</li>
+</ul>
+</li>
+<li>schemaでは、想定する値についても定義
+<ul>
+<li>例えば0にならない値であれば、そのような定義もschemaに定義</li>
+<li>監視システム側でこの値の定義から逸脱した時にはアラートを鳴らすようにできる</li>
+</ul>
+</li>
+</ul>
+<h3 id="52-dataset-schema-versioning-の定義">5.2. dataset schema versioning の定義</h3>
+<ul>
+<li>dataset schema の versioning を開始する
+<ul>
+<li><code>dataset_schema_version: X.Y.Z</code> のように定義して、schemaの変更があるたびにversionを上げていく</li>
+</ul>
+</li>
+<li>X: スキーマの追加・削除・要素の破壊的変更（型の変更など）を行った時に X -&gt; X+1
+<ul>
+<li>Xが上がった時はデータセットに破壊的変更が入っているので、すべてのデータセットを更新する必要がある</li>
+</ul>
+</li>
+<li>Y: 要素の非破壊的変更を行った時に Y -&gt; Y+1
+<ul>
+<li>Yが上がった場合にはデータセットの更新はしなくても、ML 基盤ソフトウェアは稼働できる</li>
+<li>一方で学習モデルの性能に影響する変更もある場合は、できるだけ早めに対象のデータセットだけではなく、すべてのデータセットを新しいフォーマットに更新する必要がある</li>
+</ul>
+</li>
+<li>Z: アノテーションの仕方の仕様が変わった場合はZ -&gt; Z+1
+<ul>
+<li>例：2D detection のタスクにおいて、タブレットPCをlaptopでアノテーションしていたが、smartphone classでアノテーションに変更した</li>
+<li>スキーマ自体は変わっていないものの、作られるデータセットの仕様が変わるものになる</li>
+</ul>
+</li>
+</ul>
+<h3 id="53-document作成">5.3. Document作成</h3>
+<ul>
+<li>ML 基盤ソフトウェアにドキュメントを用意する
+<ul>
+<li>「〜アノテーションの仕様はどうなっていますか？」に対して「ここを見てください」と返せるようにする</li>
+<li>ドキュメントはgitで管理されるべきなのでgithub側で管理する</li>
+</ul>
+</li>
+</ul>
+<h3 id="54-dataset-apiを作成する">5.4. Dataset APIを作成する</h3>
+<ul>
+<li><a href="https://github.com/cocodataset/cocoapi">https://github.com/cocodataset/cocoapi</a> のようにデータセットを扱うライブラリを構築する</li>
+</ul>
+<h3 id="55-データセットを構築する">5.5. データセットを構築する</h3>
+<ul>
+<li>データセットストレージを用意する
+<ul>
+<li>S3やクラウドストレージに保存</li>
+<li>データベースを用意するだけの余力がエンジニアにある場合は構築する</li>
+</ul>
+</li>
+<li>アノテーションツールの選定</li>
+<li>データセット構築パイプラインを作る</li>
+</ul>
+<h3 id="56-自分たちのデータセットを使って学習をする">5.6. 自分たちのデータセットを使って学習をする</h3>
+<ul>
+<li>configの作成</li>
+<li>学習、評価</li>
+<li>新しい version の release</li>
+</ul>
+<h2 id="6-data-drivenな開発によって性能を上げる">6. Data-drivenな開発によって性能を上げる</h2>
+<ul>
+<li>簡易MLOpsシステムを用いて、運用する
+<ul>
+<li>「バグ報告・解析 -&gt; データセット化 -&gt; 再学習してモデルをreleaseする -&gt; アプリケーション側の修正 -&gt; アプリケーションをrelease」というサイクルの構築を目指す</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-projectへ提供するモデルの性能をあげるためのmlops-pipeline開発">7. Projectへ提供するモデルの性能をあげるためのMLOps pipeline開発</h2>
+<h3 id="71-model-versioning-の構築">7.1. Model versioning の構築</h3>
+<ul>
+<li><code>{algorithm}-{option}/{model_scope}/{version}</code> とModelを定義し、一意に定まるようにする
+<ul>
+<li><code>{algorithm}</code> アルゴリズムの名前、基本的に論文などで扱われる名前を指す</li>
+<li><code>{option}</code> アルゴリズムに付随する様々なオプションを表す</li>
+<li><code>{model_scope}</code>
+<ul>
+<li><code>base</code>: Base model は、幅広いプロジェクトで利用可能な汎用モデル</li>
+<li><code>{project_name}</code>: Project model は、特定のprojectに用いるモデル
+<ul>
+<li>Project用のデータセットなどでfine-tuningを行うことで、projectにとって最高性能のモデルを得る</li>
+</ul>
+</li>
+<li><code>pretrained</code>: (Option) Pre-trained modelは、base model の汎化性能を高めるために作られるモデル</li>
+</ul>
+</li>
+<li><code>{version}</code>
+<ul>
+<li>semantic versionによって管理される</li>
+<li>各 model scopeごとにversioningは異なる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pre-trained model
+<ul>
+<li><code>{algorithm}-{option}/pretrained/{date}</code> で管理</li>
+</ul>
+</li>
+<li>Base model
+<ul>
+<li><code>{algorithm}-{option}/base/X.Y</code> で管理</li>
+<li>X: application側にとっての major model version
+<ul>
+<li>前処理後処理の変更に伴ってモデルの入力や出力が変更、層の種類を変更してアーキテクチャが変更、などからapplication側の変更も伴う場合には major versionを上げる</li>
+</ul>
+</li>
+<li>Y: Base model の minor version（学習設定のバージョン）
+<ul>
+<li>学習パラメータ、使用データセットの変更が含まれる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>project model
+<ul>
+<li><code>{algorithm}-{option}/{project_name}/X.Y.Z</code> で管理</li>
+<li><code>X.Y</code>：対応する base modelのバージョン</li>
+<li><code>Z</code>：Projectモデルのバージョン（同一 base modelに対する更新回数）</li>
+</ul>
+</li>
+</ul>
+<h3 id="72-fine-tuning-pipelineの構築">7.2. fine-tuning pipelineの構築</h3>
+<ul>
+<li>fine-tuning用のscriptやconfigをML基盤ソフトウェアに用意する</li>
+</ul>
+<h2 id="8-モデルの性能を上げる">8. モデルの性能を上げる</h2>
+<ul>
+<li>不必要なinputや不必要なレイヤーが無いか探索する</li>
+<li>Auto labelingを用いてpre-trained modelの汎化性能を向上させる</li>
+<li>Distillationを用いて性能を向上させる</li>
+<li>学習の自動パラメータチューニング</li>
+<li>新しいアルゴリズムの開発
+<ul>
+<li>工数かかるわりに性能向上が少し、みたいなケースがよくあるので注意</li>
+</ul>
+</li>
+</ul>
+<h2 id="9-以降">9. 以降</h2>
+<ul>
+<li>チームの大規模化</li>
+<li>
+<ol>
+<li>データ基盤を構築する</li>
+</ol>
+<ul>
+<li>DBを構築する</li>
+<li>データセット作成パイプライン</li>
+<li>log 監視システム</li>
+</ul>
+</li>
+<li>
+<ol start="2">
+<li>アプリケーション側の評価システムの構築</li>
+</ol>
+<ul>
+<li>KPIの設定</li>
+<li>評価用データセットの構築</li>
+<li>評価libraryの構築</li>
+</ul>
+</li>
+<li>
+<ol start="3">
+<li>Data drivenな開発でさらに性能を上げる</li>
+</ol>
+<ul>
+<li>低品質なデータを弾く仕組みの構築</li>
+<li>データ品質の向上</li>
+<li>Data-mining システム の構築</li>
+<li>Data drivenな開発</li>
+</ul>
+</li>
+<li>
+<ol start="4">
+<li>自動学習パイプラインの構築</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>実験管理を始める</li>
+</ol>
+</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>
