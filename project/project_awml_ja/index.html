@@ -28,7 +28,7 @@
 
     
         <meta property="og:title" content="AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software" />
-<meta property="og:description" content="Summary TIER IV, Inc. における成果 Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 ロボティクス分野におけるMLOpsを支援するフレームワーク「AWML」を開発。 自律走行向けの機械学習インフラと" />
+<meta property="og:description" content="Summary TIER IV, Inc. における成果 自動運転の訓練から運用まで対応するソフトウェア基盤を、OSSとして開発 AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 AWMLの全" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://scepter914.github.io/project/project_awml_ja/" /><meta property="article:section" content="project" />
 <meta property="article:published_time" content="2025-06-21T12:00:00+09:00" />
@@ -40,7 +40,7 @@
     
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software"/>
-<meta name="twitter:description" content="Summary TIER IV, Inc. における成果 Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 ロボティクス分野におけるMLOpsを支援するフレームワーク「AWML」を開発。 自律走行向けの機械学習インフラと"/>
+<meta name="twitter:description" content="Summary TIER IV, Inc. における成果 自動運転の訓練から運用まで対応するソフトウェア基盤を、OSSとして開発 AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 AWMLの全"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -130,6 +130,8 @@
             <nav id="TableOfContents">
   <ul>
     <li><a href="#summary">Summary</a></li>
+    <li><a href="#awml-an-open-source-ml-based-robotics-perception-framework-to-deploy-for-ros-based-autonomous-driving-software">AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</a></li>
+    <li><a href="#domain-adaptation-for-different-sensor-configurations-in-3d-object-detection">Domain Adaptation for Different Sensor Configurations in 3D Object Detection</a></li>
   </ul>
 </nav>
         
@@ -145,8 +147,13 @@
     <h2 id="summary">Summary</h2>
 <ul>
 <li>TIER IV, Inc. における成果</li>
+<li>自動運転の訓練から運用まで対応するソフトウェア基盤を、OSSとして開発</li>
+</ul>
+<h2 id="awml-an-open-source-ml-based-robotics-perception-framework-to-deploy-for-ros-based-autonomous-driving-software">AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software</h2>
+<ul>
 <li>Repository: <a href="https://github.com/tier4/AWML">https://github.com/tier4/AWML</a></li>
 <li>arXiv paper: <a href="https://arxiv.org/abs/2506.00645">https://arxiv.org/abs/2506.00645</a></li>
+<li>AWMLの全体設計について</li>
 </ul>
 <div style="text-align:center">
 <img src=https://raw.githubusercontent.com/tier4/AWML/4ec9ca2bbefb0f8bb95496280fa58c093484d5f1/docs/fig/AWML.drawio.svg width="600px">
@@ -154,6 +161,14 @@
 <p>ロボティクス分野におけるMLOpsを支援するフレームワーク「AWML」を開発。
 自律走行向けの機械学習インフラとして、モデルのデプロイ機能に加え、auto labeling, semi-auto labeling, data-miningを組み込んだactive learningのパイプラインを構築。
 ソフトウェア全体の設計と運用戦略を策定し、自社データセットを用いたモデルのベンチマーク評価を実施した。</p>
+<h2 id="domain-adaptation-for-different-sensor-configurations-in-3d-object-detection">Domain Adaptation for Different Sensor Configurations in 3D Object Detection</h2>
+<ul>
+<li>arXiv paper: <a href="https://arxiv.org/abs/2506.00645">https://arxiv.org/abs/2506.00645</a></li>
+<li>異なるセンサへのドメインアダプテーションに関する実験</li>
+</ul>
+<img src=https://scepter914.github.io/pic/concept_fine_tuning.png width="700px">
+<p>本研究では異なるセンサ構成間にまたがる3D物体検出のドメイン適応に取り組み、Downstream Fine-tuning（マルチデータセット学習後のデータセット固有の微調整）と、Partial Layer Fine-tuning（一部の層のみを更新して構成間の汎化を高める）を提案した。
+同一の地理領域で複数のセンサ構成により収集したペアデータセットを用いて、これらを組み合わせた共同学習は、各構成に対する素朴な共同学習を一貫して上回ることを示し、多様な車両プラットフォームへ3D物体検出モデルを適応させるうえで実用的かつスケーラブルな解決策を提供している。</p>
 
 </article>
 </div>

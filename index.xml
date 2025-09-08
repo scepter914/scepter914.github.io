@@ -6,7 +6,16 @@
     <description>Recent content in About me on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jul 2025 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Sep 2025 12:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me (Japanese)</title>
+      <link>https://scepter914.github.io/project/aboutmeja/</link>
+      <pubDate>Sun, 07 Sep 2025 12:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
+      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; X: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 &amp;nbsp;&amp;nbsp; Linkedin: @scepter914 Work Experience 2025/08- フリーランスエンジニア 2020/04-2025/07 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補</description>
+    </item>
+    
     <item>
       <title>Minimal MLOps Checklist</title>
       <link>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</guid>
       <description>Minimal MLOps Checklist 概要 自分用のメモ 1人や少人数で機械学習を用いた事業を立ち上げるときに、MLOpsに最低限必要な設計・実装タスクを並べたチェックリスト コ</description>
-    </item>
-    
-    <item>
-      <title>About me (Japanese)</title>
-      <link>https://scepter914.github.io/project/aboutmeja/</link>
-      <pubDate>Tue, 22 Jul 2025 12:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/project/aboutmeja/</guid>
-      <description>Biography Profile 田中 敬(たなか さとし) &amp;nbsp;&amp;nbsp; X: @scepter914 &amp;nbsp;&amp;nbsp; Github: @scepter914 &amp;nbsp;&amp;nbsp; Linkedin: @scepter914 Work Experience 2025/08- フリーランスエンジニア 2020/04-2025/07 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Sat, 21 Jun 2025 12:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/project_awml/</guid>
-      <description>Summary  Worked on TIER IV, Inc. Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645   In this paper, we introduce AWML, a framework designed to support MLOps for robotics. AWML provides a machine learning infrastructure for autonomous driving, supporting not only the deployment of trained models to robotic systems, but also an active learning pipeline that incorporates auto-labeling, semi-auto-labeling, and data mining techniques. We explain the whole design of software and strategy for robotics MLOps and show the benchmark our models on our datasets.</description>
+      <description>Summary  Worked on TIER IV, Inc. We developed software frameworks from training to deploy for autonomous driving as OSS projects.  AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software  Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 This paper write the whole design of AWML.   In this paper, we introduce AWML, a framework designed to support MLOps for robotics. AWML provides a machine learning infrastructure for autonomous driving, supporting not only the deployment of trained models to robotic systems, but also an active learning pipeline that incorporates auto-labeling, semi-auto-labeling, and data mining techniques.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Sat, 21 Jun 2025 12:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/project/project_awml_ja/</guid>
-      <description>Summary TIER IV, Inc. における成果 Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 ロボティクス分野におけるMLOpsを支援するフレームワーク「AWML」を開発。 自律走行向けの機械学習インフラと</description>
+      <description>Summary TIER IV, Inc. における成果 自動運転の訓練から運用まで対応するソフトウェア基盤を、OSSとして開発 AWML: An Open-Source ML-based Robotics Perception Framework to Deploy for ROS-based Autonomous Driving Software Repository: https://github.com/tier4/AWML arXiv paper: https://arxiv.org/abs/2506.00645 AWMLの全</description>
     </item>
     
     <item>
