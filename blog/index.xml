@@ -6,7 +6,26 @@
     <description>Recent content in Blogs on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Aug 2025 09:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jan 2026 01:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ml-cellar: A Minimal MLOps Model Management CLI</title>
+      <link>https://scepter914.github.io/blog/2026/20260124_ml_cellar_en/</link>
+      <pubDate>Sun, 18 Jan 2026 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2026/20260124_ml_cellar_en/</guid>
+      <description>ml-cellar: A Minimal MLOps Model Management CLI Summary  Released ml-cellar, a &amp;ldquo;Model Management CLI for Minimal MLOps,&amp;rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving.  &amp;ndash;
+Background In the operation of ML models, the &amp;ldquo;management of deliverables such as trained models&amp;rdquo; is more effective than the training code itself. Where are the weights for which experiment?</description>
+    </item>
+    
+    <item>
+      <title>ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した</title>
+      <link>https://scepter914.github.io/blog/2026/20260124_ml_cellar/</link>
+      <pubDate>Sun, 18 Jan 2026 01:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/blog/2026/20260124_ml_cellar/</guid>
+      <description>ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した Summary 「Minimal MLOpsを回すためのモデル管理CLI」として、ml-cellar をR</description>
+    </item>
+    
     <item>
       <title>Minimal MLOps Checklist</title>
       <link>https://scepter914.github.io/blog/2025/20250811_mininal_mlops/</link>

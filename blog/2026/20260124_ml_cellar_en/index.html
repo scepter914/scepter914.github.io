@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ml-cellar: A Minimal MLOps Model Management CLI - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="ml-cellar: A Minimal MLOps Model Management CLI" />
+<meta property="og:description" content="ml-cellar: A Minimal MLOps Model Management CLI Summary  Released ml-cellar, a &ldquo;Model Management CLI for Minimal MLOps,&rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving.  &ndash;
+Background In the operation of ML models, the &ldquo;management of deliverables such as trained models&rdquo; is more effective than the training code itself. Where are the weights for which experiment?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2026/20260124_ml_cellar_en/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2026-01-18T01:00:00+09:00" />
+<meta property="article:modified_time" content="2026-01-18T01:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ml-cellar: A Minimal MLOps Model Management CLI"/>
+<meta name="twitter:description" content="ml-cellar: A Minimal MLOps Model Management CLI Summary  Released ml-cellar, a &ldquo;Model Management CLI for Minimal MLOps,&rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving.  &ndash;
+Background In the operation of ML models, the &ldquo;management of deliverables such as trained models&rdquo; is more effective than the training code itself. Where are the weights for which experiment?"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+    
+        
+        
+            <script defer src="https://scepter914.github.io/js/builtin-copy.56e07a74dd440b068ab36af35542ed8960865686c19fb809f38436877ac081570612cc8a913650b0c0e3073a336680c5df960e73bf7b1de83dc6aa996f2db858.js" integrity="sha512-VuB6dN1ECwaKs2rzVULtiWCGVobBn7gJ84Q2h3rAgVcGEsyKkTZQsMDjBzozZoDF35YOc797Heg9xqqZby24WA=="></script>
+        
+    
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#about-ml-cellar">About <code>ml-cellar</code></a></li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#creating-a-repository">Creating a Repository</a></li>
+        <li><a href="#committing-deliverables">Committing Deliverables</a></li>
+        <li><a href="#distributing-deliverables">Distributing Deliverables</a></li>
+        <li><a href="#maintaining-the-repository">Maintaining the Repository</a></li>
+        <li><a href="#document-preparation">Document Preparation</a></li>
+        <li><a href="#project-operation">Project Operation</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-plans">Future Plans</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="ml-cellar-a-minimal-mlops-model-management-cli">ml-cellar: A Minimal MLOps Model Management CLI</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Released <code>ml-cellar</code>, a &ldquo;Model Management CLI for Minimal MLOps,&rdquo; written in Rust as OSS.</li>
+<li>Among the software supporting the <a href="https://scepter914.github.io/blog/2025/20250811_mininal_mlops/">Minimal MLOps Checklist</a>, it is responsible for model management and model serving.</li>
+</ul>
+<p>&ndash;</p>
+<h2 id="background">Background</h2>
+<p>In the operation of ML models, the &ldquo;management of deliverables such as trained models&rdquo; is more effective than the training code itself.
+Where are the weights for which experiment? How do you reproduce it? Who should use which model? Which model was used as the base for fine-tuning?
+For this management of ML models, the concept of &ldquo;MLOps (Machine Learning Operations)&rdquo; was born.
+It is a general term for the systems, culture, and technologies to not only &ldquo;make&rdquo; machine learning models but also to &ldquo;operate them safely, stably, and continuously to keep providing value.&rdquo;
+It is an extension of DevOps (integration of development and operations) tailored to the specific challenges of machine learning (data, reproducibility, degradation, monitoring, etc.).</p>
+<p>On the other hand, building this &ldquo;MLOps&rdquo; requires many MLOps engineers, resulting in significant costs.
+MLOps moves in the &ldquo;right&rdquo; direction the more it leans toward being full-stack: experiment management, metadata, model registries, artifact stores, serving, monitoring, and so on. However, its overall picture demands high costs and operational loads.
+While huge MLOps infrastructures are maintained at BigTech (I assume), all companies, especially small startups and research teams, often cannot pay the cost required to have an MLOps infrastructure.</p>
+<p>In reality, there are many &ldquo;light needs&rdquo; for MLOps such as:</p>
+<ul>
+<li>Research-oriented, where sharing experiment results (weights and settings) is enough.</li>
+<li>Contract/Product-based, where you want to distribute fine-tuned models for multiple projects.</li>
+<li>Simply wanting a &ldquo;place for models&rdquo; and &ldquo;minimum rules&rdquo; for now.</li>
+</ul>
+<p>I wrote the <a href="https://scepter914.github.io/blog/2025/20250811_mininal_mlops/">Minimal MLOps Checklist(Japanese article)</a> for those &ldquo;light needs,&rdquo; and this time, I created software to support Minimal MLOps.
+In the context of MLOps, many aim for full automation, but to reduce costs, <code>ml-cellar</code> emphasizes getting minimum operations running immediately by using manual CLI operations.</p>
+<p>Existing services include wandb (Weights &amp; Biases). While artifact management is possible with wandb, <code>ml-cellar</code> prioritizes &ldquo;storing models and keeping them in a state where they are ready for use at any time.&rdquo;
+Our policy is not to &ldquo;search for models buried among a massive amount of experiments,&rdquo; but rather to &ldquo;save only the high-performing models and make them accessible to anyone.&rdquo;
+The intended workflow is to manage experiment tracking loosely on wandb under individual responsibility, while handling model storage and serving meticulously on <code>ml-cellar</code> as a team responsibility.
+Additionally, <code>ml-cellar</code> has the advantage of not requiring any modifications to your training code, making it easier to start model management immediately compared to wandb.</p>
+<p>&ndash;</p>
+<h2 id="about-ml-cellar">About <code>ml-cellar</code></h2>
+<p>Instead of providing a service like MLflow, I decided to provide <code>ml-cellar</code> as a Rust CLI that makes it easy to handle a minimal model registry based on Git LFS.
+It is not an &ldquo;all-in-one&rdquo; like MLflow, but aims for a &ldquo;compromised MLOps&rdquo; focused only on truly necessary functions.
+By using Git LFS, the learning cost to understand the structure is low, and I aimed for a configuration that is unlikely to become technical debt.
+Also, since it basically wraps git and git-lfs commands, operation is possible even without <code>ml-cellar</code> (using <code>ml-cellar</code> just makes it easier).
+Therefore, I believe it can be a configuration that avoids vendor lock-in and makes operations robust.</p>
+<p>In <code>ml-cellar</code>, model deliverables are managed like a &ldquo;wine cellar&rdquo; using rack (shelf) and bin (bottle).
+Below is an example of a rack:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">model_registry_repository/</span> <span style="color:#75715e"># repository (called a model registry)</span>
+  <span style="color:#ae81ff">vit-l/</span> <span style="color:#75715e"># rack (type of model deliverable, equivalent to a grape variety in wine)</span>
+    <span style="color:#ae81ff">0.1</span><span style="color:#ae81ff">/</span> <span style="color:#75715e"># bin (a set of versioned model deliverables, equivalent to a vintage in wine)</span>
+      <span style="color:#75715e"># config files, weight files, logs, etc.</span>
+      <span style="color:#ae81ff">config.yaml</span>
+      <span style="color:#ae81ff">checkpoint.pth</span>
+      <span style="color:#ae81ff">result.json</span>
+      <span style="color:#ae81ff">log.log</span>
+    <span style="color:#ae81ff">0.2</span><span style="color:#ae81ff">/</span>
+      <span style="color:#ae81ff">...</span>
+  <span style="color:#ae81ff">vit-m/</span>
+    <span style="color:#ae81ff">...</span>
+</code></pre></div><p>In this case, a model can be uniquely identified by a name like &ldquo;vit-l/0.2,&rdquo; making distribution and reference easier.
+For distribution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar clone <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+ml-cellar download <span style="color:#f92672">{</span>path to a directory or a file<span style="color:#f92672">}</span>
+</code></pre></div><p>This is how you get the files.</p>
+<p>Also, by using GitHub as the remote repository for Git LFS, you can develop using Pull Requests for model uploads.
+The flow of &ldquo;development,&rdquo; &ldquo;review,&rdquo; and &ldquo;approval&rdquo; can be performed with an interface familiar to many software engineers, reducing the work cost and psychological cost for engineers.
+Permission management is also tied simply to GitHub accounts.</p>
+<p>&ndash;</p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>For details, see the <a href="https://github.com/scepter914/ml-cellar-rs?tab=readme-ov-file#1-install">README</a>.</li>
+<li>Note that GitHub LFS has limits on storage/bandwidth; exceeding them will result in additional charges or restrictions.
+<ul>
+<li>Please note that the user is responsible for costs incurred by exceeding Git LFS limits.</li>
+</ul>
+</li>
+</ul>
+<h3 id="creating-a-repository">Creating a Repository</h3>
+<ul>
+<li>Install GitLFS</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get update
+sudo apt-get install git-lfs
+git lfs install
+</code></pre></div><ul>
+<li>Install Rust</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl https://sh.rustup.rs -sSf | sh
+</code></pre></div><ul>
+<li>Install <code>ml-cellar</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cargo install ml-cellar
+</code></pre></div><ul>
+<li>Create a Model registry</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+cd <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+ml-cellar init
+</code></pre></div><ul>
+<li>Register the remote repository</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git remote add origin <span style="color:#f92672">{</span>remote_repository<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>Determine LFS targets in .gitattributes</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># --- Log ---
+*.log   filter=lfs diff=lfs merge=lfs -text
+
+# --- Your data ---
+*.db    filter=lfs diff=lfs merge=lfs -text
+</code></pre></div><ul>
+<li>Create a rack (a &ldquo;shelf&rdquo; for each model)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar rack <span style="color:#f92672">{</span>my_algorithm<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>Structure of a rack</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{your_ml_registry}/
+  {my_algorithm}/
+    README.md
+    config.toml
+    template.md
+</code></pre></div><ul>
+<li>Define &ldquo;required deliverables&rdquo; in config.toml
+<ul>
+<li>required_files: Files that must be present</li>
+<li>optional_files: Files that may be uploaded (&quot;*&quot; for anything)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">artifact</span>]
+<span style="color:#a6e22e">required_files</span> = [<span style="color:#e6db74">&#34;config.yaml&#34;</span>, <span style="color:#e6db74">&#34;checkpoint.pth&#34;</span>]
+<span style="color:#a6e22e">optional_files</span> = [<span style="color:#e6db74">&#34;*&#34;</span>]
+</code></pre></div><ul>
+<li>Create README.md
+<ul>
+<li>Including information such as model purpose, training data, precautions, recommended use cases, and compatible tasks will help people who search for it later.</li>
+</ul>
+</li>
+</ul>
+<h3 id="committing-deliverables">Committing Deliverables</h3>
+<ul>
+<li>Commit the model and create a PR</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Create a branch</span>
+git sw -c feat/my_algorithm/0.1
+
+<span style="color:#75715e"># Check if deliverables are complete</span>
+ml-cellar check <span style="color:#f92672">{</span>my_algorithm<span style="color:#f92672">}</span>/0.1/
+
+<span style="color:#75715e"># Commit</span>
+git add <span style="color:#f92672">{</span>path<span style="color:#f92672">}</span>
+git commit -m <span style="color:#e6db74">&#34;{commit message}&#34;</span>
+
+<span style="color:#75715e"># Push to the remote repository</span>
+ml-cellar push origin HEAD
+</code></pre></div><h3 id="distributing-deliverables">Distributing Deliverables</h3>
+<ul>
+<li>clone</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar clone <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>Immediately after cloning, the Git LFS files are not yet materialized, so you materialize them.
+<ul>
+<li>The operation of &ldquo;materializing only what is necessary&rdquo; allows you to reduce capacity by not materializing unnecessary items even as models increase.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar download <span style="color:#f92672">{</span>path to a directory or a file<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="maintaining-the-repository">Maintaining the Repository</h3>
+<p>When using GitHub Git LFS, you can use GitHub&rsquo;s features as they are.
+The following features are particularly useful:</p>
+<ul>
+<li>Pull Request</li>
+</ul>
+<p>By using GitHub as the remote repository for Git LFS, you can manage model uploads with a Pull Request-based workflow.
+Since you can realize the flow of &ldquo;development → review → approval&rdquo; on an interface familiar to many software engineers, you can reduce not only the actual work cost but also the psychological burden on engineers.</p>
+<ul>
+<li>CODEOWNER</li>
+</ul>
+<p>It is also possible to set CODEOWNERS for each rack/model name to protect each rack.
+Below is an example of <code>.github/CODEOWNERS</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">/vit/            @cv-team
+/llm-model/      @llm-team
+/**/project_A/   @project_A
+</code></pre></div><p>This allows for control such that models for a project are reviewed by the people operating that project, while base models are reviewed by the R&amp;D team.</p>
+<p>Also, by combining with branch protection / Rulesets, the operation can be made even more robust:</p>
+<ul>
+<li>Make PRs mandatory</li>
+<li>Set the required number of approvals (N people)</li>
+<li>Make CODEOWNERS approval mandatory</li>
+</ul>
+<p>These can prevent models from being added or replaced without being noticed.
+There are more features; for details, see the <a href="https://github.com/scepter914/ml-cellar-rs/blob/main/docs/docs_github.md">documentation</a>.</p>
+<h3 id="document-preparation">Document Preparation</h3>
+<p>In practice, writing evaluation results entirely by hand is costly.
+Also, summarizing them in spreadsheets makes it difficult to link results to which model they belong to.
+By putting information you want to write in the README into a JSON file in the training code, <code>ml-cellar</code> supports semi-automation to automatically create evaluation results from a template file.</p>
+<p>If you create a template like the following and run a command like <code>ml-cellar docs test_registry/test_docs/base/0.1/</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">### {{version}}
+
+- Write the summary for the model
+- Why you updated the model
+- What dataset you added
+- What you fixed in the algorithm
+- What you updated in training parameters
+
+&lt;details&gt;
+&lt;summary&gt; Evaluation results &lt;/summary&gt;
+
+- Performance
+  - Device: {performance.device}
+  - Inference time(ms): {performance.time_ms}
+  - Training time: {performance.gpu_num} GPU * {performance.batch_size} Batchsize * {performance.training_days} days
+- Dataset
+  - name: {dataset.name}
+  - Version: {dataset.version}
+  - Frame number: {dataset.frame_number}
+- mAP for test dataset
+
+| Metric         | Value              |
+| -------------- | ------------------ |
+| mAP (0.5:0.95) | {ap.map.50_95.all} |
+| mAP (0.5)      | {ap.map.50.all}    |
+
+- Per-Class AP for test dataset
+
+| Class   | Samples                                  | Accuracy               |
+| ------- | ---------------------------------------- | ---------------------- |
+| person  | {test_dataset.per_class_samples.person}  | {ap.per_class.person}  |
+| bicycle | {test_dataset.per_class_samples.bicycle} | {ap.per_class.bicycle} |
+| car     | {test_dataset.per_class_samples.car}     | {ap.per_class.car}     |
+| dog     | {test_dataset.per_class_samples.dog}     | {ap.per_class.dog}     |
+
+&lt;/details&gt;
+</code></pre></div><p>It outputs the following document to the standard output. By pasting this into the README, you can create documentation at a low cost:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">### test_docs/base/0.1
+
+- Write the summary for the model
+- Why you updated the model
+- What dataset you added
+- What you fixed in the algorithm
+- What you updated in training parameters
+
+&lt;details&gt;
+&lt;summary&gt; Evaluation results &lt;/summary&gt;
+
+- Performance
+  - Device: RTX4090
+  - Inference time(ms): 7.87
+  - Training time: 2 GPU * 32 Batchsize * 4.7 days
+- Dataset
+  - name: myCOCO
+  - Version: 2.1.1
+  - Frame number: 21321
+- mAP for test dataset
+
+| Metric         | Value      |
+| -------------- | ---------- |
+| mAP (0.5:0.95) | 0.40453625 |
+| mAP (0.5)      | 0.598      |
+
+- Per-Class AP for test dataset
+
+| Class   | Samples | Accuracy |
+| ------- | ------- | -------- |
+| person  | 647     | 0.5517   |
+| bicycle | 916     | 0.2899   |
+| car     | 663     | 0.3941   |
+| dog     | 988     | 0.586    |
+</code></pre></div><p>For details, see <a href="https://github.com/scepter914/ml-cellar-rs/blob/main/docs/docs_template.md">Documentation using template.md</a>.</p>
+<h3 id="project-operation">Project Operation</h3>
+<p>In practice, you might want to separate:</p>
+<ul>
+<li>Models fine-tuned for Project A</li>
+<li>Models fine-tuned with different data for Project B</li>
+</ul>
+<p><code>ml-cellar</code> also provides the concept of project-based model registries to support management on a per-project basis.
+For details, see the <a href="https://github.com/scepter914/ml-cellar-rs/blob/main/docs/project_based_model_registry.md">documentation</a>.</p>
+<p>&ndash;</p>
+<h2 id="future-plans">Future Plans</h2>
+<p>As a current constraint, GitHub LFS is not infinite.</p>
+<ul>
+<li>Storage limit</li>
+<li>Bandwidth (download) limit</li>
+<li>Additional charges or restrictions when exceeded</li>
+</ul>
+<p>In <code>ml-cellar</code>, we plan to design it to offload to S3 or elsewhere with a Custom Transfer Agent (not yet implemented).</p>
+<p>As current operation measures:</p>
+<ul>
+<li>Narrow down LFS targets to truly necessary deliverables.</li>
+<li>Keep checkpoints to &ldquo;best only&rdquo; (do not save all epochs).</li>
+</ul>
+<p>These are realistic countermeasures.</p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>

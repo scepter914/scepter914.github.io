@@ -1,0 +1,470 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://scepter914.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した - Scepter914 Website</title>
+
+    
+
+    
+
+    
+
+    
+        <meta property="og:title" content="ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した" />
+<meta property="og:description" content="ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した Summary 「Minimal MLOpsを回すためのモデル管理CLI」として、ml-cellar をR" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scepter914.github.io/blog/2026/20260124_ml_cellar/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2026-01-18T01:00:00+09:00" />
+<meta property="article:modified_time" content="2026-01-18T01:00:00+09:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した"/>
+<meta name="twitter:description" content="ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した Summary 「Minimal MLOpsを回すためのモデル管理CLI」として、ml-cellar をR"/>
+
+    <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="https://scepter914.github.io/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://scepter914.github.io/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+    
+        
+        
+            <script defer src="https://scepter914.github.io/js/builtin-copy.56e07a74dd440b068ab36af35542ed8960865686c19fb809f38436877ac081570612cc8a913650b0c0e3073a336680c5df960e73bf7b1de83dc6aa996f2db858.js" integrity="sha512-VuB6dN1ECwaKs2rzVULtiWCGVobBn7gJ84Q2h3rAgVcGEsyKkTZQsMDjBzozZoDF35YOc797Heg9xqqZby24WA=="></script>
+        
+    
+
+
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="https://scepter914.github.io/">Scepter914 Website</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/project/aboutmeja" class="pure-menu-link">About me (Japanese)</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="https://scepter914.github.io/blog" class="pure-menu-link">Blog</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="https://scepter914.github.io/survey" class="pure-menu-link">Survey</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="https://scepter914.github.io/project/aboutmeja">About me (Japanese)</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/blog">Blog</a>
+                </li><li>
+                    <a href="https://scepter914.github.io/survey">Survey</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#ml-cellar-について"><code>ml-cellar</code> について</a></li>
+    <li><a href="#使い方について">使い方について</a>
+      <ul>
+        <li><a href="#リポジトリの作成">リポジトリの作成</a></li>
+        <li><a href="#成果物のコミット">成果物のコミット</a></li>
+        <li><a href="#成果物の配布">成果物の配布</a></li>
+        <li><a href="#リポジトリの整備">リポジトリの整備</a></li>
+        <li><a href="#document整備">Document整備</a></li>
+        <li><a href="#projectの運用">projectの運用</a></li>
+      </ul>
+    </li>
+    <li><a href="#今後について">今後について</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article class="line-numbers">
+    
+    
+    <h1 id="ml-cellar-minimal-mlopsを回すためのモデル管理cliを公開した">ml-cellar: Minimal MLOpsを回すためのモデル管理CLIを公開した</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>「Minimal MLOpsを回すためのモデル管理CLI」として、<code>ml-cellar</code> をRustで作成しOSSにした</li>
+<li><a href="https://scepter914.github.io/blog/2025/20250811_mininal_mlops/">Minimal MLOps Checklist</a> を支援するソフトウェアのうち、モデル管理とモデルServingを担当している</li>
+</ul>
+<p>&ndash;</p>
+<h2 id="背景">背景</h2>
+<p>MLモデルの運用には、学習コードそのもの以上に「学習済モデルなどの成果物の管理」が効いてきます。
+どの実験の重みがどこにあるのか、どうやって再現するのか、誰がどのモデルを使うべきなのか。どのモデルを元にファインチューニングを行ったのか。
+このMLモデルの運用に対して、&ldquo;MLOps (Machine Learning Operations)&rdquo; という概念が生まれました。
+機械学習モデルを「作る」だけでなく、「安全に・安定して・継続的に運用して価値を出し続ける」ための仕組み・文化・技術の総称です。
+DevOps（開発と運用の統合）を、機械学習特有の課題（データ、再現性、劣化、監視など）に合わせて拡張したものです。</p>
+<p>一方でこの&quot;MLOps&quot;を構築するには沢山のMLOpsエンジニアが必要になり、多大なるコストが発生します。
+MLOpsはフルスタックに寄せるほど「正しい」方向に進みます。
+実験管理、メタデータ、モデルレジストリ、アーティファクトストア、サービング、監視、などなど。ただしその全体像はコストと運用負荷を強く要求します。
+BigTechでは巨大なMLOps基盤が整備されている（と思っている）のですが、すべての会社、特に小さなスタートアップや研究チームなどではMLOps基盤を持てるほどのコストを支払えないことが多いです。</p>
+<p>&ldquo;現実的&quot;には、</p>
+<ul>
+<li>研究寄りで、実験結果（重みや設定）さえ共有できれば十分</li>
+<li>受託/プロダクトで、複数案件に対して fine-tune したモデルを配布したい</li>
+<li>まずは「モデルの置き場」と「最低限のルール」だけ欲しい</li>
+</ul>
+<p>といったMLOpsへの「ライトな需要」も多いと考えていました。</p>
+<p>その「ライトな需要」のチェックリストとして <a href="https://scepter914.github.io/blog/2025/20250811_mininal_mlops/">Minimal MLOps Checklist</a> を書いたのですが、今回はMinimal MLOpsを支援するようなソフトウェアを作ってみました。
+MLOpsの文脈では全自動化を目指すものが多いですが、コストを下げるため <code>ml-cellar</code>ではCLIの手動操作にすることで、最低限の運用がすぐに回ることを重視しました。</p>
+<p>既存のサービスとしては、wandb (Weights &amp; Biases) などがあります。
+wandbでもArtifactsの管理は可能ではあるのですが、<code>ml-cellar</code>は「モデルを保管して、いつでも使える状態にしたい」というものを重要視しています。
+「大量の実験に埋もれたモデルを探す」のではなく、「結果の良かったモデルだけを保存して誰でも使える状態にする」方針にしています。
+使い分けとして実験管理はwandbで雑にアップロードしていって個人責任で管理、モデルの保存と提供は<code>ml-cellar</code>でチーム責任で丁寧に管理していく、というのを想定しています。
+また<code>ml-cellar</code>は学習コードに手を加える必要が無いのもメリットで、wandbに比べてすぐにモデル管理を始めることができます。</p>
+<p>&ndash;</p>
+<h2 id="ml-cellar-について"><code>ml-cellar</code> について</h2>
+<p>自分が作った <code>ml-cellar</code> ではMLflowのようなサービスを提供するのではなく、Git LFS を土台にした最小限のモデルレジストリを簡単に扱えるようにするRust製CLIとして提供することにしました。
+MLflowのような&quot;全部入り&quot;ではなく、本当に必要な機能に絞った &ldquo;妥協のMLOps&rdquo; を目指しています。
+Git LFSを用いることで構成を把握するための学習コストが低く、技術負債になりにくい構成を目指しました。
+また基本的に gitコマンドと git lfsコマンドをラッピングしているため、<code>ml-cellar</code> 無しでも運用は可能です（<code>ml-cellar</code>を使ったら楽になるというだけ）。
+そのため、ベンダーロックインになりづらい構成にでき、運用もロバストにできると考えています。</p>
+<p><code>ml-cellar</code> においては、モデル成果物を「ワインセラー」のように rack（棚）とbin（瓶）で管理します。
+以下がrackの例です。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">model_registry_repository/</span> <span style="color:#75715e"># repository（モデルレジストリと呼称）</span>
+  <span style="color:#ae81ff">vit-l/</span> <span style="color:#75715e"># rack （モデル成果物の種類、ワインで言うところの品種に相当）</span>
+    <span style="color:#ae81ff">0.1</span><span style="color:#ae81ff">/</span> <span style="color:#75715e"># bin （バージョン付きのモデル成果物の集合、ワインでいうところのビンテージ）</span>
+      <span style="color:#75715e"># configファイル、重みファイル、ログなど</span>
+      <span style="color:#ae81ff">config.yaml</span>
+      <span style="color:#ae81ff">checkpoint.pth</span>
+      <span style="color:#ae81ff">result.json</span>
+      <span style="color:#ae81ff">log.log</span>
+    <span style="color:#ae81ff">0.2</span><span style="color:#ae81ff">/</span>
+      <span style="color:#ae81ff">...</span>
+  <span style="color:#ae81ff">vit-m/</span>
+    <span style="color:#ae81ff">...</span>
+</code></pre></div><p>このときモデルを「vit-l/0.2」という呼び方で一意に定めることができ、配布や参照が楽になります。
+配布においても、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar clone <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+ml-cellar download <span style="color:#f92672">{</span>path to a directory or a file<span style="color:#f92672">}</span>
+</code></pre></div><p>でファイルが手に入ります。</p>
+<p>またGitLFSのリモートリポジトリとしてGitHubを用いることで、モデルのアップロードに対してPull requestを用いた開発を行うことができます。
+多くのソフトウェアエンジニアにとって慣れたインターフェイスで「開発」「レビュー」「承認」のフローを行うことができ、エンジニア側の作業コスト、心理的コストを下げることができます。
+権限の管理もgithubアカウントに結びつけるだけになります。</p>
+<p>&ndash;</p>
+<h2 id="使い方について">使い方について</h2>
+<ul>
+<li>詳しくは <a href="https://github.com/scepter914/ml-cellar-rs?tab=readme-ov-file#1-install">README</a> 参照</li>
+<li>GitHub LFSは ストレージ/帯域に上限 があるため、超えると追加課金や制限が起きることに注意してください
+<ul>
+<li>Git LFSの上限超過により発生した費用は利用者の責任でお願いします。</li>
+</ul>
+</li>
+</ul>
+<h3 id="リポジトリの作成">リポジトリの作成</h3>
+<ul>
+<li>Install GitLFS</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get update
+sudo apt-get install git-lfs
+git lfs install
+</code></pre></div><ul>
+<li>Install Rust</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl https://sh.rustup.rs -sSf | sh
+</code></pre></div><ul>
+<li>Install <code>ml-cellar</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cargo install ml-cellar
+</code></pre></div><ul>
+<li>Model registryを作成</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+cd <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+ml-cellar init
+</code></pre></div><ul>
+<li>リモートリポジトリ登録</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git remote add origin <span style="color:#f92672">{</span>remote_repository<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>.gitattributesでLFS対象を決める</li>
+</ul>
+<pre tabindex="0"><code># --- Log ---
+*.log   filter=lfs diff=lfs merge=lfs -text
+
+# --- Your data ---
+*.db   filter=lfs diff=lfs merge=lfs -text
+</code></pre><ul>
+<li>rack（モデルごとの「棚」）を作成</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar rack <span style="color:#f92672">{</span>my_algorithm<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>rackの構成</li>
+</ul>
+<pre tabindex="0"><code>{your_ml_registry}/
+  {my_algorithm}/
+    README.md
+    config.toml
+    template.md
+</code></pre><ul>
+<li>config.tomlで「必須成果物」を定義
+<ul>
+<li>required_files：揃っていないといけないファイル</li>
+<li>optional_files：アップロードしても良いファイル（&quot;*&rdquo; で何でも可）</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">artifact</span>]
+<span style="color:#a6e22e">required_files</span> = [<span style="color:#e6db74">&#34;config.yaml&#34;</span>, <span style="color:#e6db74">&#34;checkpoint.pth&#34;</span>]
+<span style="color:#a6e22e">optional_files</span> = [<span style="color:#e6db74">&#34;*&#34;</span>]
+</code></pre></div><ul>
+<li>README.md を作成
+<ul>
+<li>モデルの用途、学習データ、注意点、推奨ユースケース、相性の良いタスクなどが書かれていると、後から探す人にとって助かる情報となります</li>
+</ul>
+</li>
+</ul>
+<h3 id="成果物のコミット">成果物のコミット</h3>
+<ul>
+<li>モデルをコミットし、PRを出す</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># branch作成</span>
+git sw -c feat/my_algorithm/0.1
+
+<span style="color:#75715e"># 成果物が揃っているかチェック</span>
+ml-cellar check <span style="color:#f92672">{</span>my_algorithm<span style="color:#f92672">}</span>/0.1/
+
+<span style="color:#75715e"># Commit</span>
+git add <span style="color:#f92672">{</span>path<span style="color:#f92672">}</span>
+git commit -m <span style="color:#e6db74">&#34;{commit message}&#34;</span>
+
+<span style="color:#75715e"># Remote repository に pushする</span>
+ml-cellar push origin HEAD
+</code></pre></div><h3 id="成果物の配布">成果物の配布</h3>
+<ul>
+<li>clone</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar clone <span style="color:#f92672">{</span>your_ml_registry<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>clone直後はGit LFSのファイルの実体化がされていない状態なので、実態化をします
+<ul>
+<li>「必要なものだけ実体化できる」運用は、モデルが増えてきても余計なものを実体化せず、容量を削減することができます</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ml-cellar download <span style="color:#f92672">{</span>path to a directory or a file<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="リポジトリの整備">リポジトリの整備</h3>
+<p>GitHub Git LFS を用いる場合、GitHubの機能をそのまま用いることができます。
+便利なものとして以下の機能が挙げられます。</p>
+<ul>
+<li>Pull Request</li>
+</ul>
+<p>Git LFS のリモートリポジトリとして GitHub を利用することで、モデルのアップロードを Pull Request ベースのワークフローで管理できます。
+多くのソフトウェアエンジニアにとって馴染みのあるインターフェイス上で「開発 → レビュー → 承認」の流れを実現できるため、エンジニアの実作業コストだけでなく心理的な負担も減らせます。</p>
+<ul>
+<li>CODEOWNER</li>
+</ul>
+<p>また、ラック（rack）/モデル名ごとに CODEOWNERS を設定して、各ラックを保護することも可能です。
+以下は <code>.github/CODEOWNERS</code> の例です</p>
+<pre tabindex="0"><code>/vit/           @cv-team
+/llm-model/     @llm-team
+/**/project_A/  @project_A
+</code></pre><p>プロジェクト用のモデルはプロジェクトを運用している人たちのレビューが入り、基盤モデルはR&amp;Dチームのレビューが入る、といったことが制御できます。</p>
+<p>またブランチ保護 / Rulesets と組み合わせることで、さらに堅牢な運用にできます。</p>
+<ul>
+<li>PR を必須にする</li>
+<li>必要な承認数（N 人）を設定する</li>
+<li>CODEOWNERS の承認を必須にする</li>
+</ul>
+<p>などで、気づかれないままモデルが追加されたり、差し替えられたりすることを防げます。</p>
+<p>他にもありますが、詳しくは<a href="https://github.com/scepter914/ml-cellar-rs/blob/main/docs/docs_github.md">ドキュメント</a>を参照してください</p>
+<h3 id="document整備">Document整備</h3>
+<p>実務上全て手作業で評価結果を書くのはコストがかかります。
+またスプレッドシートなどにまとめていくのも、スプレッドシート上の結果がどのモデルなのかの紐付けが大変です。
+学習側のコードで、READMEに書きたい情報をjsonにいれておくことで、<code>ml-cellar</code> ではtemplateファイルから自動で評価結果を作成する半手動化がサポートされています。</p>
+<p>テンプレートを以下のように作って <code>ml-cellar docs test_registry/test_docs/base/0.1/</code> のようにコマンドをうつと</p>
+<pre tabindex="0"><code>### {{version}}
+
+- Write the summary for the model
+- Why you updated the model
+- What dataset you added
+- What you fixed in the algorithm
+- What you updated in training parameters
+
+&lt;details&gt;
+&lt;summary&gt; Evaluation results &lt;/summary&gt;
+
+- Performance
+  - Device: {performance.device}
+  - Inference time(ms): {performance.time_ms}
+  - Training time: {performance.gpu_num} GPU * {performance.batch_size} Batchsize * {performance.training_days} days
+- Dataset
+  - name: {dataset.name}
+  - Version: {dataset.version}
+  - Frame number: {dataset.frame_number}
+- mAP for test dataset
+
+| Metric         | Value              |
+| -------------- | ------------------ |
+| mAP (0.5:0.95) | {ap.map.50_95.all} |
+| mAP (0.5)      | {ap.map.50.all}    |
+
+- Per-Class AP for test dataset
+
+| Class   | Samples                                  | Accuracy               |
+| ------- | ---------------------------------------- | ---------------------- |
+| person  | {test_dataset.per_class_samples.person}  | {ap.per_class.person}  |
+| bicycle | {test_dataset.per_class_samples.bicycle} | {ap.per_class.bicycle} |
+| car     | {test_dataset.per_class_samples.car}     | {ap.per_class.car}     |
+| dog     | {test_dataset.per_class_samples.dog}     | {ap.per_class.dog}     |
+
+&lt;/details&gt;
+
+</code></pre><p>以下のようなドキュメントを標準出力に流します。これをREADMEに貼り付けることで低コストでドキュメントを作成することができます</p>
+<pre tabindex="0"><code>### test_docs/base/0.1
+
+- Write the summary for the model
+- Why you updated the model
+- What dataset you added
+- What you fixed in the algorithm
+- What you updated in training parameters
+
+&lt;details&gt;
+&lt;summary&gt; Evaluation results &lt;/summary&gt;
+
+- Performance
+  - Device: RTX4090
+  - Inference time(ms): 7.87
+  - Training time: 2 GPU * 32 Batchsize * 4.7 days
+- Dataset
+  - name: myCOCO
+  - Version: 2.1.1
+  - Frame number: 21321
+- mAP for test dataset
+
+| Metric         | Value      |
+| -------------- | ---------- |
+| mAP (0.5:0.95) | 0.40453625 |
+| mAP (0.5)      | 0.598      |
+
+- Per-Class AP for test dataset
+
+| Class   | Samples | Accuracy |
+| ------- | ------- | -------- |
+| person  | 647     | 0.5517   |
+| bicycle | 916     | 0.2899   |
+| car     | 663     | 0.3941   |
+| dog     | 988     | 0.586    |
+</code></pre><p>詳しくは<a href="https://github.com/scepter914/ml-cellar-rs/blob/main/docs/docs_template.md">template.mdを用いたドキュメント化</a>を参照してください</p>
+<h3 id="projectの運用">projectの運用</h3>
+<p>実務で</p>
+<ul>
+<li>案件A向けに fine-tune したモデル</li>
+<li>案件B向けに別のデータで fine-tune したモデル</li>
+</ul>
+<p>を分けたくなることがあるかと思います。
+<code>ml-cellar</code> は project-based model registry の考え方も用意し、案件単位の管理に対応できます。
+詳しくは<a href="https://github.com/scepter914/ml-cellar-rs/blob/main/docs/project_based_model_registry.md">ドキュメント</a>を参照してください</p>
+<p>&ndash;</p>
+<h2 id="今後について">今後について</h2>
+<p>現状の制約として、GitHub LFSは無限でないことが挙げられます。</p>
+<ul>
+<li>ストレージ上限</li>
+<li>帯域（ダウンロード）上限</li>
+<li>超過時の追加課金 or 制限</li>
+</ul>
+<p><code>ml-cellar</code> では Custom Transfer AgentでS3等に逃がす設計にする予定です（まだ未実装です）</p>
+<p>現状の運用としては、</p>
+<ul>
+<li>LFS対象を本当に必要な成果物に絞る</li>
+<li>チェックポイントを “bestだけ” にする（全epoch保存しない）</li>
+</ul>
+<p>あたりが現実的な対策になります。</p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>&copy; scepter914 2019</article>
+</footer>
+
+</main>
+    </body>
+</html>
