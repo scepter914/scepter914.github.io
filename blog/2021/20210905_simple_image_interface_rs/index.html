@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した"/>
 <meta name="twitter:description" content="画像・動画・カメラ入力を扱うインターフェイスのライブラリをRustで作って公開した 概要 動画像処理において、カメラinput・mp4動画・1枚"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -189,25 +188,25 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">||</span> <span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pic&#34;</span> {
-        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_picture(<span style="color:#e6db74">&#34;./data/from_raw.png&#34;</span>);
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;video&#34;</span> {
-        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_video(<span style="color:#e6db74">&#34;./data/random_ball.mp4&#34;</span>);
-    } <span style="color:#66d9ef">else</span> {
-        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_camera(<span style="color:#e6db74">&#34;/dev/video0&#34;</span>, <span style="color:#ae81ff">640</span>, <span style="color:#ae81ff">360</span>, <span style="color:#ae81ff">330</span>);
-        <span style="color:#75715e">// width, height, fps
-</span><span style="color:#75715e"></span>    }
-
-    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> frame_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-    <span style="color:#66d9ef">loop</span> {
-        frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-        <span style="color:#66d9ef">let</span> input_image <span style="color:#f92672">=</span> interface.get_frame();
-        <span style="color:#66d9ef">if</span> input_image.is_none() {
-            <span style="color:#66d9ef">break</span>;
-        }
-        my_image_proc(<span style="color:#f92672">&amp;</span>input_image.unwrap(), frame_index);
-    }
-</code></pre></div><h2 id="利用するcrateのsurvey">利用するCrateのsurvey</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> args.len() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">||</span> <span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pic&#34;</span> {
+</span></span><span style="display:flex;"><span>        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_picture(<span style="color:#e6db74">&#34;./data/from_raw.png&#34;</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">&amp;</span>args[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;video&#34;</span> {
+</span></span><span style="display:flex;"><span>        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_video(<span style="color:#e6db74">&#34;./data/random_ball.mp4&#34;</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        interface <span style="color:#f92672">=</span> SimpleImageInterface::new_camera(<span style="color:#e6db74">&#34;/dev/video0&#34;</span>, <span style="color:#ae81ff">640</span>, <span style="color:#ae81ff">360</span>, <span style="color:#ae81ff">330</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// width, height, fps
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> frame_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>        frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> input_image <span style="color:#f92672">=</span> interface.get_frame();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> input_image.is_none() {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        my_image_proc(<span style="color:#f92672">&amp;</span>input_image.unwrap(), frame_index);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h2 id="利用するcrateのsurvey">利用するCrateのsurvey</h2>
 <h3 id="rscam">rscam</h3>
 <ul>
 <li><a href="https://crates.io/crates/rscam">https://crates.io/crates/rscam</a></li>
@@ -220,28 +219,27 @@
 </li>
 <li>画像処理に使うなら、initializeの時にformatをRGB3にすることに注意</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    camera
-        .start(<span style="color:#f92672">&amp;</span>rscam::Config {
-            interval: (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">50</span>), <span style="color:#75715e">// fps.
-</span><span style="color:#75715e"></span>            resolution: (width, height),
-            format: <span style="color:#a6e22e">b</span><span style="color:#e6db74">&#34;RGB3&#34;</span>,
-            <span style="color:#f92672">..</span>Default::default()
-        })
-        .unwrap();
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    camera
+</span></span><span style="display:flex;"><span>        .start(<span style="color:#f92672">&amp;</span>rscam::Config {
+</span></span><span style="display:flex;"><span>            interval: (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">50</span>), <span style="color:#75715e">// fps.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            resolution: (width, height),
+</span></span><span style="display:flex;"><span>            format: <span style="color:#a6e22e">b</span><span style="color:#e6db74">&#34;RGB3&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">..</span>Default::default()
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>        .unwrap();
+</span></span></code></pre></div><ul>
 <li>画像を取得するところ
 <ul>
 <li>最初の方は速度が出ていないので注意</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> frame <span style="color:#f92672">=</span> camera.capture().unwrap();
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> frame <span style="color:#f92672">=</span> camera.capture().unwrap();
+</span></span></code></pre></div><ul>
 <li>frame to image::RGBImageにはto_vecを用いる</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> rgb_image_2 <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
-</code></pre></div><h3 id="その他crate検討-for-カメラ">その他crate検討 for カメラ</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> rgb_image_2 <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</span></span></code></pre></div><h3 id="その他crate検討-for-カメラ">その他crate検討 for カメラ</h3>
 <ul>
 <li>uvc
 <ul>
@@ -275,40 +273,40 @@
 </li>
 <li>画像の取得に関しては、コメントを追記すると以下の感じになる</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-        <span style="color:#75715e">// ラムダ式
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> receive_and_process_decoded_frames <span style="color:#f92672">=</span>
-            <span style="color:#f92672">|</span>decoder: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> ffmpeg::decoder::Video<span style="color:#f92672">|</span> -&gt; Result<span style="color:#f92672">&lt;</span>(), ffmpeg::Error<span style="color:#f92672">&gt;</span> {
-                <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> decoded <span style="color:#f92672">=</span> Video::empty();
-                <span style="color:#75715e">// 有効フレームかどうか
-</span><span style="color:#75715e"></span>                <span style="color:#75715e">// 最初数フレームは落ちていることもある
-</span><span style="color:#75715e"></span>                <span style="color:#75715e">// frame : ffmpeg::util::frame::video::Video
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">while</span> decoder.receive_frame(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoded).is_ok() {
-                    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> rgb_frame <span style="color:#f92672">=</span> Video::empty();
-                    <span style="color:#75715e">// frameの取り出し
-</span><span style="color:#75715e"></span>                    scaler.run(<span style="color:#f92672">&amp;</span>decoded, <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> rgb_frame)<span style="color:#f92672">?</span>;
-                    save_file(<span style="color:#f92672">&amp;</span>rgb_frame, frame_index).unwrap();
-                    frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-                }
-                Ok(())
-            };
-
-        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> packet_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-        <span style="color:#66d9ef">for</span> (stream, packet) <span style="color:#66d9ef">in</span> ictx.packets() {
-            packet_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-            println!(<span style="color:#e6db74">&#34;packet {}&#34;</span>, packet_index);
-            <span style="color:#75715e">// ビデオの終わりかを判定
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> stream.index() <span style="color:#f92672">==</span> video_stream_index {
-                decoder.send_packet(<span style="color:#f92672">&amp;</span>packet)<span style="color:#f92672">?</span>;
-                <span style="color:#75715e">// ラムダ式に受け渡し
-</span><span style="color:#75715e"></span>                receive_and_process_decoded_frames(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoder)<span style="color:#f92672">?</span>;
-            } <span style="color:#66d9ef">else</span> {
-                println!(<span style="color:#e6db74">&#34;End of video&#34;</span>);
-            }
-        }
-        decoder.send_eof()<span style="color:#f92672">?</span>;
-        receive_and_process_decoded_frames(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoder)<span style="color:#f92672">?</span>;
-</code></pre></div><h3 id="その他crate検討-for-動画">その他crate検討 for 動画</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ラムダ式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> receive_and_process_decoded_frames <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">|</span>decoder: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> ffmpeg::decoder::Video<span style="color:#f92672">|</span> -&gt; Result<span style="color:#f92672">&lt;</span>(), ffmpeg::Error<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> decoded <span style="color:#f92672">=</span> Video::empty();
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// 有効フレームかどうか
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#75715e">// 最初数フレームは落ちていることもある
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#75715e">// frame : ffmpeg::util::frame::video::Video
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#66d9ef">while</span> decoder.receive_frame(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoded).is_ok() {
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> rgb_frame <span style="color:#f92672">=</span> Video::empty();
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">// frameの取り出し
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    scaler.run(<span style="color:#f92672">&amp;</span>decoded, <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> rgb_frame)<span style="color:#f92672">?</span>;
+</span></span><span style="display:flex;"><span>                    save_file(<span style="color:#f92672">&amp;</span>rgb_frame, frame_index).unwrap();
+</span></span><span style="display:flex;"><span>                    frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                Ok(())
+</span></span><span style="display:flex;"><span>            };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> packet_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (stream, packet) <span style="color:#66d9ef">in</span> ictx.packets() {
+</span></span><span style="display:flex;"><span>            packet_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            println!(<span style="color:#e6db74">&#34;packet </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, packet_index);
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// ビデオの終わりかを判定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> stream.index() <span style="color:#f92672">==</span> video_stream_index {
+</span></span><span style="display:flex;"><span>                decoder.send_packet(<span style="color:#f92672">&amp;</span>packet)<span style="color:#f92672">?</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// ラムダ式に受け渡し
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                receive_and_process_decoded_frames(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoder)<span style="color:#f92672">?</span>;
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                println!(<span style="color:#e6db74">&#34;End of video&#34;</span>);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        decoder.send_eof()<span style="color:#f92672">?</span>;
+</span></span><span style="display:flex;"><span>        receive_and_process_decoded_frames(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> decoder)<span style="color:#f92672">?</span>;
+</span></span></code></pre></div><h3 id="その他crate検討-for-動画">その他crate検討 for 動画</h3>
 <ul>
 <li>rust-ffmpeg-frame-grabber
 <ul>
@@ -347,7 +345,7 @@ Caused by:
 </ul>
 </li>
 </ul>
-<pre tabindex="0"><code>include = [&quot;src/lib.rs&quot;, &quot;LICENSE&quot;, &quot;README.md&quot;]
+<pre tabindex="0"><code>include = [&#34;src/lib.rs&#34;, &#34;LICENSE&#34;, &#34;README.md&#34;]
 </code></pre><h2 id="最後に">最後に</h2>
 <ul>
 <li>crateの利用、PRお待ちしております</li>

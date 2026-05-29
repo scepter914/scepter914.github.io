@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aboutmes on Scepter914 Website</title>
+    <link>http://localhost:1313/aboutme/</link>
+    <description>Recent content in Aboutmes on Scepter914 Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Apr 2022 23:59:59 +0900</lastBuildDate><atom:link href="http://localhost:1313/aboutme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>http://localhost:1313/aboutme/aboutme/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>http://localhost:1313/aboutme/aboutme/</guid>
+      <description>Biography Profile Name: Satoshi Tanaka Apr. 2020 - Now, TIER IV, Inc. Autonomous Driving Sensing/Perception Engineer Work Experience Apr. 2020 - Now Tier IV, Inc. Autonomous Driving Sensing/Perception Engineer Internship Apr. 2018 - Apr. 2019, Internship at Preferred Networks, Inc. as a part-time engineer Aug. 2017 - Mar. 2018, Internship at Hitachi, Ltd as a research assistant Academic Background Master&amp;rsquo;s Degree in Information Science and Engineering, the University of Tokyo Apr.</description>
+    </item>
+    
+    <item>
+      <title>自己紹介</title>
+      <link>http://localhost:1313/aboutme/aboutmeja/</link>
+      <pubDate>Sat, 30 Apr 2022 23:59:59 +0900</pubDate>
+      
+      <guid>http://localhost:1313/aboutme/aboutmeja/</guid>
+      <description>English version Biography Profile 田中 敬(たなか さとし) 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Work Experience 2020/04-Now 株式会社ティアフォー Autonomous Driving Sensing/Perception Engineer Internship 2018/04-2019/03 Preferred Networks Part-time Engineer 2017/08-2018/03 株式会社日立製作所 研究補助員 Academic Background</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="デフォルトパラメータとどう付き合うか"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="デフォルトパラメータとどう付き合うか"/>
 <meta name="twitter:description" content="デフォルトパラメータとどう付き合うか 概要 ロボットや機械学習では大量のパラメータを扱うことになる Architect（アーキテクチャを考える人）"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -204,21 +203,21 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
-<span style="color:#f92672">&lt;launch&gt;</span>
-  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
-
-  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;$(var input/image)&#34;</span> <span style="color:#f92672">/&gt;</span>
-  <span style="color:#f92672">&lt;/include&gt;</span>
-<span style="color:#f92672">&lt;/launch&gt;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- package_a.launch.xml--&gt;</span>
-<span style="color:#f92672">&lt;launch&gt;</span>
-  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_compressed&#34;</span> <span style="color:#f92672">/&gt;</span>
-
-  <span style="color:#75715e">&lt;!-- node --&gt;</span>
-<span style="color:#f92672">&lt;/launch&gt;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;launch&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;$(var input/image)&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/include&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/launch&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- package_a.launch.xml--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;launch&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_compressed&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- node --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/launch&gt;</span>
+</span></span></code></pre></div><ul>
 <li>このような構成の場合、各ファイルでdefault parameterが異なるため argを消したりすると挙動が異なってしまう
 <ul>
 <li>誰かの変更によって、意図しない処理が走る可能性がある状態と言える</li>
@@ -231,16 +230,16 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
-<span style="color:#f92672">&lt;launch&gt;</span>
-  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
-
-  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#75715e">&lt;!--&lt;arg name=&#34;input/image&#34; value=&#34;$(var input/image)&#34; /&gt;--&gt;</span>
-    <span style="color:#75715e">&lt;!-- The parameter changes from &#34;~/image_raw&#34; into &#34;~/image_compressed&#34; --&gt;</span>
-  <span style="color:#f92672">&lt;/include&gt;</span>
-<span style="color:#f92672">&lt;/launch&gt;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;launch&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--&lt;arg name=&#34;input/image&#34; value=&#34;$(var input/image)&#34; /&gt;--&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- The parameter changes from &#34;~/image_raw&#34; into &#34;~/image_compressed&#34; --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/include&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/launch&gt;</span>
+</span></span></code></pre></div><ul>
 <li>そのためdefault parameterを消して一番上位レイヤーからしかparameter を指定できないようにすると比較的マシになる
 <ul>
 <li>ソフトウェアが意図しない処理のときにfailするようになっていれば、「想定と異なる挙動」はしないだけマシ</li>
@@ -253,21 +252,21 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
-<span style="color:#f92672">&lt;launch&gt;</span>
-  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
-
-  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;$(var input/image)&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#75715e">&lt;!-- If this arg is commented out, then running will fail --&gt;</span>
-  <span style="color:#f92672">&lt;/include&gt;</span>
-<span style="color:#f92672">&lt;/launch&gt;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- package_a.launch.xml--&gt;</span>
-<span style="color:#f92672">&lt;launch&gt;</span>
-  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#f92672">/&gt;</span>
-  <span style="color:#75715e">&lt;!-- omit --&gt;</span>
-<span style="color:#f92672">&lt;/launch&gt;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- main.launch.xml--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;launch&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;~/image_raw&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find-pkg-share package_a)/launch/package_a.launch.xml&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;$(var input/image)&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- If this arg is commented out, then running will fail --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/include&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/launch&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- package_a.launch.xml--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;launch&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;input/image&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- omit --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/launch&gt;</span>
+</span></span></code></pre></div><ul>
 <li>ROS2では起動するソフトウェア（launch file）の中にparameterが記述されるというソフトウェアの成約が存在するので <code>command {起動するファイル} {parameterファイル}</code> のような構成を取れないので、あくまで性善説運用になってしまう</li>
 <li>なので基本的に「デフォルトパラメータの書き換えをそのものを避け、全てのパラメータを受け渡しの地点で全て確定させる」というスタンスを取る時は、ソフトウェアが大規模にならないことが確定している時にしか使いにくいとも言える
 <ul>
@@ -288,34 +287,34 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;co_dino_5scale_swin_l_lsj_16xb1_1x_coco.py&#39;</span>]
-model <span style="color:#f92672">=</span> dict(backbone<span style="color:#f92672">=</span>dict(drop_path_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>))
-param_scheduler <span style="color:#f92672">=</span> [dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;MultiStepLR&#39;</span>, milestones<span style="color:#f92672">=</span>[<span style="color:#ae81ff">30</span>])]
-train_cfg <span style="color:#f92672">=</span> dict(max_epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">36</span>)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;co_dino_5scale_swin_l_lsj_16xb1_1x_coco.py&#39;</span>]
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(backbone<span style="color:#f92672">=</span>dict(drop_path_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>))
+</span></span><span style="display:flex;"><span>param_scheduler <span style="color:#f92672">=</span> [dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;MultiStepLR&#39;</span>, milestones<span style="color:#f92672">=</span>[<span style="color:#ae81ff">30</span>])]
+</span></span><span style="display:flex;"><span>train_cfg <span style="color:#f92672">=</span> dict(max_epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">36</span>)
+</span></span></code></pre></div><ul>
 <li>このようなparameterの書き換えは（遡るのが少し面倒とは言え）比較的アーキテクチャの切れ目ごとに定義されており、ある程度configの設計指針を感じられるので問題は起こりにくい</li>
 <li>一方で適当に開発しているプロトタイプ開発などでは、（特に機械学習の研究開発のような場面で）以下のようなファイルが作られがちだったりする</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a.py</span>
-model <span style="color:#f92672">=</span> dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Model_A&#39;</span>)
-<span style="color:#75715e"># Default parameter is defined in class objects.</span>
-<span style="color:#75715e"># class Model_A(BaseDetector):</span>
-<span style="color:#75715e">#     def __init__(</span>
-<span style="color:#75715e">#             self,</span>
-<span style="color:#75715e">#             parameter_a = 2,</span>
-<span style="color:#75715e">#             parameter_b = 3):</span>
-epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v2.py</span>
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a.py&#39;</span>]
-model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v3.py</span>
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_v2.py&#39;</span>]
-model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
-epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v4.py</span>
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_v3.py&#39;</span>]
-model <span style="color:#f92672">=</span> dict(parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a.py</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Model_A&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default parameter is defined in class objects.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># class Model_A(BaseDetector):</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     def __init__(</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#             self,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#             parameter_a = 2,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#             parameter_b = 3):</span>
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_v2.py</span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a.py&#39;</span>]
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_v3.py</span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_v2.py&#39;</span>]
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_v4.py</span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_v3.py&#39;</span>]
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</span></span></code></pre></div><ul>
 <li>このような場合最終的にトレーサビリティがどうなっているのか把握しづらくなっていき、一体今どのパラメータで実行されているのかどんどん把握が難しくなっていく
 <ul>
 <li>（mmdetectionの場合は最終的に定義されたparameter fileが作られており、一応パラメータの再現自体は可能ではあるので「再現性」を問題にするのは微妙にズレていて、あくまで開発者体験が悪くなっているだけというのが正確だと思われる）</li>
@@ -340,48 +339,48 @@ model <span style="color:#f92672">=</span> dict(parameter_b<span style="color:#f
 </li>
 <li>このようになるべく層が浅い構成にすれば、比較的把握しやすいパラメータ管理になるはず</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model definition</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Model_A</span>(BaseDetector):
-    <span style="color:#66d9ef">def</span> __init__(
-            self,
-            parameter_a: Optional[int],
-            parameter_b: Optional[int],
-            parameter_c: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>):
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_base.py</span>
-model <span style="color:#f92672">=</span> dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Model_A&#39;</span>, parameter_a<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, parameter_b<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
-<span style="color:#75715e"># If parameter_c is fixed, it may be OK to use by default parameter.</span>
-epoch <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v2.py</span>
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
-
-<span style="color:#75715e"># User parameter</span>
-parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-
-<span style="color:#75715e"># Overwrite process</span>
-model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v3.py</span>
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
-
-<span style="color:#75715e"># User parameter</span>
-parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-
-<span style="color:#75715e"># Overwrite process</span>
-model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># model_a_v4.py</span>
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
-
-<span style="color:#75715e"># User parameter</span>
-parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
-epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-
-<span style="color:#75715e"># Overwrite process</span>
-model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model definition</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Model_A</span>(BaseDetector):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(
+</span></span><span style="display:flex;"><span>            self,
+</span></span><span style="display:flex;"><span>            parameter_a: Optional[int],
+</span></span><span style="display:flex;"><span>            parameter_b: Optional[int],
+</span></span><span style="display:flex;"><span>            parameter_c: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>):
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_base.py</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Model_A&#39;</span>, parameter_a<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, parameter_b<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If parameter_c is fixed, it may be OK to use by default parameter.</span>
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_v2.py</span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># User parameter</span>
+</span></span><span style="display:flex;"><span>parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Overwrite process</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_v3.py</span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># User parameter</span>
+</span></span><span style="display:flex;"><span>parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Overwrite process</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># model_a_v4.py</span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;model_a_base.py&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># User parameter</span>
+</span></span><span style="display:flex;"><span>parameter_a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>parameter_b<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Overwrite process</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f92672">=</span>parameter_a, parameter_b<span style="color:#f92672">=</span>parameter_b)
+</span></span></code></pre></div><ul>
 <li>そもそもパラメータのオーバーライドはなるべくせず、使っていないパラメータは破棄してくのが正しいという話もあるが、これもreviewを頑張っていくしか無いとも言える
 <ul>
 <li>あと「デフォルトパラメータはclassの定義地点のみ使う、パラメータファイルでは上書きするもののみ」という構図が一番綺麗なようには感じる</li>
@@ -449,23 +448,23 @@ model <span style="color:#f92672">=</span> dict(parameter_a<span style="color:#f
         - experiment_2.py
       - model_b/
         - default.py
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># projects/project_a/configs/model_a/default.py</span>
-
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;../../../../configs/component/component_a.py&#39;</span>]
-
-<span style="color:#75715e"># default parameter</span>
-parameter_a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-parameter_b <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
-parameter_c <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># projects/project_a/configs/model_a/experiment_2.py</span>
-
-_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;./default.py&#39;</span>]
-
-<span style="color:#75715e"># User parameter</span>
-parameter_a <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-parameter_b <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-</code></pre></div>
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># projects/project_a/configs/model_a/default.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;../../../../configs/component/component_a.py&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># default parameter</span>
+</span></span><span style="display:flex;"><span>parameter_a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>parameter_b <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>parameter_c <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># projects/project_a/configs/model_a/experiment_2.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>_base_ <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;./default.py&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># User parameter</span>
+</span></span><span style="display:flex;"><span>parameter_a <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>parameter_b <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span></code></pre></div>
 </article>
 </div>
 

@@ -239,7 +239,13 @@
     <loc>https://scepter914.github.io/survey/perception/detection3d/000298_eager_mot/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
+    <loc>https://scepter914.github.io/survey/perception/tracking/000298_eager_mot/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000297_sensor_dropout/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/sensor_fusion/000297_sensor_dropout/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/vision/000345_lets_dirty/</loc>
@@ -254,7 +260,13 @@
     <loc>https://scepter914.github.io/survey/perception/planning/000361_uber_prediction_mtp/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
+    <loc>https://scepter914.github.io/survey/perception/prediction/000361_uber_prediction_mtp/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/planning/000448_tcn_prediction/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/prediction/000448_tcn_prediction/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/detection3d/000295_mvlidarnet_nvidia/</loc>
@@ -266,13 +278,25 @@
     <loc>https://scepter914.github.io/survey/perception/detection3d/000356_camera_lidar_calib/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
+    <loc>https://scepter914.github.io/survey/sensing/calibration/000356_camera_lidar_calib/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/tags/sensor_fusion/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/survey/perception/planning/000444_uber_reinforce/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
+    <loc>https://scepter914.github.io/survey/perception/prediction/000444_uber_reinforce/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/tags/tracking/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://scepter914.github.io/survey/perception/planning/000360_uber_prediction/</loc>
+    <lastmod>2021-10-10T13:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://scepter914.github.io/survey/perception/prediction/000360_uber_prediction/</loc>
     <lastmod>2021-10-10T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/blog/2021/20210905_simple_image_interface_rs/</loc>
@@ -353,10 +377,10 @@
     <loc>https://scepter914.github.io/project/project_hobby/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/project/project_robocon/</loc>
+    <loc>https://scepter914.github.io/tags/robocon/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
   </url><url>
-    <loc>https://scepter914.github.io/tags/robocon/</loc>
+    <loc>https://scepter914.github.io/project/project_robocon/</loc>
     <lastmod>2019-12-09T23:59:59+09:00</lastmod>
   </url><url>
     <loc>https://scepter914.github.io/project/project_roboconja/</loc>

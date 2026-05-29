@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="VSCodeのterminal tabの設定をする"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="VSCodeのterminal tabの設定をする"/>
 <meta name="twitter:description" content="VSCodeのterminal tabの設定をする 概要 VSCode v1.58 (2021/06) で対応された &ldquo;Terminals in the editor area&rdquo; が便利そうだったのでそれに合わせてVSCodeの設定を見直し"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -172,9 +171,9 @@
 <li>デフォルト操作を「エディタ部で開く」ように変更する</li>
 <li>setting.jsonに以下を追加</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">  <span style="color:#75715e">// terminal
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#34;terminal.integrated.defaultLocation&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;editor&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
-</code></pre></div><h2 id="keybindの変更">keybindの変更</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#75715e">// terminal
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#34;terminal.integrated.defaultLocation&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;editor&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span></code></pre></div><h2 id="keybindの変更">keybindの変更</h2>
 <ul>
 <li>terminalを開く操作のkeybind当てている人向けの設定</li>
 <li>pointとしては
@@ -185,42 +184,41 @@
 </li>
 <li>terminalからのtab移動の追加はお好みで（自分はVSCode vimでC-h,lに設定しているのでそれに合わせた</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">  <span style="color:#75715e">// go from editor to terminal
-</span><span style="color:#75715e"></span>  {
-    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+j&#34;</span>,
-    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.createTerminalEditorSide&#34;</span>,
-    <span style="color:#75715e">// &#34;command&#34;: &#34;workbench.action.terminal.focus&#34;,
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;editorTextFocus&#34;</span>
-  }<span style="color:#960050;background-color:#1e0010">,</span>
-  <span style="color:#75715e">// go from terminal to editor
-</span><span style="color:#75715e"></span>  {
-    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+j&#34;</span>,
-    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.focusFirstEditorGroup&#34;</span>,
-    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;terminalFocus&#34;</span>
-  }<span style="color:#960050;background-color:#1e0010">,</span>
-  <span style="color:#75715e">// prevent from going to panel at no focus
-</span><span style="color:#75715e"></span>  {
-    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+j&#34;</span>,
-     <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;-workbench.action.togglePanel&#34;</span>
-    <span style="color:#75715e">// &#34;command&#34;: &#34;workbench.action.focusFirstEditorGroup&#34;
-</span><span style="color:#75715e"></span>  }<span style="color:#960050;background-color:#1e0010">,</span>
-  <span style="color:#75715e">// move in tab
-</span><span style="color:#75715e"></span>  {
-    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+h&#34;</span>,
-    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.previousEditorInGroup&#34;</span>,
-    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;terminalFocus&#34;</span>
-  }<span style="color:#960050;background-color:#1e0010">,</span>
-  {
-    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+l&#34;</span>,
-    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.nextEditorInGroup&#34;</span>,
-    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;terminalFocus&#34;</span>
-  }<span style="color:#960050;background-color:#1e0010">,</span>
-  {
-    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+d&#34;</span>,
-     <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.terminal.killEditor&#34;</span>
-  }<span style="color:#960050;background-color:#1e0010">,</span>
-
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#75715e">// go from editor to terminal
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+j&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.createTerminalEditorSide&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// &#34;command&#34;: &#34;workbench.action.terminal.focus&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;editorTextFocus&#34;</span>
+</span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// go from terminal to editor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+j&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.focusFirstEditorGroup&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;terminalFocus&#34;</span>
+</span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// prevent from going to panel at no focus
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+j&#34;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;-workbench.action.togglePanel&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// &#34;command&#34;: &#34;workbench.action.focusFirstEditorGroup&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// move in tab
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+h&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.previousEditorInGroup&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;terminalFocus&#34;</span>
+</span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+l&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.nextEditorInGroup&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;when&#34;</span>: <span style="color:#e6db74">&#34;terminalFocus&#34;</span>
+</span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;ctrl+d&#34;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;workbench.action.terminal.killEditor&#34;</span>
+</span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span></code></pre></div>
 </article>
 </div>
 

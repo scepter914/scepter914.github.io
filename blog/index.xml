@@ -13,8 +13,8 @@
       <pubDate>Sun, 18 Jan 2026 01:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2026/20260124_ml_cellar_en/</guid>
-      <description>ml-cellar: A Minimal MLOps Model Management CLI Summary  Released ml-cellar, a &amp;ldquo;Model Management CLI for Minimal MLOps,&amp;rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving.  &amp;ndash;
-Background In the operation of ML models, the &amp;ldquo;management of deliverables such as trained models&amp;rdquo; is more effective than the training code itself. Where are the weights for which experiment?</description>
+      <description>ml-cellar: A Minimal MLOps Model Management CLI Summary Released ml-cellar, a &amp;ldquo;Model Management CLI for Minimal MLOps,&amp;rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving. &amp;ndash;
+Background In the operation of ML models, the &amp;ldquo;management of deliverables such as trained models&amp;rdquo; is more effective than the training code itself. Where are the weights for which experiment? How do you reproduce it?</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ Background In the operation of ML models, the &amp;ldquo;management of deliverab
       <guid>https://scepter914.github.io/blog/2024/20241223_real_time_3d_detection/</guid>
       <description>Survey for Real-time 3D Detection in Autonomous Driving Summary In this blog, I summarize 3D detection methods, including implementation using inference optimization techniques like TensorRT.
 Based on the performance comparison, following models of the multi-camera 3D detection stand out:
- StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
+StreamPETR (ResNet50): This is a lightweight model, making it suitable for a wide range of applications. StreamPETR (ResNet101): This model strikes a good balance between detection performance and inference time. Far3D (V2-99): This model may be too computationally heavy for certain environments.</description>
     </item>
     
     <item>
@@ -232,7 +232,7 @@ Based on the performance comparison, following models of the multi-camera 3D det
       <pubDate>Sat, 18 Apr 2020 00:03:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2020/20200418_gollum_ver5_collapse/</guid>
-      <description>Error  For user of custom css  gollum &amp;ndash;css   When gollum updates from version 4 to version5, page layout collapses  In particular, _Sidebar is very narrow and rendored in left side.    How to fix  delete cashe on browser When using Google chrome, Ctrl-f5  Reference  Other information of gollum ver5.0  https://github.com/gollum/gollum/wiki/5.0-release-notes    </description>
+      <description>Error For user of custom css gollum &amp;ndash;css When gollum updates from version 4 to version5, page layout collapses In particular, _Sidebar is very narrow and rendored in left side. How to fix delete cashe on browser When using Google chrome, Ctrl-f5 Reference Other information of gollum ver5.0 https://github.com/gollum/gollum/wiki/5.0-release-notes </description>
     </item>
     
     <item>
@@ -286,7 +286,7 @@ Based on the performance comparison, following models of the multi-camera 3D det
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2019/20190107_tensegrity_simulation/</guid>
-      <description>What is this  Blog of https://github.com/scepter914/Tensegrity-simulation  Methods Sequence  Initialize position of particles and parameters Loop  Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground    Each Particles  f = Mg  Spring  $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles  Update particles  Verlet Integration $x_{n+1} ← $  $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error)    Strut  $x_0$ ← $(x_0 + x_1)/2.</description>
+      <description>What is this Blog of https://github.com/scepter914/Tensegrity-simulation Methods Sequence Initialize position of particles and parameters Loop Initialize force of each particle Update force of each particle from spring Update position of each particle Satisfy distance constraints of each strut Update collision of ground Each Particles f = Mg Spring $f=K_s(l-l_0)d+K_d(v_1・d-v_0・d)d$ $K_s$ : spring constant $l$ : current length $l_0$ : rest length $d$ : unit vector toward the other particle $K_d$ : damper constant $v_0$,$v_1$ : velocity of particles Update particles Verlet Integration $x_{n+1} ← $ $ xn+(xn-x_{n-1})+Δt^2F_n/m$ xn is $x_n$ (it is rendering error) Strut $x_0$ ← $(x_0 + x_1)/2.</description>
     </item>
     
     <item>

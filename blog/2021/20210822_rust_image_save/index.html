@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Rustでの画像保存の高速化"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rustでの画像保存の高速化"/>
 <meta name="twitter:description" content="Rustでの画像保存の高速化 概要 image crateのpngのsaveがなんか時間かかるのをppmで高速に保存する https://github.com/scepter914/camera-image-processing-template 実装とかはここに置いた 実装 ちまち"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -161,8 +160,8 @@
 <li>ちまちまライブラリを製作している時に見つけたhttps://github.com/zmwangx/rust-ffmpeg/blob/master/examples/dump-frames.rs の画像保存が結構高速だったので使ってみる</li>
 </ul>
 <pre tabindex="0"><code>fn save_file(frame: &amp;Video, index: usize) -&gt; std::result::Result&lt;(), std::io::Error&gt; {
-    let mut file = File::create(format!(&quot;frame{}.ppm&quot;, index))?;
-    file.write_all(format!(&quot;P6\n{} {}\n255\n&quot;, frame.width(), frame.height()).as_bytes())?;
+    let mut file = File::create(format!(&#34;frame{}.ppm&#34;, index))?;
+    file.write_all(format!(&#34;P6\n{} {}\n255\n&#34;, frame.width(), frame.height()).as_bytes())?;
     file.write_all(frame.data(0))?;
     Ok(())
 }

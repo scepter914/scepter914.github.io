@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="TelloFollowingPerson: ChainerCVを使った，Object Detectionして人に付いていくトイドローンのアプリケーション"/>
 <meta name="twitter:description" content="概要 ChainerCVのdetection example &#43; tellopyでトイドローンを自動で動かしてみたお話 アプリケーションとしては人についていくもの"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -231,9 +230,9 @@ ggるといろいろ記事が出てくる．</p>
 <p>pythonでtelloを動かすライブラリのTelloPyを使った．
 ノートPCでtelloのwifiに繋いで，exampleコードを動かすとドローンが自動で動く便利なブツ．いや本当に凄い．
 これだけで結構遊べる気がする．</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#f92672">import</span> tellopy
-help(tellopy)
-</code></pre></div><p>を見ればなんとなく中身が分かる．
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#f92672">import</span> tellopy
+</span></span><span style="display:flex;"><span>help(tellopy)
+</span></span></code></pre></div><p>を見ればなんとなく中身が分かる．
 というか元実装が読みやすいので，元実装見ながらのコーディングがおすすめ．</p>
 <ul>
 <li>参考
@@ -257,10 +256,9 @@ YOLOはObject Detectionタスクのアルゴリズムの一種．
 ここでうだうだ説明するよりChainerCVの実装を読んだ方が早いのであとは省略．</p>
 <p>あとなぜだかよくわからんけどexampleのコードをそのまま動かしたら</p>
 <pre tabindex="0"><code>
-File &quot;demo.py&quot;, line 7, in &lt;module&gt;
+File &#34;demo.py&#34;, line 7, in &lt;module&gt;
 from chainercv.experimental.links import YOLOv2Tiny
-ImportError: cannot import name 'YOLOv2Tiny'
-
+ImportError: cannot import name &#39;YOLOv2Tiny&#39;
 </code></pre><p>とerrorが出たので，でっちあげでファイルコピってimport周りを少し書き換えた．(非常にクソ解法)</p>
 <ul>
 <li>

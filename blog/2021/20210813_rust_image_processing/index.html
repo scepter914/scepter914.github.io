@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Rustでカメラから取得した画像に対して画像処理をする"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rustでカメラから取得した画像に対して画像処理をする"/>
 <meta name="twitter:description" content="Rustでカメラから取得した画像に対して画像処理をする 概要 最近勉強がてらRustを触り初めて、Rust * 画像処理はまだまだ日本語資料が少ない"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -210,7 +209,7 @@
 <li>formatを&quot;RGB3&quot;にする</li>
 <li><a href="https://github.com/loyd/rscam">https://github.com/loyd/rscam</a> の例だとMJPGになっているので注意</li>
 </ul>
-<pre tabindex="0"><code>    let device = &quot;/dev/video0&quot;;
+<pre tabindex="0"><code>    let device = &#34;/dev/video0&#34;;
     let mut camera = rscam::new(device).unwrap();
     let width = 1920;
     let height = 1080;
@@ -222,7 +221,7 @@
         .start(&amp;rscam::Config {
             interval: (1, fps),
             resolution: (width, height),
-            format: b&quot;RGB3&quot;,
+            format: b&#34;RGB3&#34;,
             ..Default::default()
         })
         .unwrap();
@@ -237,62 +236,61 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">loop</span> {
-        <span style="color:#66d9ef">let</span> frame <span style="color:#f92672">=</span> camera.capture().unwrap();
-        <span style="color:#66d9ef">let</span> rgb_image <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
-        <span style="color:#66d9ef">let</span> gray_image <span style="color:#f92672">=</span> rgb_to_gray(<span style="color:#f92672">&amp;</span>rgb_image);
-
-        <span style="color:#66d9ef">let</span> otsu_level <span style="color:#f92672">=</span> imageproc::contrast::otsu_level(<span style="color:#f92672">&amp;</span>gray_image);
-        <span style="color:#66d9ef">let</span> binarized_image <span style="color:#f92672">=</span> imageproc::contrast::threshold(<span style="color:#f92672">&amp;</span>gray_image, otsu_level);
-    }
-
-</code></pre></div><h3 id="画像をとってくる">画像をとってくる</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> frame <span style="color:#f92672">=</span> camera.capture().unwrap();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> rgb_image <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> gray_image <span style="color:#f92672">=</span> rgb_to_gray(<span style="color:#f92672">&amp;</span>rgb_image);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> otsu_level <span style="color:#f92672">=</span> imageproc::contrast::otsu_level(<span style="color:#f92672">&amp;</span>gray_image);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> binarized_image <span style="color:#f92672">=</span> imageproc::contrast::threshold(<span style="color:#f92672">&amp;</span>gray_image, otsu_level);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h3 id="画像をとってくる">画像をとってくる</h3>
 <ul>
 <li>パッとdocumentを眺めた感じ image::RgbImage::from_vec と image::RgbImage::from_rawが使えそう</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> rgb_image_raw <span style="color:#f92672">=</span> image::RgbImage::from_raw(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
-    <span style="color:#66d9ef">let</span> rgb_image_vec <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> rgb_image_raw <span style="color:#f92672">=</span> image::RgbImage::from_raw(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> rgb_image_vec <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</span></span></code></pre></div><ul>
 <li>気になったのでベンチマークを取ってみた（結果はまとめて下に）</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    println!(<span style="color:#e6db74">&#34;from_raw&#34;</span>);
-    <span style="color:#66d9ef">let</span> bench <span style="color:#f92672">=</span> Benchmark::set_start_time();
-    <span style="color:#66d9ef">let</span> rgb_image_raw <span style="color:#f92672">=</span> image::RgbImage::from_raw(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
-    bench.print_bench_time();
-    rgb_image_raw.save(<span style="color:#e6db74">&#34;data/from_raw.png&#34;</span>).unwrap();
-
-    println!(<span style="color:#e6db74">&#34;from_vec&#34;</span>);
-    <span style="color:#66d9ef">let</span> bench <span style="color:#f92672">=</span> Benchmark::set_start_time();
-    <span style="color:#66d9ef">let</span> rgb_image_vec <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
-    bench.print_bench_time();
-    rgb_image_vec.save(<span style="color:#e6db74">&#34;data/from_vec.png&#34;</span>).unwrap();
-</code></pre></div><h3 id="グレースケール化">グレースケール化</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;from_raw&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> bench <span style="color:#f92672">=</span> Benchmark::set_start_time();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> rgb_image_raw <span style="color:#f92672">=</span> image::RgbImage::from_raw(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</span></span><span style="display:flex;"><span>    bench.print_bench_time();
+</span></span><span style="display:flex;"><span>    rgb_image_raw.save(<span style="color:#e6db74">&#34;data/from_raw.png&#34;</span>).unwrap();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;from_vec&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> bench <span style="color:#f92672">=</span> Benchmark::set_start_time();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> rgb_image_vec <span style="color:#f92672">=</span> image::RgbImage::from_vec(width, height, (<span style="color:#f92672">&amp;</span>frame[<span style="color:#f92672">..</span>]).to_vec()).unwrap();
+</span></span><span style="display:flex;"><span>    bench.print_bench_time();
+</span></span><span style="display:flex;"><span>    rgb_image_vec.save(<span style="color:#e6db74">&#34;data/from_vec.png&#34;</span>).unwrap();
+</span></span></code></pre></div><h3 id="グレースケール化">グレースケール化</h3>
 <ul>
 <li><a href="https://qiita.com/RotaryKer/items/a9897ddccdd0d8e0a1c2">https://qiita.com/RotaryKer/items/a9897ddccdd0d8e0a1c2</a> を参考にした</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">rgb_to_gray</span>(rgb_image: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">image</span>::RgbImage) -&gt; <span style="color:#a6e22e">image</span>::GrayImage {
-    <span style="color:#66d9ef">let</span> width <span style="color:#f92672">=</span> rgb_image.width();
-    <span style="color:#66d9ef">let</span> height <span style="color:#f92672">=</span> rgb_image.height();
-    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> gray_image <span style="color:#f92672">=</span> image::GrayImage::new(width, height);
-    <span style="color:#75715e">// gray scale
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>width {
-        <span style="color:#66d9ef">for</span> j <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>height {
-            <span style="color:#66d9ef">let</span> pixel <span style="color:#f92672">=</span> rgb_image.get_pixel(i, j);
-            <span style="color:#66d9ef">let</span> gray_pixel <span style="color:#f92672">=</span> [((pixel[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.2126</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>
-                <span style="color:#f92672">+</span> (pixel[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.7152</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>
-                <span style="color:#f92672">+</span> (pixel[<span style="color:#ae81ff">2</span>] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.0722</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u8</span>; <span style="color:#ae81ff">1</span>];
-            gray_image.put_pixel(i, j, image::Luma(gray_pixel));
-        }
-    }
-    <span style="color:#66d9ef">return</span> gray_image;
-}
-</code></pre></div><h3 id="二値化">二値化</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">rgb_to_gray</span>(rgb_image: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">image</span>::RgbImage) -&gt; <span style="color:#a6e22e">image</span>::GrayImage {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> width <span style="color:#f92672">=</span> rgb_image.width();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> height <span style="color:#f92672">=</span> rgb_image.height();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> gray_image <span style="color:#f92672">=</span> image::GrayImage::new(width, height);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// gray scale
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>width {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> j <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>height {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> pixel <span style="color:#f92672">=</span> rgb_image.get_pixel(i, j);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> gray_pixel <span style="color:#f92672">=</span> [((pixel[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.2126</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">+</span> (pixel[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.7152</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">+</span> (pixel[<span style="color:#ae81ff">2</span>] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.0722</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u8</span>; <span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>            gray_image.put_pixel(i, j, image::Luma(gray_pixel));
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> gray_image;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="二値化">二値化</h3>
 <ul>
 <li>大津の二値化を使っているだけ</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">let</span> otsu_level <span style="color:#f92672">=</span> imageproc::contrast::otsu_level(<span style="color:#f92672">&amp;</span>gray_image);
-        <span style="color:#66d9ef">let</span> binarized_image <span style="color:#f92672">=</span> imageproc::contrast::threshold(<span style="color:#f92672">&amp;</span>gray_image, otsu_level);
-</code></pre></div><h2 id="結果">結果</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> otsu_level <span style="color:#f92672">=</span> imageproc::contrast::otsu_level(<span style="color:#f92672">&amp;</span>gray_image);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> binarized_image <span style="color:#f92672">=</span> imageproc::contrast::threshold(<span style="color:#f92672">&amp;</span>gray_image, otsu_level);
+</span></span></code></pre></div><h2 id="結果">結果</h2>
 <ul>
 <li>入力画像
 <ul>

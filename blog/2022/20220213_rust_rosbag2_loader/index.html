@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="RustでRosbag2から画像を抽出するcrate"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RustでRosbag2から画像を抽出するcrate"/>
 <meta name="twitter:description" content="RustでRosbag2から画像を抽出するcrate 概要 rosbag2のSQLite DBから直接画像を読み込むcrate を作った rosを立ち"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -183,24 +182,24 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
-    <span style="color:#66d9ef">let</span> args: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> std::env::args().collect();
-
-    <span style="color:#66d9ef">let</span> file_name: String <span style="color:#f92672">=</span> args[<span style="color:#ae81ff">1</span>].to_string();
-    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> interfaces: Vec<span style="color:#f92672">&lt;</span>Rosbag2Images<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> load_images_from_rosbag2(file_name).unwrap();
-    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> frame_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>interfaces.is_empty() {
-        <span style="color:#66d9ef">loop</span> {
-            frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-            <span style="color:#66d9ef">let</span> input_image <span style="color:#f92672">=</span> interfaces[<span style="color:#ae81ff">0</span>].get_frame();
-            <span style="color:#66d9ef">if</span> input_image.is_none() {
-                <span style="color:#66d9ef">break</span>;
-            }
-            my_image_proc(<span style="color:#f92672">&amp;</span>input_image.unwrap(), frame_index);
-        }
-    }
-}
-</code></pre></div><h2 id="作るにあたって">作るにあたって</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> args: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> std::env::args().collect();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> file_name: String <span style="color:#f92672">=</span> args[<span style="color:#ae81ff">1</span>].to_string();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> interfaces: Vec<span style="color:#f92672">&lt;</span>Rosbag2Images<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> load_images_from_rosbag2(file_name).unwrap();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> frame_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>interfaces.is_empty() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>            frame_index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> input_image <span style="color:#f92672">=</span> interfaces[<span style="color:#ae81ff">0</span>].get_frame();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> input_image.is_none() {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            my_image_proc(<span style="color:#f92672">&amp;</span>input_image.unwrap(), frame_index);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="作るにあたって">作るにあたって</h2>
 <h3 id="rosbag2について">rosbag2について</h3>
 <ul>
 <li>SQLite3が使われている
@@ -234,24 +233,24 @@
 </code></pre><ul>
 <li>これをRustのstructにすると以下の通り</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#e6db74">/// Topic の定義
-</span><span style="color:#e6db74"></span><span style="color:#75715e">#[derive(Debug)]</span>
-<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Topic</span> {
-    <span style="color:#66d9ef">pub</span> id: <span style="color:#66d9ef">u16</span>,
-    <span style="color:#66d9ef">pub</span> name: String,
-    <span style="color:#66d9ef">pub</span> topic_type: String,
-    <span style="color:#66d9ef">pub</span> serialization_format: String,
-    <span style="color:#66d9ef">pub</span> offered_qos_profiles: String,
-}
-
-<span style="color:#e6db74">/// message の定義
-</span><span style="color:#e6db74"></span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">TopicMessage</span> {
-    <span style="color:#66d9ef">pub</span> message_id: <span style="color:#66d9ef">u64</span>,
-    <span style="color:#66d9ef">pub</span> topic_id: <span style="color:#66d9ef">u16</span>,
-    <span style="color:#66d9ef">pub</span> timestamp: <span style="color:#66d9ef">u64</span>,
-    <span style="color:#66d9ef">pub</span> data: Option<span style="color:#f92672">&lt;</span>Vec<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">u8</span><span style="color:#f92672">&gt;&gt;</span>,
-}
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#e6db74">/// Topic の定義
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#75715e">#[derive(Debug)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Topic</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> id: <span style="color:#66d9ef">u16</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> name: String,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> topic_type: String,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> serialization_format: String,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> offered_qos_profiles: String,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/// message の定義
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">TopicMessage</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> message_id: <span style="color:#66d9ef">u64</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> topic_id: <span style="color:#66d9ef">u16</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> timestamp: <span style="color:#66d9ef">u64</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> data: Option<span style="color:#f92672">&lt;</span>Vec<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">u8</span><span style="color:#f92672">&gt;&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li>仕様として
 <ul>
 <li>message はtopic_idを持っていて、topic_idからtopicのtypeとかわかる</li>
@@ -279,42 +278,42 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#e6db74">/// Deserialize sensor_msgs/msg/Image to image vector.
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// ROS2 image message has data as below.
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | the index of topic data              | topic data             |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | ------------------------------------ | ---------------------- |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | 0..(header.size - 1)                 | std_msgs/Header header |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | header.size..(header.size + 3)       | uint32 height          |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | (header.size + 4)..(header.size + 7) | uint32 width           |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// |                                      | string encoding        |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// |                                      | uint8 is_bigendian     |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// |                                      | uint32 step            |
-</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | (header.datasize + 28)               | uint8[] data           |
-</span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">deserialize_image_message</span>(<span style="color:#f92672">&amp;</span>self) -&gt; <span style="color:#a6e22e">RgbImage</span> {
-        <span style="color:#66d9ef">let</span> topic_data: Vec<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">u8</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> self.data.as_ref().unwrap().to_vec();
-        <span style="color:#66d9ef">let</span> header <span style="color:#f92672">=</span> get_header(<span style="color:#f92672">&amp;</span>topic_data);
-        <span style="color:#66d9ef">let</span> height <span style="color:#f92672">=</span> get_u32(<span style="color:#f92672">&amp;</span>topic_data, header.size);
-        <span style="color:#66d9ef">let</span> width <span style="color:#f92672">=</span> get_u32(<span style="color:#f92672">&amp;</span>topic_data, header.size <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>);
-        RgbImage::from_vec(width, height, topic_data[(header.size <span style="color:#f92672">+</span> <span style="color:#ae81ff">28</span>)<span style="color:#f92672">..</span>].to_vec()).unwrap()
-    }
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#e6db74">/// Deserialize sensor_msgs/msg/Image to image vector.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// ROS2 image message has data as below.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | the index of topic data              | topic data             |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | ------------------------------------ | ---------------------- |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | 0..(header.size - 1)                 | std_msgs/Header header |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | header.size..(header.size + 3)       | uint32 height          |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | (header.size + 4)..(header.size + 7) | uint32 width           |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// |                                      | string encoding        |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// |                                      | uint8 is_bigendian     |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// |                                      | uint32 step            |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// | (header.datasize + 28)               | uint8[] data           |
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">deserialize_image_message</span>(<span style="color:#f92672">&amp;</span>self) -&gt; <span style="color:#a6e22e">RgbImage</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> topic_data: Vec<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">u8</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> self.data.as_ref().unwrap().to_vec();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> header <span style="color:#f92672">=</span> get_header(<span style="color:#f92672">&amp;</span>topic_data);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> height <span style="color:#f92672">=</span> get_u32(<span style="color:#f92672">&amp;</span>topic_data, header.size);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> width <span style="color:#f92672">=</span> get_u32(<span style="color:#f92672">&amp;</span>topic_data, header.size <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>);
+</span></span><span style="display:flex;"><span>        RgbImage::from_vec(width, height, topic_data[(header.size <span style="color:#f92672">+</span> <span style="color:#ae81ff">28</span>)<span style="color:#f92672">..</span>].to_vec()).unwrap()
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><ul>
 <li>例えば u8 * 4 to u32
 <ul>
 <li><a href="https://github.com/scepter914/rosbag2-image-loader-rs/blob/master/src/rosbag2/message_function.rs">https://github.com/scepter914/rosbag2-image-loader-rs/blob/master/src/rosbag2/message_function.rs</a></li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_u32</span>(topic_data: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">u8</span>], index: <span style="color:#66d9ef">usize</span>) -&gt; <span style="color:#66d9ef">u32</span> {
-    <span style="color:#66d9ef">let</span> u8_array <span style="color:#f92672">=</span> u32_slice_to_array(<span style="color:#f92672">&amp;</span>topic_data[index<span style="color:#f92672">..</span>(index <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)]);
-    <span style="color:#66d9ef">unsafe</span> { std::mem::transmute(u8_array) }
-}
-
-<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">u32_slice_to_array</span>(slice: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">u8</span>]) -&gt; [<span style="color:#66d9ef">u8</span>; <span style="color:#ae81ff">4</span>] {
-    slice.try_into().expect(<span style="color:#e6db74">&#34;slice with incorrect length&#34;</span>)
-}
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_u32</span>(topic_data: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">u8</span>], index: <span style="color:#66d9ef">usize</span>) -&gt; <span style="color:#66d9ef">u32</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> u8_array <span style="color:#f92672">=</span> u32_slice_to_array(<span style="color:#f92672">&amp;</span>topic_data[index<span style="color:#f92672">..</span>(index <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)]);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">unsafe</span> { std::mem::transmute(u8_array) }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">u32_slice_to_array</span>(slice: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">u8</span>]) -&gt; [<span style="color:#66d9ef">u8</span>; <span style="color:#ae81ff">4</span>] {
+</span></span><span style="display:flex;"><span>    slice.try_into().expect(<span style="color:#e6db74">&#34;slice with incorrect length&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li>string の deserialize
 <ul>
 <li>仕様をあんまり把握できてない、一旦自分の理解で</li>
@@ -323,19 +322,19 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#e6db74">/// Get string information.
-</span><span style="color:#e6db74">///
-</span><span style="color:#e6db74">/// Return.
-</span><span style="color:#e6db74">///
-</span><span style="color:#e6db74">/// - String: string data
-</span><span style="color:#e6db74">/// - usize: end_index
-</span><span style="color:#e6db74"></span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_string</span>(topic_data: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">u8</span>], start_index: <span style="color:#66d9ef">usize</span>) -&gt; (String, <span style="color:#66d9ef">usize</span>) {
-    <span style="color:#66d9ef">let</span> end_index <span style="color:#f92672">=</span> start_index <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">+</span> topic_data[start_index] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">usize</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-    <span style="color:#66d9ef">let</span> string <span style="color:#f92672">=</span>
-        String::from_utf8(topic_data[(start_index <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)<span style="color:#f92672">..</span>(end_index <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)].to_vec()).unwrap();
-    (string, end_index)
-}
-</code></pre></div><h2 id="最後に">最後に</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#e6db74">/// Get string information.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">///
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">/// Return.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">///
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">/// - String: string data
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">/// - usize: end_index
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_string</span>(topic_data: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">u8</span>], start_index: <span style="color:#66d9ef">usize</span>) -&gt; (String, <span style="color:#66d9ef">usize</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> end_index <span style="color:#f92672">=</span> start_index <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">+</span> topic_data[start_index] <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">usize</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> string <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        String::from_utf8(topic_data[(start_index <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)<span style="color:#f92672">..</span>(end_index <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)].to_vec()).unwrap();
+</span></span><span style="display:flex;"><span>    (string, end_index)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="最後に">最後に</h2>
 <ul>
 <li>crateの利用、PRお待ちしております</li>
 </ul>

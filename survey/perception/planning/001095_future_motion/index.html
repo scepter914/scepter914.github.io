@@ -38,8 +38,7 @@
     
 
     
-        <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="FutureMotion (2024/05 github)"/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="FutureMotion (2024/05 github)"/>
 <meta name="twitter:description" content="FutureMotion (2024/05 github) Summary https://github.com/kit-mrt/future-motion かなりちゃんと書かれている predictionのlibrary Method forward 見ると大体分かる inputがかなり抽象化されている class Wayformer(nn.Module): def forward( self, target_valid: Tensor,"/>
 
     <link rel="stylesheet" href="https://scepter914.github.io/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
@@ -60,7 +59,7 @@
 
 
 
-    <script defer src="https://scepter914.github.io/js/zooming.fc76b730bcba24949cb337c58c5e935f727dbea8418e918e3b1794f0707d130aadf4ead341e9305a2c6045f7bc66700d73cc5c7f5d8f6ae2c7631e095f4e18ae.js" integrity="sha512-/Ha3MLy6JJScszfFjF6TX3J9vqhBjpGOOxeU8HB9Ewqt9OrTQekwWixgRfe8ZnANc8xcf12PauLHYx4JX04Yrg=="></script>
+    <script defer src="https://scepter914.github.io/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
 
 
 
@@ -166,55 +165,55 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Wayformer</span>(nn<span style="color:#f92672">.</span>Module):
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(
-        self,
-        target_valid: Tensor,
-        target_type: Tensor,
-        target_attr: Tensor,
-        other_valid: Tensor,
-        other_attr: Tensor,
-        tl_valid: Tensor,
-        tl_attr: Tensor,
-        map_valid: Tensor,
-        map_attr: Tensor,
-        inference_repeat_n: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
-        inference_cache_map: bool <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>,
-    ) <span style="color:#f92672">-&gt;</span> Tuple[Tensor, Tensor, Tensor]:
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Args:
-</span><span style="color:#e6db74">           target_type: [n_scene, n_target, 3]
-</span><span style="color:#e6db74">            # target history, other history, map
-</span><span style="color:#e6db74">                if pl_aggr:
-</span><span style="color:#e6db74">                    target_valid: [n_scene, n_target], bool
-</span><span style="color:#e6db74">                    target_attr: [n_scene, n_target, agent_attr_dim]
-</span><span style="color:#e6db74">                    other_valid: [n_scene, n_target, n_other], bool
-</span><span style="color:#e6db74">                    other_attr: [n_scene, n_target, n_other, agent_attr_dim]
-</span><span style="color:#e6db74">                    map_valid: [n_scene, n_target, n_map], bool
-</span><span style="color:#e6db74">                    map_attr: [n_scene, n_target, n_map, map_attr_dim]
-</span><span style="color:#e6db74">                else:
-</span><span style="color:#e6db74">                    target_valid: [n_scene, n_target, n_step_hist], bool
-</span><span style="color:#e6db74">                    target_attr: [n_scene, n_target, n_step_hist, agent_attr_dim]
-</span><span style="color:#e6db74">                    other_valid: [n_scene, n_target, n_other, n_step_hist], bool
-</span><span style="color:#e6db74">                    other_attr: [n_scene, n_target, n_other, n_step_hist, agent_attr_dim]
-</span><span style="color:#e6db74">                    map_valid: [n_scene, n_target, n_map, n_pl_node], bool
-</span><span style="color:#e6db74">                    map_attr: [n_scene, n_target, n_map, n_pl_node, map_attr_dim]
-</span><span style="color:#e6db74">            # traffic lights: cannot be aggregated, detections are not tracked.
-</span><span style="color:#e6db74">                if use_current_tl:
-</span><span style="color:#e6db74">                    tl_valid: [n_scene, n_target, 1, n_tl], bool
-</span><span style="color:#e6db74">                    tl_attr: [n_scene, n_target, 1, n_tl, tl_attr_dim]
-</span><span style="color:#e6db74">                else:
-</span><span style="color:#e6db74">                    tl_valid: [n_scene, n_target, n_step_hist, n_tl], bool
-</span><span style="color:#e6db74">                    tl_attr: [n_scene, n_target, n_step_hist, n_tl, tl_attr_dim]
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">        Returns: will be compared to &#34;output/gt_pos&#34;: [n_scene, n_agent, n_step_future, 2]
-</span><span style="color:#e6db74">            valid: [n_scene, n_target]
-</span><span style="color:#e6db74">            conf: [n_decoder, n_scene, n_target, n_pred], not normalized!
-</span><span style="color:#e6db74">            pred: [n_decoder, n_scene, n_target, n_pred, n_step_future, pred_dim]
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-</code></pre></div><h2 id="experiment">Experiment</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Wayformer</span>(nn<span style="color:#f92672">.</span>Module):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(
+</span></span><span style="display:flex;"><span>        self,
+</span></span><span style="display:flex;"><span>        target_valid: Tensor,
+</span></span><span style="display:flex;"><span>        target_type: Tensor,
+</span></span><span style="display:flex;"><span>        target_attr: Tensor,
+</span></span><span style="display:flex;"><span>        other_valid: Tensor,
+</span></span><span style="display:flex;"><span>        other_attr: Tensor,
+</span></span><span style="display:flex;"><span>        tl_valid: Tensor,
+</span></span><span style="display:flex;"><span>        tl_attr: Tensor,
+</span></span><span style="display:flex;"><span>        map_valid: Tensor,
+</span></span><span style="display:flex;"><span>        map_attr: Tensor,
+</span></span><span style="display:flex;"><span>        inference_repeat_n: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>        inference_cache_map: bool <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>    ) <span style="color:#f92672">-&gt;</span> Tuple[Tensor, Tensor, Tensor]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">           target_type: [n_scene, n_target, 3]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            # target history, other history, map
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                if pl_aggr:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    target_valid: [n_scene, n_target], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    target_attr: [n_scene, n_target, agent_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    other_valid: [n_scene, n_target, n_other], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    other_attr: [n_scene, n_target, n_other, agent_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    map_valid: [n_scene, n_target, n_map], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    map_attr: [n_scene, n_target, n_map, map_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                else:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    target_valid: [n_scene, n_target, n_step_hist], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    target_attr: [n_scene, n_target, n_step_hist, agent_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    other_valid: [n_scene, n_target, n_other, n_step_hist], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    other_attr: [n_scene, n_target, n_other, n_step_hist, agent_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    map_valid: [n_scene, n_target, n_map, n_pl_node], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    map_attr: [n_scene, n_target, n_map, n_pl_node, map_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            # traffic lights: cannot be aggregated, detections are not tracked.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                if use_current_tl:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    tl_valid: [n_scene, n_target, 1, n_tl], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    tl_attr: [n_scene, n_target, 1, n_tl, tl_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                else:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    tl_valid: [n_scene, n_target, n_step_hist, n_tl], bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    tl_attr: [n_scene, n_target, n_step_hist, n_tl, tl_attr_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Returns: will be compared to &#34;output/gt_pos&#34;: [n_scene, n_agent, n_step_future, 2]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            valid: [n_scene, n_target]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            conf: [n_decoder, n_scene, n_target, n_pred], not normalized!
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            pred: [n_decoder, n_scene, n_target, n_pred, n_step_future, pred_dim]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span></code></pre></div><h2 id="experiment">Experiment</h2>
 <h2 id="discussion">Discussion</h2>
 
 </article>

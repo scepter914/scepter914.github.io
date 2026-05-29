@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on Scepter914 Website</title>
+    <title>Rust on Scepter914 Website</title>
     <link>https://scepter914.github.io/tags/rust/</link>
-    <description>Recent content in rust on Scepter914 Website</description>
+    <description>Recent content in Rust on Scepter914 Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Jan 2026 01:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,8 @@
       <pubDate>Sun, 18 Jan 2026 01:00:00 +0900</pubDate>
       
       <guid>https://scepter914.github.io/blog/2026/20260124_ml_cellar_en/</guid>
-      <description>ml-cellar: A Minimal MLOps Model Management CLI Summary  Released ml-cellar, a &amp;ldquo;Model Management CLI for Minimal MLOps,&amp;rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving.  &amp;ndash;
-Background In the operation of ML models, the &amp;ldquo;management of deliverables such as trained models&amp;rdquo; is more effective than the training code itself. Where are the weights for which experiment?</description>
+      <description>ml-cellar: A Minimal MLOps Model Management CLI Summary Released ml-cellar, a &amp;ldquo;Model Management CLI for Minimal MLOps,&amp;rdquo; written in Rust as OSS. Among the software supporting the Minimal MLOps Checklist, it is responsible for model management and model serving. &amp;ndash;
+Background In the operation of ML models, the &amp;ldquo;management of deliverables such as trained models&amp;rdquo; is more effective than the training code itself. Where are the weights for which experiment? How do you reproduce it?</description>
     </item>
     
     <item>

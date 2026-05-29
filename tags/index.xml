@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Jan 2026 01:00:00 +0900</lastBuildDate><atom:link href="https://scepter914.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>mlops</title>
+      <title>Mlops</title>
       <link>https://scepter914.github.io/tags/mlops/</link>
       <pubDate>Sun, 18 Jan 2026 01:00:00 +0900</pubDate>
       
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>rust</title>
+      <title>Rust</title>
       <link>https://scepter914.github.io/tags/rust/</link>
       <pubDate>Sun, 18 Jan 2026 01:00:00 +0900</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>planning</title>
+      <title>Planning</title>
       <link>https://scepter914.github.io/tags/planning/</link>
       <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>prediction</title>
+      <title>Prediction</title>
       <link>https://scepter914.github.io/tags/prediction/</link>
       <pubDate>Thu, 02 Jan 2025 10:00:00 +0900</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>vision</title>
+      <title>Vision</title>
       <link>https://scepter914.github.io/tags/vision/</link>
       <pubDate>Mon, 23 Dec 2024 23:00:00 +0900</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>detection3d</title>
+      <title>Detection3d</title>
       <link>https://scepter914.github.io/tags/detection3d/</link>
       <pubDate>Thu, 14 Nov 2024 10:00:00 +0900</pubDate>
       
@@ -62,7 +62,7 @@
     </item>
     
     <item>
-      <title>software</title>
+      <title>Software</title>
       <link>https://scepter914.github.io/tags/software/</link>
       <pubDate>Mon, 04 Nov 2024 12:00:00 +0900</pubDate>
       
@@ -71,7 +71,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://scepter914.github.io/tags/python/</link>
       <pubDate>Sat, 17 Aug 2024 21:00:00 +0900</pubDate>
       
@@ -80,7 +80,7 @@
     </item>
     
     <item>
-      <title>evaluation</title>
+      <title>Evaluation</title>
       <link>https://scepter914.github.io/tags/evaluation/</link>
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
@@ -89,7 +89,7 @@
     </item>
     
     <item>
-      <title>robotics</title>
+      <title>Robotics</title>
       <link>https://scepter914.github.io/tags/robotics/</link>
       <pubDate>Mon, 12 Aug 2024 13:00:00 +0900</pubDate>
       
@@ -107,7 +107,7 @@
     </item>
     
     <item>
-      <title>works</title>
+      <title>Works</title>
       <link>https://scepter914.github.io/tags/works/</link>
       <pubDate>Thu, 08 Feb 2024 21:00:00 +0900</pubDate>
       
@@ -116,7 +116,7 @@
     </item>
     
     <item>
-      <title>vim</title>
+      <title>Vim</title>
       <link>https://scepter914.github.io/tags/vim/</link>
       <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
       
@@ -125,7 +125,7 @@
     </item>
     
     <item>
-      <title>vscode</title>
+      <title>Vscode</title>
       <link>https://scepter914.github.io/tags/vscode/</link>
       <pubDate>Mon, 11 Sep 2023 00:01:00 +0900</pubDate>
       
@@ -134,7 +134,7 @@
     </item>
     
     <item>
-      <title>diary</title>
+      <title>Diary</title>
       <link>https://scepter914.github.io/tags/diary/</link>
       <pubDate>Thu, 01 Sep 2022 01:00:00 +0900</pubDate>
       
@@ -143,7 +143,7 @@
     </item>
     
     <item>
-      <title>sensor_fusion</title>
+      <title>Sensor_fusion</title>
       <link>https://scepter914.github.io/tags/sensor_fusion/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
       
@@ -152,7 +152,16 @@
     </item>
     
     <item>
-      <title>ros</title>
+      <title>Tracking</title>
+      <link>https://scepter914.github.io/tags/tracking/</link>
+      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
+      
+      <guid>https://scepter914.github.io/tags/tracking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ros</title>
       <link>https://scepter914.github.io/tags/ros/</link>
       <pubDate>Tue, 03 Aug 2021 00:03:00 +0900</pubDate>
       
@@ -161,7 +170,7 @@
     </item>
     
     <item>
-      <title>wiki</title>
+      <title>Wiki</title>
       <link>https://scepter914.github.io/tags/wiki/</link>
       <pubDate>Sun, 13 Dec 2020 02:00:00 +0900</pubDate>
       
@@ -170,7 +179,7 @@
     </item>
     
     <item>
-      <title>control</title>
+      <title>Control</title>
       <link>https://scepter914.github.io/tags/control/</link>
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
@@ -179,7 +188,7 @@
     </item>
     
     <item>
-      <title>project</title>
+      <title>Project</title>
       <link>https://scepter914.github.io/tags/project/</link>
       <pubDate>Mon, 05 Oct 2020 23:59:59 +0900</pubDate>
       
@@ -188,7 +197,7 @@
     </item>
     
     <item>
-      <title>high-speed vision</title>
+      <title>High-Speed Vision</title>
       <link>https://scepter914.github.io/tags/high-speed-vision/</link>
       <pubDate>Wed, 20 May 2020 23:59:59 +0900</pubDate>
       
@@ -197,7 +206,7 @@
     </item>
     
     <item>
-      <title>aboutme</title>
+      <title>Aboutme</title>
       <link>https://scepter914.github.io/tags/aboutme/</link>
       <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
       
@@ -206,7 +215,7 @@
     </item>
     
     <item>
-      <title>robocon</title>
+      <title>Robocon</title>
       <link>https://scepter914.github.io/tags/robocon/</link>
       <pubDate>Mon, 09 Dec 2019 23:59:59 +0900</pubDate>
       
@@ -215,7 +224,7 @@
     </item>
     
     <item>
-      <title>pandoc</title>
+      <title>Pandoc</title>
       <link>https://scepter914.github.io/tags/pandoc/</link>
       <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
       
@@ -224,7 +233,7 @@
     </item>
     
     <item>
-      <title>reveal.js</title>
+      <title>Reveal.js</title>
       <link>https://scepter914.github.io/tags/reveal.js/</link>
       <pubDate>Sun, 09 Jun 2019 00:01:00 +0900</pubDate>
       
@@ -233,7 +242,7 @@
     </item>
     
     <item>
-      <title>openframeworks</title>
+      <title>Openframeworks</title>
       <link>https://scepter914.github.io/tags/openframeworks/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0900</pubDate>
       
