@@ -413,15 +413,6 @@
     </item>
     
     <item>
-      <title>Optimising the selection of samples for robust lidar camera calibration (arxiv 2021/03)</title>
-      <link>https://scepter914.github.io/survey/sensing/calibration/000356_camera_lidar_calib/</link>
-      <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
-      
-      <guid>https://scepter914.github.io/survey/sensing/calibration/000356_camera_lidar_calib/</guid>
-      <description>Summary 使いやすい形になっているっぽい https://gitlab.acfr.usyd.edu.au/its/cam_lidar_calibration https://www.youtube.com/watch?v=WmzEnjmffQU 素人でもcalibrationができるようなtarget-based なLidar- Camera calibのパイプラ</description>
-    </item>
-    
-    <item>
       <title>The Importance of Prior Knowledge in Precise Multimodal Prediction (IROS2020)</title>
       <link>https://scepter914.github.io/survey/perception/planning/000444_uber_reinforce/</link>
       <pubDate>Sun, 10 Oct 2021 13:00:00 +0900</pubDate>
